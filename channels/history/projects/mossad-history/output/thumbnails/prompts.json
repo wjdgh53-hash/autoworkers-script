@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "mossad-history",
+    "titles": [
+      "\"적을 잡는 부대가 통째로 적이었다\" 인구 80만 나라가 만든 세계 최강 첩보기관의 풀스토리",
+      "인구 80만 신생국은 어떻게 세계 최강 첩보기관을 만들었나",
+      "모사드, 작은 사무실 하나에서 시작된 세계 최강의 그림자"
+    ],
+    "thumbnail_texts": [
+      "어디서든 있고 / 어디서든 없다 / 모사드",
+      "세계가 두려워한 / 80만의 그림자 / 모사드",
+      "추적 부대 전원이 / 적의 스파이 / 모사드"
+    ],
+    "image_concepts": {
+      "A": "다윗의 별 실루엣 속 요원 그림자 — 경외감+위압감",
+      "B": "세계 지도 위 붉은 표적들 — 긴장감+전율"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 거대한 금색 다윗의 별 앞에 검은 정장 요원 4~5명의 실루엣이 일렬로 서있는 시네마틱 장면. 어두운 남색 배경에 드라마틱 역광.",
+      "prompt_en": "Cinematic photorealistic photograph of 4-5 dark-suited agent silhouettes standing in a row before a massive golden Star of David glowing with warm light. Deep navy-blue atmospheric background with dramatic backlighting creating strong rim light on each figure. Desaturated monochrome tones with gold as the single accent color. Mysterious fog drifting at their feet, ominous and awe-inspiring mood."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 금색 다윗의 별을 배경으로 검은 코트 요원들의 실루엣이 서있는 스타일리시 장면.",
+      "prompt_en": "Stylized anime-style illustration of shadowy agent silhouettes in long black coats standing before an enormous glowing golden Star of David. Bold ink outlines with cel-shaded lighting. Deep navy and charcoal tones dominate with gold star as the single vivid accent. Dramatic wind effect on coats, mysterious and imposing atmosphere with sharp angular composition."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 어두운 세계 지도 위에 부에노스아이레스, 뮌헨, 다마스쿠스, 테헤란, 베이루트 위치에 붉은 표적 마커가 빛나는 장면.",
+      "prompt_en": "Cinematic photorealistic overhead view of a dark grayscale world map with glowing red target crosshair markers pinpointing Buenos Aires, Munich, Damascus, Tehran, and Beirut. Each marker emits a subtle red pulse glow against the desaturated monochrome map. Dramatic high-contrast lighting with deep shadows. Tactical military operations room aesthetic, tense and foreboding atmosphere."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 스타일리시한 세계 지도에 붉은 표적 마커와 연결선이 빛나는 전략 화면.",
+      "prompt_en": "Vibrant anime-style illustration of a stylized dark world map viewed from above with glowing crimson target markers connected by thin red lines forming a web across Buenos Aires, Munich, Damascus, Tehran, and Beirut. Bold graphic style with sharp geometric shapes. Monochrome map with red as the only vivid accent color. Intense tactical atmosphere with dramatic angular perspective."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 어둠 속에서 한 남자의 실루엣이 이스라엘 국기 앞에 서있고, 그의 그림자가 세계 지도 위에 길게 뻗는 장면. 컨셉 A+B 요소 결합.",
+      "prompt_en": "Cinematic photorealistic scene of a single man's dark silhouette standing before an Israeli flag (white flag with blue Star of David), his elongated shadow stretching across a massive world map on the floor below. The shadow reaches multiple cities marked with faint red glows. Desaturated monochrome palette with blue from the flag and red target markers as the only accent colors. Dramatic overhead perspective, powerful and mysterious atmosphere conveying global reach from a single origin point."
+    }
+  ]
+}

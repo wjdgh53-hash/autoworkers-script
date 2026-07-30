@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "russia-oil-korea-a",
+    "titles": [
+      "\"한국에 기름 가져왔습니다\" 콧대 높은 러시아가 한국한테 달라붙는 진짜 속내",
+      "러시아가 기름 들고 한국 찾아온 진짜 이유, 기름이 아닙니다",
+      "러시아 기름 한국 도착, 근데 이거 함정입니다"
+    ],
+    "thumbnail_texts": [
+      "러시아.. \"기름 다 가져가세요\" + 한국한테 달라붙는 진짜 속내",
+      "기름 한 방울 없는 나라에 + 자원 강국이 줄을 섰다 + \"역시 똑똑한 나라\"",
+      "러시아 나프타 한국 도착!! + 퍼주는 게 아닙니다"
+    ],
+    "image_concepts": {
+      "A": "푸틴+유조선 2분할 구도 — 푸틴이 양손을 내미는 구애 제스처, 붉은 유조선과 함께 어두운 바다색 배경",
+      "B": "러시아 지도 위 균열 + 쇄빙 LNG선 실루엣 — 균열 사이로 노란 빛이 새어나오는 구도"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 푸틴이 양손을 내미는 구애 제스처를 취하며, 배경에 거대한 붉은 유조선이 어두운 바다 위를 항진하는 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic photograph of Vladimir Putin (Russian president) in the right half of the frame, shown from chest up, extending both hands forward in a pleading gesture with a reluctant diplomatic smile. In the left half, a massive red-hulled oil tanker with Russian flag colors sails across a dark ocean. Deep navy-blue background with dramatic side lighting casting sharp shadows. Ominous atmosphere of hidden intentions and geopolitical tension."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 푸틴+유조선 2분할 구도를 애니메 스타일로 표현. 과장된 제스처와 강렬한 색대비.",
+      "prompt_en": "Vibrant anime-style illustration of Vladimir Putin (Russian president) in the right half, shown from chest up with exaggerated pleading gesture, both hands extended forward. Bold cel-shaded lighting with dramatic shadows. In the left half, a massive crimson oil tanker with Russian tricolor accents sails through dark stormy seas. Deep navy background with vivid red and golden accent colors. Intense dramatic atmosphere with sharp ink outlines and vivid color contrast."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 러시아 지도에 균열이 퍼지고, 균열 사이로 쇄빙 LNG선 실루엣이 금빛으로 빛나는 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic image of a massive Russia map viewed from above, dark navy-blue background. Deep red cracks and fractures spread across the map surface. Through the largest crack in the center, a brilliant golden light emanates, revealing the silhouette of an icebreaking LNG carrier ship glowing with warm golden light. The contrast between the dark crumbling map and the bright golden light creates a powerful visual of a giant falling apart while technology shines through."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 러시아 지도 균열+쇄빙선 빛을 스타일리시한 애니메로 표현.",
+      "prompt_en": "Stylized anime-style digital illustration of a giant Russia map suspended in dark space, with dramatic red fracture lines spreading across its surface. Through the central crack, a brilliant golden-white light bursts out, revealing a sleek icebreaking LNG carrier silhouette. Bold ink outlines, cel-shaded lighting, deep indigo background with vivid red crack lines and warm golden glow. Epic scale contrast between the massive crumbling landmass and the luminous ship below."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 러시아 국기색 유조선이 한국 반도 실루엣을 향해 항진하는 항공 구도. 유조선 뒤로 푸틴의 거대한 그림자가 바다 위에 드리워진 초현실적 장면.",
+      "prompt_en": "Photorealistic cinematic aerial view of a massive oil tanker painted in Russian flag colors (white, blue, red stripes on hull) sailing through dark ocean waters toward the Korean peninsula silhouette glowing with warm golden light on the horizon. Behind the tanker, an enormous shadow of Vladimir Putin's face is cast across the dark ocean surface, creating a surreal and ominous atmosphere. Deep dramatic lighting with dark teal ocean and warm golden glow from the peninsula."
+    }
+  ]
+}

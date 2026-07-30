@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "china-uyghur-backlash",
+    "titles": [
+      "\"민족의 씨를 말리겠다고?\" 위구르 100만 명을 가둔 중국이 맞이한 소름 돋는 복수의 부메랑",
+      "위구르족 100만 명 가둬 씨를 말리려던 중국, 탈출한 청년들이 가장 위험한 적이 됐다",
+      "\"중국인은 보이는 대로 죽여라\" 서로 죽이던 3개 세력이 중국 하나 때문에 손잡은 이유"
+    ],
+    "thumbnail_texts": [
+      "\"씨를 말려라\" + 돌아온 부메랑",
+      "\"너희가 만든 적\" + 100만 명이 돌아왔다",
+      "\"중국인은 다 죽여\" + 가둘수록 강해지는 복수"
+    ],
+    "image_concepts": {
+      "A": "균열 가는 감옥에서 빠져나오는 무장 실루엣들",
+      "B": "거대한 중국 지도 위에 불타는 일대일로 경로"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 거대한 콘크리트 수용소 벽에 균열이 퍼지고, 균열 사이로 무장한 실루엣 여러 명이 빠져나오는 장면.",
+      "prompt_en": "Dark cinematic photograph of a massive concrete prison wall cracking apart with deep fissures spreading across its surface. Through the glowing red cracks, dark silhouettes of armed fighters are emerging, backlit by intense crimson light. Deep shadows and dramatic contrast create an ominous atmosphere of unstoppable escape. The wall dominates the upper half of the frame, crumbling from within."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 균열 가는 거대한 감옥 구조물에서 무장 실루엣들이 빠져나오는 장면을 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Intense anime-style illustration of a colossal dark prison fortress shattering apart with dramatic cracks spreading like lightning across its walls. Through the glowing crimson fractures, shadowy armed figures burst free in dynamic action poses. Bold ink outlines, exaggerated perspective with the fortress towering in the upper frame, deep shadows with vivid red energy pouring through every crack."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 중국 지도를 관통하는 일대일로 경로가 도화선처럼 불이 붙어 타들어가는 시네마틱 장면.",
+      "prompt_en": "Dark cinematic aerial view of a massive map of China rendered in deep navy blue, with the Belt and Road Initiative route burning like a lit fuse across Pakistan through Xinjiang. Bright orange-red flames and sparks travel along the route line, leaving charred black trails behind. Dramatic moody lighting with deep shadows, the burning path creating the only source of vivid light against the dark geopolitical landscape."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 중국 지도 위 일대일로 경로가 도화선처럼 불타는 장면을 스타일리시한 애니메 아트로 표현.",
+      "prompt_en": "Stylized anime-style illustration of a dark navy map of China with the Belt and Road route depicted as a burning fuse line cutting across the continent. Vivid orange-yellow flames and dramatic sparks explode along the route from Pakistan through Xinjiang. Bold graphic style with exaggerated fire effects, deep contrasting shadows, and intense warm-cool color clash between the cold dark map and blazing hot route."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 부메랑 형태의 붉은 궤적이 중국 대륙을 향해 돌아오는 장면. 부메랑 궤적 위에 수용소와 무장 전사 실루엣이 겹쳐진다.",
+      "prompt_en": "Dark dramatic photograph of a massive glowing red boomerang arc cutting through a stormy night sky, curving back toward a dark silhouette of China's mainland below. Along the boomerang's fiery trail, ghostly afterimages of prison bars transforming into armed fighter silhouettes are visible. Deep shadows, ominous atmosphere with dark clouds, intense crimson and orange glow from the boomerang contrasting against the cold dark landscape."
+    }
+  ]
+}

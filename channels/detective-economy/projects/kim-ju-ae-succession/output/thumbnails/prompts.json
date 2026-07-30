@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "kim-ju-ae-succession",
+    "titles": [
+      "\"12살한테 핵 버튼 넘긴다\" 김정은이 미친 듯이 서두르는 진짜 이유",
+      "김주애 후계 확정, 역대 후계 때마다 반복된 소름 돋는 패턴",
+      "\"딸한테 세습한 독재자는 역사상 없다\" 김정은이 건 전례 없는 도박의 결말"
+    ],
+    "thumbnail_texts": [
+      "김주애 후계 확정 + 핵무기 50기의 주인이 바뀐다",
+      "중학생이 핵 버튼을 잡는다 + 한반도 대재앙 시작",
+      "김주애 후계 내정 + 곧 피바람이 분다"
+    ],
+    "image_concepts": {
+      "A": "핵 버튼 위의 어린 손 — 스케일 대비, 충격",
+      "B": "균열 가는 김정은과 김주애 — 균열·붕괴, 위기감"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 어두운 벙커 속 거대한 빨간 핵 발사 버튼 위에 어린 소녀의 작은 손이 올려진 시네마틱 장면.",
+      "prompt_en": "Cinematic photorealistic close-up of a small girl's hand (Kim Ju-ae, age 12) resting on top of a massive glowing red nuclear launch button in a dark military bunker. The button emits an ominous crimson glow that illuminates the child's delicate fingers from below. Dark shadows fill the background with faint outlines of military control panels and screens. Dramatic side lighting creates extreme contrast between the bright red button and the surrounding darkness."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 핵 버튼+어린 손 구도를 애니메 스타일로 표현. 과장된 스케일 대비.",
+      "prompt_en": "Anime-style illustration of a young girl's small hand (Kim Ju-ae, age 12) hovering over an enormous glowing red nuclear launch button. The button is dramatically oversized compared to the child's hand, emphasizing the terrifying scale contrast. Dark military bunker background with deep shadows and neon-red glow emanating from the button. Bold ink outlines, cel-shaded dramatic lighting, intense atmosphere of tension and dread."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 김정은과 김주애가 나란히 서 있고 두 인물 사이로 깊은 균열이 갈라지며 배경의 북한 국기가 찢어지는 장면.",
+      "prompt_en": "Cinematic photorealistic image of Kim Jong-un (North Korean leader, black Mao suit) and Kim Ju-ae (his young daughter, age 12) standing side by side facing forward. A deep glowing crack splits the ground between them, extending upward through the North Korean flag behind them which tears apart along the fracture line. Dark navy background with yellow and red light emanating from the cracks. Dramatic low-angle shot with ominous atmosphere of a regime fracturing from within."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 균열 가는 김정은과 김주애를 애니메 스타일로 과장 표현.",
+      "prompt_en": "Vibrant anime-style illustration of Kim Jong-un (North Korean leader) and Kim Ju-ae (his young daughter) standing back-to-back with an enormous glowing crack splitting between them. The crack emanates bright yellow-orange energy, shattering the North Korean flag in the background into dramatic fragments. Exaggerated perspective with the crack dominating the center. Dark moody color palette with vivid red and gold accent lighting from the fracture. Intense dramatic atmosphere."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 김주애가 거대한 왕좌에 홀로 앉아 있고, 왕좌와 주변이 균열과 함께 무너지고 있는 실사 장면. 체제의 불안정함을 시각화.",
+      "prompt_en": "Cinematic photorealistic image of Kim Ju-ae (young North Korean girl, age 12, in formal dark suit) sitting alone on an oversized ornate golden throne. The throne is cracking and crumbling, with large fractures spreading across its surface and pieces breaking away. Behind her, massive portraits of Kim Il-sung and Kim Jong-il on the wall are tilting and falling. Dark crimson atmospheric lighting with dust particles floating in the air. The girl appears small and isolated against the collapsing grandeur, creating a powerful sense of an unstable regime."
+    }
+  ]
+}

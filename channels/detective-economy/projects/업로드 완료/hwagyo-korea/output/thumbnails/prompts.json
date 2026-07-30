@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "hwagyo-korea",
+    "titles": [
+      "\"5천억 땅을 100원 짜장면으로 지켰는데\" 화교를 몰아낸 유일한 나라가 지금 뚫리고 있다",
+      "전 세계를 집어삼킨 화교, 한국에서만 뿌리째 뽑혀 나간 소름 돋는 이유",
+      "\"중국인 5만 8천 가구\" 화교를 몰아낸 유일한 나라에서 벌어지고 있는 일"
+    ],
+    "thumbnail_texts": [
+      "화교 몰아낸 / 유일한 나라 / 지금은 뚫렸다",
+      "중국인 5만 8천 가구 / 역차별 당하는 한국인",
+      "100원 짜장면으로 / 5천억 땅을 지킨 나라"
+    ],
+    "image_concepts": {
+      "A": "Before→After 시간 분할: 1970년대 화교 상점 거리 → 현대 중국어 부동산 간판 아파트",
+      "B": "균열/붕괴: 대한민국 지도 형상의 방패에 빨간 빛이 새어나오는 균열"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "���셉 A 실사. 좌측에 1970년대 서울 거리의 중국어 간판이 보이는 흑백 사진, 우측에 현대 한국 아파트 단지 앞 중국어 부동산 간판이 걸린 장면. 중앙에 시간의 균열선이 두 시대를 가른다.",
+      "prompt_en": "Cinematic split-screen photograph. Left side: sepia-toned 1970s Seoul street with Chinese-character shop signs and old buildings, nostalgic vintage atmosphere. Right side: modern Korean apartment complex with Chinese real estate agency signs in red and gold, dark ominous atmosphere. A dramatic glowing crack runs vertically through the center dividing past and present. Dark cinematic atmosphere with deep shadows and dramatic contrast. The crack glows with intense red light suggesting danger and breach."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 과거/현재 시간 분할을 애니메 스타일로 표현. 좌측 세피아톤 옛 거리, 우측 어두운 현대 아파트에 빨간 간판.",
+      "prompt_en": "Vibrant anime-style illustration with dramatic split composition. Left side: warm sepia-toned 1970s Korean street scene with traditional Chinese shop signs, soft nostalgic lighting with visible dust particles. Right side: dark modern Korean apartment towers with glowing red Chinese real estate signs, ominous red sky. A dramatic lightning-like crack splits the center with intense golden light. Bold ink outlines, cel-shaded dramatic lighting, intense color contrast between warm past and cold threatening present."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 대한민국 지도 형상의 금속 방패가 중앙에 크게 배치되고, 방패 표면에 깊은 균열이 퍼지며 균열 틈으로 강렬한 빨간 빛이 새어나온다. 방패 표면에 아파트 단지 실루엣이 새겨져 있다.",
+      "prompt_en": "Dark cinematic photograph of a massive metallic shield shaped like the Korean peninsula, centered in the upper half of the frame. Deep dramatic cracks spread across the shield surface, with intense red light bleeding through the fractures. Faint silhouettes of apartment buildings are embossed on the shield surface. Background is deep navy blue with dramatic rim lighting on the shield edges in gold. Moody atmosphere with volumetric red light streaming through cracks, suggesting a defensive barrier being breached."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 한반도 형상 방패의 균열에서 빨간 빛이 새어나오는 장면을 역동적 애니메 스타일로 표현.",
+      "prompt_en": "Stylized anime illustration of a grand golden shield in the shape of the Korean peninsula, positioned prominently in the upper frame. Dramatic red cracks shatter across the shield surface with explosive energy, red light bursting through fractures like magma. Small apartment building silhouettes etched into the shield are breaking apart. Deep dark navy background with bold contrast. Dynamic anime energy lines radiating from the cracks, vibrant cel-shaded style with exaggerated dramatic tension and glowing effects."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 빨간 용(중국 상징)이 한국 전통 성벽을 넘어오는 장면. 성벽에는 균열이 가고, 용의 발톱 아래로 아파트 단지가 보인다. 시네마틱 실사 스타일.",
+      "prompt_en": "Dark cinematic photograph of a massive red Chinese dragon coiling over a traditional Korean fortress wall. The ancient stone wall shows deep cracks and fractures where the dragon grips it. Below the dragon's claws, modern Korean apartment buildings are visible, dwarfed by the dragon's enormous scale. Deep shadows and dramatic side lighting create an ominous atmosphere. The dragon glows with intense red and gold tones against a dark stormy sky. Tension and foreboding mood with high contrast between the golden fortress and the red threatening dragon."
+    }
+  ]
+}

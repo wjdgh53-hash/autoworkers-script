@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-shipbuilding-dominance",
+    "titles": [
+      "\"조선소도 없이 계약했다\" 50년 전 정주영의 도박이 만든 6조원짜리 기적",
+      "조선소도 없던 나라가 미국한테 핵잠수함까지 맡게 된 소름돋는 과정",
+      "\"500원짜리 거북선 보여주고 계약 따왔다\" 한국 조선업 50년, 세계가 줄 서는 이유"
+    ],
+    "thumbnail_texts": [
+      "조선소도 없이 계약 + 50년 뒤 세계 1위",
+      "정주영의 미친 도박 + 6조원의 결과",
+      "설계도 없이 배 만들기 + 한국만 성공한 이유"
+    ],
+    "image_concepts": {
+      "A": "정주영 + 거대 선박 — 인물 중심 + 스케일 대비",
+      "B": "1972년 허허벌판 울산 vs 2026년 HD현대 조선소 — Before→After 대비"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 정주영 회장이 거대한 VLCC 유조선 앞에 서 있는 시네마틱 장면. 1970년대 울산 해안가 배경.",
+      "prompt_en": "Cinematic dramatic photograph of Chung Ju-yung (Hyundai Group founder), an elderly Korean businessman in a dark suit, standing confidently in the upper left of the frame. Behind him in the upper right, a massive VLCC oil tanker under construction towers over the scene, with industrial cranes visible. The background is the Ulsan coastline in the 1970s with warm sepia tones and golden hour lighting. His expression is determined and visionary, looking toward the horizon. Dramatic side lighting with golden accent highlights creates a heroic atmosphere of ambition and national pride."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 정주영 회장과 거대 선박을 애니메 스타일로 표현. 경탄과 자부심의 분위기.",
+      "prompt_en": "Vibrant anime-style illustration of Chung Ju-yung (Hyundai Group founder), depicted as a distinguished elderly Korean man in a dark suit with a determined heroic expression, positioned in the upper left. In the upper right, a colossal VLCC tanker looms dramatically with exaggerated scale, dwarfing everything around it. Bold cel-shaded lighting with warm golden tones and dramatic lens flare effects. The Ulsan industrial coastline stretches behind with stylized cranes and ocean. Epic atmosphere of ambition and triumph, with vivid color contrast between the warm figure and the cool blue-steel ship."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좌우 분할: 좌측 1972년 허허벌판 울산 해안, 우측 2026년 HD현대 울산 조선소의 크레인 숲과 초대형 LNG선.",
+      "prompt_en": "Photorealistic split-screen composition showing dramatic before-and-after contrast. Upper left half: barren 1972 Ulsan coastline, empty sandy shore with sparse vegetation, muted brown and grey desaturated tones, overcast sky, desolate atmosphere. Upper right half: modern 2026 HD Hyundai Heavy Industries Ulsan shipyard bustling with activity, forest of towering yellow cranes, a massive LNG carrier under construction, welding sparks flying, vibrant blue and steel tones with bright industrial lighting. Sharp diagonal dividing line between the two eras creates maximum visual contrast."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 동일한 Before→After 타임라인 대비를 애니메 스타일로 표현.",
+      "prompt_en": "Anime-style illustration with dramatic split composition. Upper left: stylized 1972 barren Ulsan coast rendered in muted watercolor-like washes of brown and grey, empty shore with wind-swept grass, melancholic atmosphere. Upper right: vibrant futuristic 2026 Ulsan mega-shipyard in bold anime colors, towering cranes rendered with sharp geometric lines, a gleaming LNG carrier with exaggerated scale, sparks and energy effects. Strong cel-shading with a glowing golden dividing line between eras, creating a powerful visual narrative of transformation and triumph."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 500원 지폐 위의 거북선이 현대 LNG 운반선으로 변형되는 초현실적 장면.",
+      "prompt_en": "Surreal cinematic photograph of a giant Korean 500-won banknote floating in the upper portion of the frame, with the Geobukseon (turtle ship) illustration on the bill magically transforming and morphing into a modern LNG carrier that emerges from the paper into three-dimensional reality. The turtle ship's wooden hull transitions seamlessly into gleaming steel. Golden ethereal light emanates from the transformation point. Dark navy blue ocean background with dramatic volumetric lighting. The scale is massive and awe-inspiring, conveying the miraculous transformation from ancient heritage to modern industrial dominance."
+    }
+  ]
+}

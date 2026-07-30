@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "china-tibet-resistance",
+    "titles": [
+      "\"65개 조항으로 입을 막았다\" 세계 2위 중국이 꺼낸 새 법이 시행 하루 만에 뒤집힌 이유",
+      "\"법 시행 바로 다음 날이었습니다\" 중국이 70년 눌러온 분노가 뉴욕 UN 앞에서 터진 이유",
+      "이름이 민족단결법입니다. 중국이 55개 민족을 묶으려 만든 법이 오히려 티베트를 세계로 퍼뜨린 이유"
+    ],
+    "thumbnail_texts": [
+      "\"입을 막으려 만든 법\" / 하루 만에 터진 분노 (강조: 하루 만에)",
+      "\"법 시행 다음 날이었다\" / 뉴욕 UN 앞까지 번졌다 (강조: 다음 날)",
+      "\"65개 조항으로 봉인\" / 하루 만에 뚫린 자리 (강조: 뚫린)"
+    ],
+    "image_concepts": {
+      "A": "붉은 인장이 찍힌 거대한 법령 문서가 세로로 갈라지고, 그 균열 사이로 UN 본부 실루엣과 티베트 설산사자기가 드러나는 구도",
+      "B": "좌측은 붉은 조명의 회의장(법이 통과되는 쪽), 우측은 UN 본부 앞 깃발 든 군중. 중앙 명암 경계가 '하루'를 가른다"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 붉은 관인이 찍힌 거대한 중국 법령 문서가 화면을 채우고, 중앙을 세로로 가르는 균열 사이로 UN 본부 실루엣과 티베트 설산사자기가 차가운 빛과 함께 드러난다.",
+      "prompt_en": "Photorealistic cinematic image of a colossal official Chinese legal document filling the frame, stamped with a massive glowing red official seal, rendered in deep shadow and dark desaturated tones. A jagged vertical fracture splits the document down the center, and through the crack a cold blue-white light breaks out, revealing the silhouette of the United Nations headquarters building and a Tibetan snow lion flag beyond. Dramatic high contrast, single crimson accent against dark charcoal and slate blue background, oppressive weight of paper versus the light escaping through the break, moody cinematic lighting, bottom half kept dark and simple."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 붉은 인장 법령 문서와 세로 균열, 균열 사이로 드러나는 UN 본부·티베트 깃발을 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration with bold ink outlines and dramatic cel-shading showing an enormous Chinese legal decree document dominating the frame, marked with a huge glowing red official seal. A sharp vertical crack tears the document apart at the center, and brilliant cold blue-white light bursts through the fissure, revealing the United Nations headquarters silhouette and a Tibetan snow lion flag behind it. Deep shadows, single crimson accent color, dark charcoal background, high contrast dramatic composition, bottom half of the frame kept dark and uncluttered."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌측은 붉은 조명이 깔린 거대한 회의장 실루엣, 우측은 UN 본부 앞에서 티베트 깃발과 피켓을 든 군중. 중앙의 강한 명암 경계가 두 장면을 가른다.",
+      "prompt_en": "Photorealistic cinematic split composition. On the left, the silhouette of a vast imposing government assembly hall bathed in deep crimson red light, rows of empty seats receding into darkness, cold and monolithic. On the right, a dense crowd gathered outside the United Nations headquarters at dusk holding Tibetan snow lion flags and protest placards, lit in desaturated cool grey-blue. A hard vertical light-dark boundary divides the two halves at the center. One determined Tibetan protester in the front row faces the camera with a resolute, unflinching expression. Dramatic high contrast, dark moody palette with a single red accent, bottom half kept dark for text space."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 좌우 대비(붉은 회의장 vs UN 앞 군중)를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration with bold outlines and strong cel-shading, split composition. Left half shows a towering government assembly hall silhouette drowned in deep crimson light, cold and monumental. Right half shows a crowd outside the United Nations headquarters raising Tibetan snow lion flags and placards, rendered in desaturated cool grey-blue. A stark vertical division separates them. In the foreground right, one anime protester faces forward with a fierce determined expression. Deep shadows, single red accent, dark high-contrast dramatic atmosphere, bottom half of frame kept dark and simple."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드 실사. 붉은 봉랍 도장이 눌린 두꺼운 문서 뭉치가 안쪽에서 터져 나오는 불빛에 갈라지고, 갈라진 틈에서 종이 조각들이 불티처럼 사방으로 날아오른다.",
+      "prompt_en": "Photorealistic cinematic close-up of a thick stack of sealed legal documents bound with a heavy red wax seal, set against a near-black background. The stack is rupturing from within, an intense light bursting outward through the widening split, and torn fragments of paper scatter upward through the air like drifting embers. Sharp dramatic rim lighting picks out the edges of the flying paper. Deep shadows, single crimson accent from the wax seal, cold white light from the rupture, extreme high contrast, sense of something sealed violently breaking open, bottom half of the frame kept dark and uncluttered."
+    }
+  ]
+}

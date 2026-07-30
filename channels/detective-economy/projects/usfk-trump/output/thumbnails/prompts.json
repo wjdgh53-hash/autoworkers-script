@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "usfk-trump",
+    "titles": [
+      "\"트럼프 고마워요\" 미국이 한국을 압박할수록 K방산이 돈을 쓸어담는 소름돋는 구조",
+      "방산 수출 30억→173억 달러, 트럼프가 만든 한국 방산 황금기의 비밀",
+      "\"압박하면 할수록 더 커진다\" 트럼프의 협박이 한국 방산을 세계 1위로 만드는 역설"
+    ],
+    "thumbnail_texts": [
+      "방산 수출 5.8배 폭발 / 트럼프가 만든 기회",
+      "\"고맙습니다 트럼프\" / 압박할수록 돈 벌리는 구조",
+      "30억 → 173억 달러 / 폴란드 20조 계약"
+    ],
+    "image_concepts": {
+      "A": "K방산 무기 라인업(K2 전차, K9 자주포, KF-21 전투기)이 우상향 화살표 위에 배열된 성장 시각화",
+      "B": "트럼프(당혹 표정) vs 한국 방산 무기 열병식/수출 현장의 A vs B 대비"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. K2 전차, K9 자주포, KF-21 전투기가 거대한 녹색 상승 화살표 위에 역동적으로 배열된 시네마틱 장면. 어두운 남색 배경에 금색 포인트.",
+      "prompt_en": "Photorealistic cinematic composition of South Korean military hardware arranged dynamically atop a massive glowing green upward arrow. A K2 Black Panther tank in the foreground left, a K9 Thunder self-propelled howitzer center, and a KF-21 Boramae fighter jet soaring from the right. Dark navy blue atmospheric background with golden light accents suggesting wealth and growth. Dramatic volumetric lighting with rim light on each vehicle creating sharp silhouettes against the dark backdrop."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 K방산 무기 라인업 + 상승 화살표를 스타일리시한 애니메 일러스트로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of South Korean military hardware arranged on a dramatic glowing green upward arrow. A stylized K2 Black Panther tank, K9 Thunder howitzer, and KF-21 Boramae jet fighter positioned heroically with bold ink outlines and cel-shaded lighting. Deep navy blue background with vivid golden sparkle effects suggesting explosive growth. Dynamic perspective from below looking up, emphasizing power and ascension."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좌측에 당혹스러운 표정의 트럼프, 우측에 한국 K2 전차와 K9 자주포가 줄지어 수출되는 항구 장면. 좌측 어두운 붉은 톤 vs 우측 밝은 청록·금색 톤.",
+      "prompt_en": "Photorealistic split composition. Left side: Donald Trump with a bewildered frustrated expression, face filling the upper left quadrant, dark reddish moody lighting behind him. Right side: rows of K2 Black Panther tanks and K9 Thunder howitzers lined up at a bright modern port ready for export, bathed in teal and golden triumphant lighting. Sharp contrast between the dark troubled left and bright prosperous right. Cinematic dramatic atmosphere with high contrast lighting."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 트럼프 당혹 표정 vs K방산 무기 수출 장면을 애니메 스타일로 표현.",
+      "prompt_en": "Stylized anime illustration with dramatic split composition. Left side: an exaggerated caricature of Donald Trump with comically shocked wide eyes and dropped jaw, dark red ominous background. Right side: sleek anime-styled K2 tanks and KF-21 fighter jets arranged triumphantly with golden sparkle effects and bright teal background. Bold contrast between the dark defeated left and radiant victorious right. Vibrant cel-shaded coloring with dramatic speed lines."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 한국 국기를 배경으로 K방산 무기들이 세계 지도 위를 행진하는 장면. 폴란드, 루마니아, 노르웨이 등에 금색 핀이 찍혀있음.",
+      "prompt_en": "Photorealistic dramatic aerial view of South Korean military hardware marching across a stylized world map. K2 tanks, K9 howitzers, and KF-21 jets positioned over Europe with glowing golden pins marking Poland, Romania, Norway, and Finland. A massive South Korean flag waves triumphantly in the background sky. Dark cinematic atmosphere with golden light beams illuminating the export destinations. Epic scale composition emphasizing global reach and dominance."
+    }
+  ]
+}

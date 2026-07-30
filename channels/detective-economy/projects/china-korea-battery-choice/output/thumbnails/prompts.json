@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "project": "china-korea-battery-choice",
+    "titles": [
+      "\"316조 부어줬는데 왜 못 쓸까요?\" 중국이 자국 배터리 대신 삼성·LG에 줄 선 진짜 이유",
+      "\"자기가 키운 1등을 버렸다\" 중국 로봇이 삼성·LG 배터리를 든 진짜 이유",
+      "\"316조 태운 중국의 착각\" 배터리는 결국 한국이 가져간 이유"
+    ],
+    "thumbnail_texts": [
+      "316조 키운 배터리 버렸다 / 중국이 삼성·LG에 줄 선 이유",
+      "자기가 키운 1등을 버렸다 / 중국 로봇이 한국배터리 든 이유",
+      "316조 태운 중국의 착각 / 배터리는 결국 한국이네"
+    ],
+    "image_concepts": {
+      "A": "좌우 대비 — 좌: 균열·잿빛 CATL 간판(붉은 하늘, 재), 우: 삼성SDI·LG 블루 빌딩에 햇살 / 중앙에 하이니켈 4680 배터리 셀 클로즈업. 316조 자멸 vs 한국 부상.",
+      "B": "스케일 대비 — 거대한 휴머노이드 로봇이 균열난 CATL 간판을 등지고 'KOREAN' 각인된 한국산 4680 셀을 집어드는 동작. 상단을 꽉 채우고 하단은 텍스트용으로 어둡게."
+    },
+    "strategy": {
+      "count": 5,
+      "art_styles": ["photorealistic", "anime"],
+      "color_palette": "dark",
+      "emotions": ["schadenfreude", "pride"],
+      "text_space": "bottom-half",
+      "face_style": "exaggerated+natural"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 균열·화염으로 무너지는 잿빛 CATL 중국 배터리 간판(붉은 하늘), 우측에 햇살 받는 삼성SDI·LG 블루 빌딩과 태극기 질감, 중앙에 파랗게 빛나는 하이니켈 4680 원통형 배터리 셀. 316조 자멸 vs 한국 부상.",
+      "prompt_en": "Cinematic dark photograph, split left-right composition. Left side: a grey Chinese battery-company signboard reading 'CATL' cracking apart with fire and falling ash under a bleak blood-red sky, symbolizing collapse. Right side: sleek blue corporate towers labeled 'SAMSUNG SDI' and 'LG' bathed in warm golden sunlight, with a subtle Korean flag metallic texture, symbolizing rise. In the glowing center, a large close-up of a cylindrical high-nickel '4680' battery cell radiating cool blue energy. High contrast, harsh side lighting; the red collapse and the golden rise are the only vivid tones. Tense, triumphant mood of a world No.1 self-destructing while a rival ascends. Lower half kept darker for title text."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '무너지는 CATL 간판(좌) vs 빛나는 삼성·LG 빌딩(우) + 중앙 4680 셀' 구도를 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant dramatic anime-style illustration, split left-right composition. Left: a grey Chinese battery signboard 'CATL' shattering with flames and ash under a crimson sky, bold ink outlines and moody shadows, evoking collapse. Right: gleaming blue skyscrapers marked 'SAMSUNG SDI' and 'LG' lit by golden rays with a hint of Korean-flag texture, evoking triumphant rise. Center: a glowing cel-shaded cylindrical '4680' high-nickel battery cell pulsing electric blue. Deep dramatic shadows, high contrast, blazing red collapse versus warm golden ascent. Intense mood of self-destruction beside a rival's rise. Lower half darker for title text."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 거대한 휴머노이드 로봇이 균열난 CATL 간판을 등지고, 'KOREAN' 각인된 파랗게 빛나는 한국산 4680 셀을 손으로 집어드는 동작. 스케일 압도.",
+      "prompt_en": "Cinematic dark photograph with dominant scale. A giant humanoid robot fills the upper frame, turning its back on a cracked, dimly-lit grey 'CATL' signboard behind it, while reaching down to pick up a glowing blue cylindrical '4680' battery cell engraved with the word 'KOREAN' held in its metallic hand. Cold industrial lighting, deep navy-black background, the battery cell the brightest blue glow in frame. A subtle Korean flag reflection on the robot's chassis. Ominous yet triumphant tone of a machine choosing Korea over its home-grown battery giant. Lower half darkened for title text."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 휴머노이드 로봇이 무너진 CATL 간판을 등지고 한국산 4680 셀을 집어드는 구도를 애니메 스타일로.",
+      "prompt_en": "Dramatic anime-style illustration with dominant scale. A towering humanoid robot dominates the upper frame, back turned to a cracked grey 'CATL' signboard in shadow, reaching down to grasp a glowing blue cylindrical '4680' battery cell engraved 'KOREAN'. Bold cel-shaded outlines, deep moody shadows, electric-blue glow from the cell as the focal point, faint Korean flag sheen on the robot's plating. Cold industrial palette with crimson danger accents on the collapsing signboard. Triumphant, tense mood. Lower half darker for text."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 극단적 스케일 — 산더미처럼 쌓인 값싼 중국 전기차 폐차 더미(잿빛) 위로, 파랗게 빛나는 거대한 한국산 4680·전고체 배터리 셀이 태극 오라와 함께 솟아오른다. 316조의 착각 vs 다음 판 선점.",
+      "prompt_en": "Extreme dramatic cinematic composition. A vast grey mountain of cheap discarded Chinese electric cars piles up in the lower background under a bleak red-tinged sky, stamped with faint clearance-price tags. Rising above it, a colossal glowing-blue Korean '4680' and solid-state battery cell ascends like a monument, wrapped in a faint taegeuk (Korean flag) aura of light, dominating the frame. Sparks and cold blue haze fill the air; harsh lighting and overwhelming scale contrast the discarded past with the ascendant future. Dark, moody, striking tone with the lower area darkened for text."
+    }
+  ]
+}

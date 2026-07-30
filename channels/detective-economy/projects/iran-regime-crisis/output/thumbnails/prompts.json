@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "iran-regime-crisis",
+    "titles": [
+      "\"제발 전쟁을 멈추지 마세요\" 이란 국민이 평화를 두려워하는 소름 돋는 이유",
+      "\"지금 끝나면 우린 다 죽습니다\" 전쟁보다 평화가 더 무서운 나라, 이란",
+      "전쟁이 끝나는 순간, 대학살이 시작된다 — 이란 9천만 국민의 공포"
+    ],
+    "thumbnail_texts": [
+      "\"전쟁을 멈추지 마세요\"",
+      "평화가 더 무서운 나라",
+      "전쟁이 끝나면 대학살이 시작된다"
+    ],
+    "image_concepts": {
+      "A": "평화의 상징 위의 핏자국 — 하얀 비둘기에 빨간 핏자국, 평화가 곧 죽음임을 암시",
+      "B": "갈라진 시간선 — 좌측 화염 속 시위대(전쟁=희망)와 우측 군화에 짓밟힌 시민(평화=숙청)"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 어두운 남색 배경 앞에 하얀 비둘기가 날개를 펼치고 있으나, 깃털과 가슴에 선명한 핏자국이 흘러내리는 시네마틱 클로즈업.",
+      "prompt_en": "Photorealistic cinematic close-up of a pure white dove with wings spread wide against a deep navy-blue dark background. Vivid crimson bloodstains streak across the dove's chest feathers and drip downward, creating a stark white-red contrast. Dark cinematic atmosphere with dramatic side lighting casting deep shadows, ominous tension radiating from the corrupted symbol of peace. The dove's eye catches a glint of light, conveying fear and vulnerability."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 핏자국 비둘기 컨셉을 강렬한 애니메 스타일로 표현. 굵은 윤곽선과 과장된 색채 대비.",
+      "prompt_en": "Anime-style illustration of a white dove with outstretched wings, its feathers splattered with bold crimson blood painted in dramatic ink-brush strokes. Deep indigo background with swirling dark shadows and cel-shaded lighting. The blood trails off the feathers in exaggerated anime-style droplets, creating intense visual tension. Vivid color contrast between pure white, deep red, and dark navy, with sharp bold outlines emphasizing the corrupted peace symbol."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 화면이 세로로 갈라져 좌측엔 화염 속 주먹 쥔 이란 시위대, 우측엔 군화에 쓰러진 시민들이 보이는 분할 구도.",
+      "prompt_en": "Photorealistic split-screen composition divided by a dramatic jagged crack down the center. Left side shows Iranian protesters with raised fists amid orange-red flames and smoke, faces filled with fierce hope and defiance. Right side reveals a dark oppressive scene of fallen civilians beneath a massive military boot, drenched in black and deep purple tones. Dark cinematic atmosphere with deep shadows and dramatic contrast between the fiery warm left half and the cold deathly right half."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 갈라진 시간선 컨셉을 애니메 스타일로 표현. 좌측 불꽃의 희망과 우측 짙은 보라빛 숙청의 대비.",
+      "prompt_en": "Vibrant anime-style illustration of a fractured timeline split composition. Left panel depicts stylized Iranian protesters raising fists through swirling orange and red flames, bold expressive eyes showing desperate hope. Right panel shows a towering dark military boot crushing fallen civilians in deep black and violet shadows with exaggerated dramatic perspective. A jagged glowing crack separates both halves, ominous dark atmosphere with intense cel-shaded contrast between warm fiery tones and cold deathly purple."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드 실사. 이란 국기 위에 놓인 올리브 가지가 불타고 있고, 그 재가 국기를 뒤덮는 장면. 평화 제안 자체가 파멸의 불씨임을 상징.",
+      "prompt_en": "Photorealistic dramatic close-up of a burning olive branch placed on the Iranian flag, flames consuming the leaves as glowing embers and ash scatter across the green-white-red fabric. Dark cinematic atmosphere with moody low-key lighting, deep shadows surrounding the scene. The fire casts an ominous orange glow that illuminates the flag beneath while smoke curls upward into pitch-black darkness, creating an atmosphere of dread and inevitable destruction."
+    }
+  ]
+}

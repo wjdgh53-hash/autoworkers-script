@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "project": "samsung-foundry-reversal",
+    "titles": [
+      "\"7%가 72%를 흔들었다\" 11배 밀리던 삼성 파운드리가 TSMC를 떨게 한 진짜 이유",
+      "2년간 8조 까먹던 삼성 파운드리, 테슬라 23조로 반격을 시작한 결정적 순간",
+      "세계 1위 TSMC가 미국에 공장을 미친 듯이 늘리는 진짜 이유, 삼성이 뒤에 있었다"
+    ],
+    "thumbnail_texts": [
+      "\"10배 차이인데\" / TSMC가 떨고 있다",
+      "삼성 6.5%의 반격 / 1위 TSMC 흔들렸다",
+      "\"이게 역전이라고?\" / 72% TSMC의 위기"
+    ],
+    "image_concepts": {
+      "A": "화살표·그래프 역전 — 어두운 회로기판 배경에 삼성 블루 상승선과 TSMC 레드 하락선이 상단에서 교차, 그 위 2나노 웨이퍼 클로즈업. 인물 없이 로고+방향성 오브젝트로 역전을 직관화.",
+      "B": "인물+상징 대비 — 이재용 회장 자신감 표정을 상단에 크게, 배경에 균열 가는 붉은 TSMC 로고와 테슬라 엠블럼. 삼성 단독+상징으로 통쾌함·자신감."
+    },
+    "strategy": {
+      "count": 5,
+      "art_styles": ["photorealistic", "anime"],
+      "color_palette": "dark",
+      "emotions": ["reversal", "tension"],
+      "text_space": "bottom-half",
+      "face_style": "exaggerated+natural"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어두운 반도체 회로기판을 배경으로, 상단에 파란 상승 화살표(삼성)와 빨간 하락 화살표(TSMC)가 극적으로 교차한다. 화면 중앙에는 빛나는 실리콘 웨이퍼 클로즈업. 약자가 강자를 뒤집는 역전의 순간을 인물 없이 오브젝트로 직관화.",
+      "prompt_en": "Cinematic dark photograph of a high-tech semiconductor circuit board filling the frame, glowing faintly in deep navy and teal. In the upper portion, a bold rising blue arrow and a falling red arrow cross each other dramatically at a sharp intersection point, symbolizing a reversal of fortunes. At the center, an extreme close-up of a shimmering silicon wafer disc catches cold light, its microscopic circuitry visible. Deep shadows, high contrast, tense reversal mood, a small challenger overturning a giant. Dark navy-black palette with electric blue and warning-red accents. Object-focused, no faces, no readable text. Bottom half kept darker for large caption text.",
+      "text_ko": "\"10배 차이인데\" / TSMC가 떨고 있다"
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '회로기판 배경 + 파란 상승선(삼성)과 빨간 하락선(TSMC) 교차 + 중앙 웨이퍼 클로즈업' 구도를 강렬한 애니메 스타일로. 역전의 긴장감.",
+      "prompt_en": "Dramatic anime-style illustration of a glowing semiconductor circuit board background in deep blue tones. A bold cel-shaded rising blue arrow and a plunging red arrow cross violently in the upper frame with dynamic speed lines, capturing a stunning reversal. At the center, a stylized shining silicon wafer disc glows with intricate circuit patterns. Bold outlines, deep dramatic shadows, tense blue-red-black palette, high-contrast reversal-and-tension mood of an underdog flipping the board. No faces, no readable text. Lower half kept dark for caption space.",
+      "text_ko": "삼성 6.5%의 반격 / 1위 TSMC 흔들렸다"
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 자신감 있는 표정의 삼성 총수형 인물(정장, 정면 응시)을 상단 좌측에 크게 배치하고, 우측 배경에 붉게 균열이 번지는 TSMC 로고 실루엣과 희미한 테슬라 엠블럼. 약자의 반격에 강자가 흔들리는 통쾌함.",
+      "prompt_en": "Cinematic dark photograph. In the upper-left, a confident middle-aged East Asian businessman in a dark suit faces the camera with a calm, assured, slightly triumphant expression, dramatically lit. On the right side and background, a large red corporate-logo-like emblem cracks and fractures with glowing red fissures spreading across it, while a faint car-brand emblem glows dimly nearby. Deep navy-black background, high contrast, red crack accents, tense mood of a giant being shaken by a challenger. Exaggerated but natural facial emotion. No readable text. Bottom half kept darker for large caption text.",
+      "text_ko": "\"이게 역전이라고?\" / 72% TSMC의 위기"
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 자신감 있는 삼성 총수형 인물 클로즈업 + 배경에 붉게 갈라지는 경쟁사 로고 구도를 강렬한 애니메 스타일로. 통쾌함·자신감.",
+      "prompt_en": "Dramatic anime-style illustration. Upper-left features a confident middle-aged East Asian businessman in a dark suit, facing forward with a calm, assured, subtly triumphant expression, bold cel-shaded lighting. Behind and to the right, a large red corporate emblem shatters with explosive glowing crack lines racing across it, a faint car-brand emblem glowing dimly nearby. Deep navy-black backdrop, high contrast, red fracture accents, tense yet triumphant mood of a challenger shaking the market leader. Bold outlines, dramatic shadows, exaggerated facial emotion. No readable text. Lower half kept dark for caption text.",
+      "text_ko": "\"10배 차이인데\" / TSMC가 떨고 있다"
+    },
+    {
+      "id": 5,
+      "type": "concept-a-hero",
+      "concept_ko": "컨셉 A 변형 실사(웨이퍼 히어로샷). 빛나는 실리콘 웨이퍼를 로우앵글 클로즈업으로 화면 가득 잡고, 표면에 반사되어 교차하는 파란 상승·빨간 하락 화살표 빛. 반도체 패권 역전을 오브젝트 한 컷으로 극대화.",
+      "prompt_en": "Cinematic dark photograph, dramatic low-angle extreme close-up of a shimmering silicon semiconductor wafer disc filling the upper frame, its concentric microcircuitry catching cold light. Reflected across its mirror-like surface, a rising blue light streak and a falling red light streak cross each other, hinting at a dramatic reversal of power. Deep low-key lighting, electric blue and warning-red highlights against a navy-black background, extreme contrast, ominous yet triumphant tension of a semiconductor power shift. No people, no readable text. Bottom half kept darker for text space.",
+      "text_ko": "삼성 6.5%의 반격 / 1위 TSMC 흔들렸다"
+    }
+  ]
+}

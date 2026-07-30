@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "cheongung-export-boom",
+    "titles": [
+      "\"미-이란 휴전됐는데 왜?\" 중동 전체가 한국에 천궁 긴급구매 밀려든 소름돋는 이유",
+      "\"재고 없다\" 미국이 동맹 버린 날, 한국만 72시간 만에 천궁 30발을 보냈다",
+      "1발 15억원짜리 한국 미사일이 56억원 패트리어트를 박살낸 방법"
+    ],
+    "thumbnail_texts": [
+      "미-이란 휴전 직후 + \"지금 안 사면 끝장\" + 중동 12조 긴급주문 폭주",
+      "미국 \"재고 없다\" 도망 + 한국만 72시간 긴급보급 + 천궁 요격률 96%",
+      "천궁 15억 vs 패트리어트 56억 + \"가격의 1/4인데 성능은 압도\" + 세계가 갈아탄 이유"
+    ],
+    "image_concepts": {
+      "A": "긴급 수송 현장 — UAE C-17 수송기가 어두운 밤 활주로에서 천궁 미사일을 하역하는 시네마틱 장면",
+      "B": "한국 vs 미국 방공 대결 — 좌측에 천궁 미사일 발사(화염+연기), 우측에 비활성화된 패트리어트"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. UAE C-17 수송기 후면이 열린 채 어두운 밤 활주로에 서 있고, 천궁-II 발사대 차량이 하역되는 긴박한 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic photograph of a massive C-17 Globemaster III cargo aircraft with its rear ramp fully open on a dark nighttime runway, a Cheongung-II (M-SAM) missile launcher vehicle being unloaded under harsh yellow interior cargo lights. Bright vivid colors from emergency red runway lights pierce the deep navy-blue night sky, creating dramatic contrast and an atmosphere of extreme urgency. The enormous scale of the transport plane towers over the missile vehicle, emphasizing the sheer magnitude of the operation. Exaggerated dramatic perspective shot from a low angle looking upward, high-key lighting on the cargo against the dark surroundings."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 C-17 수송기 + 천궁 미사일 하역 장면을 역동적인 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a colossal C-17 military cargo plane with its rear hatch open on a dark airfield at night, a Cheongung-II missile launcher vehicle rolling out under vivid golden interior lights. Bold cel-shaded outlines and saturated bright colors create a striking contrast between the warm yellow cargo bay and the deep navy night sky dotted with red emergency signal lights. Exaggerated perspective emphasizes the overwhelming scale of the aircraft against the missile system below. Intense dramatic atmosphere with speed lines and dynamic lighting effects conveying urgency and high stakes."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좌측에 천궁-II 미사일이 화염과 연기를 뿜으며 발사되고, 우측에 비활성화된 패트리어트 발사대가 어둡게 놓인 대결 구도.",
+      "prompt_en": "Photorealistic dramatic split-composition photograph with a Cheongung-II missile launching on the left side, brilliant bright flames and thick white smoke erupting from the launcher against a vivid blue sky. On the right side, a deactivated Patriot missile launcher sits dormant in grey shadow and darkness, covered in dust. The left half is bathed in bright vibrant fire light and saturated warm tones representing victory, while the right half is desaturated and gloomy representing defeat. Exaggerated dramatic contrast between the two sides, cinematic high-key lighting on the Korean missile system."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 천궁 vs 패트리어트 대결 구도를 강렬한 애니메 스타일로 표현. 좌측 화염 발사 vs 우측 침묵.",
+      "prompt_en": "Anime-style illustration of an epic versus battle composition, a Cheongung-II missile blasting off on the left with exaggerated brilliant orange-red flames and swirling white smoke trails against a vivid bright sky. On the right, a dull grey Patriot missile launcher sits powerless in deep shadow, partially cracked and abandoned. Bold ink outlines with vivid saturated colors on the left contrasting with desaturated muted tones on the right. Dynamic anime action lines radiate from the launching missile, conveying triumphant energy and overwhelming dominance."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 중동 사막 한복판에 천궁-II 미사일 시스템이 배치되어 있고, 여러 중동 국가 국기가 배경에 펄럭이는 장면. 한국 방산 수출 열풍을 상징.",
+      "prompt_en": "Photorealistic cinematic wide shot of a Cheongung-II air defense missile system deployed in a vast Middle Eastern desert landscape under bright vivid sunlight and clean blue sky. Multiple national flags of UAE, Saudi Arabia, and Iraq flutter in the wind behind the missile battery, creating a colorful and vibrant display against the golden sand dunes. The missile launcher is dramatically oversized in the foreground, gleaming under high-key desert lighting with vivid saturated tones. A partially revealed second Cheongung-II unit appears at the edge of the frame, suggesting an endless line of deliveries stretching into the mysterious hazy distance."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-undersea-tunnel",
+    "titles": [
+      "똑같은 공법으로 바다를 뚫었는데 한국은 멀쩡, 중국은 15일 만에 물바다가 된 이유",
+      "7조원 세계기록 중국 터널은 보름 만에 잠겼는데, 경험도 없던 한국 터널은 왜 멀쩡할까",
+      "같은 바다 밑을 뚫었는데 한쪽은 물 한 방울, 한쪽은 물바다 — 운명을 가른 단 하나의 차이"
+    ],
+    "thumbnail_texts": [
+      "\"물 한 방울 vs 물바다\" + 같은 공법, 정반대 결과 + 개통 15일",
+      "\"왜 한쪽만 잠겼나\" + 같은 바다, 같은 공법 + 물바다 15일",
+      "\"7조 터널이 잠겼다\" + 무경험 한국은 멀쩡 + 갈린 운명"
+    ],
+    "image_concepts": {
+      "A": "A vs B 좌우 분할 — 좌측 밝고 마른 한국 해저터널 도로(정상 주행), 우측 붉은 조명 침수된 중국 해저터널(물에 잠긴 차량), 중앙 균열 경계선. 통쾌한 대비.",
+      "B": "스케일 대비 + 단면 절개 — 해수면 위 화물선, 아래 절개된 두 터널 단면 대비(한쪽 마른 도로, 한쪽 벽 균열·누수). 서늘한 호기심."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌우 분할 — 좌측은 밝고 뽀송한 한국 해저터널 도로를 정상 주행하는 자동차, 우측은 붉은 비상등 아래 물에 잠긴 중국 해저터널과 떠오른 차량. 중앙에 갈라진 경계선.",
+      "prompt_en": "Photorealistic cinematic split-screen thumbnail of two undersea road tunnels divided down the middle by a jagged fracture line. LEFT HALF: a bright, bone-dry Korean undersea tunnel with cars driving normally on a clean paved road, cool clean lighting, pristine and safe. RIGHT HALF: a Chinese undersea tunnel flooded with dark water, cars half-submerged and floating, ominous red emergency lights glowing through the murk, water pouring from the tunnel wall. Dramatic contrast between dry order and flooded disaster, deep dark background, sharp high-contrast lighting, the two tunnels dramatically oversized filling the frame. Tense ironic mood of two identical tunnels with opposite fates."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 좌(마른 한국 터널)·우(침수 중국 터널) 좌우 분할 대비를 다크 톤 애니메 스타일로, 중앙 균열 경계선과 붉은 비상등.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration, dramatic split composition of two undersea road tunnels divided by a bold jagged crack down the center. LEFT: a brightly lit, completely dry Korean undersea tunnel with cars cruising safely on a clean road, crisp cel-shaded highlights. RIGHT: a Chinese undersea tunnel drowned in dark floodwater with cars floating and sinking, glowing red emergency lights piercing the gloom, water gushing from the cracked wall. Strong stylized contrast between dry safety and flooded catastrophe, deep black palette with sharp dramatic ink outlines, exaggerated perspective, the tunnels oversized and filling the frame, ironic tense atmosphere."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 스케일 대비 + 단면 절개 — 상단 해수면 위 거대 화물선, 하단 절개된 두 해저터널 단면 대비(왼쪽 마른 도로, 오른쪽 벽 균열·누수). 우측 수심 화살표.",
+      "prompt_en": "Photorealistic cinematic cross-section thumbnail: the upper portion shows the ocean surface with a massive cargo ship sailing across dark water, and below the seabed a cutaway reveals two side-by-side undersea tunnel cross-sections. The LEFT tunnel is dry and intact with cars driving on a clean road; the RIGHT tunnel of identical shape has cracks splitting its wall with seawater bursting and spraying inward. A vertical depth arrow marks the extreme depth on the right side. Dark rocky seabed background, dramatic moody lighting with a cool blue-and-yellow accent contrast, the cutaway dramatically oversized and eye-catching, conveying an eerie sense of two identical structures with one hidden fatal flaw."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 단면 절개 대비(마른 도로 vs 균열·누수 터널)를 애니메 스타일로, 상단 화물선과 바다, 우측 수심 화살표.",
+      "prompt_en": "Vibrant anime-style illustration of an undersea tunnel cross-section: the top shows the sea surface with a huge cargo ship, and beneath the seabed a dramatic cutaway reveals two identical side-by-side tunnel cross-sections. The LEFT tunnel is dry and pristine with cars driving on a clean road in bright cel-shaded color; the RIGHT tunnel has jagged cracks bursting across its wall with seawater spraying inward, rendered in darker ominous tones. A bold vertical depth arrow on the right marks the extreme depth. Dark rocky seabed with strong ink outlines, dramatic contrast lighting, cool blue and yellow accents, the cutaway oversized and dynamic, an eerie mysterious mood of one hidden fatal difference."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 침수된 중국 해저터널 안에서 물이 벽을 뚫고 쏟아지는 순간을 클로즈업, 붉은 비상등과 떠오르는 차량, 화면 한쪽 구석에는 마른 한국 터널 도로가 밝게 대비되어 보인다 — 재난과 안전을 한 프레임에.",
+      "prompt_en": "Photorealistic dramatic thumbnail capturing the moment seawater bursts through the wall of a flooded undersea road tunnel, dark water surging across the lane with a car being lifted and swept, ominous red emergency lights glowing through the spray and gloom. In one corner of the frame, glimpsed through the chaos, a bright bone-dry tunnel road with cars driving safely shines in stark calm contrast. Dark moody crisis lighting with deep shadows and sharp high-contrast rendering, the bursting water and floating car dramatically oversized in the frame, combining imminent flooding disaster with a glimpse of dry safety, tense ironic atmosphere."
+    }
+  ]
+}

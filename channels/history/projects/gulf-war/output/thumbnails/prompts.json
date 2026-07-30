@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "gulf-war",
+    "titles": [
+      "\"미국은 절대 안 온다\" 후세인이 이길 수 있다고 확신한 4가지 이유 | 걸프전",
+      "후세인은 바보가 아니었다 — 걸프전, 역사상 최악의 오판이 만들어진 과정",
+      "세계 4위 이라크는 왜 미국에 덤볐을까? 걸프전의 숨겨진 계산"
+    ],
+    "thumbnail_texts": [
+      "\"미국은 안 온다\" / \"후세인의 확신\"",
+      "\"이길 수 있다\" / \"최악의 오판\"",
+      "\"4가지 근거\" / \"전부 틀렸다\""
+    ],
+    "image_concepts": {
+      "A": "후세인 자신감 클로즈업 + 배경에 다가오는 에이브럼스 전차 행렬",
+      "B": "체스판 앞 후세인 캐릭터, 거대한 그림자 손이 판을 뒤집는 연출"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 사담 후세인의 자신만만한 표정 클로즈업, 배경에 에이브럼스 전차 행렬이 먼지를 일으키며 다가오는 시네마틱 장면.",
+      "prompt_en": "Cinematic photorealistic close-up portrait of Saddam Hussein (Iraqi president) with a confident, defiant expression, looking slightly off-camera. Behind him in soft focus, a column of M1A1 Abrams tanks advances through desert dust clouds. Desaturated monochrome color grading with slight warm tones on Hussein's face contrasting the cold steel of approaching tanks. Dramatic side lighting creates deep shadows, ominous atmosphere of impending confrontation."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 자신만만한 후세인 캐릭터의 클로즈업, 뒤에서 거대한 전차 실루엣이 다가오는 스타일라이즈드 일러스트.",
+      "prompt_en": "Stylized anime-style illustration of Saddam Hussein (Iraqi president) in military uniform with an overconfident smirk, dramatic close-up. Behind him, massive silhouettes of M1A1 Abrams tanks loom through swirling desert sand, dwarfing his figure. Desaturated monochrome palette with cel-shaded lighting, only Hussein's military beret has a subtle warm accent. Bold ink outlines, tension-filled atmosphere with exaggerated perspective making the tanks appear enormous."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 사담 후세인이 체스판 앞에 앉아 자신만만하게 말을 움직이는데, 보이지 않는 거대한 손이 체스판 자체를 들어올리고 있는 시네마틱 장면.",
+      "prompt_en": "Cinematic photorealistic scene of Saddam Hussein (Iraqi president) sitting confidently at a chess board, moving pieces with a satisfied expression. His side is full of pieces while the opponent's side appears empty. Above the board, a massive shadowy hand reaches down to lift the entire chess board from underneath. Desaturated monochrome tones with dramatic top-down lighting casting long shadows. Atmosphere of dramatic irony and impending reversal."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 체스판 앞 후세인 캐릭터가 승리를 확신하는 표정인데, 체스판에 균열이 생기며 거대한 그림자 손이 판을 뒤집는 애니메 일러스트.",
+      "prompt_en": "Vibrant anime-style illustration of Saddam Hussein (Iraqi president) character sitting at an ornate chess board with an arrogant victorious expression, his side crowded with pieces. Dramatic cracks spread across the chess board surface as a colossal dark shadowy hand emerges from above to flip the entire board. Monochrome palette with bold ink outlines, the cracks glow with subtle red-orange light. Exaggerated anime expressions and dynamic composition conveying hubris meeting its downfall."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 좌우 분할: 좌측에 이라크 국기+자신만만한 후세인 실루엣+'세계 4위' 텍스트 공간, 우측에 미국 성조기+거대한 스텔스기 실루엣. 좌측은 밝은 모노톤, 우측은 어둡고 압도적인 분위기.",
+      "prompt_en": "Split composition photorealistic image divided vertically. Left side shows a confident Saddam Hussein (Iraqi president) silhouette standing tall against the Iraqi flag backdrop in lighter monochrome tones, military medals glinting. Right side shows an ominous dark atmosphere with a massive F-117 Nighthawk stealth aircraft silhouette descending through storm clouds against the American flag. The contrast between the two halves is extreme — left side warm and confident, right side cold and overwhelming. Cinematic dramatic lighting with high contrast monochrome grading."
+    }
+  ]
+}

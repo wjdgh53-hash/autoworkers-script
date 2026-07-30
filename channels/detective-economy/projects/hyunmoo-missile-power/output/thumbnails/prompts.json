@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "hyunmoo-missile-power",
+    "titles": [
+      "툭하면 미사일 쏘던 북한이 입을 닫았습니다, 현무-7의 정체",
+      "북한이 갑자기 조용해진 배경, 현무-7이라는 이름 하나였습니다",
+      "중국도 일본도 긴장시킨 한국 미사일, 현무-7은 뭐가 다른가"
+    ],
+    "thumbnail_texts": [
+      "북한이 입을 닫았다 + 강대국이 긴장한 현무-7 + \"이번엔 못 막는다\"",
+      "왜 갑자기 조용해졌나 + 미·중·러 다음 4번째 현무-7 + \"이건 못 피한다\"",
+      "도발하던 북한의 침묵 + 핵 없이 강대국을 긴장시킨 현무-7 + \"막을 방법이 없다\""
+    ],
+    "image_concepts": {
+      "A": "스케일 대비+상징물 파괴 3분할 — 좌: 붉게 점화된 현무 미사일 발사 / 중: 고개 숙인 김정은 클로즈업(굴욕·패배) / 우: 붉게 타는 평양 스카이라인. 어두운 노을+화염 오렌지. 통쾌함.",
+      "B": "미스터리형 — 어둠 속 붉은 미사일 궤적이 물음표처럼 떠오르고, 지도 위 중국·일본 방향으로 붉은 경고 레이더 원이 번짐. 짙은 남색 배경. 호기심·긴장."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌측 붉게 점화되어 발사되는 대형 현무 미사일, 중앙 고개 숙인 김정은 클로즈업(굴욕·패배 표정), 우측 화염에 휩싸인 평양 스카이라인. 어두운 노을과 화염 오렌지의 시네마틱 3분할.",
+      "prompt_en": "Photorealistic cinematic three-part composition against a dark dusk sky. On the left, a massive South Korean Hyunmoo ballistic missile ignites and launches from a mobile launcher, blazing with red-orange rocket flame and thick smoke. In the center, a close-up of a defeated, humiliated North Korean-style leader figure with his head bowed low and eyes downcast, exaggerated expression of dread. On the right, a burning city skyline engulfed in orange flames and smoke. Deep dark orange-and-red dusk palette, dramatic crisis lighting with sharp contrast, the launching missile and bowed figure dramatically oversized in the frame. Tense triumphant atmosphere of an enemy forced into silence."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 3분할(좌 미사일 발사 / 중 고개 숙인 김정은 / 우 불타는 평양)을 다크 톤 애니메 스타일로.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration in a dramatic three-part composition against a dusk sky. Left: a huge Hyunmoo missile launching with bold cel-shaded red-orange flame and billowing smoke, sharp ink outlines. Center: a close-up of a defeated authoritarian leader figure with head bowed and an exaggerated look of dread. Right: a burning city skyline in vivid orange flames. Deep charcoal and dark-orange palette with strong dramatic contrast and exaggerated perspective, the missile and bowed figure oversized in the frame. Stylized illustration radiating triumphant tension and an enemy's forced silence, glowing red-orange highlights against the gloom."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 어둠 속 붉은 미사일 궤적이 물음표처럼 휘어 올라가고, 세계지도 위 중국·일본 방향으로 붉은 경고 레이더 원이 번지는 미스터리 장면.",
+      "prompt_en": "Photorealistic cinematic mystery scene: in a dark night sky, a glowing red missile trajectory arcs upward curving into the shape of a question mark, leaving a luminous trail. Below, a dark tactical world map with East Asia visible, red pulsing warning radar circles rippling outward toward China and Japan. Deep navy-and-black background with intense red accent glow, dramatic ominous lighting and sharp contrast, the question-mark trajectory dramatically oversized and central. Suspenseful atmosphere of a hidden weapon whose identity is unknown, tense and enigmatic mood."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 물음표 미사일 궤적 + 중국·일본으로 번지는 붉은 경고 원을 애니메 스타일로.",
+      "prompt_en": "Vibrant dark anime-style illustration of a mystery scene: a glowing red missile trajectory sweeps upward through a night sky, curving into a bold question-mark shape with a luminous cel-shaded trail. Below, a stylized dark map of East Asia with red pulsing warning radar circles spreading toward China and Japan, sharp ink outlines. Deep navy and black palette with vivid red glowing highlights, dramatic contrast and dynamic perspective, the question-mark trajectory oversized and central. Suspenseful, enigmatic mood of an unidentified weapon shaking great powers."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 컴컴한 상황실 대형 스크린 앞에서 경악하는 중국·일본 군 지휘관들, 스크린에는 붉은 물음표 궤적의 현무-7과 '?'로 가려진 제원표, 창밖으로 발사되는 미사일 섬광 — 정체불명 무기 앞의 강대국 긴장을 한 프레임에.",
+      "prompt_en": "Photorealistic dramatic thumbnail inside a dark military command room: two or three alarmed East Asian military commanders in uniform staring up in shock at a giant glowing screen. The screen displays a red question-mark missile trajectory and a weapon spec sheet mostly blacked out with large '?' marks. Through a window behind them, a bright missile launch flash lights up the night. Dark moody blue crisis lighting with deep shadows and sharp dramatic contrast, the panicked commanders' faces oversized in the frame, red warning glow reflecting off the screen. Tense atmosphere of great powers rattled by an unidentified weapon."
+    }
+  ]
+}

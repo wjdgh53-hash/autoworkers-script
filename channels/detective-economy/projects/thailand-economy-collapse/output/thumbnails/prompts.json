@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "thailand-economy-collapse",
+    "titles": [
+      "\"9%에서 1.6%로\" 아시아 최고 성장국이던 태국이 성장 엔진을 잃어버린 배경",
+      "연 9% 성장하던 나라가 왜 30년째 제자리인가, 태국 경제 몰락의 전말",
+      "세계가 부러워하던 태국은 어쩌다 회복 불능에 빠졌나"
+    ],
+    "thumbnail_texts": [
+      "세계 1위 성장국 / 성장률 1.6% / 무슨 일이?",
+      "아시아의 우등생 / 30년째 제자리 / 그 끝은",
+      "9% → 1.6% / 멈춰버린 나라 / 회복 불능"
+    ],
+    "image_concepts": {
+      "A": "화살표/그래프 붕괴 — 붉은 급락 곡선이 화려한 방콕 스카이라인을 꿰뚫는다",
+      "B": "균열·붕괴 — 반짝이던 방콕 마천루가 한가운데서 쩍 갈라진다"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 화려한 방콕 야경 스카이라인을 붉은 급락 그래프 곡선이 관통하며 도시가 어둠에 잠기는 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic image of the glittering Bangkok city skyline at night, with iconic skyscrapers and temples, being violently pierced by a giant glowing red crashing downward stock-market curve slicing diagonally through the towers. The bright golden city lights fade into deep darkness and shadow along the falling line, dramatic contrast between the vivid neon glow and encroaching blackness. Ominous crisis atmosphere with deep shadows and moody lighting, the collapsing red arrow oversized and dominating the frame."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 방콕 스카이라인 + 붉은 급락 곡선을 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of the Bangkok skyline at night with detailed skyscrapers and temple spires, dramatically pierced by a massive glowing red crashing downward graph line cutting across the scene. Bold ink outlines and cel-shaded lighting emphasize the contrast between the golden city glow and the dark fractured shadows spreading where the red line falls. Intense dramatic atmosphere, exaggerated perspective, deep cinematic shadows and vivid crisis-red accents."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 반짝이던 방콕 마천루가 한가운데서 쩍 갈라지며 절반이 어둠에 무너지고 아래로 텅 빈 거리가 드러나는 장면.",
+      "prompt_en": "Photorealistic dramatic image of a shimmering modern Bangkok skyscraper skyline splitting apart down the middle with a massive jagged crack, one half brightly lit and one half crumbling into darkness and rubble. Deep fractures spread across the glass towers, dust and shadow pouring downward to reveal empty deserted streets below. Dark cinematic atmosphere, dramatic contrast, ominous moody lighting evoking collapse and crisis."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 갈라지는 방콕 마천루 붕괴를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a gleaming Bangkok skyscraper skyline cracking and fracturing straight down the center, half glowing with city lights and half collapsing into dark shattered ruins. Bold outlines and cel-shading highlight the deep jagged cracks, falling debris and looming shadows over an emptying street. Dramatic tense atmosphere with exaggerated scale, deep shadows and vivid contrast between light and darkness."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 스케일 대비 — 텅 빈 방콕 관광 거리 위로 거대하게 치솟는 태국 바트 지폐/동전 더미, 사람은 없고 돈만 압도적으로 크다.",
+      "prompt_en": "Photorealistic dramatic scene of a deserted empty Bangkok street market at dusk with shuttered stalls and no people, while an enormous towering stack of Thai baht banknotes and coins looms oversized in the foreground, dwarfing the tiny abandoned shops behind. Dark moody cinematic lighting, deep shadows and dramatic contrast, an unsettling atmosphere where the giant money towers over the emptiness, conveying a strong currency crushing a hollowed-out economy."
+    }
+  ]
+}

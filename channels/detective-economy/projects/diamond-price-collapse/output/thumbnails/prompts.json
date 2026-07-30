@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "diamond-price-collapse",
+    "titles": [
+      "중국이 다이아몬드값을 88% 무너뜨렸습니다, 이제 반지는 자산이 아닙니다",
+      "\"평생 자산인 줄 알았는데\", 중국이 결혼반지값 5년 만에 88% 폭락시켰습니다",
+      "중국이 다이아 88% 폭락시킨 뒤, 금 산 사람만 웃고 있습니다"
+    ],
+    "thumbnail_texts": [
+      "중국이 찍어낸 다이아 / 내 반지값 88% 폭락",
+      "평생 자산인 줄 알았지 / 중국 덕에 88% 폭락",
+      "금 샀으면 웃었다 / 중국이 다이아 88% 박살"
+    ],
+    "image_concepts": {
+      "A": "중국 공장 물량공세 vs 무너지는 내 반지값 — 끝없는 공장 컨베이어에서 쏟아지는 다이아 무더기(중국 국기 포인트)와 앞쪽에서 값이 무너지는 다이아 반지의 스케일 대비",
+      "B": "금 vs 다이아 대결 + 중국 — 상승하는 금괴와 중국이 무너뜨린 하락 다이아 반지의 좌우 대비"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어둠 속 끝없이 이어지는 중국 공장 컨베이어 라인에서 반짝이는 다이아몬드가 무더기로 쏟아져 나오고, 그 앞쪽에는 값이 무너지듯 붉은 균열이 번지는 커다란 다이아 반지가 짓눌리는 시네마틱 장면. 상단 구석에 중국 국기.",
+      "prompt_en": "Dark cinematic photograph of an endless Chinese factory conveyor line in the top half of the frame, overflowing with piles of sparkling diamonds pouring out and dramatically oversized. A small red Chinese national flag accent glows in the upper corner. In front, a large diamond ring is crushed under the flood, red cracks spreading across it and a downward collapse glow. Deep shadows, dramatic contrast, moody industrial lighting, cold steel tones with tense ominous atmosphere, overwhelming scale."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 장면(중국 공장에서 쏟아지는 다이아 물량 + 짓눌려 무너지는 반지)을 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant dramatic anime-style illustration of a colossal Chinese factory conveyor line dominating the upper frame, spilling mountains of glittering diamonds in exaggerated scale, a small red Chinese flag accent in the corner. Below, a large diamond ring is being crushed by the flood, fractured with red cracks and a collapsing downward glow. Bold ink outlines and cel-shaded lighting, dark stormy palette with deep shadows and sharp dramatic contrast, intense overwhelming tense mood."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 하나의 프레임 좌우 대비 — 왼쪽은 초록 상승 화살표와 함께 빛나는 금괴, 오른쪽은 붉은 하락 화살표와 함께 값이 무너지는 다이아 반지. 오른쪽 배경에는 희미한 중국 공장 실루엣.",
+      "prompt_en": "Dark cinematic photograph split into a stark left-right contrast across the top half: on the left a gleaming stack of gold bars rising with a bright green upward arrow, on the right a diamond ring collapsing under a red downward arrow with faint Chinese factory silhouettes and a small red flag accent behind it. Dramatic side lighting, deep shadows, high contrast, gold glow versus cold red decline, tense moody atmosphere emphasizing the reversal of value."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 좌우 대비(상승 금괴 ↔ 중국이 무너뜨린 하락 다이아)를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant dramatic anime-style illustration of a striking left-to-right contrast in the upper frame: on the left shining gold bars soaring with a bold green upward arrow, on the right a diamond ring crashing under a red downward arrow with faint Chinese factory silhouettes and a small red flag accent behind. Bold cel-shaded outlines, dark cinematic palette with deep shadows and dramatic contrast, warm gold glow against cold red collapse, intense reversal atmosphere charged with tension."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 다이아몬드가 얹힌 왕관/왕좌가 아래에서 밀려 올라오는 무수한 공장제 다이아 물결에 짓눌려 붉은 균열을 내며 부서지는 초현실적 스케일 대비 — 100년 제국이 물량에 무너지는 역설을 시각화.",
+      "prompt_en": "Dark surreal cinematic image of a towering crown or throne encrusted with a giant diamond, dominating the top half of the frame, being shattered and cracked with spreading red fractures as it is overwhelmed from below by an endless surging wave of mass-produced diamonds. Ominous stormy background, deep shadows, dramatic cold and red contrast, a small red flag accent glinting in the flood, moody tense atmosphere emphasizing a hundred-year empire crushed by sheer volume."
+    }
+  ]
+}

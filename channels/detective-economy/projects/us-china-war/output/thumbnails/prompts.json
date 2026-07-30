@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "us-china-war",
+    "titles": [
+      "\"370척인데 왜 지냐고요?\" 중국 해군의 숫자가 의미 없는 소름돋는 이유",
+      "중국 해군이 미국을 숫자로 이겼는데 전쟁에서는 지는 진짜 이유",
+      "미국 해군 295척 vs 중국 해군 370척, 그래도 미국이 이기는 소름돋는 이유"
+    ],
+    "thumbnail_texts": [
+      "미국 295척 vs 중국 370척 + 숫자가 다가 아닌 이유",
+      "370척의 허상 + 진짜 해군력의 조건",
+      "배 숫자로는 1등 + 전쟁나면 전멸"
+    ],
+    "image_concepts": {
+      "A": "숫자 vs 실질 대비 — 소형 함정 군집 vs 미국 항공모함 A vs B 구도",
+      "B": "균열 가는 숫자 — \"370\" 숫자에 금이 가며 뒤로 항공모함 실루엣"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 빨간 조명 아래 밀집한 중국 소형 함정 수십 척, 우측에 푸른 조명 속 거대한 미국 항공모함 한 척이 압도적으로 대비되는 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic split composition of naval power imbalance. On the left side under ominous red lighting, a dense swarm of dozens of small Chinese naval corvettes and frigates crowd together on dark ocean waters. On the right side under cold blue lighting, a single massive US Navy Nimitz-class aircraft carrier towers over the scene, dwarfing every ship on the left. Dark cinematic atmosphere with deep shadows, dramatic contrast between the red-lit Chinese fleet and blue-lit American supercarrier, moody lighting across a dark navy-blue ocean."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 소형 함정 군집 vs 거대 항공모함의 극적 크기 대비를 강렬한 애니메 스타일로 표현. 과장된 원근감으로 항공모함의 압도적 위용 강조.",
+      "prompt_en": "Anime-style illustration of a dramatic naval showdown with exaggerated perspective. On the left, a chaotic cluster of small Chinese warships rendered in sharp red and orange tones, looking insignificant and fragile. On the right, an overwhelmingly massive US aircraft carrier looms with bold ink outlines and cel-shaded steel-blue hull, towering like a fortress over the tiny fleet. Dark cinematic atmosphere with deep dramatic shadows, ominous dark ocean, vivid color contrast between fiery red left side and cold steel-blue right side, intense tension radiating from the scene."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 거대한 금색 숫자 '370'이 화면 중앙에 떠 있으나 깊은 균열이 전체를 관통하며 붕괴 중. 균열 사이로 붉은 빛이 새어 나오고, 뒤편에 미국 항공모함 실루엣이 어렴풋이 보인다.",
+      "prompt_en": "Photorealistic cinematic image of the giant golden number '370' cracking apart in mid-air against a dark stormy sky. Deep fractures split through the metallic gold digits with glowing red-hot light bleeding through every crack, chunks of the number beginning to crumble and fall. Behind the shattering number, the dark silhouette of a US Navy aircraft carrier emerges through smoke and haze. Dark cinematic atmosphere with deep shadows, dramatic contrast between the glowing red fractures and cold dark navy-blue background, moody ominous lighting."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 거대한 숫자 '370'이 폭발하듯 균열이 퍼지며 파편이 흩어지는 모습을 강렬한 애니메 스타일로 표현. 배경에 항공모함 실루엣.",
+      "prompt_en": "Vibrant anime-style illustration of the massive golden number '370' violently shattering with bold dramatic cracks spreading across its surface. Bright red energy bursts through the fractures with sharp anime-style speed lines and debris flying outward. Behind the exploding number, the imposing dark silhouette of a US aircraft carrier stands firm and untouched. Dark cinematic atmosphere with deep dramatic shadows, intense contrast between blazing red crack energy and dark grey-blue background, exaggerated sense of destruction and tension."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 미국 항공모함 갑판 위에서 내려다본 시점으로, 수평선 위에 개미처럼 작은 중국 함정 수십 척이 점처럼 찍혀 있는 극단적 스케일 대비. 항공모함 갑판의 디테일이 압도적 실체감을 전달.",
+      "prompt_en": "Photorealistic dramatic bird's-eye view looking down from the flight deck of a massive US Navy aircraft carrier, with dozens of fighter jets lined up on the deck showing immense scale. Far below on the dark ocean stretching to the horizon, scores of tiny Chinese naval vessels appear as insignificant dots scattered across the water, barely visible against the vast dark sea. Dark cinematic atmosphere with deep moody shadows, dramatic overhead lighting on the carrier deck contrasting with the ominous dark ocean below, conveying an overwhelming sense of dominant naval power versus mere numbers."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "trump-usfk-withdrawal",
+    "titles": [
+      "\"빼라고 했더니 못 뺀다\" 트럼프가 절대 주한미군을 철수할 수 없는 소름돋는 이유",
+      "트럼프 \"미군 빼겠다\" 14조 요구했다가 한국에게 역으로 당한 이유",
+      "\"14조 내놔\" 트럼프의 주한미군 협박, 왜 한국만 안 통하는가"
+    ],
+    "thumbnail_texts": [
+      "트럼프 \"미군 빼겠다\" / 미 의회가 법으로 막았다 / 대통령이 자기 군대를 못 뺀다 / 한국 \"빼세요\"",
+      "\"14조 내놔\" / 트럼프 주한미군 협박 / 법으로 차단당한 대통령 / 한국의 역습",
+      "\"못 뺍니다\" / NDAA 국방수권법 / 트럼프도 못 건드리는 28,500명 / 진짜 이유"
+    ],
+    "image_concepts": {
+      "A": "트럼프 vs 한국 국회의사당(법의 벽) — A vs B 대결 구도",
+      "B": "부서지는 트럼프의 철수 명령서 — 상징물 파괴 구도"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 분노한 트럼프, 우측에 거대한 법전/방패가 가로막는 A vs B 대결 구도. 어두운 남색 배경에 노란색/붉은색 포인트.",
+      "prompt_en": "Dark cinematic photograph of a dramatic confrontation. On the left, Donald Trump (US President) with an exaggerated angry expression, fist clenched, leaning forward aggressively. On the right, a massive imposing stone wall shaped like a shield with the letters 'NDAA' carved deep into it, glowing with golden light. The wall towers over Trump, creating a dramatic scale contrast. Deep navy-blue background with deep shadows, dramatic side lighting casting harsh shadows. Red and golden accent lights illuminate the tension between the two sides."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 트럼프 vs 거대한 법의 방패 대결 구도를 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of an intense confrontation scene. On the left, Donald Trump (US President) drawn with exaggerated angry expression, dramatic wind blowing his hair, cel-shaded with bold outlines. On the right, a colossal glowing golden shield-wall with 'NDAA' engraved in bold letters, radiating powerful energy waves that push back against Trump. Dark navy background with dramatic anime-style speed lines and energy effects. High contrast between warm red tones on Trump's side and cool blue-gold tones on the shield side."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 'WITHDRAWAL ORDER' 문서가 중앙에서 균열이 퍼지며 부서지고, 뒤로 한국 군 장비 실루엣이 보이는 상징물 파괴 구도.",
+      "prompt_en": "Dark cinematic photograph of an official military document labeled 'WITHDRAWAL ORDER' dramatically cracking and shattering from the center. Deep red glowing cracks spread across the paper like breaking glass, fragments floating in mid-air. Behind the shattering document, silhouettes of Korean military equipment — a large missile launcher and a self-propelled howitzer — loom in dramatic backlighting. Pure black background with intense red crack lighting and warm golden rim light on the military silhouettes. Ominous yet triumphant atmosphere."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 부서지는 철수 명령서 + 한국 군 장비 실루엣을 애니메 스타일로 표현.",
+      "prompt_en": "Stylized anime-style illustration of an official document dramatically exploding apart with bold red energy cracks radiating from the center. The document reads 'WITHDRAWAL ORDER' in sharp typography, pieces flying outward with dynamic motion lines. Behind the destruction, imposing silhouettes of Korean Hyunmoo-5 missile and K9 Thunder self-propelled howitzer emerge from dramatic backlighting with golden energy aura. Dark black background with vivid red crack effects and warm golden highlights, intense cel-shaded contrast."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 트럼프가 자기 손으로 쓴 명령서를 찢으려 하지만, 보이지 않는 힘에 의해 손이 멈춰있는 초현실적 장면. 실사 시네마틱.",
+      "prompt_en": "Dark cinematic surreal photograph of Donald Trump (US President) with a frustrated, exaggerated expression, both hands gripping an official document trying to tear it apart, but his hands are frozen mid-motion as if stopped by an invisible force. Golden chains of light wrap around his wrists, emanating from the document itself. The document glows with an ethereal blue-gold aura of authority. Behind him, a faint translucent image of the South Korean flag waves triumphantly. Deep black background with dramatic spotlight from above, tension and irony captured in a single frame."
+    }
+  ]
+}

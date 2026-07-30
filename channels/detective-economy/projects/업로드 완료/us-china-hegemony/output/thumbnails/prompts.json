@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "us-china-hegemony",
+    "titles": [
+      "\"중국은 사실 두렵다\" 세계 2위가 미국에 덤비는 소름돋는 이유",
+      "미중 패권전쟁, 중국이 절대 이길 수 없는 결정적 약점",
+      "\"지금 안 싸우면 끝이다\" 중국이 미국에 도전한 진짜 이유"
+    ],
+    "thumbnail_texts": [
+      "세계 2위의 두려움 / 중국이 숨긴 치명적 약점",
+      "두려워서 싸우는 나라 / 중국의 진짜 속사정",
+      "강한 척하는 중국 / 약점이 드러났다"
+    ],
+    "image_concepts": {
+      "A": "시진핑 고통 표정 클로즈업 — 이마에 손을 짚고 고통스러운 표정, 짙은 남색/블랙 배경에 빨간색 그라데이션",
+      "B": "균열 가는 중국 국기 — 오성홍기에 균열이 갈라지며 어둠이 드러나고 노란 별이 떨어지는 효과"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 시진핑이 이마에 손을 짚고 극도로 고통스러운 표정을 짓는 클로즈업. 짙은 남색과 블랙 배경에 빨간색 그라데이션이 번지며 위기감을 극대화한다.",
+      "prompt_en": "Photorealistic cinematic extreme close-up of Xi Jinping (President of China) pressing his hand against his forehead with an agonized, distressed expression, beads of sweat visible on his skin. Deep navy-blue and pitch-black background with an ominous crimson red gradient bleeding in from the edges, evoking the Chinese flag's red. Dramatic side lighting carves deep shadows across his face, emphasizing every crease of pain and tension. The composition places his face large in the upper half of the frame, filling it edge to edge, with the lower half fading into dark cinematic emptiness."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 시진핑이 고통스러운 표정으로 이마를 감싸 쥔 모습을 강렬한 애니메 스타일로 표현. 남색-블랙 배경에 붉은 기운이 퍼진다.",
+      "prompt_en": "Anime-style illustration of Xi Jinping (President of China) clutching his forehead with an exaggerated expression of anguish and desperation, bold ink outlines defining his sharp features. The background is a swirling vortex of deep navy and black with intense red energy radiating outward like a cracking aura. Cel-shaded dramatic lighting casts stark shadows across his face, with vivid contrast between the crimson glow and the dark void behind him. His figure dominates the upper half of the frame with imposing scale."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 거대한 중국 오성홍기가 화면 상단을 가득 채우고 있으나, 깊은 균열이 갈라지며 뒤쪽의 어둠이 드러난다. 노란 별이 균열 사이로 떨어져 내린다.",
+      "prompt_en": "Photorealistic dramatic photograph of a massive Chinese five-star red flag stretching across the upper frame, its fabric tearing apart with deep violent cracks and fractures splitting through the red surface. Through the jagged fissures, an ominous pitch-black void is revealed behind. Golden yellow stars are breaking loose and falling downward through the cracks, trailing faint sparks. Dark cinematic atmosphere with moody lighting, the red fabric lit with harsh dramatic contrast against the deep shadows of the fractures."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 중국 오성홍기가 화면 상단에서 거대하게 갈라지며 붕괴하는 모습을 역동적인 애니메 스타일로 표현. 노란 별들이 떨어지고 어둠이 번진다.",
+      "prompt_en": "Vibrant anime-style illustration of a colossal Chinese five-star red flag shattering dramatically with stylized cracks radiating across its surface like breaking glass. Bold black fracture lines split the vivid red fabric as golden stars detach and tumble downward with dynamic motion trails. Behind the crumbling flag, a deep ominous darkness seeps through with swirling dark energy. Intense dramatic contrast with cel-shaded rendering, the composition placing the fracturing flag large in the upper half with dark emptiness below."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 시진핑의 거대한 그림자가 미국 국회의사당 위로 드리워지지만, 그림자 자체에 균열이 생기며 부서지고 있는 장면. 실사 시네마틱 스타일로 두려움과 붕괴를 동시에 표현한다.",
+      "prompt_en": "Photorealistic cinematic wide shot of a towering dark shadow of Xi Jinping (President of China) cast over the silhouette of the US Capitol building at dusk. The massive shadow itself is cracking and fragmenting apart, pieces breaking off and dissolving into the dark sky, revealing faint red light bleeding through the fractures. Deep dramatic contrast between the dark ominous shadow and the dim twilight sky, creating an atmosphere of collapsing power and imminent downfall. The scene fills the upper half with the looming fractured shadow against moody storm clouds."
+    }
+  ]
+}

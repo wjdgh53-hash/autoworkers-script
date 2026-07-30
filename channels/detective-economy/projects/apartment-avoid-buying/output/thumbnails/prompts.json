@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "apartment-avoid-buying",
+    "titles": [
+      "\"15억 주고 산 내 집이 15억이 아니었다\" 사는 순간 돈이 새는 아파트 7가지",
+      "이런 아파트 사지 마세요, 사는 순간 5천만 원이 증발하는 함정 7가지",
+      "사는 순간 통장에서 5천만 원이 새는 아파트, 당신 집도 여기 해당됩니다"
+    ],
+    "thumbnail_texts": [
+      "내 집 15억 / 진짜 15억 아님 / 함정 7가지",
+      "이런 아파트 / 사면 돈 샌다 / 사지 마세요",
+      "사는 순간 / 5천만원 증발 / 이런 집 조심"
+    ],
+    "image_concepts": {
+      "A": "지폐가 빠져나가는 초고층 아파트 — 창문·틈에서 만원권이 빨려 나가듯 흩날림 (손실 불안)",
+      "B": "경악한 인물 + 빨간 화살표로 특정 아파트 동을 콕 지목 ('내 집도?' 경계)"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어두운 도시의 초고층 아파트 창문과 틈에서 만원권 지폐가 빨려 나가듯 흩날리는 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic photograph of a towering high-rise apartment building at dusk in a dark grey city, dramatic moody lighting with deep shadows. Stacks of Korean won banknotes are being sucked out through the windows and cracks, swirling and scattering into the air like money leaking away. Ominous atmosphere with dramatic contrast, red warning glow emanating from the cracks in the concrete facade, conveying financial loss and crisis."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '돈 새는 아파트'를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a massive high-rise apartment tower in a dark cinematic city, bold ink outlines and cel-shaded dramatic lighting. Korean won banknotes stream out of the windows and fractures, swirling dramatically into the night sky. Deep shadows and glowing red cracks spread across the building facade, creating an intense ominous mood of money draining away and looming financial danger."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 충격받아 입을 벌린 인물이 옆의 번듯한 아파트 한 동을 빨간 화살표로 지목당하는 장면.",
+      "prompt_en": "Photorealistic cinematic thumbnail of an attractive middle-aged Korean man with a warm likeable face, mouth open in shocked exaggerated expression, extreme close-up filling the upper half of the frame. Behind him a modern high-rise apartment complex in a dark grey moody city, one specific tower circled and pinpointed by a bold bright red arrow and red dashed circle. Dramatic contrast, deep shadows, tense ominous atmosphere as if realizing his own home is the problem."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 '경악 인물 + 빨간 지목 화살표' 구도를 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of a handsome middle-aged Korean man with expressive shocked eyes and open mouth, exaggerated dramatic close-up in the upper half of the frame. Behind him a row of dark high-rise apartment buildings under a moody night sky, one tower pinpointed by a bold red arrow and red dashed circle. Bold outlines, cel-shaded dramatic lighting, deep shadows and tense atmosphere of alarming realization."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드 실사. 아파트 단면(도면·구조)이 X-ray처럼 드러나며 벽 속 균열·부실 지점이 빨갛게 표시되는 인포그래픽형 시네마틱 컷.",
+      "prompt_en": "Photorealistic cinematic cross-section cutaway view of a high-rise apartment building, like an X-ray exposing the hidden interior structure, in a dark dramatic setting. Several structural weak points, cracks and rusted rebar are glowing in alarming red inside the concrete walls and floors. Moody dramatic lighting, deep shadows, high contrast, conveying hidden defects and danger lurking behind a seemingly normal apartment."
+    }
+  ]
+}

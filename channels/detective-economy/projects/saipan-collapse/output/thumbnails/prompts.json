@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "saipan-collapse",
+    "titles": [
+      "손님이 한국인밖에 없던 섬, 그 한 손님이 떠나자 통째로 무너진 사이판",
+      "\"손님이 한국인밖에 없었거든요\" 한 명 떠났다고 통째로 무너진 사이판",
+      "한국인 다 떠난 텅 빈 사이판이 되레 더 비싸진 거꾸로 된 경제"
+    ],
+    "thumbnail_texts": [
+      "한국인마저 등 돌린 / 사이판",
+      "한 손님에 다 걸었다 / 무너진 사이판",
+      "한국인이 먹여 살리던 / 버려진 사이판"
+    ],
+    "image_concepts": {
+      "A": "캐리어 끌고 텅 빈 리조트 거리를 떠나는 한국인 관광객의 뒷모습 + 셔터 내린 한국어 간판 가게 (마지막 손님이 떠나는 순간)",
+      "B": "작은 사이판 섬을 홀로 떠받치던 단 하나의 손이 손을 떼자 섬이 기울어 무너지는 상징 (단일 고객 의존 붕괴)"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 캐리어를 끌고 텅 빈 사이판 리조트 거리를 떠나는 한국인 관광객의 뒷모습, 양옆엔 셔터 내린 상점들. 저물녘 쓸쓸한 분위기.",
+      "prompt_en": "Cinematic photorealistic image of a Korean tourist seen from behind, dragging a rolling suitcase away down a deserted resort street in Saipan at dusk. The traveler has an attractive, likeable back-view silhouette in casual travel clothes; the street ahead is lined with shuttered, closed-down storefronts and dark empty shops that once bustled with Korean visitors. Deep shadows and moody twilight lighting, with a faint teal ocean glow lingering on the horizon, create a heavy atmosphere of loneliness and abandonment. The lone departing figure looms large in the upper portion of the frame, dramatizing the very last customer walking away."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 장면(캐리어 끌고 떠나는 한국인 관광객 뒷모습 + 셔터 내린 거리)을 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of a Korean tourist viewed from behind, pulling a suitcase down an empty Saipan resort street at dusk. The character is a handsome, likeable figure with expressive posture; bold cel-shaded outlines and dramatic twilight lighting emphasize the shuttered, darkened storefronts lining the deserted street. A melancholic teal ocean glow lingers on the horizon while deep purple shadows convey emptiness and quiet sorrow. The solitary departing figure dominates the upper part of the frame, exaggerating the mood of the last visitor leaving."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 작은 사이판 섬을 홀로 떠받치던 단 하나의 손이 손을 떼자 섬이 기울어 붉게 균열 가며 무너지는 상징 이미지.",
+      "prompt_en": "Dramatic photorealistic conceptual image of the island of Saipan tilting over and beginning to crumble as a single supporting hand pulls away from beneath it, leaving the island's only pillar of support gone. Glowing red cracks spread across the fracturing landmass against a dark, ominous background. High-contrast dramatic lighting and deep shadows convey acute crisis and collapse, symbolizing an economy that leaned entirely on one single customer. The toppling island fills the upper portion of the frame for instant mobile readability."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 단일의존 붕괴 상징(홀로 떠받치던 손이 손을 뗀 순간)을 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of Saipan island tipping over and shattering as one lone supporting hand withdraws from underneath it. Bold ink outlines and glowing red fracture lines spread across the collapsing island against a dark, tense background. Exaggerated dramatic perspective and high-contrast cel shading amplify the sense of sudden total collapse, symbolizing complete dependence on a single customer. The falling island dominates the upper part of the frame."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. A 앵글의 역설을 시각화 — 사람 하나 없는 셔터 내린 거리 위로 붉은 상승 화살표와 치솟는 그래프 선. 텅 비었는데 값만 폭등하는 모순.",
+      "prompt_en": "Cinematic photorealistic image of a completely deserted Saipan shopping street with shuttered stores and not a single person in sight, while a blazing red upward arrow and a steeply rising glowing graph line soar into the dark sky above the empty road. The visual paradox of an emptied resort that somehow keeps getting more expensive is captured in one frame. Dark dramatic atmosphere with intense red and yellow accents against deep shadow creates tension and unease. The empty street and the surging red arrow dominate the upper portion of the frame."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-mideast-defense-oil",
+    "titles": [
+      "\"미사일이 다 떨어졌다\" 미국이 못 하는 걸 한국이 해버린 중동의 충격적 상황",
+      "패트리어트 2,800발 중 2,400발 소진, 미국 대신 중동 하늘을 지키는 나라",
+      "\"제발 천궁2 좀 더 줘\" 미국 무기가 바닥나자 중동이 한국에 줄을 선 이유"
+    ],
+    "thumbnail_texts": [
+      "\"패트리어트 재고 0\" + 미국 대신 중동을 지키는 한국 + 천궁2 수주 100조 돌파",
+      "\"2,800발 중 2,400발 소진\" + 미국이 못 채우는 빈자리 + 韓 천궁2의 역전",
+      "\"미국도 못 막는 미사일을 한국이 막았다\" + 중동 \"줄 서서 사겠다\" + 방산 신화의 시작"
+    ],
+    "image_concepts": {
+      "A": "빈 패트리어트 발사대 vs 천궁2 야적장 대비 — A vs B 레이아웃으로 텅 빈 발사대(좌, 어둡게)와 가득 찬 천궁2 야적장(우, 밝게) 대비",
+      "B": "천궁2 야간 사막 발사 순간 — 사막 야간 배경에서 천궁2가 발사되는 드라마틱한 클로즈업"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 텅 빈 패트리어트 발사대가 어둡고 적색 조명 아래 버려진 채 서 있고, 우측에 천궁2 미사일이 빼곡히 적재된 야적장이 올리브·황색 조명으로 빛나는 대비 구도.",
+      "prompt_en": "Photorealistic cinematic split-frame comparison of two military scenes in dark cinematic atmosphere with dramatic contrast and deep shadows. On the left, an abandoned empty Patriot missile launcher sits in a desolate military yard under ominous red-tinted lighting, with cracks in the concrete and no missiles loaded, conveying crisis and depletion. On the right, a fully stocked Cheongung-2 (M-SAM) missile stockyard is packed with rows of sleek missile canisters under warm olive-green and golden lighting, radiating strength and readiness. Moody lighting with exaggerated contrast between the dark depleted left side and the hopeful bright right side, evoking tension and triumph simultaneously."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 빈 패트리어트 vs 천궁2 야적장 대비를 애니메 스타일의 극적인 화면 분할로 표현.",
+      "prompt_en": "Anime-style illustration with bold ink outlines depicting a dramatic split-screen military comparison in dark cinematic tones with deep shadows and dramatic contrast. Left panel shows a desolate, crumbling Patriot missile launcher standing empty under a blood-red fractured sky, dark shadows creeping across the abandoned launch pad with an ominous atmosphere of decay. Right panel shows a gleaming Cheongung-2 missile stockyard overflowing with neatly arranged missile tubes under warm golden-olive light, with dynamic speed lines radiating outward to convey power and abundance. Cel-shaded lighting and vivid color contrast between the two halves amplify the shocking visual gap between American depletion and Korean military might."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 사막 한가운데 밤하늘을 배경으로 천궁2가 발사되는 순간을 포착한 시네마틱 장면. 오렌지 화염이 어둠을 가르며 솟구친다.",
+      "prompt_en": "Photorealistic cinematic close-up of a Cheongung-2 (M-SAM) surface-to-air missile launching at night in a Middle Eastern desert, dark cinematic atmosphere with deep shadows across the sand dunes. A massive orange and yellow exhaust flame erupts from the launcher, dramatically illuminating the surrounding desert terrain and casting long dark shadows, while the pitch-black night sky above remains ominous and vast. The missile rises with a blazing trail of fire and smoke, every mechanical detail of the Cheongung-2 launch system rendered with sharp clarity. Moody lighting with intense dramatic contrast between the fiery launch and the surrounding darkness creates an atmosphere of raw military tension and national pride."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 사막 야간 배경에서 천궁2 발사 화염이 밤하늘을 수놓는 장면을 역동적인 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a Cheongung-2 missile launching from a desert at night with dark cinematic atmosphere and dramatic contrast. The launch flame is rendered in exaggerated brilliant orange and yellow cel-shaded strokes that tear through the pitch-black sky, with dynamic motion lines and energy particles swirling around the ascending missile. The desert sand dunes below are cast in deep moody shadows with cracks and heat distortion radiating from the launch pad. Bold outlines and intense color saturation create an ominous yet awe-inspiring scene of Korean military technology dominating the dark Middle Eastern night."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 중동 지도 위에 패트리어트 아이콘들이 하나씩 꺼지며 천궁2 아이콘이 밝게 점등되는 전략 지도 스타일. 한국에서 중동으로 뻗어가는 빛나는 수출 경로선이 인상적.",
+      "prompt_en": "Photorealistic dark cinematic overhead view of a strategic military map of the Middle East rendered as a high-tech holographic display with deep shadows and moody blue-black lighting. Across the map, fading red Patriot missile defense icons flicker and go dark one by one with visible cracks and fracture effects, while bright golden-green Cheongung-2 defense icons light up intensely at key positions across Saudi Arabia, UAE, and Iraq. A glowing luminous export route line stretches from the Korean peninsula across the ocean to the Middle East, pulsing with energy. The dramatic contrast between the dying red American defense network and the rising golden Korean one creates an ominous atmosphere of a massive geopolitical power shift unfolding in real time."
+    }
+  ]
+}

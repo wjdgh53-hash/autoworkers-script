@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "china-shipbuilding-collapse",
+    "titles": [
+      "\"팔수록 적자였다\" 세계 1위 중국 조선업, 1600곳이 70곳 된 이유",
+      "점유율 74%가 스스로 무너졌다, 미국이 손대기도 전에 벌어진 일",
+      "\"1위인데 왜 망하죠?\" 배를 팔면 팔수록 손해 본 중국 조선업의 끝"
+    ],
+    "thumbnail_texts": [
+      "\"팔수록 적자\" + 무너지는 세계 1위 + 1600곳→70곳 / 수주 -35%",
+      "싸게 팔다 자멸 + 안에서 곪은 1위 + 점유율 74% / 파산 도미노",
+      "\"1위인데 왜?\" + 배 만들수록 손해 + -35% 증발 / RG 거절"
+    ],
+    "image_concepts": {
+      "A": "상징물 파괴/균열 — 어두운 폭풍 바다에서 녹슬고 부식된 초대형 중국 LNG선이 선체 균열과 함께 기울어 침몰. 빛바랜 오성홍기. 파멸감.",
+      "B": "급락 그래프 — 붉은 급락 화살표와 74%에서 추락하는 곡선이 거대한 중국 화물선을 관통. 붕괴 긴장."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어두운 폭풍우 바다에서 녹슬고 부식된 거대한 중국 LNG 운반선이 선체에 붉은 균열이 번지며 옆으로 기울어 가라앉는 시네마틱 장면. 빛바랜 오성홍기가 찢겨 나부낀다.",
+      "prompt_en": "Photorealistic cinematic thumbnail of a colossal rusted, corroded Chinese LNG carrier ship listing and sinking sideways in a dark stormy sea, glowing red cracks and fractures spreading across its decaying steel hull. A faded, tattered Chinese national flag flaps on the stern. Ominous storm clouds and deep navy-blue darkness surround the vessel, dramatic high-contrast lighting with red warning accents piercing the gloom. The massive ship is dramatically oversized filling the upper half of the frame, conveying a tense catastrophic mood of a giant collapsing from within."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 장면(녹슨 중국 LNG선이 균열과 함께 폭풍 바다에 침몰)을 다크 톤 애니메 스타일로, 붉은 균열과 찢긴 오성홍기.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration of an enormous rusted, corroded Chinese LNG carrier tilting and sinking in a violent stormy sea, bold glowing red cracks fracturing across its decaying hull. A tattered Chinese flag whips on the stern. Deep black-and-navy storm palette with sharp dramatic ink outlines and cel-shaded red warning highlights, exaggerated dynamic perspective, towering waves crashing against the doomed ship. The vessel is oversized and fills the upper half of the frame, intense ominous atmosphere of a titan collapsing."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 짙은 회색 배경에서 거대한 중국 국기색 화물선을 붉은 급락 화살표가 관통하고, 74% 정점에서 급락하는 붉은 곡선 그래프가 배 위로 겹쳐진 붕괴 긴장 장면.",
+      "prompt_en": "Photorealistic dramatic thumbnail of a huge dark cargo ship painted in Chinese red-and-gold tones, pierced and dragged down by a massive glowing red plunging arrow. A sharp red line graph crashes downward from a high peak, overlaid across the sky above the ship. Dark charcoal-grey stormy background with high-contrast dramatic lighting and vivid saturated red accents. The ship and the plunging arrow are dramatically oversized filling the upper half of the frame, conveying a tense mood of sudden collapse and freefall."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 급락 화살표/추락 그래프가 중국 화물선을 관통하는 붕괴 장면을 다크 애니메 스타일로.",
+      "prompt_en": "Vibrant dark anime-style illustration of a massive Chinese cargo ship being pierced and pulled down by a giant glowing red plunging arrow, a jagged red line graph crashing steeply downward across the stormy sky above it. Deep charcoal and black palette with bold ink outlines and vivid neon-red highlights, exaggerated dramatic perspective, dark ominous clouds. The ship and the plunging arrow are oversized and fill the upper half of the frame, tense atmosphere of a market in freefall and imminent collapse."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 텅 비고 녹슨 중국 조선소 도크 — 방치된 반쯤 만들다 만 선체, 멈춰 선 붉은 크레인, 먹구름. 폐허가 된 세계 1위 조선소의 몰락을 한 프레임에.",
+      "prompt_en": "Photorealistic cinematic thumbnail of a vast abandoned, rusting Chinese shipyard dock at dusk, a half-built ship hull left corroding and forsaken, silent red gantry cranes frozen in place, cracked concrete and empty scaffolding. Dark stormy sky with heavy grey clouds looming overhead, moody desaturated lighting with deep shadows and a cold red accent glow. The derelict shipyard sprawls dramatically across the upper half of the frame, evoking an eerie sense of a former world-number-one industry fallen into ruin and collapse."
+    }
+  ]
+}

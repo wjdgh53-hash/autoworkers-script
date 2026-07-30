@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-military-power",
+    "titles": [
+      "\"총 한 자루도 못 만들던 나라\" 70년 만에 세계가 벌벌 떠는 군사 강국이 된 소름돋는 이유",
+      "\"42년간 봉인당한 미사일\" 한국이 족쇄를 풀자 벌어진 충격적인 일",
+      "세계 5위 군사 강국의 시작은 남의 총을 분해하는 것이었다"
+    ],
+    "thumbnail_texts": [
+      "70년 전 총도 못 만들던 나라 + 지금은 세계가 두려워한다",
+      "\"미친 성장\" + 폐허에서 세계 5위까지",
+      "방산 수출 113조 + 총도 못 만들던 나라의 반전"
+    ],
+    "image_concepts": {
+      "A": "Before->After 시간 대비: 부서진 M1 소총(과거)과 KF-21 전투기+미사일 발사(현재)의 극적 대비",
+      "B": "균열/붕괴의 역전 - 족쇄 돌파: 부서지는 쇠사슬 속에서 솟구치는 현무-5 미사일"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 녹슬고 부서진 M1 소총이 흑백 세피아 톤으로, 우측에 KF-21 전투기와 현무-5 미사일 발사 화염이 대비되는 시네마틱 장면. 모노톤 기조에 미사일 화염만 붉은 악센트.",
+      "prompt_en": "Cinematic photorealistic split composition with a rusted, broken M1 Garand rifle on the left side rendered in desaturated grayscale sepia tones, and a sleek KF-21 Boramae fighter jet alongside a Hyunmoo-5 ballistic missile launching with fiery exhaust on the right side. High contrast monochrome palette with a single deep orange-red accent from the missile flame. The left half shows dust, debris, and a desolate 1950s Korean War landscape, while the right half features a dark navy sky with the modern weapons dominating the upper portion of the frame. Mysterious partially revealed composition suggesting a dramatic transformation across decades."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 과거의 부서진 소총과 현재의 KF-21+미사일 발사를 애니메 스타일의 극적 대비로 표현. 모노톤 기조에 화염 악센트.",
+      "prompt_en": "Anime-style illustration with bold ink outlines showing a dramatic before-and-after split. On the left, a shattered M1 Garand rifle lies among grey rubble in a desaturated monochrome war-torn landscape of 1950s Korea. On the right, a powerful KF-21 Boramae fighter jet soars upward alongside a Hyunmoo-5 missile trailing a single vivid red-orange flame, the only color accent against the high-contrast grayscale palette. Cel-shaded dramatic lighting with deep shadows creates an intriguing sense of an impossible transformation, with all key elements concentrated in the upper half of the frame."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 거대한 쇠사슬이 산산조각 부서지며 그 사이로 현무-5 미사일이 솟구치는 장면. 어두운 모노톤 배경에 화염만 붉은 포인트.",
+      "prompt_en": "Photorealistic dramatic scene of massive steel chains shattering and breaking apart in an explosive burst, with a Hyunmoo-5 ballistic missile surging upward through the fractures. Desaturated monochrome color scheme with deep black background and metallic gray chain fragments, the only color accent being the intense crimson-orange rocket exhaust. Ominous atmosphere with dark shadows and high contrast grayscale lighting, cracks and fractures spreading outward from the point of breakthrough. The missile and chain debris fill the upper portion of the frame, conveying the tension of suppressed power finally unleashed."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 족쇄를 박살내며 솟구치는 현무-5 미사일을 애니메 스타일로 표현. 모노톤에 화염 악센트.",
+      "prompt_en": "Vibrant anime-style illustration of enormous iron shackles and chains exploding into fragments as a sleek Hyunmoo-5 missile blasts through them with tremendous force. Bold black ink outlines with cel-shaded high-contrast grayscale tones, the entire scene rendered in desaturated monochrome except for a single vivid crimson-red accent from the missile's exhaust flame. Exaggerated perspective from below looking up at the missile breaking free, with stylized speed lines and dramatic dark shadows creating an ominous yet thrilling atmosphere of liberation. Chain fragments and the ascending missile dominate the upper half of the composition."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드 실사. 1950년대 한국 병사의 어두운 실루엣이 뒷모습으로 서서 먼 지평선 위로 현대 한국 군사 퍼레이드(K2 전차, KF-21, 현무-5 발사대)를 바라보는 장면. 모노톤에 지평선 너머 미사일 화염만 붉은 악센트.",
+      "prompt_en": "Photorealistic cinematic scene of a dark silhouette of a 1950s Korean War soldier seen from behind, standing alone in a desolate grayscale battlefield, gazing toward the distant horizon where a modern Korean military arsenal is partially revealed through atmospheric haze — K2 Black Panther tanks, a KF-21 Boramae fighter jet in flight, and a Hyunmoo-5 missile launch pad. Desaturated monochrome palette with high contrast grayscale, a single deep red-orange accent glowing from a distant missile exhaust on the horizon. The backlit soldier figure and military silhouettes occupy the upper half, creating a mysterious and intriguing composition that evokes both tension and curiosity about Korea's impossible transformation."
+    }
+  ]
+}

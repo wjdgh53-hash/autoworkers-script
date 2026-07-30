@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-giga-steel-auto",
+    "titles": [
+      "알루미늄을 항복시킨 한국의 철, 세계 자동차 10대 중 1대를 삼켰다",
+      "\"철은 끝났다\"던 세계가 한국 철 앞에 다시 백기 들었다",
+      "벤츠도 BMW도 버렸던 철, 알루미늄 꺾고 세계 車를 다시 삼켰다"
+    ],
+    "thumbnail_texts": [
+      "\"도로를 점령한 K-철\" / 알루미늄 시대 끝 / 세계가 다시 줄섰다",
+      "알루미늄의 항복 / 한국 철의 대역전 / 世界車 10대중 1대",
+      "벤츠도 다시 철로 / 30년 만의 반전 / 한국이 뒤집었다"
+    ],
+    "image_concepts": {
+      "A": "레퍼 비주얼 계승 — 제철소 배경에 시뻘건 용융 강판과 은색 코일, 세계 명차와 태극기가 함께 선 웅장한 국뽕 장면",
+      "B": "A vs B 대결 — 초라하게 밀려나는 알루미늄 차체 vs 거대하게 빛나며 세계 명차를 떠받치는 한국 강판 코일"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어두운 제철소 안, 압연롤에서 흘러나오는 시뻘건 용융 강판과 거대한 은색 기가스틸 코일, 그 뒤로 늘어선 세계 명차와 태극기.",
+      "prompt_en": "Photorealistic cinematic shot inside a dark, cavernous steel mill with dramatic contrast and deep shadows. In the upper half, a river of glowing molten orange steel sheet pours from massive rolling machinery on the left, next to a huge gleaming silver steel coil that towers dominantly. Behind them, a row of luxury German and American cars (a black luxury SUV and a silver luxury sedan) sit gleaming, with large South Korean Taegeukgi flags hanging in the smoky background. Intense orange furnace glow, sparks flying, moody industrial atmosphere of overwhelming national pride and power."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 제철소+용융 강판+은색 코일+세계 명차+태극기 장면을 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of a dark dramatic steel mill interior with deep shadows and high contrast. In the upper half, glowing molten orange steel flows from towering rolling machinery beside an enormous shining silver steel coil. A line of luxury German and American cars gleams behind, with bold South Korean Taegeukgi flags in the hazy background. Cel-shaded lighting, exaggerated fiery orange glow and flying sparks, epic heroic atmosphere of national triumph."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌측엔 어둡게 밀려나는 초라한 알루미늄 차체 조각, 우측엔 주황빛으로 빛나는 거대한 한국 강판 코일이 세계 명차를 떠받치는 대결 구도.",
+      "prompt_en": "Photorealistic dramatic composition with strong left-right contrast and dark cinematic lighting. On the left, a dull, cold, cracked aluminum car body panel slumps in shadow, looking defeated and discarded. On the right, a massive glowing silver-and-orange Korean steel coil rises powerfully, supporting sleek luxury German and American cars on top, with a South Korean Taegeukgi flag behind. Ominous shadows on the losing side versus warm triumphant glow on the winning side, tension and shock, overwhelming scale difference."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 알루미늄 패배 vs 한국 강판 승리 대결 구도를 애니메 스타일로.",
+      "prompt_en": "Bold anime-style illustration with dramatic left-right versus composition and dark high-contrast atmosphere. On the left, a dull grey aluminum car panel cracks and crumbles in cold shadow, defeated. On the right, a gigantic radiant Korean steel coil glows with orange energy, lifting luxury German and American cars upward, a South Korean Taegeukgi flag waving behind. Cel-shaded, exaggerated scale contrast, dynamic sparks and glow, intense mood of victorious reversal."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 프레임을 압도하는 거대한 빛나는 한국 강판 코일이 왕좌처럼 군림하고, 그 아래 짓눌린 작은 알루미늄 조각. 용융 불꽃과 태극기.",
+      "prompt_en": "Photorealistic epic hero shot of one colossal, luminous silver steel coil dominating the upper half of the frame like a throne, radiating orange molten heat and sparks in a dark industrial void with dramatic shadows. Far below and dwarfed, a tiny crushed, dull aluminum car fragment lies broken. A single large South Korean Taegeukgi flag glows in the background. Extreme scale contrast, shock and awe, deep cinematic contrast, overwhelming sense of dominance and national pride."
+    }
+  ]
+}

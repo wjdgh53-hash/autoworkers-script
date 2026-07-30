@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "project": "china-economy-timebombs",
+    "titles": [
+      "\"숫자가 너무 나빠서 아예 안 셉니다\" 세계 2위 중국이 자기 통계를 지운 진짜 이유 | 물가·집값·인구·청년·지방빚 5대 뇌관의 연쇄",
+      "\"이미 우리가 먼저 맞고 있습니다\" 중국 5대 위기가 원화·물가·월급까지 덮치는 이유 | 디플레·부동산·인구·청년·지방빚",
+      "세계 2위 경제가 이미 무너지기 시작했습니다 | 400조 빚 남기고 사라진 부동산 공룡부터 통계 지운 청년실업까지 5대 뇌관"
+    ],
+    "thumbnail_texts": [
+      "세계 2위의 자폭 + 통계마저 지웠다 + 왜 이렇게 됐나",
+      "중국 5대 뇌관 + 스스로 눌렀다 + 자멸의 방아쇠",
+      "14억 경제 위기 + 정부가 만든 재앙 + 진짜 원인은"
+    ],
+    "image_concepts": {
+      "A": "인물 감정 + 지워진 데이터 — 경악·식은땀 짓는 중국 지도자(상단 정면)와 붉은 X로 삭제된 실업률 그래프. 어두운 배경 + 빨강 포인트. 경멸/불안 톤.",
+      "B": "균열 + 하강 화살표 — 균열 간 중국 상징 마천루(상단 좌우 꽉 참)에 내리꽂히는 붉은 하강 화살표. 어두운 배경 + 고채도 빨강. 붕괴/긴장 톤."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 경악하며 식은땀 흘리는 중국 지도자가 상단을 정면으로 채우고, 그 옆에 붉은 X로 그어져 삭제된 청년 실업률 그래프. 어두운 배경에 붉은 경보 톤.",
+      "prompt_en": "Photorealistic cinematic YouTube thumbnail of a stern authoritarian East Asian male leader in a dark suit, upper half of the frame, facing forward with a shocked panicked expression and beads of cold sweat on his forehead, eyes wide. Beside him floats a glowing red economic line-chart of youth unemployment that has been violently crossed out with a big red X and is dissolving, as if the data is being erased and hidden. Dark charcoal-red background with ominous crimson alert lighting, harsh dramatic contrast, the leader's sweating face and the deleted graph dramatically oversized, mood of a regime desperately covering up a collapse. Lower area kept darker for text space.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 구도 — 식은땀 흘리며 경악하는 중국 지도자 + 붉은 X로 삭제되는 실업률 그래프를 강렬한 다크 톤 애니메 스타일로.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration of a stern authoritarian East Asian male leader in a dark suit filling the upper frame, face contorted in shock and panic with exaggerated cold sweat drops, wide staring eyes, bold cel-shaded outlines. Next to him a glowing red unemployment line-chart is slashed through with a huge red X and shattering apart, symbolizing erased and hidden statistics. Deep black-crimson palette with sharp dramatic ink shadows and red alert glow, exaggerated tense expression, the sweating leader and the destroyed graph dramatically oversized, atmosphere of a cover-up and looming collapse. Darker lower band reserved for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 붉은 오성홍기 색이 감도는 거대한 중국 마천루 스카이라인이 상단을 꽉 채우며 균열이 번지고, 붉은 하강 화살표가 도시로 내리꽂힌다. 어두운 잿빛 폐허 톤.",
+      "prompt_en": "Photorealistic cinematic YouTube thumbnail of a massive Chinese metropolitan skyline of towering skyscrapers filling the upper half of the frame edge to edge, deep fractures and cracks spreading across the buildings as they begin to crumble, dust breaking off. A large bold red downward-plunging arrow stabs down into the city from above. Dark ashen ruined-city color grade with ominous crimson accents, a faint communist-red tint in the smoggy sky, harsh high-contrast dramatic lighting, the cracking skyline and the red crashing arrow dramatically oversized, mood of an economic superpower collapsing under its own weight. Lower portion kept darker and clear for text space.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 균열 마천루 + 내리꽂히는 붉은 하강 화살표를 역동적 다크 애니메 스타일로.",
+      "prompt_en": "Dynamic dark anime-style illustration of a colossal Chinese skyline of skyscrapers dominating the upper frame, bold jagged cracks splitting the towers as chunks break away and fall, rendered in strong cel-shaded outlines. A giant red downward-crashing arrow plunges into the city center. Deep black-and-ash palette with glowing crimson accents and a faint red-tinted smoggy sky, exaggerated dramatic perspective, stark shadows and sharp highlights, the fracturing skyline and the plunging red arrow dramatically oversized, atmosphere of an unstoppable collapse. Darker lower band left open for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 다섯 개의 도미노 블록(물가·집값·인구·청년·지방빚)이 서로를 무너뜨리며 연쇄로 넘어지고, 마지막 블록이 한반도·원화 지폐 쪽으로 쓰러지려는 순간. 자멸이 한국으로 번지는 한 컷.",
+      "prompt_en": "Photorealistic cinematic YouTube thumbnail of five massive cracked stone domino blocks toppling in a chain reaction against a dark stormy backdrop, each block faintly engraved with an ominous economic icon (falling prices, a cracked house, a shrinking population figure, an unemployed youth, a debt chain). The blocks are painted in Chinese communist red and are collapsing one into the next; the final falling block leans toward a small Korean peninsula silhouette and a stack of Korean won banknotes at the edge of the frame, about to crush them. Deep dark background with dramatic crimson rim light, dust and debris flying, harsh high-contrast lighting, the toppling dominoes dramatically oversized, tense mood of a self-inflicted collapse spilling over onto Korea.",
+      "text_space": "bottom-half"
+    }
+  ]
+}

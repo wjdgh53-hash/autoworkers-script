@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "nk-nuclear-bluff",
+    "titles": [
+      "\"핵을 쓰면 망하고, 안 쓰면 굶는다\" 김정은이 절대 말 못하는 핵의 진짜 비밀",
+      "북한 핵이 사실은 '저주'인 이유 — 쏘지도 버리지도 못하는 무기의 비극",
+      "\"쓸 수도 없는 핵에 나라가 망한다\" 김정은이 숨기는 북한 핵의 치명적 함정"
+    ],
+    "thumbnail_texts": [
+      "\"쓰면 망하고, 안 쓰면 굶는다\" + 핵이 북한을 조이고 있다",
+      "\"핵무기가 저주였다\" + 김정은이 절대 말 못하는 진실",
+      "\"핵 유지비만 연 9천억\" + 60% 국민이 죽을 먹는 나라의 선택"
+    ],
+    "image_concepts": {
+      "A": "핵미사일에 쇠사슬로 묶인 김정은 — 무기가 주인을 구속하는 역전 이미지",
+      "B": "갈라진 북한 — 좌측 화려한 미사일 퍼레이드 vs 우측 황폐한 농촌/빈 식탁"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 거대한 북한 핵미사일에 쇠사슬로 묶인 김정은. 미사일이 주인을 구속하는 역전된 권력 관계.",
+      "prompt_en": "Photorealistic cinematic photograph of Kim Jong-un (North Korean leader in black Mao suit) bound by heavy iron chains to a towering North Korean ICBM missile. Kim's expression shows strain and desperation as the massive chains wrap around his body, connecting him to the missile that looms above. Dark red and black atmospheric background with dramatic side lighting casting harsh shadows. The missile dominates the upper half while Kim struggles below, creating a visual metaphor of a weapon imprisoning its owner."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 쇠사슬+김정은+미사일 구도를 애니메 스타일로 표현.",
+      "prompt_en": "Dramatic anime-style illustration of Kim Jong-un (North Korean leader in black Mao suit) chained to a massive nuclear missile with heavy iron shackles. Bold cel-shaded art with exaggerated proportions — the missile towers enormously in the upper frame while Kim is pulled down by glowing chains. Dark crimson and black background with vivid blue-cold highlights on the chains. Intense emotional atmosphere with speed lines and dramatic lighting emphasizing the irony of a dictator trapped by his own weapon."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좌우 분할 — 좌측에 화려한 북한 미사일 퍼레이드, 우측에 황폐한 북한 농촌과 빈 식탁. 중앙에 균열선.",
+      "prompt_en": "Photorealistic split-screen composition of North Korea's contradiction. Left side shows a grand military parade with gleaming ICBM missiles on mobile launchers under red banners and golden decorations, shot in warm red and gold tones. Right side shows a desolate North Korean rural village with empty fields, a bare wooden table with a single cracked bowl of thin porridge, in desaturated grey-brown cold tones. A dramatic crack or fracture line splits the image down the center. Cinematic lighting with stark contrast between the two halves."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 미사일 vs 빈곤 대비 구도를 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration showing a dramatic split composition of North Korea's paradox. Left half depicts a spectacular missile parade with stylized ICBM rockets gleaming under red spotlights and golden confetti, rendered in warm saturated reds and golds. Right half shows a stark contrast — an emaciated anime-style North Korean family sitting before an empty wooden table in a crumbling grey village, rendered in cold desaturated blues and greys. A bold jagged crack divides the two worlds. Exaggerated contrast between opulence and poverty with dynamic cel-shaded lighting."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 김정은이 거대한 핵미사일 위에 앉아 있지만, 미사일 아래가 무너지고 있는 모래성. 허세의 붕괴를 시각화.",
+      "prompt_en": "Cinematic photorealistic image of Kim Jong-un (North Korean leader in black Mao suit) sitting atop a massive nuclear missile with a proud expression, but the missile is planted in a crumbling sandcastle that is collapsing into dust. The upper half shows Kim and the missile against a dark ominous sky with red clouds. Sand and debris cascade downward as the foundation disintegrates. Dramatic backlighting creates a rim light around the missile while the crumbling base is lit with harsh cold light, emphasizing the futility and fragility of nuclear ambition built on an impossibly weak economic foundation."
+    }
+  ]
+}

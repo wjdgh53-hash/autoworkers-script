@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "china-crisis",
+    "titles": [
+      "\"통장 잔액이 0원이 됐습니다\" 빚 8경 원, 은행 300개 소멸, 중국에서 진짜 벌어지고 있는 일",
+      "\"돈이 전부 사라졌다\" 부채 8경 원의 정체, 14억 인구의 통장을 집어삼킨 괴물의 실체",
+      "\"은행이 일주일에 7개씩 사라진다\" 8경 원 부채의 끝, 중국 금융 시스템 붕괴의 현장"
+    ],
+    "thumbnail_texts": [
+      "\"시진핑이 숨긴 진실\" + 빚 8경, 은행 300개 증발",
+      "\"통장 잔액 0원\" + 中 14억 부채 도미노 시작",
+      "\"돈이 전부 사라졌다\" + 국가부채 8경원, 통제 불능 + 은행 붕괴"
+    ],
+    "image_concepts": {
+      "A": "3인물 병렬 감정 과장 — ATM 앞 예금자, 무너지는 아파트 앞 건설노동자, 빈 가게 앞 자영업자 (001 패턴 계승)",
+      "B": "부채 도미노 붕괴 — 부동산→은행→지방정부→서민 도미노가 연쇄 붕괴하는 장면"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 3인물 병렬 배치 — ATM 앞에서 절규하는 예금자, 무너지는 아파트 단지 앞 건설노동자, 셔터 내린 가게 앞 자영업자. 붉은 폐허 배경, 감정 과장.",
+      "prompt_en": "Anime-style illustration of three distressed people standing side by side in the upper half of the frame. Left: an elderly depositor with exaggerated crying expression clutching an empty bankbook in front of an ATM showing '0'. Center: a construction worker with a hard hat, horrified face, standing before a half-built concrete apartment skeleton with visible cracks. Right: a small business owner with hollow desperate eyes in front of a shuttered storefront. Dark crimson-red ruined cityscape background with ominous atmosphere, dramatic shadows and deep contrast. Bold expressive anime art with cel-shading and intense emotional expressions."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 동일한 3인물 구도를 시네마틱 실사 스타일로. 붉은 톤 조명, 폐허 배경.",
+      "prompt_en": "Cinematic photorealistic image of three Chinese citizens standing shoulder to shoulder in the upper half. Left: an elderly woman pressing her hands against an ATM screen showing zero balance, tears streaming down her face. Center: a young construction worker in dusty overalls staring in disbelief at a massive unfinished apartment complex crumbling behind him. Right: a middle-aged shopkeeper sitting defeated in front of a permanently closed store with metal shutters. Dark cinematic atmosphere with deep crimson lighting, smoke and dust particles in the air, dramatic contrast between the desperate human figures and the decaying urban landscape behind them."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 거대한 도미노가 좌에서 우로 쓰러지는 장면. 각 도미노 블록이 부동산-은행-지방정부-서민을 상징. 어두운 배경, 붉은 조명.",
+      "prompt_en": "Cinematic photorealistic scene of massive stone domino blocks falling in sequence from left to right in the upper half of the frame. The first domino is a crumbling high-rise apartment building, the second is a bank vault door breaking apart, the third is a government building facade cracking, the fourth is a family home being crushed. Dark moody atmosphere with dramatic red and orange lighting from below, deep shadows, dust and debris flying through the air. Each domino is enormous and imposing, creating a sense of unstoppable catastrophic chain reaction."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 도미노 연쇄 붕괴를 애니메 스타일로 극적 표현. 원근 과장.",
+      "prompt_en": "Vibrant anime-style illustration of giant domino pieces toppling in dramatic forced perspective from left to right in the upper half. The dominoes are stylized as Chinese architectural elements — a luxury apartment tower, a bank with golden vault, a government building with red pillars, and finally a humble family home. Intense dynamic motion lines and impact effects as each domino crashes into the next. Dark navy and crimson background with explosive yellow-orange light bursting from the collision points. Exaggerated scale and dramatic depth, bold ink outlines."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. Xi Jinping이 거대한 부채 시계 앞에서 땀을 흘리며 서있는 장면. 시계가 8경원을 표시. 붉은 배경, 시네마틱.",
+      "prompt_en": "Cinematic dark atmosphere portrait of Xi Jinping (President of China) standing nervously in the upper half of the frame, sweat on his forehead, looking sideways with a tense worried expression. Behind him looms an enormous ominous debt clock or timer glowing in threatening red, casting eerie light on his face. The background is pure darkness with subtle cracks spreading like a web. Dramatic side lighting creates deep shadows on his face, emphasizing tension and impending crisis. Photorealistic style with high contrast and moody cinematic color grading."
+    }
+  ]
+}

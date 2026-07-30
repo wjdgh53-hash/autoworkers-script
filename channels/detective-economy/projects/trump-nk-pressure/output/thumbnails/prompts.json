@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "trump-nk-pressure",
+    "titles": [
+      "\"핵이 있으면 안전하다고?\" 이란 공습이 증명한 북한의 진짜 약점",
+      "\"김정은이 핵을 포기한 게 아닙니다\" 이란 전쟁 후 북한에서 벌어지는 일",
+      "\"핵 수만 발로도 못 막았다\" 소련이 증명한 북한의 운명"
+    ],
+    "thumbnail_texts": [
+      "핵 무용 / 증명됐다",
+      "소련도 멸망했다 / 북한이 버틸까",
+      "핵 수만 발 / 못 막았다"
+    ],
+    "image_concepts": {
+      "A": "북한 핵미사일(화성-19)에 거대한 균열이 가면서 부서지는 이미지",
+      "B": "좌측에 빛나는 핵미사일(과거 자랑), 우측에 먼지로 부서진 잔해(현실) Before→After 대비"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 북한 ICBM(화성-19급 대형 미사일)에 거대한 붉은 균열이 퍼지며 파편이 떨어지는 시네마틱 장면. 어두운 배경에 미사일만 극적으로 조명.",
+      "prompt_en": "Photorealistic cinematic photograph of a massive North Korean ICBM missile (Hwasong-19 type, large white intercontinental ballistic missile) with dramatic glowing red cracks spreading across its surface, fragments breaking away into darkness. Dark moody background with deep shadows, the missile fills the upper half of the frame, lit by intense dramatic side lighting that emphasizes the fractures. Red-orange light emanates from the cracks, creating an ominous atmosphere of imminent collapse and destruction."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 핵미사일 균열 장면을 과장된 애니메 스타일로 표현. 폭발적 에너지와 파편이 역동적으로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a massive North Korean ICBM missile shattering apart with dramatic glowing red cracks and explosive energy bursting from within. Bold ink outlines and cel-shaded lighting, dark atmospheric background with intense contrast. Fragments of the missile scatter dynamically with speed lines and energy effects, vivid red and orange crack light against the dark steel surface, conveying a powerful sense of destruction and collapse."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좌측에 금빛으로 빛나는 완전한 핵미사일(과거의 자랑), 우측에 먼지와 잔해로 부서진 미사일 잔해(현실). 극적인 Before→After 대비.",
+      "prompt_en": "Photorealistic cinematic split composition showing dramatic before-and-after contrast. Left side: a pristine North Korean ICBM missile gleaming with golden light, polished surface reflecting power and pride, warm golden lighting. Right side: the same missile reduced to crumbling rubble and dust, grey and desaturated, broken fragments scattered. Dark cinematic background, extreme contrast between the golden glory on the left and ashen destruction on the right, dramatic atmospheric lighting."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 Before→After 대비를 애니메 스타일로 표현. 좌측 금빛 미사일 vs 우측 부서진 잔해.",
+      "prompt_en": "Stylized anime illustration showing dramatic before-and-after split composition. Left side: a gleaming North Korean ICBM missile rendered in brilliant gold and white tones with sparkle effects and powerful aura, representing past pride. Right side: the same missile shattered into grey dust and fragments with dark heavy shading, representing harsh reality. Bold cel-shaded style with exaggerated contrast between the vibrant golden left and desaturated crumbling right, dark atmospheric background."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. Kim Jong Un의 과장된 불안한 표정 클로즈업. 배경에 균열이 간 핵미사일 실루엣이 흐릿하게 보임. 긴장감과 공포를 극대화.",
+      "prompt_en": "Dark cinematic photograph featuring Kim Jong Un (North Korean leader, round face, distinctive black hair) in exaggerated extreme close-up filling the upper frame, his expression showing visible anxiety and fear with wide eyes and tense jaw. Behind him, a blurred silhouette of a cracking ICBM missile with red fracture lines glowing ominously. Deep dark shadows, dramatic rim lighting on his face creating stark contrast, moody atmosphere of dread and impending doom."
+    }
+  ]
+}

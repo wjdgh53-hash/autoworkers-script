@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "vietnam-resistance",
+    "titles": [
+      "\"2,000년간 3번 이겼습니다\" 프랑스·미국·중국을 꺾은 베트남의 소름돋는 비밀",
+      "\"중국도 미국도 못 이겼습니다\" 2,000년간 정복당하지 않은 나라의 소름돋는 비밀",
+      "\"강대국 3개를 꺾은 나라\" 베트남이 2,000년간 살아남은 소름돋는 이유"
+    ],
+    "thumbnail_texts": [
+      "강대국 3개를 꺾은 나라 + 베트남",
+      "2,000년의 저항 + 왜 안 무너졌을까?",
+      "중국도 프랑스도 미국도 + 못 이긴 나라"
+    ],
+    "image_concepts": {
+      "A": "베트남 전사의 불굴 — 고대 전사가 균열진 강대국 국기들을 배경으로 정면 응시",
+      "B": "무너진 강대국들 — 프랑스·미국·중국 국기가 부서지고 베트남 별이 빛남"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 베트남 고대 전사가 갑옷을 입고 검을 들고 정면을 응시하는 시네마틱 장면. 배경에 프랑스·미국·중국 국기가 반투명하게 균열진 채 깔려 있다.",
+      "prompt_en": "Cinematic photorealistic portrait of a Vietnamese ancient warrior in traditional bronze armor holding a sword, staring directly at the camera with fierce determination. Behind him, three translucent national flags — French tricolor, American stars and stripes, and Chinese five-star red flag — appear cracked and fractured like shattered glass. Dark navy blue background with dramatic rim lighting highlighting the warrior's face. Red and golden yellow accent colors matching the Vietnamese flag create striking contrast against the dark backdrop."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 베트남 전사 구도를 애니메 스타일로. 강렬한 눈빛과 바람에 휘날리는 갑옷 장식.",
+      "prompt_en": "Vibrant anime-style illustration of a Vietnamese ancient warrior in ornate bronze armor, holding a gleaming sword with intense determined eyes staring directly at the viewer. Behind the warrior, three translucent national flags — French tricolor, American stars and stripes, and Chinese five-star red flag — are dramatically cracking and shattering. Bold ink outlines with cel-shaded lighting. Dark navy background with vivid red and golden yellow accents from the Vietnamese flag colors. Exaggerated dramatic perspective emphasizing the warrior's imposing presence."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 프랑스 삼색기, 미국 성조기, 중국 오성홍기가 돌처럼 균열이 가며 부서지고, 그 사이로 베트남 국기의 노란 별이 강렬하게 빛나는 장면.",
+      "prompt_en": "Cinematic photorealistic image of three massive stone-like national flags — French tricolor, American stars and stripes, and Chinese five-star red flag — cracking and crumbling dramatically from the center outward. Through the deep cracks and fractures, intense golden-yellow and red light radiates outward, forming the shape of the Vietnamese golden star. Pure black background creates extreme contrast with the glowing cracks. Dramatic volumetric lighting with dust particles floating in the beams of light breaking through."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 국기 파괴+별 빛남 구도를 애니메 스타일로. 더 과장된 균열과 빛의 폭발.",
+      "prompt_en": "Stylized anime illustration of three towering national flags — French tricolor, American stars and stripes, and Chinese five-star red flag — dramatically shattering into fragments with exaggerated cracks spreading across their surfaces. From the center of the destruction, an enormous glowing Vietnamese golden star erupts with explosive golden-yellow and red energy beams. Bold black background with high-contrast cel-shaded lighting. Dynamic composition with fragments flying outward and intense light rays creating a powerful visual impact."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 베트남 지도 실루엣이 방패 형태로 서 있고, 그 앞에 부러진 창 3개(프랑스·미국·중국 국기 색)가 흩어져 있는 상징적 구성.",
+      "prompt_en": "Cinematic photorealistic image of Vietnam's map silhouette transformed into a massive glowing golden shield standing upright in the center. In front of the shield, three broken spears lie scattered on the ground — one painted in French blue-white-red, one in American red-white-blue stars and stripes pattern, and one in Chinese red with yellow stars. Dark dramatic background with golden rim light outlining the Vietnam shield shape. Moody atmospheric lighting with subtle red and yellow color grading emphasizing resilience and triumph."
+    }
+  ]
+}

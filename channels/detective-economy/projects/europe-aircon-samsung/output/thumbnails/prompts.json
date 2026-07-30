@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "europe-aircon-samsung",
+    "titles": [
+      "유럽 에어컨 대박 앞에서 삼성·LG가 돈 되는 그 판을 통째로 건너뛴 이유",
+      "\"2027년에 다 사라진다\" 삼성·LG가 유럽 에어컨 열풍을 일부러 넘긴 계산",
+      "세계 1위 삼성·LG는 왜 유럽 에어컨 열풍에 뛰어들지 않았을까"
+    ],
+    "thumbnail_texts": [
+      "세계 1위 삼성·LG + 대박을 걷어찼다 + 이유는 2027년",
+      "돈 쏟아지는 시장 + 한국은 안 들어갔다",
+      "中이 쓸어담는 동안 + 한국은 다른 판을 봤다"
+    ],
+    "image_concepts": {
+      "A": "스케일 대비 — 작고 조잡한 저가 이동식 에어컨 무더기 vs 그것을 압도하는 거대한 삼성·LG 히트펌프·건물 냉난방 인프라. 남들이 다투는 작은 판과 1등이 노린 훨씬 큰 판의 크기 역전.",
+      "B": "2027 규제 장벽 인과 역전 — 중국 국기 붙은 저가 에어컨 더미는 규제 장벽에 막혀 무너지고, 같은 장벽이 삼성·LG에겐 빛나는 통과의 문이 된다. 막힘 vs 통과의 대비."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 작고 조잡한 저가 이동식 에어컨 무더기, 우측에 그것을 압도하며 솟아오른 거대한 삼성·LG 히트펌프·건물 냉난방 인프라와 상승 화살표. 크기 역전으로 '진짜 큰 판'을 강조.",
+      "prompt_en": "Photorealistic cinematic composition built on a dramatic scale contrast. On the left, a chaotic heap of small cheap crude portable air conditioners, dented and flimsy, looking insignificant and dwarfed. On the right, a colossal towering Samsung and LG heat pump and building HVAC infrastructure system rising far above, dramatically oversized, with a large upward arrow surging skyward and sharp teal and gold accent highlights. Dark moody atmosphere with deep shadows, dramatic contrast and ominous tension, the enormous machinery looming to emphasize the gap between the tiny discarded market and the vast hidden one."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 스케일 대비(저가 에어컨 무더기 vs 거대한 삼성·LG 히트펌프·인프라)를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration built on a dramatic scale contrast. On the left, a messy heap of small cheap portable air conditioners drawn with bold ink outlines and cel-shading, looking flimsy and worthless. On the right, a gigantic gleaming Samsung and LG heat pump and central HVAC tower soaring upward with exaggerated dramatic perspective, glowing teal and gold, a bold rising arrow slashing skyward. Dark dramatic background with deep shadows and vivid high-contrast lighting, the towering infrastructure looming over the tiny discarded units for a shocking sense of scale."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 중국 국기 붙은 저가 에어컨 더미가 거대한 규제 장벽에 막혀 무너지고(좌·잿빛/붉은열기), 같은 장벽이 삼성·LG에겐 청록·황금빛 통과의 문으로 열리는(우) 인과 역전 장면.",
+      "prompt_en": "Photorealistic cinematic scene of a causal reversal. On the left, a towering ominous regulatory checkpoint barrier slams down and blocks a collapsing mountain of cheap air conditioners marked with the Chinese national flag, sparks and cracks spreading as they topple into gray, defeated heat. On the right, the very same barrier opens like a glowing doorway of teal and gold light, through which sleek premium Samsung and LG air conditioning units pass triumphantly into radiance. Dark cinematic atmosphere, deep shadows and dramatic contrast between the crumbling blocked collapse and the shining passage."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 '규제 장벽에 막힌 중국 저가 에어컨 vs 통과하는 삼성·LG'의 인과 역전을 애니메 스타일로 표현.",
+      "prompt_en": "Dramatic anime-style illustration of a causal reversal. On the left, a massive ominous regulatory barrier crashes down with bold ink outlines, blocking and crushing a toppling heap of cheap air conditioners bearing the Chinese national flag, cracks and sparks bursting out in ashen and red heat. On the right, the same barrier swings open as a luminous teal-and-gold gateway, sleek premium Samsung and LG air conditioners gliding through into brilliant light. Dark dramatic background, deep shadows and intense cel-shaded contrast between the blocked collapse and the shining passage."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드 실사·초현실. 모두가 불타는 작은 저가 에어컨 더미를 두고 아귀다툼하는 사이, 홀로 떨어져 선 삼성·LG 히트펌프 뒤로 훨씬 거대한 냉난방 인프라의 숨은 판이 청록·황금빛으로 드러나는 전략적 반전 은유.",
+      "prompt_en": "Surreal photorealistic conceptual image of a strategic reversal. In the foreground, a frenzied crowd swarms and fights over a small glittering pile of cheap portable air conditioners engulfed in flames and smoke. Apart from the chaos, a single calm sleek Samsung and LG heat pump stands alone on a dark hill, illuminated by a vast glowing horizon of teal and gold light that reveals an enormous hidden expanse of building HVAC infrastructure stretching far behind it. Dark dramatic cinematic atmosphere, deep shadows and moody contrast, the hidden giant market glowing far larger than the small burning one everyone is fighting over."
+    }
+  ]
+}

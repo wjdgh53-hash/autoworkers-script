@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "us-iran-ceasefire",
+    "titles": [
+      "\"2주 뒤 진짜 전쟁이 온다\" 미국-이란 휴전 뒤에서 벌어지는 소름 돋는 일들",
+      "미국-이란 2주 휴전, 왜 유가는 안 떨어질까? 이 전쟁이 끝나지 않는 진짜 이유",
+      "\"항공모함이 오고 있다\" 2주 휴전이 평화가 아닌 이유, 한국이 가장 위험합니다"
+    ],
+    "thumbnail_texts": [
+      "2주 휴전의 진짜 목적 + 전쟁 준비 시간",
+      "평화? 항모가 온다",
+      "칼 가는 2주 + 진짜 무서운 건 따로 있다"
+    ],
+    "image_concepts": {
+      "A": "항공모함 접근 — 평화로운 해협 위로 거대 항공모함 그림자가 접근하는 긴장감 넘치는 장면",
+      "B": "호르무즈 봉쇄 — 해협 위 거대 자물쇠/톨게이트에 성조기와 이란기가 대비되는 위기 장면"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 어두운 페르시아만 해협 위로 거대한 항공모함이 석양을 등지고 접근하는 시네마틱 장면. 긴장감 넘치는 군사적 분위기.",
+      "prompt_en": "Photorealistic cinematic photograph of a massive US Navy aircraft carrier (USS George H.W. Bush CVN-77) approaching through a narrow strait at sunset. The carrier fills the upper half of the frame, its imposing silhouette backlit by a deep orange and crimson sunset. Dark navy-blue water below with smaller oil tankers appearing tiny in comparison. Dramatic volumetric lighting with god rays piercing through clouds, creating an ominous atmosphere of military tension and impending conflict."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 항공모함이 좁은 해협을 통과하며 접근하는 장면을 극적인 애니메 스타일로 표현.",
+      "prompt_en": "Dramatic anime-style illustration of a colossal aircraft carrier cutting through a narrow ocean strait. Bold cel-shaded rendering with exaggerated scale — the carrier dominates the upper frame with sharp angular lines and detailed flight deck. Deep indigo ocean contrasts with a blazing orange-red sunset sky. Smaller oil tankers scatter below like toys. Intense dramatic atmosphere with speed lines and dynamic perspective emphasizing the carrier's massive approach."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 호르무즈 해협 위에 거대한 자물쇠와 쇠사슬이 걸려있고, 양쪽에 미국기와 이란기가 대치하는 위기감 넘치는 장면.",
+      "prompt_en": "Photorealistic cinematic photograph of a giant padlock and heavy chains stretched across a narrow ocean strait, symbolizing the Strait of Hormuz blockade. The massive padlock dominates the upper center of the frame, with the American flag on the left side and the Iranian flag on the right side in dramatic opposition. Dark moody atmosphere with deep shadows, red and blue accent lighting reflecting off the water. Oil tankers queued in the distance behind the chains, creating a sense of economic strangulation and geopolitical crisis."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 호르무즈 해협 봉쇄를 상징하는 거대 자물쇠와 국기 대치를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of an enormous golden padlock chained across a narrow sea strait. Bold dramatic composition with the padlock centered in the upper half, glowing with ominous red energy. On the left, the American stars and stripes flag waves aggressively; on the right, the Iranian flag with its green-white-red colors stands defiant. Dark stormy background with lightning strikes. Cel-shaded art with high contrast between the golden lock, dark waters, and vivid flag colors. Intense atmosphere of confrontation and crisis."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. Donald Trump 대통령과 이란 최고지도자 Ali Khamenei가 체스판을 사이에 두고 대치하는 장면. 체스판 위에 항공모함과 미사일 말이 놓여있다.",
+      "prompt_en": "Photorealistic cinematic photograph of Donald Trump (US President, stern determined expression) and Ali Khamenei (Iran Supreme Leader, defiant expression) facing each other across a giant chess board. The chess pieces are miniature aircraft carriers, missiles, and oil barrels. Trump on the left side, Khamenei on the right, both leaning forward in intense confrontation. Dark dramatic lighting from above illuminates their faces while the background fades to deep black. The chess board dominates the upper half with golden and dark pieces creating a sense of high-stakes geopolitical game."
+    }
+  ]
+}

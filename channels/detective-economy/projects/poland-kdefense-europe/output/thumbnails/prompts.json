@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "project": "poland-kdefense-europe",
+    "titles": [
+      "\"독일 말고 한국 거 주세요\" 전차 종주국을 6년 만에 따돌린 K2, 폴란드 9조 계약의 뒷이야기",
+      "\"6년은 못 기다려\" 세계 1위 독일을 버리고 한국에 9조를 안긴 폴란드, 그 뒷이야기",
+      "\"레오파드는 됐고\" 전차 종주국 독일이 후발 한국에 밀린 진짜 구조"
+    ],
+    "thumbnail_texts": [
+      "6년 vs 2년, 독일이 밀렸다 / \"한국 거 주세요\" / 폴란드 9조",
+      "전차 종주국이 무너진 날 / \"레오파드는 됐고\" / 계약 9조",
+      "왜 폴란드는 독일을 버렸나 / \"6년은 못 기다려\" / K2 9조"
+    ],
+    "image_concepts": {
+      "A": "멈춘 독일 vs 달리는 한국 — 좌측 먼지 쌓인 채 멈춰선 독일 레오파드2 ↔ 우측 강렬하게 기동하는 K2 흑표, 시간 역전의 스케일 대비",
+      "B": "K2 행렬을 바라보며 결심하는 폴란드 군 관계자 클로즈업, 어두운 전장 톤에 노란 섬광"
+    },
+    "strategy": {
+      "count": 5,
+      "art_styles": ["photorealistic", "anime"],
+      "color_palette": "dark",
+      "emotions": ["shock", "tension"],
+      "text_space": "bottom-half",
+      "face_style": "exaggerated+natural"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 먼지 쌓인 채 버려진 독일 레오파드2, 우측에 붉은 섬광 속에서 맹렬히 기동하는 K2 흑표 — 6년의 정체 vs 2년의 속도를 스케일 대비로 시각화.",
+      "prompt_en": "Cinematic dark photograph split into two dramatically contrasting halves. On the left, an old German Leopard 2 main battle tank sits motionless and abandoned, its hull caked in grey dust and cobwebs, sunk in deep cold shadow to symbolize years of stagnation. On the right, a powerful South Korean K2 Black Panther tank charges aggressively toward the viewer with heavy motion blur and kicked-up dirt, its armor lit by an intense crimson-red glow. Deep shadows, harsh side lighting and extreme high contrast create an ominous battlefield atmosphere of a shocking power reversal, the oversized racing K2 towering over the frozen Leopard. Dramatic moody cinematic tone, tense war-torn setting."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '멈춘 독일 레오파드2 vs 질주하는 K2 흑표' 시간 역전 구도를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant dramatic anime-style illustration split into two contrasting halves. On the left, a rusted, dust-covered German Leopard 2 tank stands frozen and abandoned in gloomy blue shadow, cracks and cobwebs suggesting years of decay. On the right, a sleek South Korean K2 Black Panther tank bursts forward with explosive speed lines, cel-shaded highlights and a blazing red aura around it. Bold ink outlines, exaggerated perspective and dark moody lighting emphasize the shocking reversal between the dead German tank and the charging Korean one. Intense tense atmosphere with high color contrast against a shadowy battlefield backdrop."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. K2 흑표 전차 행렬을 바라보며 결심하는 폴란드 군 관계자(서양 중년 남성) 상단 클로즈업, 뒤로 야간 전장에 노란 섬광.",
+      "prompt_en": "Cinematic dark photograph of a middle-aged Western European military officer in a Polish army uniform, shown in a large upper-frame close-up with a determined, resolute yet likeable face, jaw set in a hard decision. Behind and below him, a long column of South Korean K2 Black Panther tanks rolls through a night battlefield, their silhouettes cutting through smoke lit by bursts of yellow muzzle-flash glow. Deep shadows, dramatic low-key lighting and high contrast wrap the scene in an ominous, tense war atmosphere. The officer's face is sharply lit against the dark background, conveying a shocking, weighty moment of choosing Korea over Germany."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 결심하는 폴란드 군 관계자 클로즈업 + K2 행렬을 애니메 스타일로. 어두운 야간 전장에 노란 섬광.",
+      "prompt_en": "Dramatic anime-style illustration of a handsome middle-aged Western European military officer in a Polish army uniform, drawn as a large upper-frame close-up with expressive determined eyes and a tense, resolute expression. Behind and below him, a column of South Korean K2 Black Panther tanks advances across a dark night battlefield, silhouetted against bursts of glowing yellow flashes and drifting smoke. Bold cel-shaded outlines, deep dramatic shadows and high contrast lighting create an ominous, high-tension mood. The officer's face is starkly lit against the shadowy backdrop, capturing a shocking moment of decisive resolve."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 극단적 로우앵글 스케일 충격 — 산산이 금 가며 무너지는 거대한 독일 레오파드2를 압도적으로 짓밟고 솟아오르는 초대형 K2 흑표, 붉은 경고 광채.",
+      "prompt_en": "Extreme low-angle cinematic shot of a colossal South Korean K2 Black Panther tank towering over a shattered, crumbling German Leopard 2 tank that is fracturing apart with deep cracks and falling debris in a dark war-torn field. A menacing crimson-red warning glow rims the dominant K2 while the broken Leopard sinks into cold blue shadow beneath it. Dust, sparks and smoke fill the ominous air; harsh dramatic lighting and extreme contrast exaggerate the scale so the K2 feels overwhelmingly powerful. Intense shocking atmosphere of a total collapse and reversal, moody dark battlefield tone."
+    }
+  ]
+}

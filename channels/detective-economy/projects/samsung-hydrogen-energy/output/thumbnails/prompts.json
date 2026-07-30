@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "project": "samsung-hydrogen-energy",
+    "titles": [
+      "석유 시대 끝났다! 삼성이 갈아엎은 에너지 패권 전쟁, 기름 없던 한국이 판을 쥔 '100MW 수소'",
+      "기름 한 방울 없던 나라의 반란! 삼성이 뒤집은 에너지 패권, 산유국도 줄 세운 한국의 '그린수소'",
+      "석유 제국 흔들린다! 삼성이 갈아탄 에너지 패권 전쟁, 한국이 주도권 쥔 '세계 최초 100MW'"
+    ],
+    "thumbnail_texts": [
+      "기름값 목줄, 단 33km / \"산유국이 한국에 왔다\" / 왜 우릴 찾지?",
+      "호르무즈 막히던 날 / \"삼성이 판을 갈아탔다\" / 이제 우리 차례",
+      "석유왕국이 손 내밀었다 / \"기름 없는 한국에게\" / 역전됐다"
+    ],
+    "image_concepts": {
+      "A": "A vs B 스케일 대비 + 서열 역전 — 좌측 어둡게 붕괴하는 검은 유전·석유탑 ↔ 우측 초록 글로우 그린수소 플랜트, 가운데 자신감 넘치는 한국 기업 총수, 산유국 인물이 손 내미는 실루엣",
+      "B": "균열/붕괴 — 갈라지는 검은 원유 배럴과 호르무즈 해협 지도 위 붉은 차단선, 그 균열 사이로 솟아오르는 초록 H2 수소 플랜트"
+    },
+    "strategy": {
+      "count": 5,
+      "art_styles": ["photorealistic", "anime"],
+      "color_palette": "dark",
+      "emotions": ["shock", "tension"],
+      "text_space": "bottom-half",
+      "face_style": "exaggerated+natural"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 검은 연기 속 붕괴하는 낡은 유전·석유 시추탑, 우측에 초록빛으로 빛나는 최신 그린수소 플랜트 — 가운데 자신감 있는 미소의 한국 대기업 총수, 뒤로 손 내미는 중동 산유국 인물 실루엣. 석유 몰락 vs 수소 부상의 서열 역전.",
+      "prompt_en": "Cinematic dark photograph split into two dramatically contrasting halves. On the left, an old black oil derrick and refinery towers collapse and burn in choking dark smoke, sunk in cold shadow to symbolize the dying age of oil. On the right, a vast modern green-hydrogen plant with gleaming storage tanks glows with a clean emerald light against a bright hopeful sky. In the center foreground stands a confident middle-aged East Asian corporate chairman in a dark suit, arms crossed with a calm, likeable, self-assured smile, sharply lit. Behind him, the shadowy silhouette of a robed Middle-Eastern oil sheikh reaches out a hand as if seeking help. Extreme high contrast, harsh side lighting, ominous yet triumphant tone capturing a shocking reversal of energy power. Bottom half left darker for text space."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '붕괴하는 검은 유전 vs 빛나는 초록 수소 플랜트 + 자신감 있는 한국 총수 + 손 내미는 산유국' 서열 역전 구도를 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant dramatic anime-style illustration split into two contrasting halves. On the left, a crumbling black oil derrick and refinery burn in gloomy smoke and blue shadow, cracks spreading to suggest the collapse of the oil era. On the right, a futuristic green-hydrogen plant with glowing emerald storage tanks rises brilliantly against a bright sky, cel-shaded highlights radiating clean energy. In the center, a confident East Asian corporate chairman in a dark suit stands with a resolute likeable expression and crossed arms, bathed in green rim light. Behind him, a robed Middle-Eastern oil sheikh silhouette extends a pleading hand. Bold ink outlines, exaggerated perspective, high color contrast and moody dramatic lighting emphasize the shocking power reversal. Bottom half kept darker for caption space."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 갈라지며 검은 기름을 쏟는 원유 배럴들과 호르무즈 해협 지도 위 붉은 차단선, 그 균열 사이로 솟아오르는 초록 H2 수소 플랜트 — 위기(석유 병목)에서 반전(수소)으로.",
+      "prompt_en": "Cinematic dark photograph of massive black steel oil barrels cracking apart and spilling crude oil, arranged over a dim world map where the narrow Strait of Hormuz is slashed by a glowing red blockade line. Through the widening cracks in the barrels, a radiant green hydrogen plant with clean glowing H2 storage tanks bursts upward into light, symbolizing a breakthrough rising out of an energy crisis. Deep shadows, a tense ominous red-and-black color scheme with a striking emerald-green focal glow, harsh dramatic lighting and extreme contrast. Object-centered composition, no faces, foreboding crisis-to-reversal atmosphere. Bottom half darker for large text."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 갈라지는 검은 원유 배럴 + 호르무즈 붉은 차단선 + 균열 사이로 솟는 초록 수소 플랜트를 강렬한 애니메 스타일로.",
+      "prompt_en": "Dramatic anime-style illustration of huge black oil barrels violently cracking and gushing dark crude, set over a shadowy map with the Strait of Hormuz cut by a blazing red blockade line. From the splitting cracks, a glowing green hydrogen plant with luminous H2 tanks erupts upward in brilliant emerald light. Bold cel-shaded outlines, explosive speed and crack lines, deep dramatic shadows, and a tense red-black palette with an intense green focal glow. Object-focused, no characters, high-contrast ominous crisis-to-breakthrough mood. Lower half kept dark for caption text."
+    },
+    {
+      "id": 5,
+      "type": "concept-a-hero",
+      "concept_ko": "컨셉 A 변형 실사(히어로 클로즈업). 자신감 넘치는 한국 대기업 총수 상반신 클로즈업, 뒤로 좌측은 꺼져가는 검은 유전·우측은 빛나는 초록 수소 플랜트가 대비되는 배경. 통쾌한 역전의 주인공.",
+      "prompt_en": "Cinematic dark photograph, large upper-frame close-up of a confident middle-aged East Asian corporate chairman in a sharp dark suit, with a calm, likeable, self-assured half-smile, jaw set with quiet triumph, face sharply lit against a dark background. Behind him the scene splits: on the left a dying black oil derrick fades into cold smoke and shadow, on the right a brilliant green-hydrogen plant glows with clean emerald light and rising steam. Deep low-key lighting, high contrast, an ominous yet victorious tone capturing the human face of a shocking energy power reversal. Bottom half darker for text space."
+    }
+  ]
+}

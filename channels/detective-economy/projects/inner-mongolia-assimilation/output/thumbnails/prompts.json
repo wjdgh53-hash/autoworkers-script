@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "inner-mongolia-assimilation",
+    "titles": [
+      "스스로 중국이 되기로 했던 내몽골은 왜 지금 모국어마저 빼앗기고 있을까?",
+      "스스로 중국의 손을 잡았던 내몽골은 왜 지금 아이들 교과서에서 모국어가 지워질까?",
+      "스스로 중국이 되기로 했던 내몽골, 30만 명이 거리로 나선 뒤 무슨 일이 벌어졌을까?"
+    ],
+    "thumbnail_texts": [
+      "\"이제 몽골어는 안 된다\" + 교과서 한 장으로 말을 지웠다 + 🟢\"30만이 일어섰다\"",
+      "\"자치는 영원히 보장한다\" + 총 한 발 없이 지워졌다 + 🟢\"위구르는 싸웠는데…\"",
+      "\"몽골어를 지워라\" + 30만이 거리로 나섰지만 + 🟢\"그 후 벌어진 일은\""
+    ],
+    "image_concepts": {
+      "A": "권력자 vs 저항 좌우 2분할 — 좌 고뇌하는 시진핑+불타는 오성홍기 / 우 몽골어 지키기 학생 시위대",
+      "B": "지워지는 모국어 — 몽골 전통복 아이가 세로문자 교과서를 안고, 붉은 검열 획에 글자가 지워지는 감정 단일 피사체"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측 고뇌하는 시진핑과 불타는 중국 국기, 우측 교문 밖으로 쏟아지는 몽골 학생 시위대의 좌우 2분할 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic split composition. On the left, Xi Jinping (Chinese leader) in a dark suit pressing his forehead with a troubled, pained expression, half in shadow, with a large red Chinese national flag (five-star red flag) burning and torn behind him, glowing embers and smoke. On the right, a dense crowd of ethnic Mongolian students in school uniforms surging out through a school gate in angry protest, some raising plain sky-blue Mongolian traditional flags and blank protest placards. Dark stormy overcast atmosphere with dramatic fiery orange backlight and deep shadows, high contrast, ominous crisis mood, subjects large and clear in the upper portion of the frame."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 좌우 2분할(고뇌하는 시진핑+불타는 국기 / 몽골 학생 시위대)을 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration, dramatic split composition. Left side: Xi Jinping (Chinese leader) with an exaggerated troubled expression, hand on his forehead, a torn burning red Chinese national flag (five-star red flag) behind him with glowing embers. Right side: a surging crowd of ethnic Mongolian students in school uniforms breaking out of a school gate in protest, raising plain sky-blue Mongolian traditional banners and blank placards. Bold ink outlines, cel-shaded lighting, dark moody sky with intense orange fire glow and red accents, high contrast, tense dramatic atmosphere, subjects bold and large in the upper portion."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 몽골 전통복 아이가 세로문자 교과서를 끌어안고, 붉은 검열 획이 글자를 지우는 감정적 장면. 배경엔 거대한 오성홍기와 사라지는 초원.",
+      "prompt_en": "Photorealistic emotional cinematic portrait of a young ethnic Mongolian child in traditional Mongolian dress (deel) clutching an old open textbook filled with ornate traditional vertical Mongolian calligraphy, as thick red brush strokes slash across and erase the flowing script. Behind the child looms an enormous dark red Chinese national flag (five-star red flag), while a faint Mongolian grassland with a traditional ger tent dissolves into shadow in the distance. Dark somber atmosphere, dramatic low-key lighting, sorrowful tense mood, the child large and central in the upper portion of the frame."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 세로문자 교과서를 안은 몽골 아이와 지워지는 글자, 붉은 오성홍기 배경을 애니메 스타일로.",
+      "prompt_en": "Emotional anime-style illustration of a young ethnic Mongolian child in traditional Mongolian deel dress hugging an old open textbook covered in ornate traditional vertical Mongolian calligraphy, with bold red brush strokes crossing out and erasing the script. A towering dark red Chinese national flag (five-star red flag) fills the background while a Mongolian grassland with a ger tent fades into darkness. Expressive teary eyes, bold ink outlines, cel shading, dark moody palette with dramatic red accents, sorrowful tense atmosphere, the child large and central in the upper portion."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 붉은 오성홍기가 커튼처럼 몽골 초원을 뒤덮어 삼키고, 그 앞에 홀로 선 작은 몽골 목동 실루엣이 올려다보는 스케일 대비 상징 장면.",
+      "prompt_en": "Photorealistic dramatic wide symbolic scene: an enormous blood-red Chinese national flag (five-star red flag) descending like a heavy curtain and swallowing a vast darkening Mongolian grassland, engulfing scattered traditional ger tents in shadow. In the foreground stands the small lone silhouette of a Mongolian herder in traditional dress, tiny against the overwhelming red flag, looking up. Extreme scale contrast, dark ominous storm clouds, cold blue grassland versus dominating deep red, cinematic dramatic lighting, mood of a culture being quietly engulfed."
+    }
+  ]
+}

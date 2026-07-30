@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "project": "hwagyo-korea-c",
+    "titles": [
+      "\"중국인 5만 8천 가구\" 화교를 몰아낸 유일한 나라에서 벌어지고 있는 일"
+    ],
+    "thumbnail_texts": [
+      "막았던 나라가 + 뚫리고 있다",
+      "58,896가구 + 회수율 2% + 뚫린 방어선",
+      "중국인이 쓸어 담는 + 대한민국 아파트"
+    ],
+    "image_concepts": {
+      "A": "A vs B 대결 — 한국 아파트(밝은 청색) vs 오성홍기 색감 아파트(어두운 빨강), 중앙 균열선",
+      "B": "화살표/그래프 + 균열 — 대한민국 지도 위 빨간 상승 화살표 + 지도 표면 균열"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 한국 아파트 단지가 좌우로 나뉘어, 좌측은 밝고 깨끗한 한국 아파트, 우측은 어두운 빨간색으로 물든 같은 아파트. 중앙에 균열이 퍼지는 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic wide shot of a Korean apartment complex split dramatically down the center. The left half shows clean modern apartments bathed in cool blue daylight, representing South Korea. The right half shows the identical buildings cast in ominous deep red and gold tones, reminiscent of the Chinese flag palette. A dramatic glowing crack runs down the center dividing line, with debris and light spilling from the fracture. Dark moody atmosphere with high contrast between the blue-lit and red-lit halves."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 좌우 분할 아파트 대결 구도를 강렬한 애니메 스타일로 표현. 균열에서 에너지가 폭발하는 느낌.",
+      "prompt_en": "Vibrant anime-style illustration of a Korean apartment complex dramatically split in two. Left side rendered in clean bright blue and white tones with sharp cel-shaded lighting. Right side engulfed in intense crimson red and dark gold hues with bold ink outlines. A massive glowing crack runs through the center with energy particles erupting from it. Exaggerated dramatic perspective with the buildings towering overhead. High contrast vivid color palette emphasizing the clash between blue and red."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 어두운 남색 배경 위 대한민국 지도 형상에 빨간 상승 화살표가 꽂히고, 수도권 지역이 빨갛게 타오르며 지도 표면에 균열이 퍼지는 장면.",
+      "prompt_en": "Photorealistic dramatic rendering of a glowing map of South Korea against a deep dark navy background. Bright red upward arrows pierce through the Seoul metropolitan area, which glows intensely in crimson and orange. Visible cracks and fractures spread across the map surface emanating from the capital region. Golden data points scattered across the map. The overall atmosphere is ominous and foreboding, with cinematic volumetric lighting highlighting the red-hot zones against the cold dark background."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 대한민국 지도 위 빨간 화살표와 균열을 역동적인 애니메 스타일로 표현. 수도권이 불타는 듯한 연출.",
+      "prompt_en": "Stylized anime-style digital illustration of South Korea's map rendered as a dramatic battlefield. Bold red arrows surge upward through the Seoul area with explosive energy effects. The map surface shatters with exaggerated anime-style cracks spreading outward, glowing orange and red. Deep navy blue background with scattered golden spark particles. Dynamic composition with forced perspective making the arrows appear massive and threatening. Vivid cel-shaded coloring with intense red versus cold blue contrast."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 한국 방패 형상에 균열이 나면서 빨간 빛이 새어나오고, 방패 표면에 아파트 단지 실루엣이 희미하게 보이는 상징적 이미지.",
+      "prompt_en": "Photorealistic cinematic rendering of a massive metallic shield shaped like the outline of South Korea, floating against a dark atmospheric background. The shield surface has a subtle embossed pattern of apartment building silhouettes. Deep glowing red cracks spread across the shield from a central impact point, with intense crimson light bleeding through the fractures. The shield appears to be breaking apart from within. Dark moody atmosphere with dramatic rim lighting highlighting the metallic edges in cool blue while the cracks glow in fierce red and gold."
+    }
+  ]
+}

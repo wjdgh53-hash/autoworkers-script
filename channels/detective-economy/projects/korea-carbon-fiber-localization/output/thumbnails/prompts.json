@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "project": "korea-carbon-fiber-localization",
+    "titles": [
+      "\"돈 줘도 안 판다\" 40년 버티던 일본, 효성이 세계 3번째로 뚫자 벌어진 일",
+      "\"평생 못 만든다\"던 일본, 효성 연구원들이 14년 만에 세계 3번째로 해냈다",
+      "40년간 문전박대하던 일본이, 한국 탄소섬유 국산화 한 줄에 먼저 손 내민 사연"
+    ],
+    "thumbnail_texts": [
+      "\"진짜 만들었어?\" + 세계 3번째 국산화 + 40년 독점 무너졌다",
+      "\"돈 줘도 안 판다더니\" + 한국, 세계 3번째 성공 + 일본 태도 180도 돌변",
+      "일본: 말문이 막혔다 + 효성 14년의 반란 + 국산화에 일본 백기"
+    ],
+    "image_concepts": {
+      "A": "상징물 파괴 + 인물 경악 — 굵은 검은 탄소섬유 실 다발이 붉은 원(현행 일장기)을 관통하며 균열을 내고, 옆에 두 손으로 입을 가린 채 경악한 일본인. 어두운 배경 + 빨강/노랑 포인트. 통쾌 톤.",
+      "B": "Before→After 스케일 대비 — 조각나 무너지는 일장기 위로 우뚝 선 한국 연구원 실루엣과 케이블처럼 팽팽하게 당겨진 검은 실. 반전 통쾌 톤."
+    },
+    "flag_warning": "일본 국기는 반드시 현행 일장기(흰 바탕 중앙 붉은 원, Hinomaru)만 사용. 욱일기(방사형 광선) 절대 금지."
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 굵은 검은 탄소섬유 실 다발이 붉은 원(현행 일장기)을 관통해 산산이 균열내고, 옆에서 두 손으로 입을 가린 일본인이 경악하는 통쾌 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic YouTube thumbnail: a thick bundle of glossy black carbon-fiber filaments, taut like steel cables, punches straight through a plain Japanese national flag (white field with a single solid red circle in the center — NOT a rising-sun ray flag), shattering the red disc into cracking fragments that scatter. To one side, a middle-aged Japanese person in a business suit presses both hands over their mouth in stunned disbelief, eyes wide with shock. Dark charcoal industrial background with sharp red and yellow accent lighting, the piercing black threads and the cracking red disc oversized and dominating the frame, triumphant reversal mood, strong dramatic contrast. Leave the lower half emptier for text overlay."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 검은 실이 붉은 원 일장기를 관통·균열내고 경악한 일본인을 다크 톤 애니메 스타일로.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration: a thick bundle of black carbon-fiber threads with bold ink outlines pierces through a plain Japanese flag (white field with one solid red circle centered — a normal Hinomaru, NOT a rising-sun ray flag), the red disc cracking apart into cel-shaded shards. Beside it a middle-aged Japanese figure in a suit clamps both hands over their mouth, cel-shaded face contorted in shock, eyes huge. Deep black and shadowed palette with sharp crimson and yellow accent highlights, the piercing threads and shattering red disc dramatically oversized, exaggerated stunned expression, triumphant reversal atmosphere, strong stylized contrast. Keep the bottom half clearer for text."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 조각나 무너지는 붉은 원 일장기 위로 우뚝 선 한국 연구원 실루엣과 케이블처럼 팽팽하게 당겨진 검은 탄소섬유 실의 반전 장면.",
+      "prompt_en": "Photorealistic cinematic YouTube thumbnail: a Japanese national flag (white field with a single solid red circle — a plain Hinomaru, NOT a rising-sun ray flag) crumbles and breaks apart into falling fragments at the bottom, while above it rises the confident silhouette of a Korean researcher in a lab coat standing tall and resolute. Around the figure, strands of glossy black carbon fiber stretch taut like powerful cables, gleaming under dramatic light. Dark industrial background with red and yellow accent glow, the rising researcher and the taut black threads oversized against the collapsing flag, triumphant reversal mood, sharp cinematic contrast. Lower portion kept simpler for text overlay."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 무너지는 붉은 원 일장기 위로 우뚝 선 한국 연구원과 팽팽한 검은 실을 역동적 다크 애니메 스타일로.",
+      "prompt_en": "Vibrant dark anime-style illustration: a plain Japanese flag (white field with one centered solid red circle — a normal Hinomaru, NOT a rising-sun ray flag) shatters into bold cel-shaded fragments at the bottom of the frame, while a Korean researcher in a lab coat rises above it in a heroic pose, silhouette strong and determined. Around them, taut black carbon-fiber threads stretch like glowing cables with bold ink outlines. Dynamic exaggerated perspective, dark palette with glowing red and yellow accents, the rising figure and taut threads dramatically oversized over the collapsing flag, intense triumphant reversal mood, sharp stylized contrast. Bottom half left clearer for text."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 일본이 내밀던 '거절 도장'이 찍힌 서류가 검은 실 한 가닥에 관통당해 찢기고, 그 위로 '세계 3번째'라는 승리의 빛이 번지는 한 프레임 — 40년 문전박대가 뒤집히는 순간.",
+      "prompt_en": "Photorealistic dramatic YouTube thumbnail: a stack of official rejection documents stamped with a red 'DENIED'-style seal is pierced and torn apart by a single taut strand of gleaming black carbon fiber shooting through it. Behind the tearing papers, a warm golden light of victory breaks through, and a faint plain Japanese flag (white with a solid red circle, a normal Hinomaru, NOT a rising-sun flag) darkens and recedes in the background. Moody dramatic lighting with deep shadows and sharp red-and-gold accents, the piercing black thread and the ripping documents oversized in the upper frame, capturing the moment 40 years of refusal is overturned, sharp cinematic contrast. Keep lower half emptier for text."
+    }
+  ]
+}

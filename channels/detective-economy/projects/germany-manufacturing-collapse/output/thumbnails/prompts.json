@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "germany-manufacturing-collapse",
+    "titles": [
+      "'재미 보던 꿀이 독이 됐다' 세계 최강 독일 제조업이 3년 만에 무너진 과정",
+      "세계 1위 독일 제조업이 3년 연속 뒷걸음질 친 과정",
+      "독일이 20년간 빨던 '꿀 3개'가 동시에 사라진 날"
+    ],
+    "thumbnail_texts": [
+      "3년 연속 뒷걸음질 / 석 달 만에 5천 곳 파산 / 세계 1등 독일의 몰락",
+      "세계 1등 제조강국의 최후 / 20년 빨던 꿀 3개가 / 한꺼번에 독이 됐다",
+      "독일이 스스로 판 무덤 / 세계 1등 공장의 붕괴 / 이게 남 일일까?"
+    ],
+    "image_concepts": {
+      "A": "Before→After 대비 — 전성기 독일 자동차 공장이 어두운 붕괴·균열로 무너지는 대비 장면",
+      "B": "상징물 파괴 — 거대한 빨간 우하향 화살표가 독일 국기와 공장을 관통하며 추락을 시각화"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 화면 상단 왼쪽은 밝게 빛나던 전성기 독일 자동차 조립라인, 오른쪽은 같은 공장이 어둡게 무너지고 균열이 번지는 Before→After 대비.",
+      "prompt_en": "Cinematic photorealistic split composition filling the top half of the frame: on the left, a bright gleaming German automobile assembly line at its peak with rows of new cars; on the right, the same factory collapsing into darkness with red glowing cracks spreading across the walls and machinery. Dark cinematic atmosphere with deep shadows and dramatic contrast between the bright prosperous past and the shattered present. Ominous moody lighting, towering industrial scale, a sense of sudden decline and crisis."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 전성기→붕괴 대비를 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration filling the top half of the frame, split contrast: on the left a radiant German car factory in its golden age with shining assembly lines; on the right the same plant fracturing into darkness with vivid red cracks tearing through the structure. Bold ink outlines and cel-shaded dramatic lighting, dark cinematic color palette with intense red accents, exaggerated perspective conveying collapse and tension."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 거대한 빨간 우하향 화살표가 독일 국기와 무너지는 공장 실루엣을 뚫고 내리꽂히는 충격적 장면.",
+      "prompt_en": "Photorealistic dramatic image filling the top half of the frame: a massive glowing red downward arrow smashing diagonally through a German national flag and the silhouette of a collapsing industrial factory. Debris and sparks fly as the structures crack and crumble under the plunging arrow. Dark cinematic atmosphere, deep shadows, high dramatic contrast, oversized elements towering in the frame to convey shock and catastrophic decline."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 빨간 화살표 관통·공장 붕괴를 애니메 스타일로.",
+      "prompt_en": "Dynamic anime-style illustration filling the top half of the frame: an enormous glowing red downward arrow crashing through a German flag and a crumbling factory skyline, sending shards and sparks flying. Bold cel-shaded outlines, dark moody background with fluorescent red highlights, exaggerated dramatic angle and oversized proportions expressing shock, tension, and sudden collapse."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드 실사. 전성기 상징 폭스바겐 앰블럼이 갈라지고 그 틈으로 어둠과 붉은 균열이 번지는 극단적 클로즈업.",
+      "prompt_en": "Extreme close-up photorealistic shot filling the top half of the frame of a heavy metal German car emblem cracking apart, deep red fractures glowing through the widening split as darkness seeps out from within. Dramatically oversized, dark cinematic atmosphere with deep shadows and moody lighting, intense contrast, a haunting sense of a once-mighty symbol breaking down."
+    }
+  ]
+}

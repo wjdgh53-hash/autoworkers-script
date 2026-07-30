@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "us-israel-alliance",
+    "titles": [
+      "\"미국은 이스라엘 중독입니다\" 이란 전쟁이 터진 진짜 이유 | 414조원의 구조",
+      "\"인구 2.4%가 미국을 지배한다\" 350조원을 바친 미국과 이스라엘의 충격적 관계",
+      "\"지지하는 이유가 멸망이라고?\" 미국이 이스라엘을 절대 포기 못하는 소름 돋는 역사"
+    ],
+    "thumbnail_texts": [
+      "414조원의 중독 + 끊을 수 없는 이유",
+      "이란 전쟁의 진실 + 돈을 따라가면",
+      "미국이 못 끊는 + 이스라엘이라는 약"
+    ],
+    "image_concepts": {
+      "A": "주사기와 달러 — 달러가 주입되는 주사기가 미국 위에 놓인 중독 이미지",
+      "B": "불타는 중동과 달러 비 — 좌측 전쟁, 우측 동맹, 중앙에 달러 폭포"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 거대한 의료용 주사기에 달러 지폐가 녹아들어가는 모습. 주사기 바늘이 미국 국기 패턴의 표면에 꽂혀 있다. 어두운 시네마틱 조명.",
+      "prompt_en": "Cinematic dramatic photograph of a massive medical syringe filled with glowing green US dollar bills being injected into a surface painted with the American flag pattern. The syringe towers in the upper half of the frame, needle pointing downward. Dark moody background with deep shadows, the dollar bills inside emit an eerie green glow contrasting with red liquid mixing in. Dramatic side lighting creates an ominous atmosphere of dependency and crisis."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 주사기+달러+미국 국기 구도를 강렬한 애니메 스타일로 표현. 과장된 원근감.",
+      "prompt_en": "Vibrant anime-style illustration of a giant syringe filled with glowing US dollar bills being injected into an American flag surface. Bold ink outlines and cel-shaded lighting emphasize the oversized syringe dominating the upper frame with exaggerated perspective. The dollars glow neon green inside the syringe barrel while red liquid swirls around them. Dark dramatic background with speed lines radiating from the injection point, creating intense atmosphere of addiction and urgency."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좌측에 불타는 중동 지역 지도, 우측에 미국과 이스라엘 국기가 나란히. 중앙에서 달러 지폐가 폭포처럼 쏟아진다.",
+      "prompt_en": "Cinematic dramatic photograph with split composition. Left side shows a burning map of the Middle East with orange flames and dark smoke rising. Right side shows the American flag and Israeli flag (Star of David on white and blue) standing side by side. In the center, a cascade of US dollar bills pours down like a waterfall connecting both sides. Deep red and orange tones on the left contrast with cool blue tones on the right, with golden dollar bills creating a dramatic bridge between war and alliance."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 불타는 중동+달러 폭포+미국-이스라엘 국기를 강렬한 애니메 스타일로. 과장된 화염과 달러.",
+      "prompt_en": "Vibrant anime-style illustration with dramatic split composition. Left half shows a stylized burning Middle East map with exaggerated towering flames in bright orange and crimson. Right half shows American and Israeli flags (Star of David on white and blue stripes) billowing dramatically. Center features an explosive cascade of oversized dollar bills raining down like a golden waterfall. Bold outlines, high contrast between fiery red left side and cool blue right side, with golden dollar bills creating visual drama."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 다윗의 별이 미국 백악관을 감싸는 쇠사슬로 변형된 모습. 쇠사슬 고리 하나하나가 달러 동전. 어두운 시네마틱.",
+      "prompt_en": "Cinematic dramatic photograph of the White House in Washington DC wrapped in massive golden chains. The chains form the shape of the Star of David when viewed from above, and each chain link is made of gold coins and dollar bills. The White House appears small and constrained in the upper portion of the frame. Dark ominous sky with dramatic rim lighting on the golden chains creating a stark contrast. Atmosphere of entrapment and structural dependency, moody and unsettling."
+    }
+  ]
+}

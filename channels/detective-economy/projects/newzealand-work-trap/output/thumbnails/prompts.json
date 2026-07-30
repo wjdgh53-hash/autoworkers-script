@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "newzealand-work-trap",
+    "titles": [
+      "일해서 버는 사람이 지는 나라, 뉴질랜드가 보내는 경고 (한국도 시작됐다)",
+      "성실히 벌면 손해 보는 나라가 되자, 청년들이 짐을 쌌습니다",
+      "월급으론 못 사는 나라, 뉴질랜드 청년들이 내린 선택"
+    ],
+    "thumbnail_texts": [
+      "일할수록 가난해진다 + 뉴질랜드의 청년들 + 결국 다 떠났다",
+      "성실히 벌면 지는 나라 + 뉴질랜드의 현실 + 한국도 시작됐다",
+      "집이 사람을 쫓아냈다 + 뉴질랜드의 몰락 + 다음은 한국?"
+    ],
+    "image_concepts": {
+      "A": "작업복 차림의 작은 노동자를 거대한 집·아파트 그림자가 내리누르는 스케일 대비",
+      "B": "캐리어를 끌고 공항에서 나라를 등지는 지친 청년, 뒤로 뉴질랜드 국기"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 작업복 차림의 작은 노동자가 하늘을 가릴 만큼 거대한 아파트 그림자에 짓눌리는 스케일 대비 장면.",
+      "prompt_en": "Photorealistic cinematic image with dramatic scale contrast: a small, weary worker in blue work clothes standing in the upper half of the frame, dwarfed and crushed under the towering oversized shadow of an enormous apartment tower looming above him. Dark moody atmosphere, deep shadows, cold high-contrast lighting, oppressive tense mood of an ordinary laborer overwhelmed by unreachable housing. A subtle red warning glow behind the giant building."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 스케일 대비(작은 노동자 vs 거대한 집)를 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration with dramatic scale contrast: a small tired worker in work clothes with an expressive exhausted face in the upper half of the frame, overwhelmed beneath a gigantic towering apartment building casting a crushing shadow. Bold ink outlines, cel-shaded deep shadows, moody dark color palette with a vivid red accent, intense oppressive atmosphere of labor losing to real estate."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 공항에서 캐리어를 끌고 지친 표정으로 나라를 등지는 뉴질랜드 청년, 뒤로 흐릿한 국기.",
+      "prompt_en": "Photorealistic cinematic image of a tired young New Zealander with a natural weary, resigned expression pulling a suitcase, walking away through an airport terminal in the upper half of the frame, glancing back one last time. A blurred New Zealand national flag hangs in the dim background. Cold desaturated blue tones, dramatic moody lighting, deep shadows, melancholic tense atmosphere of youth abandoning their homeland, faint red departure-sign glow."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 캐리어 끌고 떠나는 지친 청년 + 국기를 애니메 스타일로.",
+      "prompt_en": "Dramatic anime-style illustration of a weary young person with expressive sorrowful eyes pulling a suitcase and leaving through an airport in the upper half of the frame, looking back. A New Zealand flag fades in the dark background. Bold outlines, cel-shaded moody lighting, cold blue color palette with a vivid red accent, emotional tense atmosphere of resignation and departure."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 텅 빈 지갑에서 동전 몇 개만 떨어지는 손과, 그 위로 어둡게 솟은 아파트 숲 실루엣의 상징적 대비.",
+      "prompt_en": "Photorealistic conceptual close-up in the upper half of the frame of an open empty wallet with only a few coins falling from a tired hand, set against a dark looming silhouette of dense apartment towers rising in the background. Cold desaturated tones, dramatic shadows, moody high-contrast lighting, a bleak tense mood of hard work no longer being enough, a subtle red glow between the buildings."
+    }
+  ]
+}

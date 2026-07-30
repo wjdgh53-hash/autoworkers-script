@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "rareearth-magnet-breakthrough",
+    "titles": [
+      "드디어 중국에서 독립합니다 — 한국이 세계 최초로 개발한 '희토류 없는 신기술', 90% 독점의 끝?!",
+      "중국이 90% 쥔 희토류, 드디어 한국이 독립한다 — 세계 최초 신기술의 정체?!",
+      "이제 중국 없이도 됩니다 — 한국이 세계 최초로 뚫은 희토류 독립 신기술?!"
+    ],
+    "thumbnail_texts": [
+      "중국 90% 독점 + 드디어 독립한다 + 세계 최초 신기술?!",
+      "이제 중국 없이 + 희토류 뚫었다 + 세계 최초!!",
+      "중국의 희토류 무기 + 한국이 독립한다 + 90% 끝?!"
+    ],
+    "image_concepts": {
+      "A": "붉은 중국 봉쇄(거대 자물쇠/성벽)를 태극 빛 균열이 가르고, 그 틈으로 은빛 신기술 자석이 드러남 — 돌파의 통쾌함",
+      "B": "좌(중국산 자석 더미·붉은 억압) → 우(빛나는 태극 색 국산 신기술 자석) Before→After 독립 대비"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 붉은 중국 국기 색으로 뒤덮인 거대한 강철 자물쇠가 태극(청·적) 빛으로 갈라지고, 그 균열 사이로 은빛 원통형 영구자석이 강렬하게 빛난다.",
+      "prompt_en": "Photorealistic cinematic close-up of a massive steel padlock entirely coated in deep Chinese-flag red, cracking apart down the center with a brilliant fracture glowing in Korean taegeuk blue-and-red light. Through the widening crack, a gleaming silvery cylindrical neodymium-style permanent magnet is revealed, radiating cold metallic highlights. Dark cinematic atmosphere, deep shadows, dramatic contrast, ominous red glow versus the clean silver breakthrough. The padlock and magnet dominate the upper half of the frame, oversized and towering, moody high-tension lighting."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 장면(붉은 자물쇠가 태극 균열로 갈라지고 은빛 자석이 드러남)을 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of a colossal padlock drenched in deep Chinese-flag red, violently splitting apart with an explosive fracture glowing in Korean taegeuk blue-and-red energy. A shining silver cylindrical permanent magnet bursts into view through the crack, sparks and light rays around it. Bold ink outlines, cel-shaded dramatic lighting, dark moody background with high-contrast red-versus-silver color clash, exaggerated sense of a wall being broken. The lock and magnet fill the upper half of the frame, dynamic and oversized."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌측은 어두운 중국산 자석 더미(붉은 그림자), 우측은 밝게 빛나는 태극 색 국산 신기술 자석 하나, 사이를 균열선이 가른다.",
+      "prompt_en": "Photorealistic split-composition thumbnail. On the left, a dark heap of dull gray industrial magnets buried in ominous Chinese-flag red shadow and haze. On the right, a single pristine permanent magnet glowing with warm bright light and subtle Korean taegeuk blue-and-red accents, standing clean and triumphant. A jagged glowing crack line separates the two sides. Dark cinematic atmosphere, deep shadows on the left versus luminous highlight on the right, dramatic before-and-after contrast. The magnets occupy the upper half of the frame, large and clearly readable."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 좌(억압된 중국산 자석)→우(빛나는 국산 신기술 자석) 대비를 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration with a split composition. Left side: a gloomy pile of gray magnets smothered in dark Chinese-flag red shadow, oppressive mood. Right side: one radiant permanent magnet blazing with bright light and Korean taegeuk blue-and-red glow, heroic and clean. A dramatic glowing fracture line divides them. Bold cel-shaded outlines, high-contrast dark-versus-bright color palette, intense before-and-after tension. Magnets are oversized and centered in the upper half of the frame."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 붉은 손(중국)이 은빛 자석을 움켜쥐고 있으나, 태극 빛을 내뿜는 손(한국)이 그 손아귀를 부수며 자석을 빼내는 극적 대치.",
+      "prompt_en": "Photorealistic dramatic scene of a giant menacing hand coated in deep Chinese-flag red tightly gripping a cluster of silver permanent magnets, its grip visibly cracking and shattering apart as a second hand glowing with Korean taegeuk blue-and-red light pries a gleaming magnet free. Fragments and light shards fly outward. Dark cinematic background, deep shadows, ominous red versus bright silver-and-blue breakthrough, extreme tension and sense of liberation. The clashing hands and magnet dominate the upper half of the frame, oversized and confrontational."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "project": "europe-digital-colony",
+    "titles": [
+      "\"대기업 50년간 0개\" 식민지배했던 유럽이 한국에 뒤집힌 소름돋는 이유",
+      "\"대기업 0개\" 세계를 지배했던 유럽이 한국에 뒤집힌 이유",
+      "세계를 식민지배했던 유럽이 지금은 디지털 식민지가 됐습니다"
+    ],
+    "thumbnail_texts": [
+      "\"대기업 0개\" + \"삼성전자\"",
+      "\"50년간 0개\" + \"식민지배자의 추락\"",
+      "\"디지털 식민지\" + \"뒤집혔다\""
+    ],
+    "image_concepts": {
+      "A": "좌우 대비 — 침몰하는 유럽 범선(어두운) vs 가동 중인 반도체 팹(밝은)",
+      "B": "균열/붕괴 — EU 깃발 문양이 새겨진 거대한 범선이 내부에서 부서지며 침몰",
+      "C": "좌우 대비 — 폐쇄된 유럽 공장(어두운) vs 활발한 반도체 공장(밝은)"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 폭풍 속에서 침몰하는 대항해시대 범선, 우측에 밤에 환하게 빛나는 반도체 팹. 과거의 지배자가 가라앉고 기술이 떠오르는 역전 구도.",
+      "prompt_en": "Photorealistic cinematic split composition. Left half shows a massive European Age of Exploration galleon sinking into dark stormy ocean waters, its wooden hull cracking apart, sails torn and falling, caught in violent grey-black storm clouds. Cold desaturated blue-grey tones, dramatic waves crashing over the deck. Right half shows a state-of-the-art semiconductor fabrication plant at night, every window glowing with clean bright blue-white light, steam rising from pristine ventilation systems, the building radiating power and activity against a clear dark sky. Extreme color contrast between the dark drowning left and the luminous electric blue right, with a sharp vertical divide in the center."
+    },
+    {
+      "id": 2,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. EU 문양이 새겨진 거대한 범선이 내부에서 균열이 퍼지며 부서지는 극적 클로즈업. 균열 사이로 어둠이 보인다.",
+      "prompt_en": "Photorealistic cinematic close-up of a colossal European galleon breaking apart from within. The ornate wooden hull decorated with golden star emblems is cracking open with deep fractures spreading across the surface. Dark void visible through the widening gaps. The grand sails are collapsing and tearing. Debris and golden ornamental fragments float outward in slow motion. Dark stormy ocean background with heavy grey clouds. Moody dramatic atmosphere with the only warm color being the fading gold paint on the crumbling ship, everything else cold grey and dark blue."
+    },
+    {
+      "id": 3,
+      "type": "concept-c-photorealistic",
+      "concept_ko": "컨셉 C 실사. 좌측에 셔터 내린 유럽 공장, 녹슨 굴뚝, 잡초. 우측에 환하게 가동 중인 반도체 클린룸 팹. 같은 '공장'인데 하나는 죽고 하나는 살아있는 대비.",
+      "prompt_en": "Photorealistic cinematic split composition. Left half shows an abandoned European industrial factory with heavy rusted metal shutters permanently closed, dark smokestacks producing no smoke, cracked concrete walls with weeds growing through, empty parking lot. Overcast grey sky, desaturated cold grey-brown tones, completely lifeless and still. Right half shows a massive modern semiconductor fabrication facility in full nighttime operation, hundreds of bright blue-white LED lights illuminating pristine white exterior walls, steam actively rising from rooftop systems, the building alive with energy. Sharp vertical divide in the center with extreme contrast between dead grey-brown left and vibrant electric blue-white right."
+    }
+  ]
+}

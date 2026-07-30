@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "project": "australia-china-rareearth",
+    "titles": [
+      "호주는 중국 자본 싹 쫓아냈는데… 한국은 희토류 88% 갖다 바치고 있습니다",
+      "중국한테 또 당하는 한국 — 호주는 \"14일 안에 나가라\" 했는데 우리는 목줄 잡혔다",
+      "14억 중국 무릎 꿇린 호주, 근데 한국은 중국 손에 전기차값까지 쥐여줬습니다"
+    ],
+    "thumbnail_texts": [
+      "호주는 쫓아냈다 + 한국은 88% 잡혔다 + 다음은 내 지갑",
+      "중국에 갖다 바친 88% + 다음은 네 지갑 + (시진핑) 한국은 만만하지",
+      "호주는 끊었다 + 한국은 또 당한다 + (시진핑) 호주는 놓쳤지만…"
+    ],
+    "image_concepts": {
+      "A": "호주(승리·단호) vs 한국(종속·위기) 좌우 분할 — 좌측 호주가 강제매각 명령서로 중국 자본을 밀어내는 단호한 장면(가득 찬 비축창고), 우측 한국 전기차·가전 위로 중국 국기색 손이 희토류 가루를 쥐고 가격표를 끌어올림(텅 빈 창고에 균열). 분노·경각심.",
+      "B": "시진핑 굴욕(호주 앞)에서 한국을 노리는 시선으로 전환 — 호주 앞에서 이마 짚는 곤혹·굴욕의 시진핑, 그 손이 한국 전기차/지갑을 다시 움켜쥐는 구도, 가운데 갈라진 균열. 통쾌함→위협."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌측 호주가 '강제매각 명령서'로 중국 자본을 밀어내며 가득 찬 광물 비축창고를 지키고, 우측 한국 전기차·가전 위로 중국 국기색 손이 희토류 가루를 쥐고 가격표를 끌어올리는 좌우 분할 위기 장면.",
+      "prompt_en": "Photorealistic cinematic split-composition thumbnail. On the left side, a confident, resolute scene of Australia defending itself: a stamped government 'DIVESTMENT ORDER' document shoving away a shadowy hand, behind it a full, brightly secured mineral stockpile warehouse glowing with stacked rare-earth crates, lit in a cool steel-blue triumphant tone. On the right side, a darker crisis scene of South Korea: sleek electric cars and home appliances under threat as a large hand colored in the Chinese national flag (red with five gold stars) squeezes a fistful of glowing rare-earth powder and yanks a red price tag upward, an empty cracked stockpile warehouse behind it. A jagged glowing fault line splits the two halves down the center. Dark charcoal-black background, dramatic moody crisis lighting, vivid red accent highlights, tense atmosphere of anger and looming threat, oversized elements filling the frame, bottom half left clear for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 좌(호주 승리·비축창고)→우(한국 종속·중국 손이 희토류 가루로 가격 인상) 대비를 다크 톤 애니메 스타일로.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration, dramatic split composition. Left half: a triumphant, resolute Australia scene with a stamped 'DIVESTMENT ORDER' document forcefully pushing away a shadowy hand, a full glowing mineral stockpile warehouse behind it in cool steel-blue cel-shaded tones with bold ink outlines. Right half: a tense crisis scene of South Korea, sleek electric cars and appliances menaced by a giant hand colored in the Chinese national flag (red with five gold stars) crushing glowing rare-earth powder and dragging a red price tag upward, an empty cracked warehouse behind. A blazing jagged fault line splits the center. Deep black and charcoal palette, sharp dramatic contrast, exaggerated perspective, glowing red highlights, stylized atmosphere of anger and impending threat, oversized elements in the upper frame, bottom half kept clear for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 호주 앞에서 이마를 짚으며 굴욕·곤혹에 빠진 시진핑, 그 손은 동시에 한국 전기차/지갑을 다시 움켜쥐는 구도. 가운데 갈라진 균열. 통쾌함에서 위협으로 전환.",
+      "prompt_en": "Photorealistic cinematic thumbnail of a Chinese leader figure resembling Xi Jinping in the center, an older East Asian man wearing an exaggerated expression of humiliation and frustration, one hand pressed against his forehead in defeat as a stamped Australian government order document floats before him. Yet his other hand reaches sideways and clamps down on a small South Korean electric car and a wallet, squeezing them ominously. A glowing jagged fault line cracks the dark scene down the middle, separating the defeat on one side from the new threat on the other. Dark charcoal-black background with dramatic moody lighting, deep shadows and sharp contrast, vivid red and orange molten accents glowing through the cracks, the humiliated face oversized in the upper frame, tense atmosphere shifting from schadenfreude to menace, bottom half kept clear for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 시진핑 굴욕→한국 노림 구도를 다크 톤 애니메 스타일로, 가운데 용암 같은 균열.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration of a Chinese leader figure resembling Xi Jinping centered in the frame, an older East Asian man with an exaggerated cel-shaded expression of humiliation and anger, one hand clutching his forehead in defeat as a stamped Australian order document hovers before him, while his other hand reaches out and seizes a small South Korean electric car and a wallet. A blazing molten fault line cracks the dark composition down the center, dividing his defeat from the looming threat. Deep black and charcoal palette with bold ink outlines, dramatic glowing red-orange lava cracks, sharp contrast and exaggerated perspective, the humiliated face oversized in the upper frame, stylized atmosphere shifting from triumph to menace, bottom half kept clear for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 충격에 빠진 한국 직장인이 치솟는 전기차 가격표와 텅 빈 희토류 비축창고 앞에서 경악하는 클로즈업, 머리 위로 중국 국기색 손이 희토류 가루를 움켜쥔 그림자, 한쪽에 호주의 '강제매각 명령서'가 정답지처럼 빛난다 — 위기와 해법을 한 프레임에.",
+      "prompt_en": "Photorealistic dramatic thumbnail of a Korean office worker, a likeable man in a suit with an exaggerated expression of shock and dismay, standing before a soaring red electric-car price tag and an empty, cracked rare-earth stockpile warehouse. Above him looms a shadowy giant hand colored in the Chinese national flag (red with five gold stars) crushing a fistful of glowing rare-earth powder, while off to one side a stamped Australian 'DIVESTMENT ORDER' document glows like a model answer sheet. Dark moody crisis lighting with deep shadows and sharp dramatic contrast, vivid red accents cutting through the gloom, the panicked face oversized in the upper frame, combining the anger of being squeezed by China with a glimmer of the Australian solution, bottom half kept clear for text.",
+      "text_space": "bottom-half"
+    }
+  ]
+}

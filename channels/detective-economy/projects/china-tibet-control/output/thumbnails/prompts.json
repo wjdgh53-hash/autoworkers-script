@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "china-tibet-control",
+    "titles": [
+      "티베트 탄압이 서울까지 왔습니다, 중국 새 법 하나로 당신 SNS도 처벌 대상이 된 이유",
+      "서울 한복판에 중국 비밀경찰서가 있었습니다, 티베트에서 시작된 이 법이 내 SNS까지 노리는 이유",
+      "저 멀리 티베트 얘긴 줄 알았는데, 2026년 이 법 하나로 서울의 당신도 처벌 대상이 됐습니다"
+    ],
+    "thumbnail_texts": [
+      "서울 한복판에 / 중국 경찰서 (강조: 서울)",
+      "내 SNS 한 줄로 / 중국서 잡힌다 (강조: 내 SNS)",
+      "남의 일인 줄 / 알았는데 내 문제 (강조: 내 문제)"
+    ],
+    "image_concepts": {
+      "A": "서울 야경(남산타워 실루엣) 위로 드리운 거대한 붉은 중국 국기 그림자, 아래에서 불안하게 스마트폰을 보는 인물",
+      "B": "작은 티베트 삼색기에서 출발한 붉은 감시망(카메라·사슬)이 지구를 타고 서울로 뻗어와 빨간 경고 표식을 찍는 부감 구도"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 남산타워가 보이는 어두운 서울 야경 위로 거대한 붉은 중국 국기 그림자가 드리우고, 아래에서 한 사람이 긴장한 얼굴로 스마트폰을 바라본다.",
+      "prompt_en": "Photorealistic cinematic image of a nighttime Seoul city skyline with the distinctive N Seoul Tower silhouette, drenched in dark cinematic atmosphere and deep shadows. A massive ominous red Chinese national flag shadow (five yellow stars on red) looms and stretches menacingly across the entire skyline, casting a blood-red glow over the buildings. In the foreground, a frightened Korean man with a tense, shocked expression stares down at his glowing smartphone, his face lit anxiously by the screen. Dramatic high contrast, moody threatening lighting, oppressive sense of surveillance closing in."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 서울 야경+중국 국기 그림자+스마트폰 든 불안한 인물을 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration with bold ink outlines and cel-shaded lighting depicting a dark nighttime Seoul skyline with the N Seoul Tower silhouette. A gigantic ominous red Chinese national flag shadow (five yellow stars on red) looms across the sky, bathing the city in a deep crimson dramatic glow. In the foreground, an anime young man with an exaggerated tense, alarmed expression clutches a glowing smartphone, his eyes wide with fear. Deep shadows, dramatic high contrast, oppressive atmosphere of cross-border surveillance."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 어두운 지구본 부감 구도에서 작은 티베트 삼색기로부터 붉은 감시망(감시카메라·사슬)이 뻗어나와 서울 지점에 빨간 경고 표식을 찍는다.",
+      "prompt_en": "Photorealistic cinematic aerial view of a dark, moody globe seen from above, dominated by deep shadows and dramatic contrast. From a small glowing Tibetan flag marker in one region, a spreading web of ominous red glowing lines studded with surveillance cameras and chain links stretches across continents and terminates at Seoul, South Korea, where a stark bright red warning marker pulses menacingly. The red surveillance web dominates the frame with tension and threat, conveying an inescapable cross-border tracking network reaching a single city."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 티베트→서울 붉은 감시망 확장 부감 구도를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration with bold outlines and dramatic cel-shading showing a dark globe from a high aerial angle. From a tiny glowing Tibetan flag marker, a spreading network of glowing red surveillance lines dotted with security cameras and chains snakes across the world and converges on Seoul, South Korea, marked with a stark red warning symbol. Deep shadows, intense crimson glow, high contrast dramatic composition conveying an ominous, tightening web of cross-border surveillance."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드 실사. 서울 지하철·거리를 걷는 평범한 시민의 스마트폰 화면이 붉게 물들고, 화면 속에서 감시카메라 렌즈 같은 붉은 눈동자가 그를 되쏘아본다.",
+      "prompt_en": "Photorealistic cinematic close-up of an ordinary Korean commuter walking on a dark, dimly lit Seoul street or subway platform, holding up a smartphone. The phone screen glows an ominous red, and reflected within it is a menacing surveillance camera lens shaped like a watching red eye staring back at the person. The commuter's face shows a shocked, uneasy expression as they realize they are being watched. Deep shadows, dramatic crimson highlights, moody high-contrast atmosphere of invisible surveillance reaching into everyday life."
+    }
+  ]
+}

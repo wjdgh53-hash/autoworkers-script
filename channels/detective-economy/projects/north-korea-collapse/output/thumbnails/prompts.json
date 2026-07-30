@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "north-korea-collapse",
+    "titles": [
+      "북한이 갑자기 붕괴되면, 72시간 안에 한국이 바다를 잃는다",
+      "북한 붕괴 72시간, 중국이 준비한 것을 보면 소름 돋습니다",
+      "\"48시간 안에 끝난다\" 북한 붕괴 직후, 중국군 6만이 움직이는 시나리오"
+    ],
+    "thumbnail_texts": [
+      "붕괴 후 72시간 + 중국군 6만 투입 + 한국, 유사 내륙국",
+      "동해가 사라진다 + 무역국가 한국의 최악 시나리오",
+      "\"48시간 안에 끝난다\" + 중국의 북한 접수 시나리오"
+    ],
+    "image_concepts": {
+      "A": "한반도 지도에 중국 방향 빨간 화살표가 관통하며 동해로 뻗는 군사 침투 구도",
+      "B": "밝은 한국 항구가 어둡게 변하며 중국 군함이 봉쇄하는 Before→After 대비"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 한반도 지도 위로 중국 방향에서 거대한 빨간 화살표 3개가 북한을 관통하며 동해 쪽으로 뻗는 시네마틱 군사 지도. 한국은 화살표에 둘러싸여 고립된 느낌. 노란색 72h 카운트다운 효과.",
+      "prompt_en": "Dark cinematic atmosphere, photorealistic military strategic map showing the Korean Peninsula from above. Three massive glowing red arrows pierce through North Korea from the Chinese border, extending aggressively toward the East Sea (Sea of Japan). South Korea appears isolated and surrounded by the converging arrows. Deep shadows with dramatic contrast, moody lighting. The map has an ominous dark navy-black background with the arrows emitting intense red glow and a yellow countdown timer element reading '72H' as a focal accent point in the upper portion."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 한반도 지도+화살표 군사 침투 구도를 애니메 스타일로 표현. 굵은 외곽선과 높은 채도의 드라마틱한 분위기.",
+      "prompt_en": "Anime-style illustration with bold ink outlines, dramatic military strategic map of the Korean Peninsula viewed from above. Three oversized glowing red arrows with cel-shaded edges slash through North Korea from China's direction, extending toward the East Sea. South Korea is trapped and encircled by the converging arrows. Dark cinematic atmosphere with deep navy background, vivid saturated red arrows with exaggerated glow effects, and a bright yellow '72H' countdown element as an intense focal point. Stylized digital illustration with high contrast and dramatic anime lighting."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좌측에 밝고 번영하는 부산항 풍경, 우측에 같은 항구가 어둡게 변하며 거대한 중국 해군 군함 실루엣이 해안을 봉쇄하는 Before→After 장면.",
+      "prompt_en": "Photorealistic cinematic split composition showing Busan Port, South Korea. Left half depicts a bright prosperous harbor with container ships and city lights in warm tones. Right half shows the same harbor transformed into darkness — massive Chinese Navy warship silhouettes blockading the coastline, ominous dark clouds, and deep shadows engulfing the port. Sharp dramatic contrast between the bright left and dark right halves. Dark cinematic atmosphere with tension-filled moody lighting, the warship silhouettes emit a faint threatening red glow against the dark navy sky."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 항구 봉쇄 Before→After 대비를 애니메 스타일로 표현. 극단적인 명암 대비와 과장된 군함 스케일.",
+      "prompt_en": "Vibrant anime-style illustration with bold outlines, dramatic split composition of a Korean port city. Left half shows a lively, bright harbor with warm golden lighting and bustling container ships in vivid cel-shaded colors. Right half dramatically shifts to darkness — exaggerated oversized Chinese Navy warship silhouettes with menacing angular designs blockade the coastline, dark storm clouds swirl above. Extreme contrast between the bright cheerful left and the ominous shadowy right. Stylized digital illustration with intense dramatic anime lighting, deep navy-black tones on the dark side with faint red glow from the warships."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 위에서 내려다본 동해 바다 위로 거대한 자물쇠 체인이 해상 항로를 봉쇄하는 초현실적 이미지. 체인 너머로 한국 화물선들이 갇혀 있다.",
+      "prompt_en": "Dark cinematic photorealistic surreal image viewed from above, showing the East Sea (Sea of Japan) with a massive iron chain and padlock stretching across the ocean surface, physically blocking maritime shipping routes. Beyond the chain barrier, several South Korean cargo ships are trapped and unable to pass. The ocean is dark navy-blue with dramatic deep shadows, the iron chain glows with an ominous cold metallic sheen, and faint red emergency lights reflect off the water surface. Atmospheric tension with moody fog and dramatic overhead lighting creating an oppressive locked-in feeling."
+    }
+  ]
+}

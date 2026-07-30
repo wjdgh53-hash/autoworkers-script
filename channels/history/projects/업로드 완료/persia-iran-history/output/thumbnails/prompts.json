@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "persia-iran-history",
+    "titles": [
+      "\"노예를 해방한 제국\" 페르시아가 지금의 이란이 되기까지 3,000년의 비밀",
+      "알렉산더도 몽골도 아랍도 삼켜버린 나라, 페르시아 3,000년 생존의 비밀",
+      "정복당할수록 강해진 나라, 페르시아에서 이란까지"
+    ],
+    "thumbnail_texts": [
+      "페르시아는 왜 / 사라지지 않았을까",
+      "정복자를 삼킨 / 3,000년 제국",
+      "악당이 아니었다 / 페르시아의 진실"
+    ],
+    "image_concepts": {
+      "A": "고대 관용 vs 현대 편견 — 키루스 실린더(황금빛)와 깨진 사슬(어두운 톤)의 좌우 대비",
+      "B": "삼켜지지 않는 불꽃 — 무너지는 고대 석벽 균열 사이로 타오르는 조로아스터교 영원의 불꽃"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 황금빛 조명을 받는 키루스 실린더가 경외감을 자아내고, 우측에 깨진 사슬과 족쇄가 차가운 청회색 톤으로 놓여 있다. 고대 관용과 현대 편견의 극적 대비.",
+      "prompt_en": "Photorealistic cinematic still-life composition. On the left, the Cyrus Cylinder bathed in warm golden light, partially revealed from shadow, resting on ancient stone — desaturated monochrome background with a single gold accent color highlighting the cylinder's cuneiform inscriptions. On the right, broken iron shackles and chains in cold blue-grey tones, scattered on cracked dark stone. High contrast grayscale with gold as the sole warm accent. Mysterious partially-revealed composition evoking ancient gravitas, with ominous dark shadows framing the objects and cracks spreading across the stone surface beneath."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 키루스 실린더와 깨진 사슬의 좌우 대비를 세련된 애니메 스타일로 표현. 금색 포인트와 모노톤 기반의 극적 명암.",
+      "prompt_en": "Stylized digital illustration in anime art style. A dramatic split composition — on the left, the Cyrus Cylinder glowing with radiant golden light, intricate cuneiform details rendered with bold clean lines, surrounded by warm amber particles floating upward. On the right, shattered iron chains and broken shackles in stark cold grey-blue tones, fragments suspended mid-air against a dark fractured backdrop. Desaturated monochrome palette with vivid gold as the single striking accent color. Intriguing mysterious atmosphere with dramatic cel-shaded lighting and sharp contrast between the two halves."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 무너지는 고대 페르시아 석벽의 깊은 균열 사이로 조로아스터교의 영원한 불꽃이 밝게 타오르는 시네마틱 장면. 파괴 속 생존의 긴장감.",
+      "prompt_en": "Photorealistic cinematic photograph of an ancient Persian stone wall crumbling apart, deep dramatic cracks and fractures spreading across weathered dark brown-grey masonry carved with Persepolis-style reliefs. Through the widest central crack, a brilliant Zoroastrian eternal flame burns intensely in vivid orange-gold, casting warm light onto the surrounding rubble. High contrast grayscale stone against the single bright flame accent. Ominous dark shadows fill the edges, dust particles float in shafts of firelight, creating a tense atmosphere of destruction meeting indestructible survival."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 균열이 퍼지는 고대 석벽 사이로 타오르는 불꽃을 역동적인 애니메 스타일로 표현. 어둠 속 금빛 불꽃의 극적 대비.",
+      "prompt_en": "Vibrant anime-style illustration of a massive ancient Persian stone wall shattering apart with dramatic radiating cracks, carved reliefs crumbling into fragments. Through the central fracture, a powerful Zoroastrian sacred flame erupts in brilliant orange-gold with stylized swirling fire tendrils. Bold ink outlines and cel-shaded dramatic lighting — desaturated monochrome grey-brown stone contrasting against the single vivid golden-orange flame. Dark ominous shadows with expressive speed lines emphasizing the destruction, yet the flame burns unbroken and defiant."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 페르세폴리스 유적의 거대한 황소 기둥 머리가 모래폭풍 속에서 반쯤 드러나 있는 미스터리 구도. 모노톤 사막에 금빛 포인트.",
+      "prompt_en": "Photorealistic cinematic wide shot of a colossal Persepolis bull-headed capital column partially emerging from a swirling desert sandstorm, only half-revealed through the haze. Desaturated monochrome sandy brown-grey tones dominate the scene, with a single golden accent light catching the bull's carved eye and horn details. The massive ancient sculpture dwarfs the barren landscape around it. Mysterious partially-obscured composition with ominous atmospheric tension — dark storm clouds above, fine sand particles suspended in dramatic shafts of light piercing through the dust."
+    }
+  ]
+}

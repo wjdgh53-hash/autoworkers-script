@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "nk-russia-fallout",
+    "titles": [
+      "\"13조를 퍼줬는데 1조도 못 받았다\" 김정은이 푸틴한테 완전히 당한 소름돋는 전말",
+      "\"형님 약속이 다르잖아요\" 푸틴에 역대급으로 호구 당한 김정은의 처참한 최후",
+      "푸틴한테 13조 갖다 바친 김정은, 북러관계 완전히 끝장난 진짜 이유"
+    ],
+    "thumbnail_texts": [
+      "13조 퍼줬는데 1조? + 역대급 호구 김정은 + 북러관계 완전 끝장",
+      "\"푸틴 형님 너무합니다\" + 완전히 버림받은 김정은 + 13조 vs 1조의 진실",
+      "결국 호구 된 김정은 + 북러관계 싹 다 파탄났다 + \"형 약속이 다르잖아\""
+    ],
+    "image_concepts": {
+      "A": "균열+흑백 김정은 vs 냉소 푸틴 A vs B 대립 구도, 어두운 배경에 붉은 불꽃 포인트",
+      "B": "13:1 스케일 대비 — 거대한 금괴 더미 앞 쪼그라든 김정은, 돌아서는 푸틴 뒷모습"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 푸틴이 냉소적으로 웃으며 좌측에, 김정은이 균열 효과와 흑백 처리로 우측에 배치된 A vs B 대립 구도. 배경에 붉은 불꽃과 어두운 톤.",
+      "prompt_en": "Photorealistic cinematic split composition. On the left, Vladimir Putin (Russian President) with a cold contemptuous smirk, lit by warm side lighting, in full color. On the right, Kim Jong Un (North Korean leader) looking defeated and anxious, rendered in desaturated grayscale with dramatic crack effects shattering across his face and suit. Dark moody background with deep red and orange fire glow behind both figures, creating an ominous atmosphere of political collapse."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 동일한 푸틴 vs 김정은 대립 구도를 강렬한 애니메 스타일로 표현. 균열과 불꽃을 과장된 효과로 묘사.",
+      "prompt_en": "Vibrant anime-style illustration of a dramatic confrontation. On the left, Vladimir Putin (Russian President) drawn with sharp angular features and a sinister confident grin, bathed in warm golden light. On the right, Kim Jong Un (North Korean leader) depicted with an anguished defeated expression, his figure fragmenting with dramatic crack lines and shattered glass effects in cool blue-gray tones. Explosive red and orange energy bursts fill the dark background between them, with bold cel-shaded shadows and intense color contrast."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 거대한 금괴 더미(13조 규모)가 화면 상단을 가득 채우고, 그 앞에 작은 동전 몇 개를 손에 쥔 초라한 김정은. 배경 뒤편으로 돌아서 걸어가는 푸틴의 뒷모습.",
+      "prompt_en": "Photorealistic cinematic scene of extreme scale contrast. A massive towering pile of gleaming gold bars and stacked cash fills the upper frame, glowing under dramatic spotlight. In front of this enormous wealth, Kim Jong Un (North Korean leader) stands small and diminished, holding just a few tiny coins in his open palm with a stunned devastated expression. In the dark shadowy background, the silhouette of Vladimir Putin (Russian President) walks away with his back turned, indifferent. Deep dark atmosphere with rich golden highlights on the treasure and a single red downward arrow accent."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 스케일 대비를 과장된 애니메 비율로 표현. 산더미 같은 금괴 앞의 초라한 김정은과 돌아서는 푸틴.",
+      "prompt_en": "Stylized anime illustration with exaggerated scale contrast. A colossal mountain of shining gold ingots and treasure towers over the scene with dramatic sparkle effects. At the base, a comically small Kim Jong Un (North Korean leader) clutches a handful of tiny coins, his anime-style eyes wide with shock and despair, sweat drops flying. Behind him in the shadows, Vladimir Putin (Russian President) walks away as a dark imposing silhouette with a dismissive wave. Bold vibrant colors with golden yellows against a deep navy-black background, dramatic speed lines emphasizing the scale difference."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 김정은이 빈 금고 앞에 서 있고 금고 문이 열려 텅 빈 내부가 보이는 구도. 금고 위에 러시아 국기가 걸려 있고, 바닥에 '13조'가 적힌 영수증이 흩어져 있다.",
+      "prompt_en": "Cinematic photorealistic scene of Kim Jong Un (North Korean leader) standing alone before a massive open steel vault. The vault door is swung wide open revealing a completely empty dark interior, creating a dramatic void. Kim Jong Un stares into the emptiness with a stunned hollow expression. A Russian flag (white, blue, and red horizontal stripes) hangs limply above the vault. Scattered receipts and torn documents litter the floor around his feet. Dark dramatic lighting with a single cold spotlight on Kim Jong Un, deep shadows everywhere, atmosphere of total loss and betrayal."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "finland-k9-deal",
+    "titles": [
+      "\"-40도에서 이것만 살아남았다\" 핀란드가 K9 중고 112문을 긁어간 날",
+      "네덜란드를 버리고 한국을 택한 핀란드, K9 중고 112문 추가의 전말",
+      "\"프랑스 독일은 시동도 못 걸었다\" 핀란드 K9 중고 112문, 유럽이 뒤집어진 이유"
+    ],
+    "thumbnail_texts": [
+      "\"-40도, 이것만 작동\" + 핀란드 K9 중고 112문",
+      "\"프·독은 시동도 안 걸렸다\" + 한국 중고 K9만 작동",
+      "\"급선회\" + 핀란드, 중고 K9에 1조 + 실전 결과"
+    ],
+    "image_concepts": {
+      "A": "설원 Before→After 대비 — 멈춘 유럽 전차(어둡고 차가운) vs 포격하는 K9(따뜻한 화염빛). 통쾌함.",
+      "B": "극한 환경 클로즈업 — K9 포신에 고드름, 드라마틱 사이드 라이팅. 경외감."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 눈 덮인 핀란드 설원에서 좌측에 멈춰 선 유럽 자주포(차갑고 어두운 톤)와 우측에 포구 화염을 뿜으며 사격하는 K9 Thunder 자주포(따뜻한 화염빛)의 극적 대비.",
+      "prompt_en": "Photorealistic cinematic split composition on a frozen Finnish snowfield at dusk. On the left, a stalled European self-propelled howitzer sits dead in deep snow, coated in frost, engulfed in dark cinematic atmosphere with deep shadows and blue-grey tones conveying failure. On the right, a South Korean K9 Thunder self-propelled howitzer fires a massive round, its muzzle blast erupting in brilliant orange flame that cuts through the ominous frozen landscape. Dramatic contrast between the cold dead left side and the fiery explosive right side, with swirling snow particles caught in the muzzle flash."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 설원 속 멈춘 유럽 자주포 vs 화염을 뿜는 K9 Thunder의 대비를 애니메 스타일로 과장되게 표현.",
+      "prompt_en": "Anime-style illustration with bold dramatic contrast on a vast frozen snowfield. On the left, a broken-down European self-propelled howitzer buried in snow, rendered in desaturated cold blue tones with dark cinematic shadows and cracking ice. On the right, a K9 Thunder self-propelled howitzer unleashes a spectacular muzzle blast, exaggerated anime-style fire and smoke billowing in vivid orange and red against the ominous dark sky. Dynamic speed lines and dramatic contrast emphasize the explosive energy, with swirling snow caught in the shockwave."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. -40도 극한 환경에서 K9 Thunder 포신에 고드름이 매달린 클로즈업. 드라마틱 사이드 라이팅으로 메탈릭 질감과 얼음의 경외감을 강조.",
+      "prompt_en": "Photorealistic extreme close-up of a K9 Thunder self-propelled howitzer barrel in -40 degree Arctic conditions. Thick icicles hang from the massive gun barrel, glistening with blue-tinted ice crystals against a dark cinematic background with deep shadows. Dramatic side lighting rakes across the metallic surface, revealing frost patterns and condensation on the cold steel. The barrel appears battle-ready despite the brutal frozen environment, conveying an ominous sense of raw military power surviving impossible conditions."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. K9 Thunder 포신에 고드름이 달린 극한 환경 클로즈업을 애니메 스타일로, 과장된 얼음 질감과 드라마틱 라이팅으로 표현.",
+      "prompt_en": "Stylized anime illustration, extreme dramatic close-up of a K9 Thunder self-propelled howitzer barrel encased in exaggerated crystalline icicles and frost. Deep shadows and moody lighting create a dark cinematic atmosphere, with the ice rendered in shimmering blue and white cel-shaded highlights. The metallic barrel gleams under intense side lighting, every frozen detail amplified for maximum visual tension. An ominous blizzard swirls in the dark background, emphasizing the hostile Arctic environment that this weapon alone has conquered."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 핀란드 설원 위에 K9 Thunder 자주포 종대가 일렬로 전진하는 조감도. 112문의 스케일을 시각적으로 암시하는 압도적 물량.",
+      "prompt_en": "Photorealistic aerial cinematic view of a long column of K9 Thunder self-propelled howitzers advancing across a vast frozen Finnish tundra at golden hour. Dozens of vehicles stretch into the snowy horizon in a dramatic formation, their tracks carving dark lines through pristine white snow. Dark cinematic atmosphere with deep contrast between the warm low sun and ominous cold shadows cast by each vehicle. The sheer scale of the convoy conveys overwhelming military power, with exhaust plumes rising into the frigid arctic air."
+    }
+  ]
+}

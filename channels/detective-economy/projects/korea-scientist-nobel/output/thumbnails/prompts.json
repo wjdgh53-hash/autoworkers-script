@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-scientist-nobel",
+    "titles": [
+      "\"35억이요? 안 받겠습니다\" 구글을 거절한 한국 과학자를 노벨 재단이 부른 사연",
+      "구글이 35억을 들고 세 번 찾아왔지만, 포항을 떠나지 않은 한국 과학자",
+      "연봉 35억을 걷어찬 한국 과학자, 노벨 재단이 스웨덴으로 부른 까닭"
+    ],
+    "thumbnail_texts": [
+      "\"35억이요? 됐습니다\" + 노벨이 부른 + 포항의 과학자",
+      "\"왜 구글을 걷어찼나\" + 노벨이 주목한 + 한국인 두뇌",
+      "\"돈으론 못 산다\" + 35억 거절한 + 그날의 선택"
+    ],
+    "image_concepts": {
+      "A": "과학자가 빛나는 메타렌즈 웨이퍼를 관객에게 들어 보이는 인물 Show 구도",
+      "B": "위에서 짓누르는 거대한 돈다발을 손끝의 작은 렌즈가 밀어내는 스케일 대비"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 노준석 교수가 무지개빛 회절광이 번지는 얇은 원형 메타렌즈를 관객 쪽으로 들어 보이며 정면을 응시하는 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic photograph of Junsuk Rho (POSTECH professor), a Korean scientist, holding a thin circular metalens wafer up toward the camera with an intense, determined expression on his face. The wafer glows with iridescent rainbow diffraction light against a dark cinematic laboratory background with deep shadows and moody lighting. Strong rim lighting separates his figure from the shadowy backdrop, creating dramatic high contrast. His face and the glowing metalens dominate the upper portion of the frame, radiating a sense of pride and awe."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 인물+메타렌즈 Show 구도를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a Korean male scientist, modeled on Junsuk Rho (POSTECH professor), lifting a thin circular metalens wafer toward the viewer with a bold, determined expression. Cel-shaded lighting and dramatic ink outlines emphasize the iridescent rainbow glow radiating from the lens against a dark, shadowy laboratory backdrop. High contrast and deep shadows create a tense, cinematic anime mood. The character and the glowing lens fill the upper half of the frame with heroic intensity."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 위에서 거대한 달러 다발이 짓누르는데, 손끝의 작디작은 빛나는 메타렌즈가 그것을 밀어내는 스케일 대비 장면.",
+      "prompt_en": "Photorealistic dramatic photograph showing an enormous towering stack of US dollar bills pressing down from the top of the frame, dwarfing a single tiny glowing metalens balanced on a fingertip below that pushes back against the weight. The dark cinematic background with deep shadows makes the green cash and the brilliant white-and-rainbow glow of the small lens collide in extreme high contrast. Ominous dramatic lighting conveys a tense standoff between overwhelming money and a small object of quiet power. The oversized dollar stack and the luminous lens anchor the upper portion of the composition."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 스케일 대비(거대 돈다발 vs 손끝 작은 렌즈)를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Bold anime-style illustration of a dramatically oversized tower of dollar bills bearing down from above, contrasted with one tiny radiant metalens held on a fingertip that resists the crushing weight. Cel-shaded rendering with sharp ink outlines and vivid highlights sets the glowing lens against a dark, shadow-heavy background for intense high contrast. The exaggerated scale difference and ominous atmosphere create a tense, cinematic anime feel. The giant cash stack and the glowing lens command the upper half of the frame."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 어두운 배경에 떠 있는 종잇장처럼 얇은 메타렌즈 클로즈업, 나노 구조가 무지개빛으로 빛나고 뒤로 구글 로고가 흐릿하게 흩어지는 오브젝트 중심 구도.",
+      "prompt_en": "Photorealistic macro close-up of an ultra-thin, paper-like circular metalens floating in a dark cinematic void, its nanoscale surface structures shimmering with iridescent rainbow light. Deep shadows and dramatic moody lighting make the glowing lens the single blazing focal point in extreme high contrast. Behind it, a faint Google logo dissolves into shadow, hinting at a rejected offer. The luminous lens fills the upper portion of the frame with a tense, awe-inspiring atmosphere."
+    }
+  ]
+}

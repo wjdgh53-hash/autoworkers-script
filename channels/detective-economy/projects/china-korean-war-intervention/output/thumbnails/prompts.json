@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "project": "china-korean-war-intervention",
+    "titles": [
+      "\"우리 통일 막더니, 자기 대만도 잃었다\" 중국이 6·25에 100만 대군 밀어넣은 대가",
+      "\"조선을 위해서가 아니었다\" 중국이 코앞의 통일을 짓밟고 챙긴 것",
+      "\"중국이 빼앗은 통일, 값은 우리가 낸다\" 6·25 참전이 남긴 분단 70년과 국방비 66조"
+    ],
+    "thumbnail_texts": [
+      "\"통일? 여기서 끝이야\" / 중국이 짓밟은 통일",
+      "우리 통일 막더니… / 자기 대만도 영영 잃었다",
+      "그때 그은 선 / 지금 우리가 내는 66조"
+    ],
+    "image_concepts": {
+      "A": "마오쩌둥형 중국 지도자가 붉게 갈라진 한반도(38선)를 손으로 끊고, 뒤로 대만이 회색으로 소멸 — 가해자 지목 + 자업자득을 한 컷에",
+      "B": "위=철조망 쳐진 갈라진 한반도(38선), 아래=국방비 66조 고지서와 현재 도시 실루엣 — 과거의 선이 지금의 청구서로"
+    },
+    "strategy": {
+      "count": 5,
+      "art_styles": ["photorealistic", "anime"],
+      "color_palette": "dark",
+      "emotions": ["anger", "tension"],
+      "text_space": "bottom-half",
+      "face_style": "exaggerated+natural"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 마오쩌둥형 중국 공산당 지도자가 붉게 쩍 갈라진 한반도(38선)를 손으로 내려긋듯 끊고, 뒤로 대만 섬이 회색으로 소멸. 가해자 지목 + 자업자득.",
+      "prompt_en": "Cinematic dark photograph. A stern authoritarian mid-20th-century Chinese communist leader in a grey buttoned Mao suit (Mao Zedong-esque), shown in a large upper-frame close-up with a cold, arrogant expression, one hand slicing down like a blade across a map of the Korean peninsula that is splitting apart along a glowing blood-red fracture (the 38th parallel). Behind and beyond him, the island of Taiwan dissolves into cold grey shadow, slipping out of his reach. Deep earthy-navy background, harsh side lighting and high contrast; the red fault line is the only vivid glow. Ominous, tense atmosphere of a nation's unification being severed by a foreign hand. Lower half kept darker for title text."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '지도자가 갈라진 한반도를 끊고 대만이 소멸하는' 구도를 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant dramatic anime-style illustration. A stern authoritarian mid-20th-century Chinese communist leader in a grey Mao suit, drawn as a large upper-frame close-up with a cold, arrogant expression and hard eyes, one hand chopping down across a map of the Korean peninsula that cracks apart along a blazing blood-red line (the 38th parallel). Behind him the island of Taiwan crumbles and fades to grey, slipping from his grasp. Bold ink outlines, cel-shaded highlights, deep moody shadows and a glowing crimson fault line against a dark earthy-navy backdrop. Intense tense mood of a unification being cut in two. Lower half darker for title text."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 위=철조망·붉은 38선으로 갈라진 한반도, 아래=거대한 '66조' 노란 숫자의 국방비 고지서 더미와 현재 도시 실루엣. 그때 그은 선이 지금의 청구서.",
+      "prompt_en": "Cinematic dark photograph in a vertical before-and-after composition. Top half: a Korean peninsula torn in two by rusted barbed wire and a glowing blood-red line marking the 38th parallel, cold war-torn tone. Bottom half: a looming stack of official documents and bills stamped with an enormous glowing-yellow number '66조', overlaid on the silhouette of a modern present-day city skyline, visually linking the old dividing line to a present-day cost. Deep shadows, high contrast, the red division line and the yellow warning number the only vivid colors. Ominous atmosphere of a 70-year-old wound still being paid for."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 갈라진 한반도(위) → 국방비 66조 고지서·현재 도시(아래) 과거-현재 대비를 애니메 스타일로.",
+      "prompt_en": "Dramatic anime-style illustration in a vertical before-and-after composition. Top half: a Korean peninsula split by barbed wire and a blazing red 38th-parallel line, gloomy war-torn tone with bold outlines. Bottom half: a towering pile of documents and bills marked with a huge glowing-yellow '66조', set against the cel-shaded silhouette of a modern city skyline, connecting the old dividing line to today's cost. Deep dramatic shadows, high contrast, crimson division line and yellow warning numbers glowing against a dark backdrop. Tense, sobering mood."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 극단적 스케일 — 거대한 붉은 균열이 한반도를 두 동강 내고, 회색 인민복 소매의 거대한 손이 그 위를 짓누른다. 먼 배경엔 대만이 잿빛으로 부서짐.",
+      "prompt_en": "Extreme dramatic cinematic composition. A colossal blood-red fracture tears the Korean peninsula in two, while a giant shadowy hand emerging from a grey communist-leader's sleeve presses down heavily on the split, dominating the frame. In the far dark background, a small island of Taiwan crumbles into grey dust and drifts away. A menacing crimson glow rims the crack; dust, sparks and cold blue shadow fill the ominous air. Harsh lighting and extreme scale make the destruction overwhelming — a unification crushed by a foreign hand alongside a self-inflicted loss. Dark, moody, shocking tone with the lower area darkened for text."
+    }
+  ]
+}

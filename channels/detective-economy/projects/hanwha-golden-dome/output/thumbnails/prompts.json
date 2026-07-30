@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "project": "hanwha-golden-dome",
+    "titles": [
+      "\"한국 없이는 못 짓는다\" 세계 최강 미국이 골든돔 핵심 배를 3조에 통째로 맡긴 이유",
+      "\"이 배가 없으면 못 막는다\" 세계 최강 미국이 한국 조선소에 3조짜리 골든돔 계측함을 맡긴 이유",
+      "세계 최강 미국이 자기 미사일 막을 배 한 척을 못 지어 한국에 3조를 안긴 이유"
+    ],
+    "thumbnail_texts": [
+      "초강대국을 움직인 / 한국 조선의 힘",
+      "자기 배도 못 만드는 미국 / 결국 한국에 맡겼다",
+      "미국 미사일 방패의 심장 / 한국이 쥐었다"
+    ],
+    "image_concepts": {
+      "A": "스케일 대비 — 태극기를 단 거대한 회색 미사일 계측함이 화면 상단을 압도하고, 그 아래 왜소한 성조기 조선소 크레인이 올려다본다. 붉은 경보 톤 배경에 상공의 미사일 궤적 광선.",
+      "B": "A vs B 조선소 대비 — 좌: 텅 비고 녹슨 미국 조선소(어둡고 정지된 도크), 우: 용접 스파크가 튀는 풀가동 한국 조선소(태극기). 붕괴 vs 부활의 명암·활력 대비."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 태극기를 단 거대한 회색 미사일 계측함이 화면 상단을 좌우로 꽉 채우며 압도하고, 그 아래 왜소한 성조기 조선소 크레인이 올려다본다. 붉은 경보 톤 배경에 상공을 가르는 미사일 궤적 광선.",
+      "prompt_en": "Photorealistic cinematic shot of a colossal grey naval missile-range instrumentation ship flying a large South Korean Taegukgi flag, dominating the entire upper half of the frame edge to edge with imposing scale. Far below at the waterline, a tiny dwarfed shipyard gantry crane draped with a small American flag looks up at the towering vessel, emphasizing the dramatic size mismatch. Ominous crimson-red alert lighting bleeds across a dark navy sky, with a streaking missile trajectory light arcing overhead. Harsh dramatic contrast and moody atmosphere; the lower half kept darker and clear for bottom-half text space.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 태극기를 단 거대한 계측함이 화면 상단을 압도하고 왜소한 성조기 크레인이 올려다보는 지위 역전 구도를 강렬한 애니메 스타일로. 붉은 기운과 미사일 궤적이 번진다.",
+      "prompt_en": "Vibrant anime-style illustration of a gigantic grey missile-range instrumentation warship bearing a bold South Korean Taegukgi flag, looming across the upper half of the frame with overwhelming scale and cel-shaded dramatic lighting. A small, dwarfed shipyard crane with a tiny American flag stands far below, gazing up in awe. A swirling aura of intense red energy radiates behind the ship against a deep navy-black sky, with a dynamic streaking missile trajectory cutting across the top. Bold ink outlines, stark shadows, high contrast; darker empty lower half reserved for bottom-half text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좌측은 텅 비고 녹슨 미국 조선소(어둡고 정지된 도크), 우측은 용접 스파크가 튀는 풀가동 한국 조선소(태극기). 붕괴 vs 부활의 명암 대비.",
+      "prompt_en": "Photorealistic split-composition dramatic photograph. Left half: an abandoned, rusting American shipyard with empty silent dry docks under cold dim bluish light and an American flag hanging limp, conveying industrial decay and collapse. Right half: a fully operational South Korean shipyard blazing with orange welding sparks, cranes in motion and a South Korean Taegukgi flag, radiating heat and vitality. Sharp light-versus-dark, decay-versus-rebirth contrast down the center seam. Cinematic moody grade; lower portion kept clear and darker for bottom-half text space.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 좌 녹슨 미국 조선소 vs 우 스파크 튀는 한국 조선소를 역동적 애니메 스타일 좌우 대비로.",
+      "prompt_en": "Dynamic anime-style split illustration. Left half: a desolate rusted American shipyard with dead empty docks rendered in cold desaturated blue-grey tones and a drooping American flag, evoking decline. Right half: a roaring South Korean shipyard erupting with vivid orange welding sparks, active cranes and a proud Taegukgi flag, rendered in warm energetic colors with motion trails. Bold cel-shaded contrast splitting collapse from revival at the center line, stark shadows and vibrant highlights; darker lower band left open for bottom-half text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 미국 국회의사당/미사일 방어 돔이 금이 가며 무너지는 위로, 태극기를 단 한국 계측함이 방패처럼 그 자리를 메우러 다가온다. 최강의 균열 + 한국의 부상을 한 컷에.",
+      "prompt_en": "Photorealistic cinematic wide shot of a cracking golden missile-defense dome over the silhouette of the US Capitol at dusk, fissures splitting its surface with faint red light bleeding through, pieces breaking off — a symbol of a superpower's failing shield. Sailing in from the side to fill the gap comes a massive grey South Korean instrumentation warship flying a bold Taegukgi flag, lit heroically against storm clouds. Deep dramatic contrast between the fracturing dome and the rising Korean vessel, an atmosphere of decline meeting ascent; the looming elements fill the upper half with darker moody space below for bottom-half text.",
+      "text_space": "bottom-half"
+    }
+  ]
+}

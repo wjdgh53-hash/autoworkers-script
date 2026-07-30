@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-weapon-export",
+    "titles": [
+      "\"50년 걸린 미국 vs 첫 실전의 한국\" 세계가 경악한 K방산의 비밀",
+      "\"패트리어트는 20%였다\" 한국 천궁2가 첫 실전에서 96%를 찍은 이유",
+      "\"이런 나라는 처음이다\" 세계가 줄 서는 한국 무기의 소름 돋는 비밀"
+    ],
+    "thumbnail_texts": [
+      "요격률 96% + \"패트리어트는 20%였다\" + 한국이 뒤집은 판도",
+      "1발 15억 vs 50억 + \"싸고 좋은 무기는 없다?\" + 한국이 뒤집었다",
+      "\"이런 성능은 처음\" + 요격률 96%의 정체 + 세계가 줄 선 한국 무기"
+    ],
+    "image_concepts": {
+      "A": "패트리어트 vs 천궁2 좌우 분할 대비 — 낡은 미국 vs 강렬한 한국 역전 구도",
+      "B": "천궁2 미사일 발사 순간 클로즈업 — 압도적 스케일과 불꽃의 경이감"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 낡고 퇴색한 패트리어트 발사대, 우측에 화염을 뿜으며 발사되는 천궁2. 모노크롬 기조에 발사 불꽃만 포인트 컬러.",
+      "prompt_en": "Photorealistic cinematic split composition of two missile defense systems in desaturated monochrome tones. Left side shows a weathered, aging MIM-104 Patriot launcher in heavy shadow, coated in dust and corrosion, surrounded by dark fog — ominous atmosphere with visible cracks on the concrete pad. Right side shows a sleek Cheongung-2 (M-SAM) launcher firing upward with a single brilliant orange-red flame cutting through the grayscale world, the only saturated accent in the entire frame. High contrast grayscale with dramatic side lighting, mysterious tension between old and new."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 좌우 분할로 퇴색된 패트리어트와 불꽃 속 천궁2를 대비. 모노톤 기조에 발사 화염만 강렬한 색채.",
+      "prompt_en": "Anime-style illustration with bold ink outlines, split composition in high contrast grayscale. Left half depicts a battered Patriot missile launcher shrouded in dark shadows and swirling smoke, rendered in cold desaturated tones with an ominous cracked sky behind it. Right half shows a Cheongung-2 missile erupting from its launcher with a single vivid orange-red flame trail — the only color breaking through the monochrome world. Dramatic cel-shaded lighting with deep blacks and stark whites, intriguing asymmetric energy between the two halves, partially revealed details suggesting hidden power."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 천궁2 미사일이 발사대에서 솟구치는 순간을 저앵글로 포착. 모노크롬 하늘에 발사 불꽃만 유일한 색채.",
+      "prompt_en": "Photorealistic dramatic low-angle close-up of a Cheongung-2 missile launching from its TEL vehicle, captured at the exact moment of ignition. The entire scene is rendered in desaturated monochrome — dark navy-black sky, grayscale smoke billowing from the launcher — except for the searing orange-red rocket exhaust flame cutting upward as the single accent color. Massive scale emphasis with the missile towering overhead, deep shadows across the launcher chassis, high contrast between the dark surroundings and the bright exhaust plume. Ominous atmosphere with mysterious partially-obscured details in the smoke."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 천궁2 발사 순간을 극적 원근법으로 표현. 모노톤 배경에 불꽃의 색채가 폭발적으로 대비.",
+      "prompt_en": "Vibrant anime-style illustration of a Cheongung-2 missile blasting off from its launcher, drawn with exaggerated perspective from a dramatic low angle. The scene is rendered in high contrast black and white with heavy ink shadows — dark fractured sky, monochrome smoke trails, grayscale military vehicle below — while the rocket exhaust bursts with vivid orange-red flame as the sole color accent. Bold speed lines radiate outward from the missile, cel-shaded dramatic lighting with deep blacks and crisp whites, towering scale that fills the upper frame with an intriguing sense of overwhelming force."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 세계 지도 위에 천궁2 수출국들을 연결하는 빛줄기가 한국에서 뻗어나가는 구도. 모노크롬 지도 위에 빛줄기만 포인트 컬러.",
+      "prompt_en": "Photorealistic cinematic bird's-eye view of a dark desaturated monochrome world map stretched across the frame, with the Korean peninsula at center glowing as the single bright point. Luminous orange-red light trails arc outward from South Korea toward the Middle East, Europe, and Southeast Asia like missile trajectories, each endpoint marked by a faint silhouette of a Cheongung-2 launcher. The map is rendered in high contrast grayscale with deep shadows over ocean areas and subtle fracture-like borders between nations. The glowing trails are the only saturated color, creating an intriguing web of connections radiating from one small nation, ominous dark atmosphere with mysterious tension about the scale of reach."
+    }
+  ]
+}

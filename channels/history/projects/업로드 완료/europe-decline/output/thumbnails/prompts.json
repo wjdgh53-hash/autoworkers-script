@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "europe-decline",
+    "titles": [
+      "\"친환경하다 나라가 망합니다\" 유럽이 스스로 무너진 소름돋는 이유",
+      "한국이 부러워했던 유럽, 스스로 무너지다",
+      "선진국이 후진국이 되는 법 — 유럽이 증명한 자멸의 공식"
+    ],
+    "thumbnail_texts": [
+      "\"유럽의 자해\" + \"친환경이 독이 됐다\"",
+      "\"스스로 무너진 선진국\" + \"50년간 대기업 0개\"",
+      "\"자멸\" + \"정책이 나라를 죽였다\""
+    ],
+    "image_concepts": {
+      "A": "EU 깃발 내부 균열/붕괴 — 균열 사이로 꺼져가는 공장 굴뚝, 어두운 회색 배경에 노란 불빛",
+      "B": "Before→After 대비 — 좌측 밝은 과거 유럽(대성당, 황금빛) vs 우측 어둡고 폐쇄된 현재 유럽(문 닫힌 공장, 회색빛)"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. EU 깃발이 내부에서 거대하게 갈라지며 균열 사이로 연기 멈춘 공장 굴뚝이 보이는 시네마틱 장면. 어둡고 회색빛 분위기에 균열에서 노란 불빛이 새어나온다.",
+      "prompt_en": "Photorealistic cinematic close-up of a massive EU flag fabric tearing apart from within, deep jagged cracks splitting the blue field and golden stars. Through the fractures, dark silhouettes of idle factory smokestacks with no smoke are partially revealed against a gloomy overcast sky. Desaturated monochrome palette with a single warm yellow-orange accent light bleeding through the cracks, casting an ominous glow. The atmosphere is heavy with tension, dark shadows enveloping the edges while the mysterious cracks draw the eye inward."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. EU 깃발이 극적으로 붕괴하며 균열 사이로 멈춘 공장 굴뚝이 드러나는 애니메 일러스트. 고대비 흑백 톤에 노란 포인트 컬러.",
+      "prompt_en": "Anime-style illustration of the EU flag dramatically shattering and crumbling from its center, bold dark cracks spreading across the deep blue surface with golden stars falling away. Behind the fractures, stylized abandoned factory chimneys stand silent in heavy grayscale fog, partially hidden and mysterious. High contrast black and white composition with a single vivid yellow accent color glowing from within the cracks, creating an intense ominous atmosphere with sharp angular shadows and expressive linework."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 화면을 좌우로 나눠 좌측은 황금빛 대성당이 빛나는 화려한 과거 유럽, 우측은 문 닫힌 공장과 회색 폐허의 현재 유럽. 환상 붕괴의 극적 대비.",
+      "prompt_en": "Photorealistic split-screen composition divided vertically into two contrasting halves. The left side shows a grand European cathedral bathed in warm golden light, prosperous and majestic, partially fading at the boundary. The right side reveals a bleak shuttered factory with locked gates and crumbling walls under a heavy gray overcast sky. Desaturated monochrome grading across the image with a single golden accent on the left side bleeding into cold grayscale on the right, emphasizing the dramatic before-and-after collapse with an unsettling tension."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 좌측 밝은 과거 유럽 대성당과 우측 어둡게 폐쇄된 현재 유럽 공장을 대비시킨 스타일라이즈드 애니메 일러스트.",
+      "prompt_en": "Stylized anime-style illustration with a dramatic vertical split composition. The left half depicts a glorious European cathedral with exaggerated golden spires and warm radiant light in a partially revealed dreamlike style. The right half shows a desolate closed-down factory district with dark boarded-up windows and heavy black shadows under stormy skies. High contrast grayscale dominates with a single gold accent color on the cathedral side sharply cutting to cold monochrome, creating an intriguing visual tension between past glory and present decay."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. EU를 상징하는 12개 황금 별이 하나씩 꺼지며 어둠 속으로 사라지는 장면. 마지막 하나의 별만 희미하게 남아 위태롭게 빛난다. 미니멀하고 상징적인 구성.",
+      "prompt_en": "Photorealistic dramatic scene of twelve golden stars arranged in a circle against a vast dark void, most of them extinguished and crumbling into ash, with only one final star barely flickering with a faint warm yellow glow. The surrounding darkness is deep and oppressive, high contrast monochrome background with the single remaining star as the sole accent of color. Mysterious and ominous minimalist composition with dark shadows creeping inward, evoking a sense of an empire on the edge of total collapse."
+    }
+  ]
+}

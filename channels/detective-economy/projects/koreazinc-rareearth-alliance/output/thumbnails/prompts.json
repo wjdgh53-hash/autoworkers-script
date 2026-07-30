@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "koreazinc-rareearth-alliance",
+    "titles": [
+      "\"총알 만들 재료가 없다\" 세계 최강 미국이 이름도 낯선 한국 회사에 11조 싸들고 찾아온 사연",
+      "중국이 자원 무기 꺼내자 갈륨값 2년새 4배, 미국이 11조 걸고 한국에 SOS 친 상황",
+      "미국이 11조 퍼준다더니, 알고 보니 단돈 1센트에 한국 회사 지분 34.5% 가져가는 거래"
+    ],
+    "thumbnail_texts": [
+      "총알도 못 만드는 미국 / 11조 싸들고 매달렸다",
+      "세계 최강 미국이 / 한국 '이 회사'에 SOS",
+      "초강대국이 고개 숙였다 / 상대는 한국 아연회사"
+    ],
+    "image_concepts": {
+      "A": "스케일 역전 — 무지개빛 광물 쇳물을 쏟아내는 작은 한국 용광로에 거대한 전투기 편대와 성조기가 빨려들듯 몰려드는 구도. 초강대국이 작은 오브젝트에 매달리는 힘의 역전을 한 장에 압축.",
+      "B": "광물 쇳물 클로즈업 — 도가니에서 쏟아지는 무지개빛 광물 쇳물을 향해 성조기 무늬의 손이 내밀어지는 클로즈업. 어두운 배경 위 발광 대비."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 무지개빛 광물 쇳물을 쏟아내는 거대 산업 용광로를 향해 미국 전투기 편대와 성조기가 몰려드는 스케일 역전 장면.",
+      "prompt_en": "Photorealistic cinematic scene of a massive glowing industrial smelting crucible pouring a radiant cascade of rainbow-colored molten rare-earth mineral crystals, positioned across the upper half of the frame. A fleet of US Air Force fighter jets and a huge American flag surge and converge toward the small glowing crucible from the dark stormy sky, dwarfed by its blazing light. Ominous gray storm clouds fill the background while the luminous multicolored mineral flow creates extreme brightness contrast, conveying a dramatic reversal of power."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 스케일 역전 구도(작은 한국 용광로 vs 몰려드는 미국 전투기·성조기)를 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of a glowing industrial crucible unleashing a brilliant waterfall of rainbow-colored molten mineral crystals, filling the upper half of the frame. Bold ink outlines and cel-shaded dramatic lighting show a squadron of fighter jets and a towering American flag rushing toward the small radiant crucible against a dark thunderous sky. Exaggerated perspective and vivid saturated color contrast emphasize the overwhelming reversal of scale and power."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 무지개빛 광물 쇳물이 쏟아지는 도가니 클로즈업에 성조기 무늬의 손이 내밀어지는 장면.",
+      "prompt_en": "Photorealistic dramatic close-up of a molten crucible pouring a glowing rainbow-colored stream of rare-earth mineral crystals, occupying the upper half of the frame. A large hand patterned with the American flag reaches out toward the radiant molten flow. Deep dark background with intense red rim lighting and the luminous mineral glow creating high brightness contrast, evoking awe and geopolitical tension."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 도가니 쇳물 클로즈업 + 성조기 손을 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of an extreme close-up of a glowing crucible pouring a radiant rainbow stream of molten mineral crystals across the upper half of the frame. A bold American-flag-patterned hand reaches toward the luminous molten flow, rendered with strong ink outlines and dramatic cel-shaded lighting. Dark moody background with red accents and vivid glowing highlights, conveying tension and reverence."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드 실사. 미·중 힘의 역전을 A vs B로 압축 — 붉은 중국이 광물을 움켜쥔 반대편에서, 성조기가 빛나는 한국 용광로 쪽으로 기울어지는 대비 구도.",
+      "prompt_en": "Photorealistic cinematic split composition across the upper half of the frame: on one side a red-tinted clenched fist gripping dark mineral ore against a shadowy background, on the other side a brightly glowing industrial crucible overflowing with rainbow-colored molten rare-earth crystals beside an American flag leaning toward it. Dramatic dark atmosphere with a burning red-versus-luminous-gold contrast, expressing a tense reversal of global power over critical minerals."
+    }
+  ]
+}

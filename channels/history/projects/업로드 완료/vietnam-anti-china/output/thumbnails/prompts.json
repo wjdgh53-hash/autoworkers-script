@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "vietnam-anti-china",
+    "titles": [
+      "\"28년 혈맹이 하루아침에 전쟁\" 베트남이 중국을 증오하게 된 소름돋는 역사",
+      "같은 공산국가였는데 60만 대군으로 침공한 중국, 베트남이 분노하는 진짜 이유",
+      "천 년간 당하고도 절대 무릎 꿇지 않은 나라, 베트남과 중국의 소름돋는 역사"
+    ],
+    "thumbnail_texts": [
+      "28년 동맹이 / 하루아침에 적으로 / 왜?",
+      "같은 공산국가인데 / 60만 대군으로 침공 / 베트남의 분노",
+      "혈맹의 배신 / 천 년의 분노 / 끝나지 않는 전쟁"
+    ],
+    "image_concepts": {
+      "A": "중국 지도 실루엣과 베트남 지도 실루엣이 좌우로 대치하며 가운데에 균열 광채가 터지는 장면",
+      "B": "악수하는 두 손이 균열과 함께 부서지고 배경에 전쟁 실루엣이 희미하게 보이는 장면"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 어두운 배경 위에 중국 지도 실루엣(왼쪽)과 베트남 지도 실루엣(오른쪽)이 마주 대치하며, 두 실루엣 사이 중앙에서 붉은 균열 광채가 터져나오는 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic composition featuring two large map silhouettes facing each other — the silhouette of China on the left and Vietnam on the right — set against a pitch-black background. Both silhouettes are rendered in desaturated monochrome with faint national color tints, China in muted red and gold, Vietnam in deep crimson. A blazing red crack fractures the center between the two shapes, radiating sharp light like a breaking fault line. The upper half of the frame is dominated by the confronting silhouettes, with the lower half fading into a clean dark void."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 애니메 스타일로 중국과 베트남 지도 실루엣이 어둠 속에서 좌우 대결 구도를 이루고, 중앙 균열에서 붉은 에너지가 폭발적으로 터지는 장면.",
+      "prompt_en": "Anime-style illustration with bold ink outlines showing two large national map silhouettes dramatically facing off — China's silhouette on the left, Vietnam's on the right — against a deep black background with subtle grayscale texture. The silhouettes glow faintly in high-contrast monochrome with red as the sole accent color. An explosive red fracture erupts between them at center frame, with stylized crack lines and energy shards radiating outward in classic anime battle composition. The upper half is filled with the intense confrontation, leaving the lower half as a simple dark gradient."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 두 손이 악수하는 장면이 균열과 함께 산산조각 나고, 배경에는 전쟁 실루엣과 어두운 연기가 희미하게 드리운 시네마틱 사진.",
+      "prompt_en": "Photorealistic cinematic close-up of two hands in a handshake shattering apart with deep red cracks spreading across the skin and fragments flying outward. The image is rendered in high-contrast grayscale with vivid red as the only accent color highlighting the fracture lines. Behind the breaking hands, barely visible silhouettes of soldiers and smoke rise from a dark, desolate battlefield in the upper background. The composition places the crumbling handshake in the upper half of the frame, with the lower half dissolving into a clean dark background."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 두 손의 악수가 애니메 스타일로 폭발적으로 깨지며 붉은 균열이 퍼지고, 배경에 전쟁 실루엣이 흐릿하게 배치된 장면.",
+      "prompt_en": "Vibrant anime-style illustration of two hands clasped in a handshake violently breaking apart, with dramatic red crack lines and debris exploding outward in an exaggerated stylized burst. The overall palette is desaturated monochrome with bold red as the single accent color tracing every fracture. In the background, faint dark silhouettes of marching soldiers and rising smoke are rendered in a minimalist anime style, partially revealed through the haze. The shattered handshake occupies the upper center of the frame, with a clean dark gradient filling the lower portion."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드 실사. 어두운 배경 위에 낡고 찢어진 두 나라의 국기가 하나로 묶인 채 불에 타고 균열이 생기는 상징적 장면. 천 년의 갈등과 배신의 역사를 한 컷에 압축.",
+      "prompt_en": "Photorealistic cinematic shot of two tattered national flags — one deep red with yellow stars (China) and one crimson red with yellow star (Vietnam) — bound together at the center with fraying rope, both flags charred and crumbling at the edges. The image is desaturated monochrome except for the glowing red accent on the burning edges and a single crack of crimson light splitting between the two flags. Dark smoke drifts behind them against a pitch-black background, evoking ominous tension and betrayal. The bound burning flags fill the upper half of the frame, with the lower half fading into clean darkness."
+    }
+  ]
+}

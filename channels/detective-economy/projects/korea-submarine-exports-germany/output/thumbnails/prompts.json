@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-submarine-exports-germany",
+    "titles": [
+      "\"60조를 따고도 밤잠을 설친다\" 이긴 독일이 웃지 못하는 이유",
+      "주문은 사상 최대인데 배 지을 손이 없다, 캐나다를 삼킨 독일의 딜레마",
+      "\"이겨놓고 왜 표정이 굳었나\" 캐나다 잠수함 따낸 독일에 날아든 청구서"
+    ],
+    "thumbnail_texts": [
+      "60조 대박인 줄? + 이겨놓고 발등에 불 + 독일 웃음이 사라졌다",
+      "주문은 산더미인데 + 배 지을 손이 없다 + 승리가 덫이 됐다",
+      "60조 따낸 독일 + 축배 들다 말고 + 발등에 청구서 날아듦"
+    ],
+    "image_concepts": {
+      "A": "인물 당혹 클로즈업 + 균열 — 60조 계약서를 든 독일 관계자의 굳은·당혹 표정 클로즈업, 배경 독일 조선소/독일기에 균열이 번짐. 붉은 경고 포인트, 무거운 하강 톤.",
+      "B": "짐 쌓인 저울/붕괴 — 잠수함·어뢰 주문이 산더미로 쌓여 한쪽으로 기울어 무너지는 거대한 저울, 그 아래 짓눌린 작은 독일 조선소. 자멸·압박 톤."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 60조 계약서를 든 독일 관계자가 굳은 당혹 표정을 짓고, 배경 독일 국기와 조선소에 붉은 균열이 번지는 위기 시네마틱 클로즈업.",
+      "prompt_en": "Photorealistic cinematic YouTube thumbnail, tight close-up of a middle-aged Western (German) executive in a dark suit clutching a thick contract document, his face frozen in anxious dismay with furrowed brow and tight jaw, as if a victory has curdled into worry. Behind him a German national flag (black-red-gold horizontal bands) and a shipyard crane silhouette crack and fracture, with glowing red warning fissures spreading across the frame. Heavy, oppressive dark palette of charcoal and deep shadow with harsh red accent light, the anxious face and the cracking flag oversized in the frame, downcast crisis mood, sharp dramatic contrast."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 계약서 든 독일 관계자의 당혹 표정 + 균열 번지는 독일기·조선소를 다크 톤 애니메 스타일로.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration, dramatic close-up of a middle-aged German executive in a dark suit gripping a thick contract, his cel-shaded face contorted in anxious dismay, eyes wide, as triumph turns to dread. Behind him a German flag (black-red-gold bands) and shipyard cranes crack apart with bold ink-outlined fissures glowing red. Deep black and shadowed palette with sharp crimson accent highlights, exaggerated tense expression, the worried face and fracturing flag dramatically oversized, oppressive crisis atmosphere, strong stylized contrast."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 잠수함·어뢰 주문이 산더미로 쌓여 한쪽으로 기울며 무너지는 거대한 저울, 그 아래 짓눌린 작은 독일 조선소의 압박 장면.",
+      "prompt_en": "Photorealistic cinematic YouTube thumbnail: a colossal old-fashioned balance scale overloaded with a towering heap of submarines, torpedoes and contract papers piled far too high on one pan, tipping and collapsing dangerously to one side. Beneath the crashing pan, a small German shipyard (with tiny cranes and a German black-red-gold flag) is being crushed under the toppling weight. Dark stormy industrial background with deep shadow and a red danger glow, the overloaded tipping scale oversized and dominating the frame, oppressive sense of self-inflicted collapse under too many orders, sharp dramatic cinematic contrast."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 주문 산더미로 무너지는 저울 + 짓눌린 독일 조선소를 역동적 다크 애니메 스타일로.",
+      "prompt_en": "Vibrant dark anime-style illustration: a giant balance scale wildly overloaded with a mountainous pile of submarines, torpedoes and stacked contracts crashing down on one side in bold cel-shaded outlines, tipping over catastrophically. Below, a tiny German shipyard with cranes and a black-red-gold flag is squashed under the toppling load. Dynamic exaggerated perspective, dark stormy palette with glowing red danger accents, the collapsing overloaded scale dramatically oversized, intense mood of being buried by one's own winnings, sharp stylized contrast."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 축배 잔을 들다 굳어버린 독일 관계자, 잔 너머로 밀려드는 주문서·계산서 종이 폭풍과 균열 가는 독일기 — 승리가 청구서로 뒤집히는 한 프레임.",
+      "prompt_en": "Photorealistic dramatic YouTube thumbnail of a middle-aged German executive in a dark suit raising a celebratory champagne glass that freezes halfway as his face turns to alarm. Around him a storm of invoice and order papers and contract sheets swirls in, and behind him a German flag (black-red-gold bands) cracks and darkens. One sheet in the foreground reads like an overdue bill. Moody crisis lighting with deep shadows and a harsh red glow, the stunned face and the swirling paperwork oversized in the upper frame, capturing the moment a triumph flips into a looming bill, sharp dramatic contrast."
+    }
+  ]
+}

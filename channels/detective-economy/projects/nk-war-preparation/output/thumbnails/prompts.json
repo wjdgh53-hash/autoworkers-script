@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "project": "nk-war-preparation",
+    "titles": [
+      "북한, 진짜 전쟁 준비 중인가? 휴전선 코앞까지 내려온 위성 사진의 정체",
+      "\"휴전선 코앞까지 내려왔다\" 북한이 보내는 전쟁 준비 신호, 그리고 우리의 대답",
+      "위성에 딱 걸린 북한의 전쟁 준비… 그런데 개전하면 15초 만에 뒤집힙니다"
+    ],
+    "thumbnail_texts": [
+      "휴전선 코앞 / 전쟁 준비?",
+      "위성에 딱 걸림 / 남하 시작했다",
+      "전쟁 준비 신호 / 그래도 못 이긴다"
+    ],
+    "image_concepts": {
+      "A": "위성에 포착된 임박 신호 — 어둠 속 군사분계선을 따라 붉게 그어진 전술도로 라인이 남쪽으로 뻗어 내려오는 야간 위성/조감 뷰, 그 위로 선글라스 낀 북한 지도자 클로즈업이 드리움. 임박한 위협.",
+      "B": "신호 vs 반격 대결 — 좌측 하단 북한 미사일·전술도로가 밀고 내려오고, 우측에서 태극 마킹 요격 미사일(현무 계열)이 상승 교차. 긴장 속 반격 예고(통쾌)."
+    },
+    "strategy": {
+      "count": 5,
+      "art_styles": ["photorealistic", "anime"],
+      "color_palette": "dark",
+      "emotions": ["shock", "tension"],
+      "text_space": "bottom-half",
+      "face_style": "exaggerated+natural"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어둠 속 군사분계선을 따라 붉게 빛나는 전술도로 라인이 남쪽으로 뻗어 내려오는 야간 위성 조감 뷰. 상단에 선글라스 낀 북한 지도자형 인물 클로즈업이 위협적으로 드리운다. '휴전선 코앞까지 내려온 신호'를 위성 증거로 직관화.",
+      "prompt_en": "Cinematic dark aerial satellite-style photograph at night. A tense militarized border landscape seen from above, where a glowing red tactical road line snakes across the terrain and pushes downward toward the viewer, tracing a fortified frontier of cleared land and fences. Cold moonlight, deep black and dark military-green shadows, ominous red road glow. In the upper portion, an extreme close-up of a stern North Korean leader figure with short cropped hair and dark sunglasses in a dark suit looms over the scene, dramatically side-lit, exaggerated menacing expression. High contrast, imminent-threat mood. Deep black palette with warning-red accents. No readable text. Bottom half kept darker for large caption text.",
+      "text_ko": "휴전선 코앞 / 전쟁 준비?"
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '야간 위성 조감 + 붉은 전술도로 남하 라인 + 상단 북한 지도자 클로즈업' 구도를 강렬한 애니메 스타일로. 임박한 위협의 긴장감.",
+      "prompt_en": "Dramatic anime-style illustration, night aerial view of a militarized border seen from above. A bold glowing red tactical road line cuts across dark terrain with dynamic perspective, surging downward toward the viewer past cleared strips and fences, rendered with dramatic cel-shading and speed lines. In the upper frame, a stylized stern North Korean leader figure with short hair and dark sunglasses in a dark suit looms menacingly, bold outlines and heavy shadows, exaggerated threatening expression. Deep black and dark-green palette with electric warning-red accents, high-contrast imminent-threat and tension mood. No readable text. Lower half kept dark for caption space.",
+      "text_ko": "위성에 딱 걸림 / 남하 시작했다"
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌측 하단에서 북한 미사일과 붉은 전술도로가 밀고 올라오고, 우측에서 태극 마킹 요격 미사일이 화염을 뿜으며 상승 교차한다. 밤하늘 배경. '위협 vs 반격'의 긴장과 통쾌 예고.",
+      "prompt_en": "Cinematic dark photograph of a night sky over a tense border. From the lower-left, a red-glowing ballistic missile rises alongside an ominous red tactical road pushing forward. From the right, a sleek interceptor missile marked with a subtle red-and-blue taegeuk emblem streaks upward, trailing orange flame, crossing the incoming threat at a dramatic intersection. Deep navy-black sky, high contrast, red and orange fire accents against cold darkness, tense mood of an incoming attack being met by a decisive counterstrike. Object-focused, no faces, no readable text. Bottom half kept darker for large caption text.",
+      "text_ko": "전쟁 준비 신호 / 그래도 못 이긴다"
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. '좌측 북한 미사일·전술도로 남하 vs 우측 태극 요격 미사일 상승 교차' 구도를 강렬한 애니메 스타일로. 반격의 통쾌·긴장.",
+      "prompt_en": "Dramatic anime-style illustration of a night sky over a militarized border. From the lower-left, a red-glowing enemy ballistic missile ascends beside a menacing red tactical road line surging forward. From the right, a sleek interceptor missile bearing a subtle red-and-blue taegeuk emblem rockets upward with explosive orange flame and dynamic speed lines, crossing the incoming threat. Bold cel-shaded outlines, deep navy-black sky, high contrast, warning-red and fiery-orange accents, tense-yet-triumphant counterattack mood. No faces, no readable text. Lower half kept dark for caption text.",
+      "text_ko": "휴전선 코앞 / 전쟁 준비?"
+    },
+    {
+      "id": 5,
+      "type": "concept-a-hero",
+      "concept_ko": "컨셉 A 변형 실사(위성 히어로샷). 붉게 빛나는 전술도로가 휴전선을 넘어 남쪽으로 뻗는 위성 클로즈업을 화면 가득 잡고, 라인 끝에 작은 무장 차량 실루엣들. 인물 없이 '남하하는 위협' 오브젝트 한 컷으로 극대화.",
+      "prompt_en": "Cinematic dark satellite-style photograph, dramatic top-down extreme close-up of a fortified border terrain filling the frame. A glowing red tactical road line carves across cleared earth and breaches downward past a fence line toward the viewer, tiny armored-vehicle silhouettes crawling along its end. Cold overhead lighting, deep black and dark-green shadows, intense warning-red road glow, ominous imminent-advance tension of a threat creeping closer. No people, no readable text. Bottom half kept darker for text space.",
+      "text_ko": "위성에 딱 걸림 / 남하 시작했다"
+    }
+  ]
+}

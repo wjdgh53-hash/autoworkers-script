@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "newzealand-collapse",
+    "titles": [
+      "세계에서 가장 살기 좋다던 뉴질랜드, 바로 그 완벽함이 나라를 무너뜨렸습니다",
+      "낙원이라던 뉴질랜드는 어쩌다 국민이 도망치는 나라가 됐을까",
+      "살기 좋아서 망한 나라, 뉴질랜드에 지금 벌어지는 일"
+    ],
+    "thumbnail_texts": [
+      "완벽해서 무너졌다 + 뉴질랜드의 역설 + 낙원의 배신",
+      "가장 좋다던 나라의 끝 + 뉴질랜드의 몰락 + 거리 탓이 아니다",
+      "천국이 지옥이 됐다 + 뉴질랜드의 현실 + 그들이 떠난 이유"
+    ],
+    "image_concepts": {
+      "A": "아름다운 자연 절경 앞에서 걱정스러운 표정의 뉴질랜드인, 배경 풍경이 어둡게 균열",
+      "B": "그림엽서 같은 뉴질랜드 절경이 크게 갈라지고 그 틈으로 국기가 함께 찢어짐"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 눈 덮인 산과 초원 절경 앞에 근심 어린 표정으로 선 뉴질랜드 남성, 배경 풍경에 어두운 균열이 번지는 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic image of a worried middle-aged New Zealander man with a natural anxious expression standing in the upper half of the frame, framed against the iconic snow-capped Southern Alps and green pastures of New Zealand. Dark ominous cracks spread across the beautiful landscape behind him, dramatic deep shadows and moody high-contrast lighting create a tense atmosphere of a paradise quietly falling apart. A subtle red fracture glow accents the splitting scenery."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 장면(절경 앞 근심하는 인물 + 균열)을 진한 아웃라인의 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a worried New Zealander man with expressive anxious eyes positioned in the upper half of the frame, set against the majestic snow-capped mountains and green fields of New Zealand. Bold ink outlines and cel-shaded dramatic lighting emphasize dark cracks fracturing the idyllic scenery behind him. Moody deep-shadow color palette with a vivid red fracture accent, tense ominous mood of a beautiful land breaking apart."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 그림엽서 같은 뉴질랜드 절경이 유리처럼 크게 갈라지고, 그 균열을 따라 뉴질랜드 국기가 함께 찢어지는 상징적 장면.",
+      "prompt_en": "Photorealistic dramatic image of a postcard-perfect New Zealand landscape of turquoise lakes and green mountains that is cracking apart like shattered glass across the upper half of the frame. A New Zealand national flag is torn along the same fractures, its fabric splitting. The bright scenic beauty gives way to dark shadowy voids inside the cracks, high-contrast cinematic lighting, ominous tense atmosphere with a deep red glow bleeding from the fissures."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 갈라지는 절경 + 찢긴 국기를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Dramatic anime-style illustration of an idyllic New Zealand landscape shattering like broken glass in the upper half of the frame, with a New Zealand flag tearing apart along the fractures. Bold outlines and vibrant cel-shaded contrast between the bright scenic colors and the dark cracked voids. Intense ominous mood, exaggerated dramatic perspective, glowing red fracture lines cutting through the paradise."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 텅 빈 오클랜드 도심 거리에 낡은 이삿짐 캐리어 하나만 덩그러니 놓인 황량한 장면 위로 뉴질랜드 국기 그림자가 드리움.",
+      "prompt_en": "Photorealistic cinematic wide shot of a deserted, empty downtown Auckland street at dusk with shuttered shops, a single abandoned worn suitcase left standing alone in the upper-center of the frame. A faint New Zealand flag shadow is cast over the emptiness. Cold desaturated blue tones, dramatic long shadows, deep moody lighting, a haunting atmosphere of abandonment and decline, subtle red neon reflection on the wet pavement."
+    }
+  ]
+}

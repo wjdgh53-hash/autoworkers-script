@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "hanwha-us-navy-mro",
+    "titles": [
+      "\"2순위니까 조금만 기다려라\"던 캐나다, 그 사이 한화오션 도크는 미국 군함이 채웠어요",
+      "예비로 밀려난 한화오션, 어떻게 세계 최강 미국이 줄 서는 자리가 됐나",
+      "캐나다 60조에서 밀린 한화오션이 웃는 이유, 빈 도크의 주인이 바뀌었다"
+    ],
+    "thumbnail_texts": [
+      "한화오션 / 2순위의 역전 / 역전(빨강 도장) / 빈 도크를 미국이 채웠다",
+      "기다리라던 캐나다 / 미국이 먼저 왔다 / 뒤집힘(도장)",
+      "한화오션 / 밀려난 게 아니었다 / 반전(도장) / 도크 주인이 바뀌었다"
+    ],
+    "image_concepts": {
+      "A": "상징물 교체 + 스케일 대비: 밀려나는 '예비순위' 서류 vs 미 군함이 빼곡히 들어찬 한화오션 도크",
+      "B": "Before→After 좌우 분할: 텅 빈 도크 → 성조기 단 미 군함으로 가득 찬 도크"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어둠 속 거대한 조선소 드라이도크가 성조기를 단 미 해군 군함들로 빼곡히 채워지고, 앞쪽에는 구겨져 밀려나는 낡은 '예비순위' 서류가 바닥에 나뒹구는 시네마틱 장면.",
+      "prompt_en": "Dark cinematic photograph of a massive shipyard dry dock packed with towering gray U.S. Navy warships flying American flags, dramatically oversized and looming in the top half of the frame. In the foreground, a crumpled old contract document is being shoved aside and discarded on the ground. Deep shadows, dramatic contrast, moody industrial lighting with cold blue tones and a tense ominous atmosphere. Huge orange shipyard cranes silhouetted against a stormy dark sky."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 장면(미 군함으로 가득 찬 조선소 도크 + 밀려나는 예비순위 서류)을 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant dramatic anime-style illustration of a colossal shipyard dry dock overflowing with imposing gray U.S. Navy warships bearing American flags, exaggerated in scale to dominate the upper frame. A crumpled old contract paper is being pushed away and cast aside below. Bold ink outlines and cel-shaded lighting, dark stormy palette with deep shadows and sharp dramatic contrast, towering orange cranes, intense tense mood."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 하나의 조선소 도크가 좌우로 대비되는 구도 — 왼쪽은 텅 비어 어두운 빈 도크, 오른쪽은 성조기 단 미 군함들로 가득 찬 도크. 극적인 반전의 순간.",
+      "prompt_en": "Dark cinematic photograph of a single enormous shipyard dry dock split into a stark before-and-after contrast across the top half of the frame: the left side an empty, shadowy, deserted dock, the right side suddenly crowded with massive gray U.S. Navy warships flying American flags. Dramatic side lighting, deep shadows, cold moody atmosphere with high contrast, huge industrial cranes towering overhead, tense and dramatic turning-point mood."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 좌우 대비(빈 도크 → 미 군함 가득한 도크)를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant dramatic anime-style illustration of one giant shipyard dry dock shown in a striking left-to-right transformation across the upper frame: the left half a dark empty abandoned dock, the right half packed with towering gray U.S. Navy warships bearing American flags. Bold cel-shaded outlines, dark cinematic palette with dramatic contrast and deep shadows, massive cranes, an intense reversal atmosphere charged with tension."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 미 해군 항공모함이 작은 한화오션 도크 쪽으로 기울어 다가오며 '순번을 기다리는' 듯한 초현실적 스케일 대비 — 최강자가 손 내미는 역설을 시각화.",
+      "prompt_en": "Dark surreal cinematic image of a gigantic U.S. Navy aircraft carrier leaning and edging toward a comparatively small industrial shipyard dock, as if waiting in line, dramatically oversized to dominate the top half of the frame. Ominous stormy sky, deep shadows, dramatic cold-blue and steel contrast, moody tense atmosphere emphasizing the paradox of a superpower reaching out. Towering orange cranes and a lone empty berth awaiting the massive vessel."
+    }
+  ]
+}

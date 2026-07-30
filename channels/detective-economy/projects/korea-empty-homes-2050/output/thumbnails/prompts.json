@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-empty-homes-2050",
+    "titles": [
+      "공짜로 줘도 안 팔리는 일본 집들, 30년 뒤 한국이 그대로 갑니다",
+      "일본 빈집 900만 채가 보여주는 2050년 한국 부동산의 미래",
+      "0엔 주택 vs 강남값 도쿄, 인구 절벽이 집값을 가르는 법"
+    ],
+    "thumbnail_texts": [
+      "0원에도 안 팔림 / 일본의 오늘",
+      "30년 뒤 한국 / 공짜 집 시대?",
+      "일본 빈집 900만 / 한국은 324만"
+    ],
+    "image_concepts": {
+      "A": "Before→After 스케일 대비: 좌측은 잡초 우거진 버려진 일본 목조 빈집(어두움), 우측은 화려한 도쿄 도심 초고층 야경(밝음). 같은 나라인데 극단으로 갈리는 명암 대비",
+      "B": "인물 감정: 버려진 빈집 앞에 선 막막한 표정의 30~40대 인물, 뒤로 불 꺼진 집들이 줄지어 늘어선 실루엣"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 화면을 좌우로 가른 극단 대비 — 왼쪽은 잡초가 무성하게 뒤덮인 채 버려진 어두운 일본 목조 빈집, 오른쪽은 강남에 맞먹을 만큼 화려하게 빛나는 도쿄 도심 초고층 야경. 같은 나라인데 운명이 갈린 두 세계의 시네마틱 명암 대비.",
+      "prompt_en": "Dark cinematic photograph split left-to-right across the top half of the frame. On the left: a decaying abandoned Japanese wooden house swallowed by overgrown weeds, sagging roof, boarded windows, sunk in gloomy shadow. On the right: a dazzling Tokyo downtown skyline of glowing high-rise towers at night, bright neon and window lights. Extreme contrast between derelict darkness and glittering wealth within one country, moody atmospheric lighting, deep shadows, tense unsettling mood emphasizing a split fate."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 좌우 대비 장면(버려진 일본 목조 빈집 vs 화려한 도쿄 도심 야경)을 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant dramatic anime-style illustration split left-to-right across the upper frame. Left side: a crumbling abandoned Japanese wooden house overtaken by wild weeds, dark and desolate. Right side: a brilliant Tokyo skyline of towering neon-lit skyscrapers glowing against the night. Bold cel-shaded outlines, dark cinematic palette with sharp contrast between ruin and glittering prosperity, deep shadows, tense ominous atmosphere."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 버려진 빈집 앞에 선 막막하고 불안한 표정의 30~40대 인물 클로즈업, 뒤로는 불이 꺼진 채 줄지어 늘어선 빈집들의 어두운 실루엣이 끝없이 이어지는 장면.",
+      "prompt_en": "Dark cinematic photograph, close-up of a worried, helpless-looking person in their 30s-40s standing in front of a derelict abandoned house, face lit by faint dim light. Behind them, an endless row of dark, unlit empty houses recedes into shadow. Deep shadows, cold moody lighting, a few faint yellow window glows in the distance, bleak and anxious atmosphere, text space kept clear at the bottom."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 버려진 빈집 앞 막막한 인물 + 뒤로 불 꺼진 빈집 행렬 실루엣을 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant dramatic anime-style illustration, close-up of a distressed person in their 30s-40s standing before a decaying abandoned house, anxious expression. Behind them, a long line of dark unlit empty houses stretches into the gloom. Bold cel-shaded outlines, dark cinematic palette with deep shadows, sparse faint yellow lights in the distance, bleak tense mood."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 저울(천칭) 위 한쪽에는 잡초 우거진 버려진 빈집 무더기, 반대쪽에는 반짝이는 초고층 아파트 한 채가 올려져 팽팽하게 기울어진 초현실적 구도 — 인구 절벽이 집을 '자산'과 '짐덩어리' 두 종류로 가르는 역설을 시각화.",
+      "prompt_en": "Dark surreal cinematic image of a giant balance scale dominating the top half of the frame. On one pan, a heap of derelict weed-covered abandoned houses sinking down heavily; on the other pan, a single gleaming luxury high-rise apartment tower glowing bright and rising up. Dramatic tension in the tilted scale, ominous stormy backdrop, deep shadows, cold-blue and gold contrast, moody atmosphere visualizing how a population cliff splits homes into 'assets' and 'burdens'."
+    }
+  ]
+}

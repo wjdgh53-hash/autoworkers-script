@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "banqiao-dam-collapse",
+    "titles": [
+      "하룻밤에 23만 명이 사라진 반차오댐, 그런데 절반은 물이 빠진 뒤에 죽었습니다",
+      "23만 명을 삼킨 반차오댐, 정작 더 많은 사람은 홍수가 끝난 뒤에 죽었습니다",
+      "\"물은 다 빠졌는데\" 반차오댐, 하룻밤 23만 명이 두 번 죽은 이유"
+    ],
+    "thumbnail_texts": [
+      "\"물은 다 빠졌는데…\" + 죽음은 그 뒤에 / 23만 명이 지워졌다",
+      "\"이게 자연재해라고?\" + 하룻밤 23만 명 / 절반은 물 빠진 뒤 죽었다",
+      "세계가 덮은 최악의 물난리 + 8만이 죽고, 14만이 더"
+    ],
+    "image_concepts": {
+      "A": "균열·붕괴 + 인물 병치 — 흙탕물이 마을을 덮치는 붕괴 현장과 등 돌린 무표정한 관료",
+      "B": "Before→After — 물에 잠긴 마을 vs 물이 다 빠진 진흙 폐허의 정적"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 무너진 흙댐에서 쏟아진 흙탕물이 시골 마을을 집어삼키는 붕괴 현장, 우측에 감정을 숨긴 채 등을 돌리는 냉담한 중국 관료. 어두운 폭풍우 톤.",
+      "prompt_en": "Photorealistic cinematic disaster scene in a dark stormy atmosphere with deep shadows and dramatic contrast. On the left, a massive wall of muddy floodwater bursting from a collapsed earthen dam engulfs a rural Chinese village at night, houses swept away. On the right, a cold-faced Chinese government official in a 1970s Mao-era uniform turns his back and looks away with a suppressed, indifferent expression, extreme close-up of his face. Ominous red warning light rakes across the scene, moody dramatic lighting, towering scale of the flood dwarfing the tiny village."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 붕괴 현장 + 등 돌린 관료를 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration in a dark cinematic atmosphere with dramatic contrast and deep shadows. On the left, a towering wall of muddy floodwater bursting from a shattered earthen dam swallows a rural Chinese village at night. On the right, a cold, indifferent Chinese official in a 1970s Mao-era uniform turns away with an exaggerated suppressed expression, bold ink outlines and cel-shaded lighting. Ominous red accents, intense sense of catastrophe and scale, moody stormy sky."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 물이 다 빠진 뒤 진흙과 잔해만 남은 폐허가 된 마을, 무너진 댐 잔해가 멀리 보이는 정적이고 참혹한 장면.",
+      "prompt_en": "Photorealistic cinematic wide shot of a devastated rural Chinese village after floodwaters have receded, everything buried in thick grey mud and debris under a dark overcast sky. Broken remains of collapsed houses and a shattered earthen dam loom in the distance. Eerie stillness, deep shadows, dramatic desaturated contrast with a faint cold blue-grey tone, an oppressive haunting atmosphere of a wasteland where a town used to be."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 물 빠진 진흙 폐허와 멀리 무너진 댐 잔해를 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of a rural Chinese village turned into a mud-covered wasteland after floodwaters receded, dark overcast sky with dramatic contrast. Broken houses half-buried in grey mud, a shattered earthen dam collapsing in the distance. Cel-shaded moody lighting, deep shadows, cold desaturated palette with faint ominous highlights, haunting silence and desolation."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 밤에 잠든 시골 마을 위로 아파트 높이의 거대한 흙탕물 벽이 시속 50km로 덮쳐오는 순간을 극도로 과장한 공포 앵글.",
+      "prompt_en": "Photorealistic ultra-dramatic disaster photograph, dark night with intense contrast and deep shadows. A monstrous towering wall of muddy floodwater, several stories high, races toward a small sleeping rural Chinese village, about to crash down on tiny houses below. Extreme low-angle perspective exaggerating the overwhelming scale of the water wall, ominous red-tinged storm sky, moody terrifying atmosphere of an unstoppable catastrophe."
+    }
+  ]
+}

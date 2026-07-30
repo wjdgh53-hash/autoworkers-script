@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "middleeast-korea-rolemodel",
+    "titles": [
+      "\"기름 530만 배럴만 맡아줘\" 산유국들이 유독 한국에게만 매달리는 이유",
+      "\"보관료는 우리가 낼게요\" 세계 산유국들이 유독 한국에게만 원유를 맡기는 이유",
+      "\"제발 한국에 지어줘\" 오일머니 산유국들이 유독 한국에게만 매달리는 이유"
+    ],
+    "thumbnail_texts": [
+      "\"이 기름 좀 맡아줘\" / 산유국들이 유독 / 한국에게만 매달리는 이유",
+      "\"보관료는 우리가 낼게\" / 석유 없는 한국에 / 530만 배럴 맡기는 중동",
+      "\"믿을 건 한국뿐\" / 산유국이 유독 한국에게만 / 곳간을 여는 이유"
+    ],
+    "image_concepts": {
+      "A": "스케일/권위 역전 — 아랍 산유국 지도자들이 원유 드럼통을 안고 거대한 태극기 정유탱크에 매달리듯 넘겨주는 헌납 구도",
+      "B": "흐름 역전 — 중동 유전에서 한국 정유탑으로 원유가 역류하는 굵은 화살표 대비"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 아랍 전통복 산유국 지도자 두세 명이 원유 드럼통을 두 손으로 받쳐 들고, 태극기가 붙은 거대한 한국 정유 저장탱크 앞에서 다급하게 매달리듯 넘겨주는 시네마틱 장면.",
+      "prompt_en": "Cinematic photorealistic image, dramatic contrast, dark cinematic atmosphere with deep shadows and moody sunset lighting over a massive industrial oil refinery. Two or three dignified Middle Eastern oil-state leaders in traditional white thobes and headdresses, with exaggerated anxious pleading expressions, desperately holding up large crude-oil drums and offering them toward an enormous towering oil storage tank marked with the South Korean Taegukgi flag. The Arab figures look small and imploring beside the dramatically oversized Korean refinery tank, reversing the usual power balance. Deep orange industrial glow, dramatic side lighting, tense ominous mood."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '산유국 지도자들이 태극기 정유탱크에 원유를 바치며 매달리는' 장면을 강렬한 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration with bold ink outlines and cel-shaded dramatic lighting. Two or three Middle Eastern oil-state leaders in traditional white robes and headdresses with exaggerated desperate pleading faces, straining to hand over oversized crude-oil drums to a giant towering oil storage tank emblazoned with the South Korean Taegukgi flag. The small imploring Arab figures contrast against the dramatically huge Korean refinery tank. Dark moody sunset palette, deep shadows, intense dramatic contrast, tense atmosphere, exaggerated perspective."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌측 중동 사막 유전들, 우측 태극기 한국 정유탑, 가운데 원유가 중동에서 한국으로 역류하는 굵은 화살표.",
+      "prompt_en": "Photorealistic cinematic split composition with dramatic contrast and dark moody atmosphere. On the left, Middle Eastern desert oil fields with pumpjacks and oil drums labeled like Saudi, UAE and Kuwait sources under a dim sky. On the right, a towering South Korean oil refinery complex crowned with the Taegukgi flag. A thick glowing arrow of flowing crude oil surges from the Middle East across to Korea, visually reversing the expected direction. Deep shadows, ominous industrial lighting, tense high-contrast mood."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 중동→한국 원유 역류 화살표 대비를 애니메 스타일로.",
+      "prompt_en": "Bold anime-style illustration, cel-shaded with strong ink outlines and dramatic lighting. Left side shows Middle Eastern desert oil fields with pumpjacks and crude-oil drums under a dark sky; right side shows a towering South Korean refinery tower marked with the Taegukgi flag. A massive glowing arrow of crude oil rushes from the Middle East toward Korea, reversing the usual flow. Dark cinematic color palette, deep shadows, vivid dramatic contrast, tense energetic atmosphere."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 텅 빈 사막 유전 위로 걱정스러운 산유국 지도자가 스마트폰으로 태극기 정유단지 사진을 바라보며 '한국에 맡기자'는 듯한 클로즈업 — 인물 감정 중심.",
+      "prompt_en": "Photorealistic dramatic close-up, dark cinematic atmosphere with deep shadows. A dignified Middle Eastern oil-state leader in a traditional white headdress, face filling the upper frame with an exaggerated worried, hopeful expression, gazing at a glowing image of a South Korean refinery complex flying the Taegukgi flag. Behind him a dim desert oil field stretches into shadow. Moody orange rim lighting, dramatic contrast, tense anticipatory mood, oversized emotional face."
+    }
+  ]
+}

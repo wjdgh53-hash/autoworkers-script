@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "china-taiwan-crisis",
+    "titles": [
+      "중국 200만 대군이 70년째 섬 하나를 못 먹는 진짜 이유",
+      "\"중국이 대만을 치면, 먼저 쓰러지는 건 중국입니다\"",
+      "\"4주면 끝납니다\" 중국이 절대 말 못하는 대만 침공의 비밀"
+    ],
+    "thumbnail_texts": [
+      "70년째 실패 + 200만 대군의 함정",
+      "침공하면 4주 + 중국이 먼저 굶는다",
+      "못 먹는 섬 + 200만 vs 2,300만"
+    ],
+    "image_concepts": {
+      "A": "금이 간 중국 군함 — 항모 선체에 균열이 가며 석유가 새어나오는 시네마틱 장면",
+      "B": "모래성 군대 — 200만 병사 형상의 모래성이 경제 파도에 무너지는 장면"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 어두운 대만 해협에 떠 있는 중국 항공모함의 시네마틱 클로즈업. 선체에 거대한 균열이 가면서 붉은 빛이 새어나오고, 균열 사이로 석유가 바다로 흘러내린다.",
+      "prompt_en": "Photorealistic cinematic close-up of a massive Chinese aircraft carrier floating in a dark Taiwan Strait at night. A dramatic glowing red crack splits across the hull of the warship, with black crude oil visibly leaking from the fractures into the dark ocean. The carrier is imposing and enormous, filling the upper half of the frame, with dramatic rim lighting highlighting its silhouette against a stormy dark sky. Deep shadows, dark cinematic atmosphere with intense red glow emanating from the cracks, creating an ominous mood of power crumbling from within."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 균열 난 항모를 스타일리시한 애니메 스타일로 표현. 붉은 균열이 더 극적으로 빛나며, 바다에 석유가 번지는 장면.",
+      "prompt_en": "Anime-style illustration of a colossal Chinese aircraft carrier with dramatic glowing crimson cracks spreading across its hull. Bold ink outlines and cel-shaded rendering emphasize the contrast between the dark steel warship and the vivid red fracture lines. Black oil bleeds from the cracks into a dark turbulent ocean. The carrier dominates the upper half of the frame, backlit by an ominous red sky. Vibrant anime art with intense dramatic atmosphere, exaggerated scale to convey overwhelming military power that is breaking apart from within."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 200만 병사 형태로 쌓아올린 거대한 모래성이 달러와 석유통 모양의 파도에 의해 무너져 내리는 시네마틱 장면.",
+      "prompt_en": "Photorealistic dramatic photograph of an enormous sand castle sculpted in the shape of a Chinese military army formation with tanks and soldiers, towering and imposing in the upper half of the frame. A massive dark wave carrying oil barrels and dollar bills crashes into the sand fortress, causing it to crumble and dissolve dramatically. The scene is set against a blood-red sunset sky with dark clouds. Cinematic lighting with strong side light casting long shadows, deep contrast between the golden sand and the dark threatening wave. Atmosphere of inevitable destruction and futility."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 모래성 군대가 경제 파도에 무너지는 장면을 애니메 스타일로. 붉은 하늘 아래 극적인 붕괴.",
+      "prompt_en": "Stylized anime illustration of a gigantic sand castle army formation crumbling under a massive dark wave. The sand fortress is shaped like rows of Chinese military soldiers and tanks, filling the upper portion of the frame. A dramatic wave made of swirling oil barrels and currency symbols crashes against the fortress, sending sand particles flying. Blood-red anime sky with exaggerated dramatic clouds. Bold outlines, vibrant cel-shading with high contrast between warm golden sand and cold dark wave. Intense atmosphere of an unstoppable force meeting a fragile giant."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 대만 해협을 사이에 둔 거대한 중국 군화와 작은 대만 섬의 스케일 대비. 군화 밑창에 석유/식량/반도체 칩이 박혀 발을 못 딛는 장면.",
+      "prompt_en": "Photorealistic cinematic image of an enormous Chinese military combat boot hovering over a tiny glowing Taiwan island in the middle of a dark ocean. The boot is massive, filling the upper half of the frame, casting a dark shadow over the small but brightly lit island below. Critically, the sole of the boot is embedded with oil barrels, grain sacks, and semiconductor chips acting as caltrops, preventing the boot from stepping down. Dramatic overhead perspective with dark moody atmosphere, deep shadows, and a single shaft of golden light illuminating Taiwan. The contrast between the enormous boot and the tiny resilient island creates tension and scale shock."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "k2-tank-export-boom",
+    "titles": [
+      "독일이 제 손으로 걷어찬 9조 계약, 왜 한국 통장에 꽂혔나",
+      "\"이건 못 팝니다\" 독일 법 하나가 K2를 세계로 밀어낸 이야기",
+      "누가 사든 결국 한국이 버는, 전차 시장의 이상한 판"
+    ],
+    "thumbnail_texts": [
+      "독일이 스스로 걷어찬 9조 / 그 빈자리, 한국이 통째로",
+      "9조가 독일서 한국으로 / 왜 1등이 스스로 포기했나",
+      "1등 독일이 판을 걷어찼다 / 그 판을 한국이 다 먹었다"
+    ],
+    "image_concepts": {
+      "A": "좌측에 어둡게 꺼진 독일 레오파드 전차(무채색·그림자), 우측에 조명받으며 전진하는 한국 K2 전차(태극기) — 1등의 자멸과 한국의 부상을 대비로 시각화",
+      "B": "거대한 9조원 상징(원화·계약서 다발)이 독일 국기 쪽에서 태극기 쪽으로 넘어가는 흐름, 배경에 K2 전차 편대 실루엣 — 어부지리로 넘어온 계약"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어두운 전장 배경, 좌측에 무채색으로 꺼진 채 그림자에 잠긴 독일 레오파드 전차, 우측에 강렬한 조명과 태극기를 단 한국 K2 전차가 앞으로 전진하는 대비 장면.",
+      "prompt_en": "Cinematic photorealistic split-composition scene against a dark, smoky battlefield background. On the left side, a German Leopard 2 tank sits powered-down and lifeless, drained of color and sunk in deep cold-blue shadow, its silhouette fading into darkness. On the right side, a South Korean K2 Black Panther main battle tank surges forward under dramatic warm spotlighting, a small South Korean Taegukgi flag (red and blue yin-yang circle with black trigrams) mounted on it, dust and embers kicking up around its treads. Strong contrast between the dead grey German tank and the vividly lit advancing Korean tank. Dark moody atmosphere, yellow and orange accent lighting on the K2, floating dust particles, tense and triumphant reversal mood."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 구도 — 좌측 꺼진 독일 레오파드 vs 우측 조명받는 한국 K2(태극기) 대비를 생생한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration with a split composition against a dark smoky battlefield. On the left, a German Leopard 2 tank drawn in muted greys and cold blue shadow, powered-down and lifeless with bold ink outlines fading into darkness. On the right, a South Korean K2 Black Panther tank charging forward in dynamic cel-shaded lighting, a small Taegukgi flag (red and blue yin-yang circle with black trigrams) on it, dramatic speed lines and sparks trailing its treads. Intense yellow and orange color accents highlight the Korean tank against the dead grey German one. Deep dark background, exaggerated dramatic perspective, energetic and tense reversal atmosphere."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 어두운 배경에서 거대한 금빛 원화·계약서 다발이 독일 국기 쪽에서 태극기 쪽으로 흘러 넘어가고, 배경에 한국 K2 전차 편대 실루엣이 보이는 어부지리 장면.",
+      "prompt_en": "Cinematic photorealistic scene set against a deep dark background. A massive glowing stack of golden money and contract documents flows dramatically through the air, moving away from a shadowed, dimming German flag on the left toward a brightly lit South Korean Taegukgi flag (red and blue yin-yang circle with black trigrams) on the right. In the dark background, faint glowing silhouettes of a column of K2 Black Panther tanks are visible advancing. Dramatic contrast between the fading German side and the radiant Korean side conveys a windfall changing hands. Gold and warm accent lighting, deep shadows, floating golden light particles, powerful sense of an unexpected fortune won."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 구도 — 9조원 상징이 독일→한국으로 이양되고 배경에 K2 편대 실루엣이 보이는 장면을 생생한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration against a deep dark background. A huge glowing river of golden money and contract papers streams in bold cel-shaded strokes away from a dimming, shadowed German flag on the left toward a radiant South Korean Taegukgi flag (red and blue yin-yang circle with black trigrams) on the right. Stylized glowing silhouettes of a formation of K2 Black Panther tanks advance in the dark background. Bold ink outlines and dynamic motion effects emphasize the wealth shifting hands. Gold and warm color accents, deep dark backdrop, sparkling energy bursts, exaggerated dramatic perspective, thrilling sense of a fortune won by reversal."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 어두운 세계 지도 위, 유럽(독일)·중동·아프리카 여러 나라에서 한국 반도로 금빛 계약 화살표들이 일제히 몰려드는 3D 아트. 한국만 눈부신 금빛으로 빛나 세계가 한국 전차에 줄 서는 스케일을 시각화.",
+      "prompt_en": "Dramatic cinematic 3D-rendered digital art of a dark stylized world map seen from a dynamic low angle. Multiple glowing golden arrows and contract-light streams surge from Germany in Europe, the Middle East, and North Africa, all converging toward a brilliantly glowing South Korean peninsula that blazes with radiant golden light. Tiny glowing K2 Black Panther tank icons line up along the arrow paths. The surrounding continents remain sunken in deep cool-blue shadow, visually overwhelmed by Korea's golden radiance. High-contrast moody lighting, gold and warm accents, swirling luminous particles, awe-inspiring scale that makes Korea feel like the center everyone rushes toward."
+    }
+  ]
+}

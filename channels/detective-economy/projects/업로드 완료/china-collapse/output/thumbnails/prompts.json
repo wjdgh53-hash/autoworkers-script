@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "china-collapse",
+    "titles": [
+      "\"미사일에 연료 대신 물이 채워져 있었다\" 미국이 폭로한 중국 붕괴의 충격적 실체",
+      "중국 대만 침공? 장성 101명이 사라진 군대의 실체",
+      "\"호랑이인 줄 알았는데 고양이였다\" 세계 2위 경제 대국 중국 붕괴가 시작된 진짜 이유"
+    ],
+    "thumbnail_texts": [
+      "\"미사일에 물 채웠다\" + 장성 101명 숙청 + 중국군 붕괴",
+      "\"시진핑이 숨긴 진실\" + 속부터 썩은 종이호랑이",
+      "\"세계 2위의 허세\" + 군대도 경제도 다 가짜였다"
+    ],
+    "image_concepts": {
+      "A": "오성홍기 균열 — 속에서 드러나는 녹슨 미사일과 빈 지갑",
+      "B": "시진핑 충격 표정 — 부서지는 군사 장비와 하락 그래프"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 거대한 오성홍기가 중앙에서 갈라지며 균열 사이로 녹슨 미사일과 텅 빈 지갑이 드러나는 시네마틱 장면. 어두운 배경에 붉은 국기와 녹색 녹의 강렬한 색 대비.",
+      "prompt_en": "Photorealistic cinematic photograph of a massive Chinese five-star red flag cracking apart from the center, deep fractures spreading across its surface. Through the widening cracks, corroded rusty missiles and an empty worn-out wallet are revealed underneath. Dark cinematic atmosphere with deep shadows and dramatic contrast between the vivid red flag, green-brown rust, and the pitch-black background. Ominous moody lighting emphasizes the decay hidden beneath the powerful symbol."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 오성홍기가 극적으로 갈라지며 그 안에서 녹슨 미사일과 빈 지갑이 쏟아져 나오는 장면을 애니메 스타일로 표현.",
+      "prompt_en": "Anime-style illustration of a colossal Chinese five-star red flag shattering dramatically, bold fracture lines splitting it apart with debris flying outward. Behind the crumbling flag, corroded rusty missiles and a tattered empty wallet spill out from the darkness within. Dark shadows and deep dramatic contrast with vivid red fragments against a near-black background. Intense cel-shaded lighting and exaggerated perspective create an ominous, tension-filled atmosphere of hidden decay."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. Xi Jinping(시진핑)의 과장된 충격 표정 클로즈업. 배경에 부서지는 전투기와 탱크, 빨간 하락 화살표가 급락하는 모습.",
+      "prompt_en": "Photorealistic cinematic close-up of Xi Jinping (Chinese president) with an exaggerated shocked expression, wide eyes and slightly open mouth conveying disbelief. Behind him, military jets and tanks crumble and disintegrate into fragments while a large red downward arrow plunges sharply. Dark cinematic atmosphere with deep shadows and dramatic contrast, moody side lighting casting harsh shadows across his face, emphasizing the tension and crisis unfolding behind him."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 시진핑(Xi Jinping)의 과장된 충격 표정을 애니메 스타일로 묘사. 배경에 파괴되는 군사 장비와 급락하는 빨간 그래프.",
+      "prompt_en": "Vibrant anime-style illustration of Xi Jinping (Chinese president) in extreme close-up with an exaggerated shocked expression, oversized eyes wide with disbelief and sweat drops flying off. Behind him, military equipment — fighter jets and tanks — shatter into pieces with dramatic speed lines, while a bold red downward arrow crashes through the dark background. Deep dramatic shadows with intense contrast, ominous dark atmosphere with vivid red accents creating a powerful sense of shock and tension."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 종이로 만든 거대한 호랑이 모형이 비에 젖어 무너져 내리는 장면. '종이호랑이'라는 핵심 메타포를 직관적으로 시각화.",
+      "prompt_en": "Photorealistic cinematic photograph of a gigantic paper tiger sculpture collapsing in heavy rain, its soaked paper body sagging and tearing apart as water dissolves its structure. The tiger's fierce painted face distorts grotesquely as it crumbles. Scattered around the base are tiny broken toy missiles and miniature fake money. Dark dramatic atmosphere with deep shadows, rain streaks illuminated by harsh backlight creating an ominous moody scene of spectacular collapse and exposed fragility."
+    }
+  ]
+}

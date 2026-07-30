@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "vietnam-china-conflict",
+    "titles": [
+      "\"200억 달러를 퍼준 나라가 60만 대군으로 쳐들어왔다\" 베트남이 중국을 증오하는 진짜 이유",
+      "1천 년 동안 지배당하고도 끝내 살아남은 나라, 중국이 가장 두려워하는 베트남의 비밀",
+      "\"수입의 33%가 중국인데 세계에서 중국을 가장 싫어하는 나라\" 베트남이 빠진 함정의 정체"
+    ],
+    "thumbnail_texts": [
+      "28년 동지의 배신 / 200억 달러 원조한 나라가 / 60만 대군으로 침공",
+      "피로 맺은 동맹 / 그 끝은 전쟁이었다 / 중국 vs 베트남",
+      "은인이 침략자로 / 베트남이 중국을 증오하는 / 소름돋는 이유"
+    ],
+    "image_concepts": {
+      "A": "균열 가는 악수 — 중국·베트남 국기 배경 위 두 손의 악수, 손 사이에서 번지는 균열과 빨간 빛으로 배신감 시각화",
+      "B": "원조→침공 대비 — 좌측 따뜻한 보급 장면과 우측 차가운 탱크 침공 장면을 대각선으로 분리한 Before/After 구도"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 중국 오성홍기와 베트남 금성홍기가 어두운 배경에 겹쳐진 가운데, 두 손이 악수하는 순간 그 사이에서 균열이 번지며 핏빛 빨간 빛이 새어 나오는 시네마틱 장면. 배신감과 긴장감이 극대화된 모노톤 분위기.",
+      "prompt_en": "Photorealistic cinematic close-up of two hands shaking against a dark background, with the Chinese five-star red flag and Vietnamese gold-star red flag draped behind them in desaturated monochrome. Jagged cracks radiate outward from the clasped hands, glowing with a deep crimson red accent light bleeding through the fractures. High contrast grayscale shadows surround the scene, and an ominous backlight emphasizes the fractures as a symbol of broken trust. The dramatic crack lines and red glow dominate the upper half of the frame, evoking a mysterious and tension-filled atmosphere."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 균열 가는 악수 컨셉을 애니메 스타일로 표현. 두 손의 악수에서 균열이 번지고, 균열 사이로 빨간 빛이 폭발하듯 새어 나오며 두 국기의 색이 회색조 안에서 빨간 포인트 컬러로 강렬하게 부각됨.",
+      "prompt_en": "Anime-style illustration of two hands locked in a handshake, dramatically cracking apart with jagged fissures spreading outward. Desaturated monochrome ink-shaded style with bold outlines, where only the glowing crimson red light bursting from the cracks appears in vivid color as the sole accent. The Chinese five-star red flag and Vietnamese gold-star red flag are visible in the dark background, rendered in grayscale except for their red elements. Intense ominous atmosphere with dark shadows framing the fracturing hands, partially revealing the collapse of an alliance."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 화면을 대각선으로 분리하여, 좌측에는 군복 입은 중국군이 무기 상자·식량 보급품을 내리는 밝은 원조 장면(탈채색 속 따뜻한 노란 포인트), 우측에는 같은 중국군 탱크가 어두운 연기 속에서 전진하는 침공 장면(차가운 핏빛 빨간 포인트)이 충돌하는 Before/After 시네마틱 구도.",
+      "prompt_en": "Photorealistic cinematic split composition divided by a sharp diagonal line. On the left side: Chinese soldiers in period uniforms unloading wooden supply crates and aid packages, bathed in a warm amber-yellow accent light cutting through high-contrast grayscale — a scene of cooperation and trust. On the right side: a Chinese Type 62 tank rolling forward through dark smoke and rubble, lit only by a cold blood-red accent light — a scene of invasion and betrayal. The stark contrast between warmth and coldness, generosity and aggression, creates a shocking before-and-after effect. Both sides rendered in desaturated monochrome except for their respective accent colors."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 원조→침공 대비를 애니메 스타일로 표현. 대각선 분리선을 중심으로 좌측은 밝은 노란 빛 원조 장면, 우측은 차갑고 붉은 탱크 침공 장면. 강렬한 윤곽선과 극적인 셀 쉐이딩으로 배신의 낙차를 시각화.",
+      "prompt_en": "Stylized anime-style illustration split diagonally down the center. The left half depicts Chinese soldiers handing over supply boxes and military aid with a warm amber-yellow accent glow, rendered in cel-shaded grayscale — conveying solidarity and brotherhood. The right half shows a looming anime-style military tank charging forward amid black smoke and shattered ground, illuminated by a cold crimson-red accent — conveying sudden betrayal and invasion. Bold ink outlines separate the two halves sharply, with the diagonal split line itself crackling like a fracture. The visual contrast between cooperation and aggression is intriguing and tension-filled."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 베트남 전사의 실루엣이 만리장성처럼 이어진 중국 국경선 앞에 홀로 서 있는 장면. 1천 년 지배와 저항의 역사를 압축한 상징적 구도. 어두운 하늘 아래 단 하나의 빨간 포인트 컬러로 저항의 불꽃을 표현.",
+      "prompt_en": "Photorealistic dramatic silhouette of a lone Vietnamese warrior figure standing at the foot of a vast, ancient fortified wall stretching across a dark horizon — evoking both the Chinese northern frontier and centuries of domination. The entire scene is rendered in deep desaturated monochrome with heavy shadows and ominous storm clouds above. A single vivid crimson-red torch or flame held by the silhouetted figure serves as the sole accent color, symbolizing unyielding resistance across a thousand years. The mysterious, partially revealed composition creates intense curiosity about who this lone figure is and what they are facing."
+    }
+  ]
+}

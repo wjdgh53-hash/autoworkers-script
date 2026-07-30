@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "iran-israel-war",
+    "titles": [
+      "이란 이스라엘 전쟁, 30년 우정을 하루 만에 박살낸 남자",
+      "이란 이스라엘 전쟁, 이 남자가 모든 걸 바꿨습니다",
+      "\"30년 형제가 하루아침에 원수가 됐습니다\" 이란 이스라엘 전쟁의 진짜 이유"
+    ],
+    "thumbnail_texts": [
+      "이란 vs 이스라엘 / 전쟁 시킨 남자",
+      "30년 형제 / 하루 만에 원수",
+      "왜 형제가 / 서로 죽이려 할까?"
+    ],
+    "image_concepts": {
+      "A": "과거 우호(악수) vs 현재 전쟁(미사일) 좌우 대비 분할",
+      "B": "호메이니 인물 지목 — 검지로 가리키는 위협적 포즈"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 악수하는 두 손(세피아 톤), 우측에 미사일 발사 장면(붉은 톤). 가운데 균열선으로 분할. 상단 1/2에 비주얼 집중.",
+      "prompt_en": "Photorealistic cinematic split composition. Left half shows two hands in a firm diplomatic handshake, desaturated sepia monochrome tone suggesting historical past. Right half shows a ballistic missile launch with fiery exhaust trail against dark sky, high contrast monochrome with vivid red accent from the flames. A dramatic vertical crack/fracture line divides the two halves down the center. Dark moody atmosphere with strong directional lighting emphasizing the contrast between peace and war."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 악수 vs 미사일 대비를 애니메 스타일로 표현. 좌우 분할 + 균열선.",
+      "prompt_en": "Anime-style illustration with dramatic split composition. Left side depicts two hands clasping in a handshake, rendered in muted sepia tones with soft cel-shading. Right side shows a stylized ballistic missile soaring upward with exaggerated flame trails in vivid red and orange against a dark monochrome sky. A bold jagged crack splits the composition vertically. High contrast between the warm peaceful left and the intense violent right, with expressive anime linework and dynamic lighting."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 호메이니가 검지로 카메라를 겨냥하는 위협적 포즈. 어두운 모노톤 배경에 화염 효과.",
+      "prompt_en": "Photorealistic dramatic portrait of Ayatollah Ruhollah Khomeini (Iranian Supreme Leader) pointing his index finger directly at the camera in an accusatory gesture. Dark desaturated monochrome background with subtle orange-red fire glow behind the figure creating an ominous halo effect. Strong rim lighting on one side of the face creating deep shadows. Intense stern expression conveying authority and threat. The figure dominates the upper half of the frame with high contrast against the dark backdrop."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 호메이니 인물을 애니메 스타일로 — 검지 지목 포즈, 어두운 배경, 화염 효과.",
+      "prompt_en": "Stylized anime illustration of Ayatollah Ruhollah Khomeini (Iranian Supreme Leader) pointing his finger directly at the viewer with an intense commanding expression. Dark monochrome background with dramatic anime-style fire and smoke effects in red and orange. Bold ink outlines and cel-shaded lighting with strong contrast. The character fills the upper portion of the frame with exaggerated dramatic perspective making the pointing gesture feel imposing and threatening."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 이란 국기와 이스라엘 국기가 서로 충돌하며 부서지는 장면. 모노톤 배경에 파편이 흩어지고, 파편 사이로 붉은 빛이 새어나옴.",
+      "prompt_en": "Photorealistic dramatic scene of the Iranian flag and Israeli flag colliding and shattering into fragments in mid-air. Desaturated monochrome background with high contrast. Debris and shattered pieces scatter outward from the collision point. A vivid red glow bleeds through the cracks between the fragments creating an ominous atmosphere. Strong backlight silhouettes the breaking flags. The collision is centered in the upper half of the frame with fragments spreading dramatically."
+    }
+  ]
+}

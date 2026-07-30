@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "canada-defense-deals",
+    "titles": [
+      "캐나다가 시험지 다 맞힌 한화를 떨어뜨린 배경, 그런데 그게 우리한테 더 이득이었습니다",
+      "성능은 100점 맞고도 60조 잠수함에서 떨어진 한화, 웃는 건 오히려 한국인 이유",
+      "\"채점표에 없던 한 줄\" 성능 다 통과한 한화가 60조 잠수함에서 낙방한 진짜 배경"
+    ],
+    "thumbnail_texts": [
+      "\"성능은 다 통과했는데\" + 떨어진 진짜 배경",
+      "100점 맞고 낙방 + 웃는 건 오히려 한국",
+      "채점표에 없던 한 줄 + 60조가 뒤집혔다"
+    ],
+    "image_concepts": {
+      "A": "정보 역전 — 100점이 적힌 시험 답안지 위에 붉은 낙방(FAIL) 도장이 쾅 찍히고, 그 아래로 자신만만하게 수면 위로 떠오른 태극기 잠수함. 억울함→반전 기대.",
+      "B": "A vs B 대비 — 좌측 밝은 바다 위 자신만만한 태극기 잠수함 vs 우측 어둡게 균열이 번지는 캐나다 국기와 턱을 괸 채 근심하는 총리. 통쾌함."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 100점이 적힌 시험 답안지 위로 붉은 'FAIL' 낙방 도장이 강하게 찍히고, 그 아래 어두운 바다에서 태극기를 단 잠수함이 당당히 부상하는 시네마틱 위기·반전 장면.",
+      "prompt_en": "Photorealistic cinematic thumbnail: a crisp exam answer sheet marked with a bold red '100' score at the top, violently stamped over with a large red 'FAIL' rubber stamp mark that partly overlaps the perfect score, creating a jarring contradiction. Below the paper, emerging from a dark stormy ocean, a sleek modern submarine surfaces proudly bearing a South Korean flag (Taegukgi, central red-and-blue circle with black trigrams) on its conning tower. Dark charcoal and deep navy background with dramatic moody lighting, vivid red accents from the stamp cutting through the gloom, the answer sheet and stamp oversized in the upper frame. Tense atmosphere of an unfair rejection about to be reversed, sharp dramatic contrast."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 100점 답안지 + 붉은 낙방 도장 + 태극기 잠수함 부상을 다크 톤 애니메 스타일로.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration: an exam answer sheet showing a bold red '100' perfect score, violently stamped with a huge red 'FAIL' mark in dramatic cel-shaded ink outlines, the two clashing in stark contradiction. Below, a sleek modern submarine surfaces triumphantly from a dark churning sea, proudly displaying a South Korean flag (Taegukgi, red-and-blue circle with black trigrams) on its tower. Deep black and navy palette with sharp dramatic contrast and glowing red accent highlights, exaggerated perspective, the answer sheet and stamp oversized in the upper frame. Stylized illustration radiating the tension of an unjust failure poised to flip into vindication."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌측 밝은 바다 위 자신만만한 태극기 잠수함 vs 우측 어둡게 균열 번지는 캐나다 국기와 턱 괸 채 근심하는 캐나다 총리. 통쾌한 대비.",
+      "prompt_en": "Photorealistic cinematic split composition: on the left, a powerful modern submarine cruises confidently on a bright sunlit sea, bearing a South Korean flag (Taegukgi, red-and-blue circle with black trigrams) on its hull, radiating strength and assurance; on the right, a dark stormy half where a Canadian national flag (red maple leaf on white between red bands) is cracking and fracturing apart, and a worried middle-aged Western politician rests his chin on his hand with an anxious, regretful expression. Strong A-versus-B contrast between bright confident left and dark troubled right, deep dramatic lighting, the submarine and the cracking flag oversized and eye-catching, moody cinematic tension."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 좌(밝은 태극기 잠수함)→우(균열 캐나다 국기·근심 총리) 대비를 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration with a dramatic split composition: the left half shows a sleek modern submarine gliding confidently across a bright sunlit sea, flying a South Korean flag (Taegukgi, red-and-blue circle with black trigrams), rendered in bold cel-shaded color radiating pride; the right half is dark and stormy, where a Canadian flag (red maple leaf between red bands) cracks and shatters with bold ink outlines while a worried Western politician holds his chin, face full of anxious regret. Strong stylized A-to-B contrast between confident brightness and troubled gloom, dynamic perspective, dramatic lighting, the submarine and the fracturing flag dramatically oversized, conveying vindication and reversal of fortune."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 억울함에 놀란 한국 조선소 엔지니어가 100점 답안지에 찍힌 붉은 낙방 도장을 손에 든 채 경악하는 클로즈업, 배경엔 균열 가는 캐나다 국기, 한쪽엔 태극기 잠수함이 당당히 떠오른다 — 억울함과 반전을 한 프레임에.",
+      "prompt_en": "Photorealistic dramatic thumbnail of a Korean shipyard engineer in a hard hat and work uniform, an attractive man with a warm likeable face wearing an exaggerated expression of shock and disbelief, holding up an exam answer sheet marked '100' that has been stamped with a large red 'FAIL' mark. Behind him a Canadian national flag (red maple leaf between red bands) cracks and darkens, while in one corner a submarine bearing a South Korean flag (Taegukgi) surfaces proudly like a ray of vindication. Dark moody crisis lighting with deep shadows and sharp dramatic contrast, the engineer's stunned face and the red FAIL stamp oversized in the upper frame, combining the sting of an unfair rejection with the glimmer of a coming reversal."
+    }
+  ]
+}

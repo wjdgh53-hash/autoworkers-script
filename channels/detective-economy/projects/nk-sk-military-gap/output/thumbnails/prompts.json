@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "nk-sk-military-gap",
+    "titles": [
+      "\"탱크가 10년째 안 움직입니다\" 세계 4위 북한군의 충격적인 실체",
+      "세계 4위 군대의 민낯, 북한군이 전쟁을 못 하는 진짜 이유",
+      "북한군 128만 명의 실체, 숫자만 보면 절대 모르는 충격적 진실"
+    ],
+    "thumbnail_texts": [
+      "\"기름이 없어서 못 굴립니다\" + 세계 4위 군대의 실체 + 종이호랑이 북한군 + 충격 폭로",
+      "\"세계 4위라고요?\" + 북한군 실전 능력 0% + 탱크도 비행기도 못 움직여 + 허상 폭로",
+      "종이호랑이의 민낯 + \"사격 연습 1년에 3발\" + 128만 군대의 진실 + 북한군 실체"
+    ],
+    "image_concepts": {
+      "A": "균열 가는 북한 탱크 퍼레이드 — 거대한 열병식 이미지에 균열이 퍼지며 허상이 드러나는 장면",
+      "B": "한국 현무-5 vs 녹슨 북한 탱크 스케일 대비 — 압도적 크기의 현무-5가 작고 녹슨 탱크를 내려다보는 장면"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 북한 탱크 열병식 퍼레이드가 진행 중인데, 이미지 전체에 거대한 붉은 균열선이 갈라지며 허상이 무너지는 시네마틱 장면. 어두운 배경에 균열 사이로 노란 빛이 새어 나온다.",
+      "prompt_en": "Photorealistic cinematic photograph of a North Korean military tank parade on a wide boulevard, rows of aging Soviet-era tanks rolling in formation under dark overcast skies. Massive glowing red cracks and fractures rip through the entire scene like shattering glass, splitting tanks and the road apart. Deep dramatic shadows with moody lighting, bright yellow-orange light bleeding through the cracks contrasting against the dark military-green tanks and gloomy atmosphere. Exaggerated sense of dramatic collapse and shocking revelation."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 북한 탱크 열병식에 거대한 균열이 퍼지는 장면을 강렬한 애니메 스타일로 표현. 붉은 균열선과 노란 빛이 극적으로 대비된다.",
+      "prompt_en": "Vibrant anime-style illustration of a North Korean military tank parade cracking apart in dramatic fashion. Bold ink outlines define rows of dark olive-green tanks on a wide parade road, while enormous glowing crimson fracture lines shatter across the entire composition like breaking glass. Intense cel-shaded lighting with deep shadows, bright golden energy bursting through the cracks against a dark stormy sky. Exaggerated dramatic perspective emphasizing the shocking collapse of a seemingly powerful military display."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 화면 상단에 거대한 현무-5 미사일이 밝은 화염을 뿜으며 발사되고, 아래에는 작고 녹슬어 먼지 낀 북한 구형 탱크가 초라하게 놓여 있어 압도적 스케일 격차를 보여준다.",
+      "prompt_en": "Photorealistic cinematic image showing an extreme scale contrast between South Korean Hyunmoo-5 ballistic missile and a small rusted North Korean tank. The massive Hyunmoo-5 dominates the upper frame, launching with brilliant bright orange flames and white exhaust plume against a dark sky. Below, a tiny old rusted Soviet-era tank sits covered in dust and corrosion, dwarfed and pathetic in comparison. Dark cinematic atmosphere with the South Korean side illuminated by vivid launch fire while the North Korean side remains in grimy shadow."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 거대한 현무-5 미사일 발사 장면과 작고 녹슨 북한 탱크의 스케일 대비를 강렬한 애니메 스타일로 표현. 화염의 밝은 색감과 녹슨 탱크의 어두운 톤이 극적으로 대비된다.",
+      "prompt_en": "Stylized anime-style illustration depicting a dramatic scale comparison between a towering South Korean Hyunmoo-5 missile and a tiny rusted North Korean tank. The Hyunmoo-5 fills the upper portion with exaggerated size, launching with spectacular bright orange and yellow cel-shaded flames billowing outward. A comically small, corroded dark-green tank sits below, covered in rust patches and dust clouds. Bold outlines, intense color contrast between the vibrant fiery launch and the dull decaying tank, dark moody background amplifying the overwhelming power gap."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 '세계 4위' 군사력 순위표가 종이처럼 찢어지면서, 그 뒤로 녹슬고 부서진 북한 군장비 폐기장이 드러나는 충격적 장면. 균열 컨셉과 폭로 컨셉을 결합한 창의적 변형.",
+      "prompt_en": "Photorealistic cinematic image of a giant military power ranking board showing '4th' in bold letters being dramatically torn apart like paper, revealing a shocking junkyard of rusted and broken North Korean military equipment behind it. Abandoned tanks with missing treads, grounded fighter jets covered in corrosion, and crumbling artillery pieces fill the revealed space. Dark atmospheric lighting with mysterious golden light pouring through the torn gap, deep shadows creating an ominous mood of exposed deception and shocking truth."
+    }
+  ]
+}

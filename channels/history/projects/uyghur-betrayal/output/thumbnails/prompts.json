@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "project": "uyghur-betrayal",
+    "note": "사용자 최고 실적 썸네일(고뇌하는 중국 지도자 + 불타는 오성홍기 + 폐허 도시, 흑백조+붉은 불빛, 시네마틱 실사)의 시각 문법을 1편(배신의 역사)에 맞춰 재현. 텍스트 공간은 하단(generate_thumbnails.py가 자동 처리).",
+    "titles": [
+      "\"자치권은 보장해줄게\" 그 말을 믿은 위구르 100만 명이 수용소에 갇히기까지, 배신의 100년",
+      "\"제 발로 중국 손을 잡았습니다\" 위구르에게 돌아온 건 배신의 부메랑이었다",
+      "스스로 중국이 되기로 했던 위구르는 왜 지금 목숨 걸고 독립을 외칠까?"
+    ],
+    "thumbnail_texts": [
+      "제 발로 잡은 손 + 돌아온 건 100만 수용소",
+      "자치 보장할게 + 위구르를 삼킨 거짓말",
+      "믿었더니 배신 + 위구르 100만의 비극"
+    ],
+    "image_concepts": {
+      "A": "고뇌하는 중국 지도자 + 불타는 오성홍기 + 폐허 도시 (레퍼 최고 실적 공식 재현)",
+      "B": "불길에 휩싸여 갈라지는 악수 (위구르 손 vs 중국 손) — 배신의 순간",
+      "C": "불타는 붉은 국기 앞에 무너진 위구르 마을과 고개 숙인 노인 실루엣"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A(레퍼 공식 재현). 어두운 정장의 위압적인 중국 지도자 인물이 한 손으로 이마를 짚고 고뇌하는 표정. 인물은 흑백·탈채도 처리, 뒤로는 거대한 붉은 오성홍기가 불타오르고 우측 배경엔 잿빛 하늘 아래 폐허가 된 도시가 불길에 휩싸여 있다.",
+      "prompt_en": "Cinematic photorealistic image of a powerful, stern Chinese leader figure in a dark suit, one hand pressed to his forehead with a tormented, anguished expression, rendered in cold desaturated monochrome. Behind him, an enormous Chinese five-star red flag is engulfed in flames, embers and thick black smoke rising. To the right, a ruined city skyline burns under an ashen apocalyptic sky. The only strong colors are the intense red and orange of the fire against the grey desaturated scene. Dramatic volumetric lighting, floating embers, heavy cinematic atmosphere of downfall and reckoning. Subject and destruction fill the upper portion of the frame."
+    },
+    {
+      "id": 2,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B(배신 모티프). 위구르 하늘색-흰색 소매의 손과 중국 붉은색 소매의 손이 악수하는데, 맞잡은 지점에서 불길과 붉은 균열이 터져 나오며 두 손이 갈라진다. 배경은 어두운 잿빛에 불타는 오성홍기가 흐릿하게 비친다.",
+      "prompt_en": "Cinematic photorealistic close-up of two hands locked in a handshake — one sleeve Uyghur sky-blue and white, the other Chinese communist red — but at the point where they meet, flames erupt and a glowing red fracture splinters violently across both arms as the grip breaks apart. Cold desaturated monochrome background of dark smoke, with a burning Chinese five-star red flag faintly visible behind. Intense red and orange fire as the only vivid color, embers drifting. Dramatic tense lighting, a sense of betrayal and broken trust. The burning handshake sits in the upper half of the frame."
+    },
+    {
+      "id": 3,
+      "type": "concept-c-realistic",
+      "concept_ko": "컨셉 C(위구르 비극). 불타는 거대한 붉은 오성홍기 앞에서, 무너지고 불에 그을린 위구르 옛 마을(모스크 첨탑)과 고개 숙인 노인의 실루엣. 흑백조 인물 위로 붉은 화염빛이 드리운다.",
+      "prompt_en": "Cinematic photorealistic image of an elderly Uyghur man's silhouette, head bowed in grief, standing before the ruins of a burned old Uyghur town with a broken mosque minaret. Behind them looms a massive Chinese five-star red flag consumed by fire, black smoke billowing into a bleak grey sky. The figure and rubble are rendered in cold desaturated monochrome, lit only by the intense red-orange glow of the flames. Floating embers, somber apocalyptic mood of a people betrayed and displaced. Composition weighted to the upper portion of the frame."
+    },
+    {
+      "id": 4,
+      "type": "concept-a-variant",
+      "concept_ko": "컨셉 A 변주. 고뇌하는 중국 지도자가 등을 살짝 돌린 채, 그 뒤로 불타는 오성홍기와 철조망·감시탑이 늘어선 폐허가 함께 보인다. 배신의 결과(수용소)를 암시.",
+      "prompt_en": "Cinematic photorealistic image of a powerful Chinese leader figure in a dark suit, half-turned away with a grim, troubled face, rendered in cold desaturated monochrome. Behind him, a giant Chinese five-star red flag burns while rows of barbed wire fences and looming watchtowers stretch across a ruined, smoke-filled landscape. Intense red and orange firelight is the only strong color against the grey desaturated scene. Dramatic volumetric lighting, drifting embers, oppressive atmosphere of guilt and consequence. Subject and background occupy the upper part of the frame."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드(깨진 약속). 불타는 붉은 오성홍기를 배경으로, '자치권 보장'을 상징하는 낡은 조약 문서가 반으로 찢겨 불타고, 그 위로 위구르 지도 실루엣이 붉게 물든다.",
+      "prompt_en": "Cinematic photorealistic image of an old treaty document — symbolizing a promise of autonomy — being torn in half and set ablaze, its edges curling in flame. Behind it, a huge Chinese five-star red flag burns against a dark apocalyptic smoke-filled sky, and the faint red silhouette of the Xinjiang-Uyghur region glows through the smoke. Cold desaturated monochrome scene lit only by intense red and orange fire, floating embers, dramatic cinematic lighting evoking a broken promise and betrayal. Burning document and flag fill the upper portion of the frame."
+    }
+  ]
+}

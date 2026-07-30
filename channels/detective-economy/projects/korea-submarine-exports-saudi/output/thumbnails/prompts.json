@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-submarine-exports-saudi",
+    "titles": [
+      "\"여긴 나토 회원증을 안 물어봐요\" 캐나다서 고배 마신 한화오션에 사우디 6조가 열린 이유",
+      "잠수함 0척 사우디가 6조를 걸었다, 캐나다 잃은 한화오션이 다시 웃게 된 사연",
+      "\"진 자리에 더 큰 판이 깔렸다\" 사우디 6조가 하필 지금 한화오션 앞에 놓인 배경"
+    ],
+    "thumbnail_texts": [
+      "잠수함 0척인데 6조? + 캐나다서 떨어진 한화 + 사우디가 손 내밀었다",
+      "여긴 나토를 안 따진다 + 고배 마신 한화오션 + 6조 새 판이 깔렸다",
+      "진 회사를 콕 집었다 + 잠수함 0척 사우디가 + 6조를 통째로 걸었다"
+    ],
+    "image_concepts": {
+      "A": "A vs B 대치 + 상승 잠수함 — 좌측 사우디 관계자(초록 국기·사막 톤), 우측 한화 관계자(태극기·조선소), 중앙에 수면 위로 힘차게 솟아오르는 태극기 잠수함. 여명 역광으로 '새 판이 열림'. 기대 섞인 긴장.",
+      "B": "열리는 문 + 실증 항해 — 태평양을 가르며 항해하는 태극기 잠수함 뒤로 빛이 새어 나오는 거대한 문 실루엣, 상단에 우상향 그래프. 기회·희망 톤."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌 사우디 인물 vs 우 한화 인물이 대치하고, 그 사이 어두운 바다에서 태극기 잠수함이 힘차게 솟아오르는 여명 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic YouTube thumbnail, split confrontation composition: on the left, a Middle Eastern man in a white keffiyeh headdress and robe with a subtle green flag and desert tone, looking upward with cautious interest; on the right, a confident South Korean businessman in a dark suit standing before a shipyard with a South Korean flag (Taegukgi, red-and-blue circle with black trigrams). Between them, from a dark ocean, a sleek modern submarine surges powerfully upward breaking the surface, bearing a Taegukgi on its conning tower, backlit by a dramatic golden dawn light rays symbolizing a new opportunity opening. Deep navy and charcoal background with warm golden rim light, the rising submarine oversized and central, tense yet hopeful cinematic mood, sharp dramatic contrast."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 좌(사우디)-우(한화) 대치 + 중앙 솟아오르는 태극기 잠수함 + 여명 역광을 다크 톤 애니메 스타일로.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration, split confrontation composition: on the left a Middle Eastern figure in white keffiyeh with a green flag accent gazing upward with intrigue; on the right a determined South Korean man in a suit before a shipyard with a South Korean flag (Taegukgi, red-and-blue circle with black trigrams). Between them a sleek submarine erupts upward from a churning dark sea in bold cel-shaded outlines, flying a Taegukgi, framed by radiant golden dawn light rays bursting behind it to signal a new market opening. Deep black-navy palette with glowing gold accents, exaggerated dynamic perspective, the rising submarine dramatically oversized and central, mood of tense anticipation flipping into hope."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 태평양을 항해하는 태극기 잠수함 뒤로 빛이 쏟아지는 거대한 문이 열리고, 상단에 우상향 그래프가 겹치는 기회·확장 장면.",
+      "prompt_en": "Photorealistic cinematic YouTube thumbnail: a powerful modern submarine cruises across a vast open Pacific Ocean under dramatic sky, bearing a South Korean flag (Taegukgi, red-and-blue circle with black trigrams) on its hull, cutting a bright wake. Behind it, a colossal doorway silhouette opens with brilliant light pouring through, symbolizing a new market opening up. In the upper area, a glowing upward-trending arrow graph overlays the scene. Deep blue ocean tones with a luminous golden-white light burst from the doorway, the submarine and the radiant door oversized and eye-catching, cinematic sense of opportunity and expansion, sharp dramatic contrast."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 태평양 항해 잠수함 + 빛 쏟아지는 거대한 문 + 우상향 그래프를 역동적 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration: a sleek modern submarine glides across a wide Pacific sea in bold cel-shaded color, flying a South Korean flag (Taegukgi, red-and-blue circle with black trigrams), throwing a bright spray. Behind it a gigantic gateway silhouette bursts open with dazzling light streaming through, symbolizing a newly opened market, while a glowing upward arrow graph sweeps across the upper frame. Dynamic perspective, deep blue ocean palette with radiant golden-white light rays, the submarine and the shining doorway dramatically oversized, energetic mood of opportunity and rising fortune."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 한화 조선소 엔지니어가 캐나다 탈락 서류를 든 채 잠깐 낙담하지만, 등 뒤 사우디 방향에서 솟아오르는 태극기 잠수함과 여명 빛에 표정이 반전되는 한 프레임.",
+      "prompt_en": "Photorealistic dramatic YouTube thumbnail of a Korean shipyard engineer in a hard hat and work uniform, a likeable man whose face shifts from momentary disappointment (holding a rejection document) to dawning hope. Behind him, from a dark sea toward a desert horizon with a faint green flag, a submarine bearing a South Korean flag (Taegukgi, red-and-blue circle with black trigrams) surges upward into golden dawn light rays like a second chance arriving. Moody cinematic lighting with deep shadows cut by warm golden light, the engineer's expressive face and the rising submarine oversized in the frame, blending the sting of one loss with the promise of a bigger opening, sharp dramatic contrast."
+    }
+  ]
+}

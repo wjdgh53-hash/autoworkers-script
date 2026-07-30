@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-superpower-forbes",
+    "titles": [
+      "\"미국도 한국에 손 벌린다\" 세계 국력 6위, 그 평가가 빈말이 아닌 이유",
+      "설계는 미국, 만드는 건 한국 — 세계가 인정한 6강의 정체",
+      "AI 시대를 떠받치는 뼈대, 미국이 못 만드는 걸 만드는 나라"
+    ],
+    "thumbnail_texts": [
+      "'세계 6위' 초강대국 / 미국도 손 든 나라",
+      "미국이 못 만드는 걸 / 한국이 다 만든다",
+      "설계는 미국이 해도 / 만드는 손은 한국"
+    ],
+    "image_concepts": {
+      "A": "스케일 대비: 태극 컬러의 거대한 제조 로봇팔이 반도체칩·LNG선·변압기를 들어올리고, 그 아래 성조기는 작고 곤혹스럽게 손 내미는 구도",
+      "B": "A vs B 인물 감정: 곤혹스러운 미국 실무자 vs 자신감 있는 한국 엔지니어, 사이에 빛나는 HBM 반도체 칩"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어둠 속에서 태극 컬러(빨강·파랑)로 빛나는 거대한 산업용 로봇 팔이 반도체 칩, LNG 운반선, 변압기를 한꺼번에 들어올리고, 그 발밑에서는 작아진 성조기를 든 형상이 올려다보며 손을 내미는 시네마틱 장면.",
+      "prompt_en": "Dark cinematic photograph of a colossal industrial robotic arm glowing with red and blue Korean-flag tones, towering across the top half of the frame as it lifts a giant glowing semiconductor chip, an LNG carrier ship, and a massive electrical transformer all at once. At its feet, a comparatively tiny figure holding a small American flag looks up and reaches out a hand as if asking for help. Deep shadows, dramatic cold-blue and steel contrast, moody industrial lighting, tense awe-inspiring atmosphere, towering cranes silhouetted against a stormy dark sky."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 장면(태극 컬러 거대 로봇팔이 반도체·LNG선·변압기를 들어올리고 작아진 성조기 형상이 손 내미는 구도)을 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant dramatic anime-style illustration of a gigantic industrial robotic arm blazing with red and blue Korean-flag colors, exaggerated in scale to dominate the upper frame, hoisting a luminous semiconductor chip, an LNG carrier, and a huge power transformer together. Below it, a small figure clutching a tiny American flag reaches upward pleadingly. Bold ink outlines and cel-shaded lighting, dark stormy palette with deep shadows and sharp contrast, towering cranes, an intense triumphant yet tense mood."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌우 대비 구도 — 왼쪽은 곤혹스럽고 지친 표정의 미국 산업 실무자, 오른쪽은 자신감 넘치는 한국 엔지니어, 두 사람 사이에서 강렬하게 빛나는 HBM 반도체 칩이 떠 있는 장면.",
+      "prompt_en": "Dark cinematic photograph split into a left-right contrast across the top half of the frame: on the left a weary, troubled American industrial worker in a hard hat looking frustrated, on the right a confident Korean engineer standing tall. Between them floats an intensely glowing high-tech HBM semiconductor chip casting dramatic light on both faces. Deep shadows, cold moody industrial lighting, high contrast, tense rivalry atmosphere, blurred factory and shipyard background."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 좌우 대비(곤혹스러운 미국 실무자 vs 자신감 있는 한국 엔지니어, 사이에 빛나는 HBM 칩)를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant dramatic anime-style illustration with a striking left-to-right contrast across the upper frame: on the left a distressed American worker in a hard hat, on the right a self-assured Korean engineer. A radiant glowing HBM semiconductor chip hovers between them, illuminating their faces. Bold cel-shaded outlines, dark cinematic palette with deep shadows and dramatic contrast, intense competitive tension, industrial background."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 태극기 문양의 톱니바퀴/제조 심장이 세계 지도의 중심에서 돌아가고, 그 톱니에 반도체·군함·원전·변압기가 맞물려 돌아가는 초현실적 스케일 대비 — 세계가 한국의 제조 심장에 의존한다는 역설을 시각화.",
+      "prompt_en": "Dark surreal cinematic image of an enormous glowing gear-heart emblazoned with the Korean taegeuk symbol, rotating at the center of a shadowy world map, with semiconductors, warships, a nuclear reactor, and power transformers meshed into its turning teeth as if the whole world depends on it. Dramatically oversized to dominate the top half of the frame, ominous stormy backdrop, deep shadows, dramatic cold-blue and gold contrast, moody tense atmosphere emphasizing the paradox of the world leaning on one nation's manufacturing heart."
+    }
+  ]
+}

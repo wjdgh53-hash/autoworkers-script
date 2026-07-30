@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-fifth-economic-power",
+    "titles": [
+      "\"석유 한 방울 안 나는데\" 미국·중국 다음 세계 5위에 오른 나라의 정체",
+      "국토 107위·인구 29위·자원 제로, 그런데 세계 증시 5위인 나라의 비결",
+      "자원도 땅도 없는 한국이 어떻게 세계 5위 경제 대국이 됐을까"
+    ],
+    "thumbnail_texts": [
+      "자원 제로인데 / 세계 5위 / 숨겨진 비결",
+      "국토 107위 / 증시는 세계 5위 / 어떻게?",
+      "세계가 주목한 / 세계 5위 경제 / 그 정체"
+    ],
+    "image_concepts": {
+      "A": "금빛 초대형 시상대 위 태극기 후광, 아래 서열에 강대국 국기 — 세계 5위라는 결과를 서열로 시각화",
+      "B": "자원 없는 작은 반도에서 폭발적으로 솟구치는 금빛 상승 그래프 + 반도체·LNG선 실루엣 — 열세를 뒤집는 반전"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 어두운 남색 배경, 금빛 광채가 쏟아지는 시상대 최상단 중앙에 태극기가 후광을 두르고, 아래 낮은 단에 미국·중국·일본 국기가 놓인 결과 시각화 장면.",
+      "prompt_en": "Cinematic photorealistic scene of a towering golden tiered award podium set against a deep dark navy background with subtle world map and rising stock candlestick charts glowing faintly behind. At the highest central tier stands a dramatically oversized South Korean Taegukgi flag (red and blue yin-yang circle with black trigrams) wrapped in a radiant golden halo of light. On the lower tiers rest the flags of the United States, China, and Japan (Japanese flag shown as a plain white flag with a single red circle), noticeably smaller and cast in deep shadow. Gold and red accent lighting, moody dramatic contrast, high polish, glowing embers of golden particles floating upward for a triumphant, awe-inspiring mood."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 금빛 시상대 + 태극기 후광 + 하위 서열 강대국 국기 구도를 생생한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a towering golden tiered award podium against a deep dark navy backdrop with stylized rising candlestick charts and a faint world map glowing behind. Bold cel-shaded lighting and dramatic ink outlines emphasize a dramatically oversized South Korean Taegukgi flag (red and blue yin-yang circle with black trigrams) crowning the highest tier, surrounded by an explosive golden light halo. Smaller flags of the United States, China, and Japan (Japanese flag as a plain white flag with a single red circle) sit on lower, shadowed tiers. Intense gold and red color accents, exaggerated perspective, dynamic sparkling light rays, energetic and triumphant atmosphere."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 자원 없는 작고 어두운 반도에서 금빛 상승 그래프가 폭발적으로 솟구치고, 배경에 반도체 칩과 LNG 운반선 실루엣이 보이는 반전 장면.",
+      "prompt_en": "Cinematic photorealistic scene of a small dark rocky peninsula alone in a shadowy sea, from which an explosive golden upward-soaring line-and-arrow growth graph bursts dramatically into the sky, dwarfing everything around it. In the deep dark background, glowing cyan-tinted silhouettes of a semiconductor memory chip and a massive LNG carrier ship are faintly visible. Dramatic contrast between the tiny modest landmass and the towering golden surge of the graph conveys a surprising reversal. Gold and cyan accent lighting, deep shadows, moody atmospheric depth, floating golden light particles, powerful sense of unexpected breakout."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 작은 반도 + 폭발적 금빛 상승 그래프 + 반도체·LNG선 실루엣 반전 구도를 생생한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a small dark rocky peninsula in a shadowy sea, with an explosive golden upward-soaring line-and-arrow growth graph erupting skyward in bold cel-shaded strokes, dramatically dwarfing the tiny land. Stylized glowing cyan silhouettes of a semiconductor memory chip and a large LNG carrier ship glow in the dark background. Bold ink outlines and dynamic speed-line effects emphasize the shocking scale contrast between the small landmass and the towering golden graph. Gold and cyan color accents, deep dark background, sparkling energy bursts, exaggerated dramatic perspective, thrilling sense of reversal."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 어두운 세계 지도 위에서 유독 한국 반도만 눈부신 금빛으로 빛나며 거대한 금빛 빛기둥을 하늘로 쏘아올려, 어둡게 가라앉은 거대한 대륙들을 압도하는 스케일 역전 3D 아트.",
+      "prompt_en": "Dramatic cinematic 3D-rendered digital art of a dark stylized world map seen from a low dynamic angle, where the small Korean peninsula alone blazes with brilliant golden light, launching a colossal towering beam of golden energy straight into the dark sky. The far larger surrounding continents remain sunken in deep shadow and cool blue tones, visually overwhelmed by Korea's radiant golden pillar. Faint glowing stock candlestick charts rise across the background. High-contrast moody lighting, gold and cyan accents, swirling luminous particles, awe-inspiring scale-inversion mood that makes the tiny nation feel monumentally powerful."
+    }
+  ]
+}

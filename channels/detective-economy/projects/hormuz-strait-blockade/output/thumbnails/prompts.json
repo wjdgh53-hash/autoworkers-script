@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "hormuz-strait-blockade",
+    "titles": [
+      "\"해적행위라고요?\" 이란이 절대 말 못 하는 호르무즈 역봉쇄의 진실",
+      "\"통행료를 뜯긴 건 우리인데\" 호르무즈 역봉쇄, 한국이 볼모가 된 이유",
+      "이란이 '해적행위'를 외치는 동안, 한국 선박 26척은 하루 21억 원을 태우고 있다"
+    ],
+    "thumbnail_texts": [
+      "해적은 누구?",
+      "호르무즈 장악 / 진짜 해적은",
+      "내로남불 / 역봉쇄의 진실"
+    ],
+    "image_concepts": {
+      "A": "균열 가는 이란 국기 + 미국 성조기 좌우 대비 — A vs B 대결 구도",
+      "B": "좁은 해협을 가로막는 거대한 쇠사슬과 갇힌 유조선 — 스케일 대비 구도"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 균열이 퍼지는 이란 국기, 우측에 강렬한 미국 성조기가 대치하는 시네마틱 장면. 어두운 남색 배경에서 양국 국기가 극적으로 대비된다.",
+      "prompt_en": "Cinematic photorealistic dramatic photograph of two national flags facing each other in confrontation. On the left, the Iranian flag (green, white, red horizontal stripes with emblem) showing deep cracks and fractures spreading across its surface. On the right, the American Stars and Stripes flag billowing powerfully with intense rim lighting. Dark navy-blue atmospheric background with dramatic volumetric lighting creating tension between the two flags. High contrast, moody cinematic color grading."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 이란 국기 vs 성조기 대치를 애니메 스타일로 표현. 균열 효과와 대비를 극대화한 스타일라이즈드 일러스트.",
+      "prompt_en": "Vibrant anime-style illustration of two national flags in dramatic confrontation. On the left, the Iranian flag with bold cel-shaded cracks shattering across it, fragments flying outward with speed lines. On the right, the American flag rendered with intense saturated reds, whites, and blues, glowing with power. Dark indigo background with anime-style impact effects, lens flares, and dramatic diagonal composition. Bold ink outlines, high contrast cel shading."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좁은 해협을 가로지르는 거대한 녹슨 쇠사슬, 그 사이에 작은 유조선이 갇혀 있는 시네마틱 장면. 압도적 스케일 대비로 위기감 전달.",
+      "prompt_en": "Cinematic photorealistic photograph of a narrow ocean strait blocked by massive rusted iron chains stretching across the water. A small oil tanker is trapped between the enormous chain links, dwarfed by their scale. The chains show heavy rust with reddish-brown patina. Dark steel-blue ocean water, overcast dramatic sky with ominous clouds. Golden-yellow warning light reflecting off the water surface. Aerial perspective showing the vast scale difference between chains and ship."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 해협+쇠사슬+유조선 구도를 애니메 스타일로 표현. 스케일 대비와 위기감을 극대화.",
+      "prompt_en": "Stylized anime illustration of a dramatic ocean strait scene. Enormous rusted chains with exaggerated proportions stretch across a narrow waterway, each link larger than the tiny oil tanker trapped between them. Bold cel-shaded style with dramatic perspective lines emphasizing the massive scale difference. Dark teal ocean with anime-style wave effects, stormy purple-grey sky. Red rust on chains contrasted with bright yellow warning highlights. Dynamic composition with dramatic foreshortening."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 호르무즈 해협의 위성 시점에서 본 봉쇄 장면. 좁은 해협 양쪽에 미국과 이란의 군함이 대치하고, 가운데에 유조선들이 갇혀 있는 전략 지도 스타일.",
+      "prompt_en": "Cinematic satellite-view photograph looking down at a narrow ocean strait. On one side, American naval vessels with visible Stars and Stripes, on the other side, Iranian patrol boats. Between them, several commercial oil tankers are stuck in a bottleneck formation. The water is dark deep blue, with a glowing red line marking the blockade zone across the strait. Dramatic overhead perspective with tilt-shift effect making the ships look like miniatures on a strategic war map. Warm golden desert coastline contrasting with cold blue ocean."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "project": "canada-collapse",
+    "titles": [
+      "\"선진국인데 왜 통장은 텅텅\" 세계 1위 살기 좋던 캐나다가 무너진 5년 (집값·장바구니로 본 몰락)",
+      "\"다음 차례는 한국입니다\" 세계 1위 선진국 캐나다가 무너진 길, 우리가 그대로 걷고 있다",
+      "\"6조로 끝날 걸 34조를 썼다\" 북미의 우등생 캐나다를 무너뜨린 건 외부가 아니었다"
+    ],
+    "thumbnail_texts": [
+      "통장이 텅텅 + 세계 1위 살기 좋던 나라가",
+      "다섯 중 하나 + 일해도 푸드뱅크 갑니다",
+      "6년 전보다 가난 (단일 대형)"
+    ],
+    "image_concepts": {
+      "A": "텅 빈 지갑을 든 근심 어린 인물 + 뒤로 흐릿한 캐나다 국기. 채도 낮은 흐린 회색 겨울 거리 배경에 경고 빨강 포인트. 불안·근심.",
+      "B": "전성기 밴쿠버(밝음) ↔ 침체된 현재(어둠)의 Before→After 좌우 분할, 우려하는 인물 얼굴. 좌측 밝은 톤 / 우측 어두운 회색·적갈색 + 빨강 포인트. 충격·낙차."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 근심 가득한 표정의 캐나다 시민이 텅 빈 지갑과 길게 늘어진 영수증을 펼쳐 보이고, 뒤로는 흐릿한 캐나다 국기(단풍잎)와 침체된 겨울 거리. 지갑에서 빠져나간 빈 공간에 경고 빨강.",
+      "prompt_en": "Photorealistic cinematic thumbnail of an ordinary Canadian person, a middle-aged man with an exaggerated worried, anxious expression, holding open a completely empty wallet in one hand and a long trailing paper receipt in the other. Behind him a faded, desaturated Canadian flag (red with a red maple leaf) and a gloomy grey winter city street with vacant storefronts. Low-saturation cold grey overcast palette, dramatic moody crisis lighting, a vivid warning-red accent glow around the empty wallet, deep shadows and sharp contrast, the anxious face and empty wallet oversized filling the upper frame, tense atmosphere of financial dread, bottom half kept clear for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '텅 빈 지갑 + 긴 영수증 + 흐릿한 캐나다 국기 + 침체된 겨울 거리' 구도를 다크 톤 애니메 스타일로.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration of an ordinary Canadian man with an exaggerated cel-shaded expression of worry and anxiety, holding open a totally empty wallet and a long trailing receipt. Behind him a faded desaturated Canadian flag with a red maple leaf and a gloomy grey winter street of empty shops, rendered in bold ink outlines. Cold overcast grey palette, dramatic contrast, a glowing warning-red accent bursting around the empty wallet, exaggerated perspective, stylized atmosphere of financial dread, the anxious face and wallet oversized in the upper frame, bottom half kept clear for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌측 전성기의 밝고 화려한 밴쿠버(파랑·초록, 활기)와 우측 침체된 현재(어두운 회색·적갈색, 빈 상점·노숙) 좌우 분할, 가운데 균열, 앞쪽에 충격받은 시민의 얼굴.",
+      "prompt_en": "Photorealistic cinematic split-composition thumbnail. Left half: a bright, prosperous past Vancouver skyline glowing in cheerful blue-green tones, vibrant and alive. Right half: the same city in present-day decline, a dark desaturated grey-and-rust street with shuttered shops and a bleak mood. A jagged glowing fault line cracks down the center dividing the two eras. In the foreground a Canadian citizen with an exaggerated expression of shock and dismay looks toward the decayed side. Dramatic moody crisis lighting, deep shadows, vivid red accent highlights along the crack, oversized elements filling the frame, tense Before-and-After contrast, bottom half kept clear for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 '밝은 과거 밴쿠버 ↔ 어두운 현재' Before→After 좌우 분할과 충격받은 시민을 다크 톤 애니메 스타일로, 가운데 용암 같은 균열.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration, dramatic split composition. Left half: a bright prosperous past Vancouver skyline in cheerful blue-green cel-shaded tones, lively and glowing. Right half: the present-day city in decline, dark desaturated grey-and-rust streets with closed shops, bold ink outlines. A blazing molten fault line splits the center dividing the golden past from the bleak present. In the foreground a Canadian citizen with an exaggerated cel-shaded expression of shock stares at the ruined side. Deep charcoal palette with dramatic contrast, glowing red-orange accents along the crack, exaggerated perspective, tense Before-and-After atmosphere, oversized elements in the upper frame, bottom half kept clear for text.",
+      "text_space": "bottom-half"
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 충격에 빠진 한국 직장인이 치솟는 집값·물가 그래프와 텅 빈 지갑 앞에서 경악하고, 그 뒤로 무너지는 캐나다 도시(단풍잎 국기)와 한국 아파트 단지가 하나의 균열로 이어진다 — '캐나다=한국의 몇 년 뒤' 거울 메시지를 한 프레임에.",
+      "prompt_en": "Photorealistic dramatic thumbnail of a Korean office worker, a likeable man in a suit with an exaggerated expression of shock and dread, standing before a soaring red price-and-housing-cost graph line and clutching an empty wallet. Behind him a crumbling Canadian city skyline marked with a red maple-leaf flag on one side connects through a single glowing fault line to a dense South Korean apartment complex on the other side, as if the collapse is spreading toward Korea. Dark moody crisis lighting with deep shadows and sharp contrast, vivid warning-red accents cutting through the gloom, the panicked face oversized in the upper frame, a chilling mirror message that Canada is Korea's near future, bottom half kept clear for text.",
+      "text_space": "bottom-half"
+    }
+  ]
+}

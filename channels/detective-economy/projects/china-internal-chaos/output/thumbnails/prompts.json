@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "project": "china-internal-chaos",
+    "titles": [
+      "\"아무나 골라서 친다\" 몇 주 새 수십 명 죽은 중국, 전쟁도 아닌데 안에서 무너지는 이유",
+      "\"멀쩡한 사람을 골라 친다\" 세계 2위 중국에서 국민이 국민을 죽이기 시작한 이유",
+      "\"곧 대륙이 갈라진다\" 전쟁도 없이 안에서부터 무너지는 중국의 진짜 뿌리"
+    ],
+    "thumbnail_texts": [
+      "\"아무나 골라서 친다\" / 곧 안에서 터진다",
+      "\"멀쩡한 사람을 친다\" / 곧 스스로 무너진다",
+      "\"전쟁도 없이 죽는다\" / 곧 대륙이 갈라진다"
+    ],
+    "image_concepts": {
+      "A": "균열·붕괴 + 현장감 — 텅 빈 도시 교차로에 부서진 차량 1대, 흩어져 도망치는 소수 군중 실루엣. 검은 배경 + 붉은 경광등·화염 포인트. 전쟁도 없이 안에서 터진 참사.",
+      "B": "상징물 파괴 — 거대한 중국 대륙 실루엣이 바깥이 아니라 안쪽 중심에서부터 갈라져 무너짐. 짙은 회색 + 내부 붉은 용암 크랙. '자멸'을 한 장으로."
+    },
+    "strategy": {
+      "count": 5,
+      "art_styles": ["photorealistic", "anime"],
+      "color_palette": "dark",
+      "emotions": ["shock", "tension"],
+      "text_space": "bottom-half",
+      "face_style": "exaggerated+natural"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 텅 빈 대도시 교차로에 앞부분이 부서진 승용차 한 대가 멈춰 서 있고, 주변으로 소수의 사람들이 공포에 질려 흩어져 도망치는 실루엣. 붉은 경광등 불빛만이 어둠을 가른다. 전쟁도 외적도 없이 안에서 터진 참사의 순간.",
+      "prompt_en": "Cinematic dark photograph of a deserted large Chinese city intersection at night. A single sedan with a smashed, crumpled front end sits abandoned in the middle of the empty crossing. Around it, a few civilian figures in silhouette scatter and flee in terror, motion-blurred. The only light comes from harsh red-and-blue emergency beacon glow slicing through heavy darkness and thin smoke, with cold high-rise apartment blocks looming unlit in the background. Extreme high contrast, ominous stillness broken by sudden violence, a sense of an attack that came from within rather than from any war. No readable text. Bottom half kept darker for large caption text."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 '텅 빈 교차로 + 부서진 차 + 도망치는 군중 실루엣 + 붉은 경광등' 구도를 강렬한 애니메 스타일로. 안에서 터진 참사의 충격.",
+      "prompt_en": "Dramatic anime-style illustration of an empty night-time city intersection in a large Chinese metropolis. A lone sedan with a violently crumpled front end stands stopped in the middle of the crossing, while a handful of civilian silhouettes flee outward in panic with bold motion lines. Harsh red and blue emergency-light glow cuts through darkness and drifting smoke; cold unlit apartment towers loom behind. Bold cel-shaded outlines, deep dramatic shadows, tense red-black palette, high-contrast shock-and-tension mood of sudden violence erupting from within a society. No readable text. Lower half kept dark for caption space."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 거대한 중국 대륙 지형(실루엣)이 국경 바깥이 아니라 정중앙 안쪽에서부터 쩍쩍 갈라지며 붉은 용암처럼 균열이 번진다. 조각난 국토가 스스로 내려앉는 '자멸'의 이미지 — 레퍼의 '불타는 지도'와 달리 안으로 붕괴.",
+      "prompt_en": "Cinematic dark photograph of a giant three-dimensional relief map of mainland China rendered as a dark landmass, seen from a dramatic high angle. Instead of burning at the edges, deep glowing red-orange cracks split open from the very center of the country and spread outward, molten fissures widening as chunks of the land subside and collapse inward on themselves. Charcoal-grey terrain, no flames on the outside, only internal fracture light — a nation caving in from within. Deep shadows, ominous high contrast, tense red-and-black palette with a molten focal glow. Object-centered, no faces, no readable text. Bottom half darker for large text."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 중국 대륙이 안쪽 중심에서부터 갈라져 붉은 용암 균열이 번지며 조각나 무너지는 '자멸' 구도를 강렬한 애니메 스타일로.",
+      "prompt_en": "Dramatic anime-style illustration of a huge dark relief map of mainland China viewed from a high angle. Blazing red-orange molten cracks erupt from the country's very center and race outward, splitting the landmass into subsiding fragments that collapse inward. Bold cel-shaded outlines, explosive crack lines, deep dramatic shadows, tense red-black palette with an intense molten glow at the core. No flames along the borders — the destruction comes from inside. Object-focused, no characters, no readable text, high-contrast self-destruction mood. Lower half kept dark for caption text."
+    },
+    {
+      "id": 5,
+      "type": "concept-a-hero",
+      "concept_ko": "컨셉 A 변형 실사(현장 클로즈업). 부서진 차량 앞유리·찌그러진 보닛을 로우앵글 클로즈업으로 크게 잡고, 흐릿한 배경에 도망치는 군중과 붉은 경광등. 참사의 현장감을 인물 없이 오브젝트로 극대화.",
+      "prompt_en": "Cinematic dark photograph, dramatic low-angle close-up of the smashed front end of an abandoned sedan — crumpled hood and shattered windshield filling the upper frame — stopped in an empty night city intersection. In the blurred background, silhouetted civilians flee and harsh red emergency-beacon light bleeds through smoke, cold unlit apartment towers behind. Deep low-key lighting, extreme contrast, an ominous tense atmosphere of sudden violence erupting inside a great power. No people in focus, no readable text. Bottom half kept darker for text space."
+    },
+    {
+      "id": 6,
+      "type": "benchmark-burning-street-map",
+      "concept_ko": "벤치 채널 스타일 실사. 좌측은 불타는 중국 도심 거리 — 한자 간판이 늘어선 상가, 공포에 질려 카메라 쪽으로 달려오는 동아시아 군중, 뒤엔 부서져 불타는 차량과 잔해·연기. 우측은 오성홍기 별이 박힌 중국 대륙 지도가 용암처럼 불타며 균열이 번짐. 전경 화염, 검붉은 종말 톤.",
+      "prompt_en": "Cinematic hyper-realistic disaster thumbnail, dramatic high contrast, split composition. LEFT HALF: a chaotic burning Chinese downtown street lined with shops covered in Chinese-character signboards, a crowd of terrified East Asian people sprinting toward the camera with panicked faces, a wrecked car burning in the background, scattered debris, thick black smoke and orange flames licking up from the foreground. RIGHT HALF: a giant relief map of mainland China engulfed in blazing fire and glowing molten lava, the five yellow stars of the Chinese flag still visible across its burning red surface, deep cracks spreading with incandescent orange light. Ominous apocalyptic mood, intense red-orange fire palette against dark smoke, deep shadows, sharp cinematic lighting. Photorealistic, ultra-detailed, 16:9. Lower portion kept darker and less busy for large caption text."
+    }
+  ]
+}

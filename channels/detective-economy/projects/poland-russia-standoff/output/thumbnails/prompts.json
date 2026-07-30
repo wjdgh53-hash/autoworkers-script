@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "poland-russia-standoff",
+    "titles": [
+      "\"겁먹을 줄 알았지?\" 러시아 코앞의 폴란드가 한국 전차 1,000대로 최전선을 채운 이유",
+      "러시아가 가장 노리는 나라가 가장 겁이 없다, 폴란드 최전선을 뒤덮은 한국 무기 9조의 정체",
+      "러시아가 당황한 폴란드의 한 수, 코앞 최전선을 한국 전차·자주포로 메꾼 배짱의 실체"
+    ],
+    "thumbnail_texts": [
+      "러시아 코앞인데 폴란드는 태연하다 + \"겁먹을 줄 알았지?\" + 한국 전차 1,000대",
+      "러시아가 함부로 못 건드리는 이유 + 이게 최전선이다 + K-무기 9조 배치",
+      "가장 위협받는 나라가 가장 배짱 + 러시아 당황 + 무기수입 유럽 2위"
+    ],
+    "image_concepts": {
+      "A": "국경 최전선을 가득 메운 K2 전차·K9 자주포의 압도적 물량 대열 앞에서 태연하게 서 있는 폴란드 병사",
+      "B": "좌측 어둡고 위협적인 러시아 기갑 실루엣 vs 우측 K2·K9로 무장하고 자신만만한 폴란드 최전선의 좌우 대치"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 국경 방어선을 끝없이 메운 K2 전차·K9 자주포 대열의 압도적 물량감, 그 앞에 여유로운 표정으로 태연히 서 있는 폴란드 병사 한 명.",
+      "prompt_en": "Photorealistic cinematic photograph of a massive military column of South Korean K2 main battle tanks and K9 self-propelled howitzers stretching endlessly along a border defense line, overwhelming in sheer number and scale, their steel silhouettes catching a sharp cold rim light. In the immediate foreground stands a single fictional Polish soldier in a plain modern camouflage uniform (no insignia, no flags), an attractive young man with a warm likeable face wearing a calm, unbothered, faintly confident expression despite the tension around him. Dark pre-dawn border atmosphere in deep gray and navy blue tones, heavy shadows and dramatic contrast, moody ominous lighting that makes the endless armor look towering and imposing. The tanks and the composed soldier fill the frame with strong depth-of-field perspective."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 구도(최전선을 뒤덮은 K2·K9 대열 + 태연한 폴란드 병사)를 강렬한 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of an overwhelming column of South Korean K2 tanks and K9 self-propelled howitzers filling a border defense line into the distance, dramatically oversized and towering with exaggerated perspective. In the foreground, a single fictional Polish soldier, a handsome anime character with expressive eyes and a plain unmarked camouflage uniform (no flags, no insignia), stands relaxed and self-assured with a calm confident half-smile amid the looming threat. Bold ink outlines and cel-shaded lighting, dark cinematic border atmosphere of deep gray and navy blue, intense dramatic contrast and cold rim light glinting off the armored vehicles, tense ominous mood."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌측에 어둡고 위협적인 러시아 전차 실루엣, 우측에 또렷한 K9 자주포와 자신감 넘치는 폴란드 인물이 좌우로 대치하는 대결 구도.",
+      "prompt_en": "Photorealistic cinematic split composition of a tense frontline standoff. On the left, a menacing dark silhouette of looming Russian armored tanks emerging from cold shadow and mist, shrouded in deep blue-black gloom and an ominous atmosphere of threat. On the right, brightly defined South Korean K2 tanks and a K9 self-propelled howitzer stand ready with sharp highlights, and beside them a fictional Polish soldier, an attractive young man with a warm likeable face and a bold, confident, defiant expression. Extreme brightness contrast between the shadowy left and the crisply lit right, dark dramatic border tones, heavy cinematic shadows, high-tension confrontational mood. No flags, no insignia on either side."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 좌측 러시아 위협 vs 우측 폴란드 무장·배짱의 좌우 대결 구도를 애니메 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a dramatic left-versus-right military face-off. The left half is dominated by ominous dark silhouettes of Russian tanks looming out of cold blue shadow, radiating menace and threat. The right half bursts with clearly rendered South Korean K2 tanks and a K9 self-propelled howitzer under bright dramatic highlights, and a fictional Polish soldier, a handsome anime character with expressive eyes and a bold defiant confident grin. Bold ink outlines, cel-shaded lighting, maximized brightness contrast between the shadowy threatening left and the vivid confident right, dark cinematic palette of navy and steel gray, intense confrontational tension. No flags, no insignia."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 지면에 바짝 붙은 초저각 앙각 시점으로, 하늘을 가릴 만큼 거대하게 밀려오는 K2 전차·K9 자주포 대열의 압도적 물량감을 극대화한 스케일 충격 컷.",
+      "prompt_en": "Photorealistic dramatic worm's-eye low-angle shot looking up at a colossal advancing wall of South Korean K2 tanks and K9 self-propelled howitzers, the machines dramatically oversized and towering against a dark stormy border sky, treads and gun barrels filling the frame with crushing scale. A tiny lone fictional Polish soldier in a plain unmarked uniform stands calm and unshaken at the base of the frame, dwarfed by the overwhelming column yet composed and confident. Deep gray and navy blue cinematic tones, harsh cold rim light rimming the steel silhouettes, heavy shadows, ominous high-tension atmosphere of unstoppable force. No flags, no insignia."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "korea-rare-earth",
+    "titles": [
+      "2026년 7월, 삼성 반도체가 멈출 뻔했습니다. 강원도 산골 폐광이 막아낸 광물 전쟁",
+      "중국이 끊자 내 스마트폰이 위태로워졌다 — 30년 만에 깨어난 강원도 폐광의 정체",
+      "\"다음 달이면 반도체가 멈춥니다\" 그 위기를 막은 건 30년 전 버려진 강원도 폐광이었다"
+    ],
+    "thumbnail_texts": [
+      "삼성 반도체 + 7월 멈출 뻔 + 강원도가 살렸다",
+      "\"반도체 끊긴다\" + 중국의 협박 + 구원자는 폐광",
+      "내 폰·전기차 + 중국이 쥐고 있다 + 반전 카드 한국에"
+    ],
+    "image_concepts": {
+      "A": "균열 반도체 위기 — 갈라지는 삼성 HBM 반도체 웨이퍼/스마트폰 위로 붉은 균열, 배경에 어두운 중국 오성홍기 그림자. 불안·위기감.",
+      "B": "폐광 부활 Before→After — 좌측 어둡게 버려진 강원도 폐광 갱도, 우측 황금빛 텅스텐 원광과 재가동 광산, 상단 태극기. 통쾌함·자긍심."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 갈라지는 삼성 HBM 반도체 웨이퍼와 스마트폰 위로 붉은 균열이 번지고, 어두운 배경에 중국 오성홍기 그림자가 드리운 시네마틱 위기 장면.",
+      "prompt_en": "Photorealistic cinematic close-up of a cracking Samsung HBM4 memory chip wafer and a fracturing smartphone screen, glowing red cracks spreading dramatically across their surfaces like a spreading fault line. Behind them looms a dark, shadowy Chinese national flag (red flag with five gold stars) cast as an ominous silhouette over the scene. Dark charcoal-black background with deep shadows, dramatic contrast and moody crisis lighting, the chip and phone dramatically oversized and filling the upper frame. Tense ominous atmosphere of imminent technological collapse, vivid red accent highlights against the darkness."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 균열 반도체+스마트폰 위기를 다크 톤 애니메 스타일로 표현, 붉은 균열과 중국 오성홍기 그림자.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration of a Samsung HBM4 memory chip wafer and a smartphone violently cracking apart, intense glowing red fracture lines bursting across them with bold ink outlines and dramatic cel-shaded lighting. A shadowy Chinese national flag (red flag with five gold stars) looms ominously in the dark background. Deep black and charcoal palette with sharp dramatic contrast and exaggerated perspective, the shattering devices oversized in the upper frame. Stylized digital illustration radiating tension and impending crisis, glowing red highlights cutting through the gloom."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 좌측은 어둡게 버려진 강원도 폐광 갱도, 우측은 황금빛으로 빛나는 텅스텐 원광과 재가동된 광산, 상단에 태극기. Before→After 대비.",
+      "prompt_en": "Photorealistic cinematic split composition: on the left, a dark abandoned Korean mountain mine tunnel, decayed and shadowy with rusted rails and crumbling rock; on the right, a brilliantly glowing golden tungsten ore deposit inside a freshly reactivated, brightly lit mining operation with sparkling rich mineral veins. A South Korean national flag (Taegukgi, with the central red-and-blue circle and black trigrams) flies prominently at the top of the frame. Dramatic Before-versus-After contrast between dark ruin and radiant golden revival, the gleaming tungsten ore oversized and eye-catching, deep dramatic lighting with a triumphant warm golden glow dominating the right side."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 좌(어두운 폐광)→우(황금 텅스텐 재가동 광산) 대비를 애니메 스타일로, 상단 태극기.",
+      "prompt_en": "Vibrant anime-style illustration with a dramatic split composition: the left half shows a dark, abandoned Korean mountain mine tunnel rendered in gloomy desaturated tones with bold ink outlines; the right half explodes with a radiant golden tungsten ore vein and a reborn, brightly glowing mining site in vivid cel-shaded color. A South Korean national flag (Taegukgi, central red-and-blue circle with black trigrams) waves boldly at the top. Strong stylized Before-to-After contrast between shadowy decline and golden triumphant revival, the glowing tungsten ore dramatically oversized, dynamic perspective and intense dramatic lighting conveying pride and reversal of fortune."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 충격에 빠진 삼성 반도체 엔지니어가 멈춰 선 클린룸 생산라인 앞에서 경악하는 클로즈업, 머리 위로 붉은 균열과 중국 오성홍기 그림자, 한쪽 구석에 황금빛 텅스텐 원광이 한 줄기 희망처럼 빛난다 — 위기와 구원을 한 프레임에 결합.",
+      "prompt_en": "Photorealistic dramatic thumbnail of a Korean Samsung semiconductor engineer in a white cleanroom bunny suit, an attractive man with a warm likeable face wearing an exaggerated expression of shock and alarm, standing before a stalled, darkened semiconductor production line. Red cracks fracture across the dim cleanroom and a shadowy Chinese national flag (red flag with five gold stars) looms overhead, while in one corner a single chunk of glowing golden tungsten ore shines like a ray of rescue. Dark moody crisis lighting with deep shadows and sharp dramatic contrast, the engineer's panicked face oversized in the upper frame, combining imminent disaster with a glimmer of golden salvation."
+    }
+  ]
+}

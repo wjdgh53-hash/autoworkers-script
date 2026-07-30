@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "xi-jinping-power-crisis",
+    "titles": [
+      "\"자기 사람을 죽여야 한다\" 시진핑이 측근까지 숙청하며 완성하려는 소름돋는 큰 그림",
+      "충성해도 살아남지 못한다.. 시진핑 10년 숙청의 끝에서 드러난 진짜 목적",
+      "\"충성의 대가는 죽음\" 시진핑에게 버림받은 최측근들, 그 숙청 뒤에 숨겨진 전쟁 시나리오"
+    ],
+    "thumbnail_texts": [
+      "\"자기 사람까지 숙청?\" + \"시진핑의 진짜 목적\"",
+      "\"군 서열 2위도 죽였다\" + \"남은 건 2명뿐\"",
+      "\"시진핑 최측근의 최후\""
+    ],
+    "image_concepts": {
+      "A": "균열/붕괴 — 시진핑 뒤의 부서지는 군사위 의자들 (7개 중 5개 파괴, 어두운 붉은 배경에 금빛 균열)",
+      "B": "인물 감정 — 거대한 빈 회의실에 시진핑 혼자 앉은 고독한 권좌 (암적색+검정, 스포트라이트)"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 시진핑이 굳은 표정으로 상단 중앙에 서 있고, 그 뒤로 7개의 군사위원회 의자 중 5개가 산산조각 나며 부서지고 있는 장면. 어두운 붉은 배경에 금빛 균열이 번져나간다.",
+      "prompt_en": "Photorealistic cinematic portrait of Xi Jinping (President of China) standing in the upper center of the frame with a cold, stern expression and clenched jaw, wearing a dark Mao suit. Behind him, seven ornate military council chairs are arranged in a row — five of them violently shattering into fragments mid-air, golden cracks splitting through the dark crimson-red marble floor and walls. Deep shadows engulf the scene with dramatic contrast, a single harsh overhead light casting ominous shadows across his face. Dark cinematic atmosphere with moody lighting and an overwhelming sense of tension and dread."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 시진핑이 상단 중앙에 굳은 표정으로 서 있고, 뒤편의 7개 의자 중 5개가 폭발하듯 부서지며 금빛 균열이 퍼지는 장면을 다크 애니메 스타일로 표현.",
+      "prompt_en": "Dark anime-style illustration of Xi Jinping (President of China) standing imposingly in the upper center with a ruthless, exaggerated cold stare, wearing a black Mao suit with sharp cel-shaded highlights. Behind him, five of seven grand military chairs explode into jagged shards with bold golden crack lines radiating outward like lightning across the deep blood-red background. Dramatic ink-heavy shadows and intense contrast create an ominous atmosphere, with particles and debris suspended in the air around the fracturing chairs."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 거대한 텅 빈 회의실에 시진핑이 상단 중앙의 의자에 홀로 앉아 있고, 나머지 좌석은 모두 비어 있다. 암적색과 검정 톤의 공간에 시진핑에게만 스포트라이트가 비추는 고독한 장면.",
+      "prompt_en": "Photorealistic cinematic wide shot of Xi Jinping (President of China) sitting alone in the upper center at the head of a massive empty conference table in a cavernous dark meeting hall. Dozens of vacant leather chairs stretch away into deep shadow on both sides. A single harsh spotlight isolates him from above, his face showing a naturally tense and weary expression with visible fatigue lines. The room is bathed in dark crimson-black tones with moody dramatic lighting, dust particles visible in the spotlight beam, creating an overwhelming sense of isolation and ominous solitude."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 거대한 어둠 속 빈 회의실에서 시진핑이 상단 중앙에 혼자 앉아 있고, 위에서 내려오는 한 줄기 빛만이 그를 비추는 고독한 장면을 다크 애니메 스타일로 표현.",
+      "prompt_en": "Stylized dark anime illustration of Xi Jinping (President of China) sitting alone in the upper center of an enormously vast, shadowy council chamber, his exaggerated expression conveying a mix of cold determination and hidden unease. Empty chairs fade into pitch-black darkness around him with dramatic cel-shaded contrast. A single dramatic beam of white light falls from above onto his solitary figure, the rest of the hall consumed by deep crimson and black tones with bold ink outlines and heavy atmospheric shadows."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 시진핑의 손이 거대한 장기판 위의 말들을 쓸어내리는 장면. 장기말에는 군복을 입은 인물 실루엣이 새겨져 있고, 쓸려 떨어지는 말들 사이로 금빛 균열이 번진다. 어둡고 긴장감 넘치는 시네마틱 구도.",
+      "prompt_en": "Photorealistic cinematic close-up of a powerful hand belonging to Xi Jinping (President of China) sweeping chess-like pieces off a massive dark wooden strategy board positioned in the upper half of the frame. Each fallen piece is carved with the silhouette of a Chinese military general in uniform, tumbling through the air with golden cracks spreading across the board surface. Xi Jinping's stern face is partially visible in the background with exaggerated intense eyes glaring downward. Dark cinematic atmosphere with deep shadows, dramatic crimson backlighting, and an ominous sense of ruthless calculated power."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "russia-oil-korea",
+    "titles": [
+      "\"종량제봉투가 사라졌다\" 마트 텅 빈 봉투 칸 뒤에 숨겨진 소름돋는 진실",
+      "종량제봉투부터 기저귀까지, 전부 사라지는 진짜 이유",
+      "\"봉투 1인당 2개만 판매\" 에너지 전쟁이 내 장바구니를 덮쳤습니다"
+    ],
+    "thumbnail_texts": [
+      "종량제봉투 대란 + 에너지 전쟁이 내 일상을 덮쳤다",
+      "봉투가 사라졌다 + 나프타 재고 15일 + \"1인 2개 제한\"",
+      "기름 한 방울 없는 나라의 비상 + 종량제봉투부터 기저귀까지"
+    ],
+    "image_concepts": {
+      "A": "텅 빈 마트 봉투 칸 + 뒤에 유조선 그림자 (��상→거시 연결)",
+      "B": "종량제봉투가 녹아내리며 세계 지도로 변하는 초현실 이미지"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 텅 빈 마트 진열대 클로즈업, 빈 칸에 '품절' 표시. 뒤편으로 거대한 유조선의 어두운 그림자가 드리워지는 초현실적 장면. 형���등 조명의 차가운 실내와 어두운 그림자 대비.",
+      "prompt_en": "Photorealistic cinematic close-up of an empty convenience store shelf section, fluorescent lighting casting cold bluish light. The shelf slots are completely bare with a prominent red 'SOLD OUT' sign. Behind the empty shelf, through a surreal atmospheric haze, looms the massive dark silhouette of a crude oil tanker ship, dramatically oversized, casting an ominous shadow over the entire store interior. Dark moody atmosphere with dramatic contrast between the sterile store lighting and the threatening shadow. Shallow depth of field focusing on the empty shelf in the upper half of the frame."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 텅 빈 마트 진열대 + 유조선 그림자를 애니메 스타일로 표현. 강렬한 색감 대비와 과장된 원근감.",
+      "prompt_en": "Vibrant anime-style illustration of an empty convenience store shelf section under harsh fluorescent lighting. The shelves are eerily bare with bold red 'SOLD OUT' signs. Behind the shelf, a colossal oil tanker silhouette looms through dramatic atmospheric perspective, casting deep shadows across the store. Cel-shaded style with exaggerated contrast between cold blue store interior and warm orange-red threatening shadow. Bold ink outlines, intense dramatic atmosphere with oversized scale contrast."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 거대한 한국 종량제봉투가 화면 중앙 상단에서 녹아내리며, 녹은 부분이 중동과 러시아가 표시된 세계 지도 형태로 변하는 초현실적 이미지. 검은 배경에 봉투의 파란/초록색과 녹아내리는 붉은/주황색 대비.",
+      "prompt_en": "Photorealistic surreal image of a giant Korean garbage bag (blue-green translucent plastic) positioned in the upper center of the frame, dramatically melting and dissolving downward. The melted portions transform into a glowing world map showing the Middle East and Russia, rendered in deep red and orange tones resembling crude oil. Pure black background with cinematic rim lighting on the bag. The melting transition creates viscous dripping streams that glow with fiery orange light. Dramatic tension atmosphere with high contrast between the cool blue-green plastic and hot red-orange melted geography."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 녹아내리는 종량제봉투→세계 지도 변형을 애니메 스타일로. 더 과장된 ��아내림 효과와 선��한 색감.",
+      "prompt_en": "Stylized anime illustration of a massive Korean garbage bag in the upper center, dramatically melting and transforming. The dissolving plastic morphs into a vivid world map highlighting the Middle East and Russia in blazing orange and crimson. Dark black background with exaggerated cel-shaded lighting. Bold flowing lines show the melting transition with oversized dripping effects that glow neon orange. Vibrant anime color palette with extreme contrast between cool teal-green bag and hot red-orange melted world map. Intense dramatic atmosphere."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 실사. 대형 마트 통로에서 사람���이 종량제봉투를 사재기하는 장면. 텅 빈 진열대 앞에서 봉투 몇 장을 움켜쥔 손 클로즈업. 배경으로 유조선이 보이는 뉴스 화면이 매장 TV에 나오고 있음.",
+      "prompt_en": "Photorealistic cinematic shot of a Korean supermarket aisle in crisis. Close-up of hands desperately clutching the last few blue garbage bags from an almost empty shelf. The upper portion shows the panic scene with blurred shoppers rushing in the background. A TV monitor mounted on the store wall displays breaking news footage of an oil tanker in the Strait of Hormuz. Cold fluorescent lighting mixed with the warm glow of the TV screen creates dramatic color contrast. Tense atmosphere of everyday crisis, attractive appealing hands with natural proportions."
+    }
+  ]
+}

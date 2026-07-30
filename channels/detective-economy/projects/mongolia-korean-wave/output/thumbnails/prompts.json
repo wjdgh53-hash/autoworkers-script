@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "mongolia-korean-wave",
+    "titles": [
+      "\"중국이랑 상종도 못하겠다\" 몽골이 한국에 올인하는 이유",
+      "\"우린 중국이 싫다\" 칭기즈칸 후손들이 밤새 한국어를 배우는 진짜 배경",
+      "국경 맞댄 중국을 등지고, 몽골이 바다 건너 한국을 택한 700년의 계산"
+    ],
+    "thumbnail_texts": [
+      "\"우린 중국이 싫다\" + 국경 맞댄 이웃 두고 + 한국을 택한 몽골",
+      "\"칭기즈칸 후손이 왜?\" + 밤새 한국어 배우는 + 초원의 대반전",
+      "\"중국은 쳐다도 안 본다\" + 바다 건너 한국에 올인 + 700년의 계산"
+    ],
+    "image_concepts": {
+      "A": "A vs B 대면 대립 — 좌측 등 돌린 화난 중국(오성홍기+회색 매연) vs 우측 손 맞잡은 몽골·한국(몽골기·태극기, 밝은 초원). 중국이 외면당하고 한국이 선택받는 통쾌한 구도.",
+      "B": "지도+화살표 — 몽골 지도 위, 국경 맞댄 거대 중국을 등지고 바다 건너 한국으로 향하는 굵은 붉은 화살표. 의문에서 깨달음으로."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌측에 오성홍기를 배경으로 화가 나 등을 돌린 중국(회색 매연·공장), 우측에 몽골기와 태극기를 배경으로 환하게 손을 맞잡은 몽골 청년과 한국. 중국이 외면당하고 한국이 선택받는 통쾌한 대립 장면.",
+      "prompt_en": "Photorealistic cinematic thumbnail with a strong A-versus-B split composition: on the left, a Chinese national flag (red field with five yellow stars) looms over a gloomy grey scene of smokestacks and industrial haze, where a figure turns its back angrily with a scowling face; on the right, a bright vivid scene under a clear blue sky and green steppe grassland where a young Central Asian Mongolian man with a warm friendly face and a South Korean presence (Taegukgi flag, red-and-blue circle with black trigrams) clasp hands warmly, a Mongolian flag (blue-red vertical bands with the golden soyombo symbol) beside them. Left half desaturated cold grey, right half saturated warm and bright, dramatic lighting, red and yellow accent pops, the turned-away Chinese figure and the joined hands oversized and eye-catching. Emotional tone of vindication and being chosen over a powerful rival, sharp cinematic contrast."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 좌(등 돌린 화난 중국·매연)→우(손 맞잡은 몽골 청년·태극기·밝은 초원) 대립 구도를 다크 톤 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration with a dramatic A-versus-B split composition: the left half shows a Chinese national flag (red field with five yellow stars) over a grim grey cityscape of smokestacks and haze, a figure turning its back with an angry cel-shaded scowl; the right half bursts with bright saturated color under a blue sky and green steppe, where a young Mongolian man with a cheerful likeable face and a South Korean flag (Taegukgi, red-and-blue circle with black trigrams) join hands warmly, a Mongolian flag (blue-red bands with golden soyombo) at their side. Bold ink outlines, cold desaturated left versus warm glowing right, dynamic perspective, red and yellow accent highlights, the turned-away figure and clasped hands dramatically oversized. Stylized mood of being joyfully chosen over a resentful superpower."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 몽골 지도 위에서 국경을 맞댄 거대한 중국을 등지고, 바다 건너 한국을 향해 뻗는 굵은 붉은 화살표. 지정학적 선택을 한눈에 보여주는 인포그래픽형 시네마틱 장면.",
+      "prompt_en": "Photorealistic cinematic map-based thumbnail: a stylized geopolitical map of East Asia, with landlocked Mongolia glowing at the center. A huge looming China (rendered dark and shadowy with a faint red star flag texture) presses against Mongolia's southern border, but a thick bold glowing red arrow sweeps away from China, arcing across the sea toward a bright highlighted South Korea (Taegukgi flag marker). Dark desaturated map background with dramatic rim lighting, the red arrow and the glowing Korea marker as vivid high-saturation focal points, subtle yellow highlight accents. Sense of a decisive turn away from a powerful neighbor, clean dramatic infographic-cinematic style, oversized arrow dominating the frame."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 지도+화살표(거대 중국을 등지고 바다 건너 한국으로 향하는 붉은 화살표) 구도를 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of a geopolitical map: a stylized map of East Asia with landlocked Mongolia glowing at the center in bold cel-shaded color. A massive dark looming China (shadowy with a faint red star motif) presses on Mongolia's southern border, while a thick glowing red arrow with bold ink outlines curves dramatically away from China, arcing over the sea toward a brightly highlighted South Korea (Taegukgi flag marker). Deep dark map background with dynamic lighting, the red arrow and glowing Korea rendered as vivid saturated focal points, yellow accent highlights. Stylized dramatic sense of decisively turning away from a giant neighbor, oversized arrow sweeping across the frame."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 한국어 교재를 품에 안은 몽골 청년이 밝게 웃으며 태극기 쪽을 바라보고, 뒤편 한쪽엔 오성홍기가 어둡게 균열 가며 외면당한다. 한국을 향한 동경과 중국 외면을 한 프레임에.",
+      "prompt_en": "Photorealistic dramatic thumbnail of a young Central Asian Mongolian man with a warm, likeable, expressive face, hugging a Korean-language textbook to his chest and smiling brightly as he looks toward a glowing South Korean flag (Taegukgi, red-and-blue circle with black trigrams). Behind him on one side, a Chinese national flag (red field with five yellow stars) darkens, cracks and fractures, cast aside in shadow. Bright warm cinematic lighting on the young man and the Korean flag versus deep cold shadow on the cracking Chinese flag, sharp dramatic contrast, the smiling face and the textbook oversized in the frame, red and yellow accent pops. Emotional tone of yearning admiration for Korea and pointed rejection of China in a single frame."
+    }
+  ]
+}

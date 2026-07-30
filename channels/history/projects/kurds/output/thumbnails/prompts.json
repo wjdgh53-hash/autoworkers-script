@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "kurds",
+    "titles": [
+      "\"석유 한 방울보다 가벼운 4천만 명\" 쿠르드족이 100년간 배신당하고도 또 싸우는 소름돋는 이유",
+      "\"석유 한 방울보다 가벼운 4천만 명\" 쿠르드족, 강대국이 절대 독립시키지 않는 진짜 이유",
+      "\"비밀 공작을 선교와 혼동하지 마라\" 미국이 중동 전쟁마다 꺼내는 4천만 명의 카드"
+    ],
+    "thumbnail_texts": [
+      "배신만 5번 + 4천만 명 + 나라는 없다",
+      "100년째 이용당하는 중 + 쿠르드족 + 진짜 이유",
+      "석유 vs 4천만 명 + 강대국의 선택 + 소름"
+    ],
+    "image_concepts": {
+      "A": "부서지는 약속의 지도 — 쿠르디스탄 지도가 4조각으로 갈라지며 주변국 국기 색이 침식",
+      "B": "결연한 전사의 눈빛 — 쿠르드 전사 클로즈업, 불타는 산악 배경"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 쿠르디스탄 지도 윤곽이 빨간 균열선을 따라 4조각으로 갈라지는 시네마틱 이미지.",
+      "prompt_en": "Photorealistic cinematic image of a large ancient-looking stone map of Kurdistan cracking into four pieces along deep glowing red fracture lines. Each fragment is being pulled apart by invisible forces, with the colors of surrounding nations (Turkish red, Iranian green, Iraqi black, Syrian red-white-black) bleeding into each piece from the edges. Deep navy-blue background with dramatic volumetric lighting from above, golden sun emblem (Kurdish symbol) faintly glowing at the center where the cracks converge. Ominous atmosphere with dust particles rising from the fractures."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 갈라지는 쿠르디스탄 지도를 스타일라이즈드 일러스트로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a dramatic cracking map of Kurdistan splitting into four fragments. Bold red fracture lines glow intensely against a deep indigo background, with each fragment tinted in the colors of surrounding nations — crimson red, forest green, jet black, tricolor stripes bleeding inward. A fading golden sun emblem sits at the epicenter of the cracks. Cel-shaded lighting with exaggerated lens flare effects along the fractures, dynamic composition with debris and sparks flying outward. Intense dramatic atmosphere."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 쿠르드 전사 클로즈업, 쿠피야 착용, 결연한 표정, 뒤로 불타는 산악 배경.",
+      "prompt_en": "Photorealistic cinematic extreme close-up portrait of a Kurdish Peshmerga fighter wearing a traditional red-and-white keffiyeh (kufiya) headscarf, staring directly into camera with fierce determined eyes. Weather-beaten face with dust and minor scratches, conveying years of battle and resilience. Behind him, a mountainous landscape engulfed in orange flames and rising black smoke. Dramatic side lighting from the fires casts warm orange tones on one side of his face while the other remains in deep shadow. Dark brownish-gray atmosphere with vivid orange and red fire highlights."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 결연한 쿠르드 전사 클로즈업을 애니메 스타일로 표현.",
+      "prompt_en": "Stylized anime-style illustration of a Kurdish Peshmerga warrior in extreme close-up, wearing a traditional red-white keffiyeh headscarf, staring at the viewer with intense burning determination in their eyes. Handsome attractive male face with strong jawline and expressive eyes. Behind the figure, stylized flames and smoke rise from jagged mountain silhouettes. Bold ink outlines, cel-shaded dramatic lighting with warm orange fire glow on one side and cool blue shadow on the other. Dynamic anime composition with speed lines radiating outward."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 쿠르드 깃발이 거대한 체스판 위에 꽂혀 있고, 4개국(터키/이란/이라크/시리아)의 거대한 손들이 사방에서 깃발을 향해 뻗어오는 초현실적 이미지.",
+      "prompt_en": "Surreal cinematic photograph of a massive chessboard stretching to the horizon under a stormy sky. At the center stands a single Kurdish flag (red-white-green with golden sun emblem) planted firmly on the board. Four enormous shadowy hands reach toward the flag from each direction — one draped in Turkish red, one in Iranian green, one in Iraqi tricolor, one in American stars-and-stripes. The Kurdish flag glows with warm golden light while the surrounding atmosphere is dark and ominous. Dramatic God-ray lighting breaks through storm clouds directly onto the flag. Scale contrast between the tiny flag and the colossal reaching hands creates a feeling of vulnerability and defiance."
+    }
+  ]
+}

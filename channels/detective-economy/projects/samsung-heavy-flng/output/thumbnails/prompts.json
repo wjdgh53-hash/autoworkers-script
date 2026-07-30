@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "project": "samsung-heavy-flng",
+    "titles": [
+      "\"그 사업엔 손대지 마라\" 6조 잃은 삼성중공업이 해상 LNG 공장 64%를 쥔 이유",
+      "\"그 이름은 꺼내지도 마라\" 8년 6조를 태운 삼성중공업이 그 사업만 안 놓은 이유",
+      "\"예산부터 잘라라\" 6조 적자 8년, 삼성중공업이 딱 하나 안 줄인 항목이 뒤집은 판"
+    ],
+    "thumbnail_texts": [
+      "1행(노란색+검은 두꺼운 외곽선) \"끝까지 안 놓았다\" (8자) / 2행(하늘색+흰 외곽선) 삼성중공업 8년의 값 (9자) = 총 17자",
+      "1행(노란색+검은 두꺼운 외곽선) \"아무도 안 남았다\" (8자) / 2행(하늘색+흰 외곽선) 삼성중공업 홀로 1위 (9자) = 총 17자",
+      "1행(노란색+검은 두꺼운 외곽선) \"금기어가 1위 됐다\" (8자) / 2행(하늘색+흰 외곽선) 삼성중공업의 8년 (8자) = 총 16자"
+    ],
+    "text_layout": "하단 2행 단일 블록(동급 크기, 계층 없음). 요소 2개 / 각 8~10자 / 총 20자 이내. 레퍼 001 형식 계승. 제목이 쥔 정보(6조·64%·해상 LNG 공장·이유)는 썸네일에 넣지 않음 — 중복 0%.",
+    "image_concepts": {
+      "A": "상단을 좌우로 꽉 채운 초대형 해상 LNG 설비(FLNG) + 옆에 붙은 예선 1척으로 스케일 압도, 상단 하늘에 태극기를 크게 배치해 국가 역량으로 격상. 인물 없음.",
+      "B": "좌측 잿빛으로 텅 빈 도크와 주인 없이 정박한 설비 / 우측 조명이 전부 켜진 채 설비 3기가 동시에 올라가는 거제 야드의 좌우 대비, 상단에 태극기. 인물 없음."
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 초대형 해상 LNG 설비(FLNG)가 프레임 좌우를 꽉 채우고, 옆에 붙은 작은 예선 1척이 스케일을 증명한다. 상단 하늘에는 태극기가 크게 펄럭이며 국가 역량 프레임을 만든다.",
+      "prompt_en": "Photorealistic cinematic aerial photograph of a colossal FLNG (floating liquefied natural gas production vessel) built by Samsung Heavy Industries, its deck densely packed with silver pipe racks, huge spherical LNG storage tanks, tall process towers and yellow gantry cranes, spanning the entire width of the frame. A single small tugboat sits alongside the hull, dwarfed to a tiny fraction of the vessel's length, making the sheer scale overwhelming. A large South Korean national flag (Taegukgi, white flag with a red and blue yin-yang circle and four black trigrams) billows prominently high in the sky above the vessel. Deep blue ocean and sky with warm golden backlight raking across the steel structure, dramatic high-contrast lighting and rich deep shadows in the hull, a proud triumphant atmosphere. Absolutely no people anywhere in the frame."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 초대형 해상 LNG 설비 + 예선 스케일 대비 + 상단 태극기를 애니메 일러스트 스타일로 표현.",
+      "prompt_en": "Vibrant anime-style illustration of a colossal FLNG (floating liquefied natural gas production vessel) by Samsung Heavy Industries, drawn with bold ink outlines and cel-shaded lighting, its deck crowded with silver pipe racks, giant spherical LNG tanks, process towers and yellow gantry cranes filling the frame edge to edge. One tiny tugboat beside the hull exaggerates the impossible scale through forced perspective. A large South Korean national flag (Taegukgi, white flag with a red and blue yin-yang circle and four black trigrams) waves boldly across the sky above the vessel. Saturated deep blue sea and sky with brilliant golden rim light and strong contrast on the steel, a heroic and proud mood. No people in the frame at all."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 좌측은 잿빛 저채도로 텅 빈 도크와 주인 없이 정박한 설비, 우측은 조명이 전부 켜진 채 해상 LNG 설비 3기가 동시에 올라가는 거제 야드. 상단에 태극기.",
+      "prompt_en": "Photorealistic cinematic split-composition photograph of a shipyard: the left side is a desaturated grey, empty dry dock with one unfinished offshore plant module moored alone under flat overcast light, quiet and abandoned. The right side is the same Samsung Heavy Industries yard at Geoje fully alive, with three enormous FLNG (floating liquefied natural gas production vessels) under construction side by side, every floodlight blazing, pipe racks, spherical LNG tanks and gantry cranes lit in warm golden light with sparks and rich saturated color. A large South Korean national flag (Taegukgi, white flag with a red and blue yin-yang circle and four black trigrams) flies prominently in the upper sky over the bright right side. Strong contrast between the cold grey left and the golden high-energy right, dramatic cinematic lighting, a mood of reversal and pride. No people visible anywhere."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 텅 빈 잿빛 도크 → 설비 3기 동시 건조 야드의 좌우 명암 대비를 애니메 스타일로 표현. 상단에 태극기.",
+      "prompt_en": "Dramatic anime-style illustration with a left-right contrast composition, bold ink outlines and cel-shaded lighting. On the left, a monochrome grey deserted dry dock with a single unfinished offshore plant hull moored under a colorless sky. On the right, the Samsung Heavy Industries yard in Geoje bursting with light as three gigantic FLNG (floating liquefied natural gas production vessels) rise simultaneously, gantry cranes and spherical LNG tanks glowing in vivid golden and amber tones. A large South Korean national flag (Taegukgi, white flag with a red and blue yin-yang circle and four black trigrams) waves boldly in the sky above the illuminated side, and the color divide between the two halves is stark and graphic. No people in the illustration."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 예선 갑판 높이에서 초대형 해상 LNG 설비의 선체 벽을 극단 로우앵글로 올려다본 압도 구도. 파이프와 구형 탱크가 하늘을 가리고, 그 위로 태극기가 크게 걸린다.",
+      "prompt_en": "Photorealistic extreme low-angle worm's-eye view from sea level looking up the towering steel hull wall of a Samsung Heavy Industries FLNG (floating liquefied natural gas production vessel), the flank rising like a cliff so that spherical LNG tanks, pipe racks and process towers loom overhead and dominate the sky. Forced perspective and a wide lens make the structure feel dramatically oversized and impossible for humans to have built. A large South Korean national flag (Taegukgi, white flag with a red and blue yin-yang circle and four black trigrams) flies high above the superstructure, catching the light. Golden late-afternoon sun flares between the pipes against a deep blue sky, with strong contrast and rich shadows across the painted steel plates, an awe-inspiring and proud atmosphere. Completely free of people."
+    }
+  ]
+}

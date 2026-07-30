@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "uyghur-resource",
+    "titles": [
+      "\"그냥 사막인데요?\" 중국이 전 세계의 비난을 감수하면서도 신장을 절대 못 놓는 진짜 이유",
+      "\"버려진 사막이라면서요?\" 중국이 목숨 걸고 신장을 지키는 숨겨진 이유",
+      "아무도 안 살려는 사막, 중국은 왜 국제 비난까지 감수하며 붙잡을까?"
+    ],
+    "thumbnail_texts": [
+      "왜 못 놓을까? + 버려진 사막 신장",
+      "텅 빈 사막인데 + 중국이 목숨 거는 이유",
+      "신장 + 이 사막에 숨겨진 것 + 중국 경제의 심장"
+    ],
+    "image_concepts": {
+      "A": "스케일 대비 — 작은 청록 신장 지도 조각 vs 뒤덮는 거대한 붉은 오성홍기, 조각에서 원유·면화가 빛남",
+      "B": "상징 반전 — 갈라진 메마른 사막 밑에서 검은 원유와 하얀 면화가 솟구침"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 작고 청록빛인 신장 지도 조각을 거대한 붉은 오성홍기가 손아귀처럼 움켜쥐고 뒤덮는다. 작은 지도 조각 안에서는 검은 원유와 하얀 면화가 은은히 빛난다.",
+      "prompt_en": "Cinematic photorealistic image of a small teal-colored map fragment of the Xinjiang region being gripped and engulfed by an enormous red Chinese five-star flag that wraps around it like a giant clenching hand. Inside the tiny map fragment, faint glowing hints of black crude oil and white cotton shimmer, as if hiding treasure. Desaturated dark monotone background, single dominant crimson-red accent from the flag. Tense, ominous mood with dramatic scale contrast and low-key lighting."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 스케일 대비(작은 신장 조각 vs 거대한 붉은 국기) 구도를 애니메 스타일로. 조각 속 자원의 빛이 더 강조됨.",
+      "prompt_en": "Dramatic anime-style illustration of a tiny teal Xinjiang map fragment being seized and smothered by a colossal red Chinese five-star flag looming over it like a grasping force. Within the small fragment, vivid glowing streaks of black oil and white cotton emphasize a hidden treasure. Bold ink outlines, cel-shaded lighting, desaturated grey monotone backdrop with one searing crimson accent. Intense scale contrast, curiosity-and-tension atmosphere, deep shadows."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 갈라진 메마른 사막 표면 아래에서 검은 원유가 분출하고 하얀 목화가 솟아오르는 초현실적 반전 장면. 겉은 황량하지만 속은 자원의 보고.",
+      "prompt_en": "Cinematic photorealistic surreal image of a cracked, barren desert surface splitting open, with black crude oil gushing upward and white cotton bolls bursting out from beneath the sand, revealing hidden riches under a wasteland. Muted sandy monotone tones dominate, with stark black oil and pure white cotton as the only strong contrasts, plus a faint red glow on the horizon. Dramatic god-rays and floating dust, a sense of shocking revelation and hidden value."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 '사막 밑에서 솟구치는 원유·면화' 반전 구도를 애니메 스타일로. 더 폭발적인 분출과 극적 명암.",
+      "prompt_en": "Stylized anime illustration of a cracked barren desert splitting apart as black crude oil erupts explosively upward and white cotton bursts out from beneath the sand, revealing a hidden trove under the wasteland. Desaturated sandy monotone palette with dramatic black-and-white resource contrast and a single faint red horizon glow. Bold outlines, cel-shaded dynamic lighting, exaggerated eruption, a powerful sense of revelation."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 평범한 흰 티셔츠와 지붕 위 태양광 패널에, 붉은 신장 지도와 사막 유전의 이미지가 이중 노출처럼 비쳐 보이는 상징적 구성. '내 일상 = 그 사막'.",
+      "prompt_en": "Symbolic cinematic photorealistic double-exposure image: a plain white t-shirt and a rooftop solar panel, with the silhouette of the red Xinjiang map, desert oil derricks, and cotton fields faintly showing through them like a ghosted overlay. Desaturated monotone everyday scene with a single crimson-red accent from the map silhouette. Quiet but unsettling mood, suggesting a hidden connection between daily life and a distant desert, soft dramatic lighting."
+    }
+  ]
+}

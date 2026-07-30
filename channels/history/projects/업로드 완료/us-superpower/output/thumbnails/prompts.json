@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "us-superpower",
+    "titles": [
+      "\"쫓겨난 자들이 세계를 지배했다\" 영국에서 밀려난 102명이 초강대국을 만든 소름돋는 이유",
+      "\"겨우 102명이 시작한 나라\" 미국이 세계 유일 초강대국이 된 진짜 이유",
+      "영국에서 쫓겨난 102명이 만든 나라, 미국이 초강대국이 된 소름돋는 역사"
+    ],
+    "thumbnail_texts": [
+      "쫓겨난 자들의 제국 + 미국 탄생의 비밀",
+      "패배자가 만든 나라 + 세계 최강이 된 이유",
+      "102명이 시작한 나라 + 세계 유일 초강대국"
+    ],
+    "image_concepts": {
+      "A": "메이플라워호 vs 핵항공모함 Before→After 대비 — 초라한 목선에서 압도적 군함으로의 역전을 한 프레임에",
+      "B": "거대한 성조기 앞에 작고 고독한 청교도 실루엣 — 스케일 대비로 102명의 출발과 초강대국의 현재를 동시에"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 왼쪽에 작고 낡은 메이플라워호 목선, 오른쪽에 압도적인 미국 핵항공모함이 나란히 배치된 시네마틱 장면. 모노톤 바다 배경 위에 성조기 빨강·파랑 포인트.",
+      "prompt_en": "Cinematic photorealistic side-by-side composition: on the left, a small battered 17th-century wooden sailing ship (the Mayflower) tossed on stormy seas, and on the right, a massive modern US Navy nuclear aircraft carrier dominating the frame. Desaturated monochrome ocean and sky with a single accent of deep crimson red from a small American flag on the carrier's deck. Dramatic low-angle perspective emphasizes the staggering scale difference, evoking a mysterious and intriguing atmosphere of impossible transformation. High contrast grayscale shadows and cinematic fog heighten the tension between past and present."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 메이플라워호와 핵항공모함의 대비를 강렬한 애니메 스타일로 표현. 흑백 모노톤 바다에 성조기 빨간 줄무늬만 컬러로 살아남아 극적 대비를 이룬다.",
+      "prompt_en": "Dramatic anime-style illustration with bold ink outlines: a tiny weathered 17th-century sailing ship on the left faces an enormous modern aircraft carrier on the right, both emerging from a churning black-and-white ocean. Cel-shaded high-contrast grayscale palette with a single vivid red stripe from an American flag cutting across the composition like a wound. Exaggerated perspective lines pull the eye from the fragile wooden hull to the towering steel fortress, creating an intriguing sense of impossible historical scale. Dark waves and billowing storm clouds frame the scene with tense, ominous energy."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 거대한 성조기를 배경으로 하단에 작은 청교도 일행 실루엣이 걸어가는 시네마틱 장면. 흑백 모노톤에 성조기 빨간 줄무늬만 컬러로 남아 숙연한 경이감을 자아낸다.",
+      "prompt_en": "Cinematic photorealistic image of a colossal American flag filling the entire background, its surface rendered in high contrast grayscale except for the vivid red stripes that remain saturated and bold. Silhouetted against the base of the flag, a small group of Puritan figures in period clothing walk in a tight cluster, their dark outlines tiny against the overwhelming national symbol. The composition conveys a mysterious and haunting sense of scale — a handful of outcasts standing beneath the emblem of the world's most powerful nation. Dramatic backlighting and deep shadows create a tense, ominous atmosphere of historical weight."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 애니메 화풍으로 그려진 거대 성조기 앞 청교도 실루엣. 굵은 선과 극적 명암으로 102명의 작은 시작과 초강대국의 상징을 대비시킨다.",
+      "prompt_en": "Stylized anime-style illustration featuring a massive American flag rendered in striking black and white with only its red stripes glowing in vivid color, dominating the entire backdrop. At the bottom edge of the flag, a cluster of small dark silhouettes of Puritan settlers in period hats and cloaks stand huddled together, dwarfed by the towering symbol above them. Bold graphic ink lines and dramatic cel-shaded contrast amplify the intriguing tension between the insignificant group and the colossal national emblem. The scene radiates a quiet, awe-inspiring solemnity with an undercurrent of mysterious destiny."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 대서양 한복판에 고립된 메이플라워호를 극단적인 오버헤드(항공) 시점으로 내려다본 장면. 광활하고 차가운 흑백 바다 위의 작은 점 같은 배가 인간의 왜소함과 동시에 역사의 출발점을 상징한다.",
+      "prompt_en": "Photorealistic aerial overhead shot looking straight down at the tiny Mayflower sailing ship alone in the center of a vast, cold, featureless ocean. Desaturated monochrome palette with black and white with single accent color — a faint red and blue glimmer on the ship's flag. The ship is rendered small and fragile against the immense dark swirling water that surrounds it on all sides, creating a deeply intriguing and ominous sense of isolation. Dramatic high-contrast grayscale waves radiate outward from the vessel, emphasizing the scale of the journey and the tension of the unknown ahead."
+    }
+  ]
+}

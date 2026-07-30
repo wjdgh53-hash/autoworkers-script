@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "iran-israel-conflict",
+    "titles": [
+      "이란 이스라엘 전쟁의 숨겨진 진실, 이 두 나라는 한때 형제였습니다",
+      "이란과 이스라엘은 종교 때문에 싸우는 게 아닙니다, 진짜 이유는 훨씬 소름돋습니다",
+      "이란이 무너지면 당신의 기름값이 오릅니다, 중동 전쟁이 한국을 덮치는 과정"
+    ],
+    "thumbnail_texts": [
+      "숨겨진 동맹 + 이란 vs 이스라엘",
+      "형제에서 원수로 + 진짜 이유",
+      "비밀 거래 + 30년의 배신"
+    ],
+    "image_concepts": {
+      "A": "악수에서 미사일로 — Before→After 대비, 우호에서 적대로의 극적 전환",
+      "B": "분노의 지도자 — 이란 최고지도자 클로즈업, 화염 배경의 위협적 분위기"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 좌측 상단에 따뜻한 금빛 조명 아래 두 손이 악수하는 장면, 우측 상단에 어둡고 붉은 폭발/미사일 화염 배경. Before→After 대비로 관계의 극적 반전을 시각화.",
+      "prompt_en": "Photorealistic cinematic split composition. Left upper half: two hands in a firm handshake under warm golden lighting, symbolizing alliance and trust, with subtle oil pipeline imagery in the background. Right upper half: dark explosive scene with missile trails and orange-red flames against a black smoke-filled sky. Sharp diagonal divide between the two halves, warm gold transitioning abruptly to deep crimson and black. Dramatic contrast between cooperation and destruction, desaturated monochrome with selective gold and red accent colors."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 악수→폭발 대비를 스타일리시한 애니메 스타일로 표현. 금색과 빨강의 극적 대비.",
+      "prompt_en": "Stylized anime illustration with dramatic split composition. Left upper half: two silhouetted figures shaking hands under warm golden cel-shaded lighting, oil derricks visible in the soft background. Right upper half: explosive chaos with bold red and orange flames, missile streaks cutting through dark smoke rendered in thick ink outlines. Sharp angular divide between the halves. Vibrant anime color palette with desaturated base tones and vivid gold and crimson accents. Dynamic perspective with exaggerated contrast between peace and war."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. Ayatollah Ali Khamenei의 분노한 표정 클로즈업. 배경에 화염과 연기, 어두운 분위기.",
+      "prompt_en": "Photorealistic dramatic close-up portrait of Ayatollah Ali Khamenei (Supreme Leader of Iran), stern and intense expression, positioned in the upper center of the frame. Dark smoky background with distant orange flames and missile trails. Dramatic rim lighting from the side casting deep shadows across his face. Desaturated monochrome color grading with selective warm red and orange accents from the background fire. Ominous atmosphere of tension and power."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 이란 지도자의 위압적 클로즈업을 애니메 스타일로. 배경 화염과 어두운 분위기.",
+      "prompt_en": "Anime-style dramatic illustration of Ayatollah Ali Khamenei (Supreme Leader of Iran), intense piercing gaze in extreme close-up filling the upper half of the frame. Bold ink outlines and cel-shaded rendering emphasize sharp facial features and stern expression. Background rendered in dark swirling smoke and vivid orange-red flame effects with expressive brush-stroke textures. Desaturated base with vivid crimson and amber accents. Atmosphere of ominous authority and barely contained fury."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 이란 국기와 이스라엘 국기가 불꽃 속에서 서로를 향해 부딪히는 장면. 실사 스타일, 극적인 충돌 이미지.",
+      "prompt_en": "Photorealistic dramatic image of the Iranian flag and the Israeli flag rushing toward each other in a violent collision at the upper center of the frame. Sparks and fire erupt from the point of impact, creating a brilliant explosion of orange and white light. Dark smoky background with debris scattered outward. The flags appear tattered and battle-worn. Desaturated monochrome atmosphere with selective vivid accents: Iran's green and red, Israel's blue and white, and the orange-gold of the central explosion. Cinematic tension and conflict."
+    }
+  ]
+}
