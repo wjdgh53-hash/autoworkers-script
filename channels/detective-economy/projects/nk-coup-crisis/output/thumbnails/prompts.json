@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "nk-coup-crisis",
+    "titles": [
+      "\"전쟁으로 20조를 벌었다\" 북한 쌀값 사실상 역대 최고, 청구서는 한국으로 온다",
+      "\"쌀 1kg 4만원\" 20조를 벌고도 사실상 바닥이 뚫린 나라, 그 값은 우리가 치른다",
+      "\"20조는 어디로 갔나\" 북한 군 수뇌부 사실상 물갈이, 계산서는 한국이 받는다"
+    ],
+    "thumbnail_texts": [
+      "\"20조 벌었다는데\" / 평양 쌀값 역대 최고 / 청구서는 한국으로",
+      "\"전쟁으로 20조 벌었다\" / 쌀 1kg 4만원 / 값은 우리가 낸다",
+      "\"돈은 어디로 갔나\" / 북한 군 수뇌부 물갈이 / 계산서는 한국행"
+    ],
+    "image_concepts": {
+      "A": "결핍 대비형 — 텅 빈 시장 좌판 위에 놓인 쌀 한 줌과 붉은 가격표. 어둡게 잠긴 시장 천막 실루엣과 붉은 화염 글로우만 배경에 둔다(요소 2개 고정)",
+      "B": "돈의 소실형 — 불에 타 재가 되어 좌에서 우로 흩어지는 지폐 다발이 화면을 압도한다. 160x90px에서도 '불타는 돈' 형태가 식별된다"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 텅 빈 시장 좌판 위에 쌀 한 줌만 남아 있고 그 옆에 붉은 가격표가 꽂혀 있다. 뒤로 어둡게 잠긴 천막 실루엣.",
+      "prompt_en": "Photorealistic cinematic close shot of a nearly empty market stall counter at night, bare weathered wood with only a single small handful of white rice grains left on it, a stark red price tag stabbed upright beside the grains. Behind it, the darkened silhouette of a collapsed market awning fades into blackness, lit from one side by a distant red ember glow. Deep shadows, heavy contrast, cold and desolate atmosphere of scarcity. The oversized empty counter dominates the lower frame, no people visible."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 빈 좌판과 쌀 한 줌, 붉은 가격표를 셀셰이딩 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of a bare market stall counter with a single lonely handful of rice grains and a bright red price tag jabbed into the wood beside them. Bold ink outlines and cel-shaded lighting make the empty counter and the tiny pile of rice instantly readable. Dark navy and charcoal background with a shuttered market tent silhouette and vivid crimson ember glow, deep shadows against sharp red highlights. Dramatic low-angle perspective, tense atmosphere of shortage, no characters in frame."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 거대한 지폐 다발이 불에 타면서 좌에서 우로 재가 되어 흩어진다.",
+      "prompt_en": "Photorealistic cinematic image of a colossal bundle of banknotes burning from one edge, the paper curling black and disintegrating into glowing embers and grey ash that stream sideways across the frame from left to right. The oversized stack dominates the composition against a near-black background, rim-lit in hot orange by its own flame. Deep shadows, heavy dramatic contrast, thin drifting smoke. Ominous atmosphere of vanished wealth, no people visible."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 불타는 지폐 다발과 흩어지는 재를 애니메 스타일로.",
+      "prompt_en": "Anime-style illustration of an enormous stack of paper money catching fire, its edges blackening and breaking apart into bright embers and ash that sweep across the frame in a strong left-to-right diagonal. Cel-shaded rendering with bold outlines, dark charcoal and deep navy palette pierced by vivid orange and crimson highlights. Heavy shadow, dramatic contrast, dynamic motion lines in the drifting ash. Tense mood of loss, oversized single object silhouette, no characters."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 거대한 쌀 됫박이 기울어져 있는데 쏟아지는 것은 쌀이 아니라 잿불과 재다. 지평선에는 어두운 도시 실루엣.",
+      "prompt_en": "Surreal photorealistic image of a giant traditional wooden rice measuring box tipped on its side, pouring out glowing embers and grey ash instead of grain. The ash piles into drifts along the ground while a darkened city skyline sits faintly on the horizon behind it under a deep crimson sky. Dark cinematic palette with heavy shadow, dramatic orange rim light and strong contrast. The oversized tilted box dominates the frame as a single bold silhouette, ominous and tense, no people visible."
+    }
+  ]
+}

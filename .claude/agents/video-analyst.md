@@ -1,4 +1,5 @@
 ---
+name: video-analyst
 model: opus
 tools:
   - Read

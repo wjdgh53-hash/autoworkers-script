@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "project": "apple-china-deadline",
+    "style": "photorealistic",
+    "revision": "2026-08-03 개정 — 2줄 카피 구조(감정+지식격차) / 대립 구도 온도 규칙 적용",
+    "titles": [
+      "하이닉스 밀어내고 중국 메모리 고른 애플, \"이 값\" 받아 들고 18일째 답이 없는 이유",
+      "하이닉스 밀어내고 중국 골랐던 애플, 18일 뒤 문서에서 딱 한 칸을 못 채우고 있다",
+      "삼성·하이닉스 대신 중국 메모리 골랐던 애플, 8월 21일 상원에 제출해야 하는 네 가지"
+    ],
+    "thumbnail_texts": [
+      "\"하이닉스 밀어내고 중국 갔다\" / 중국이 애플한테 부른 값 / 고맙지 뭐~",
+      "\"깎으러 갔다가 이걸 받았다\" / 애플이 18일째 못 채운 칸 / 어렵네~",
+      "\"내 폰값 오른 이유다\" / 애플이 중국에 넘긴 것 / 어이가 없네"
+    ],
+    "anchor_ref": "001 — 삼성 놔두고 중국으로 갔던 애플, 8월 21일까지 답해야 하는 진짜 이유",
+    "note": "은닉 대상은 창신메모리가 애플에 부른 D램 값. 5장 전부 숫자·문자 렌더링 금지. 한국 인물 4장(1·3·4·5)에 배치, 애플의 손이 우리 물건에 실제로 닿는 장 2장(1·3).",
+    "copy_rule": "2026-08-03 개정 — 1줄·2줄 모두 9~12자(공백 제외). 폰트 크기 제약. 리액션은 가해자의 뻔뻔함."
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "purpose": "content",
+      "composition": "인물 감정 클로즈업 (2인 근접 투샷 + 손 접촉)",
+      "concept_ko": "대본 첫 문장 '하이닉스를 밀어내고 애플이 고른 중국 업체'와 확정 카피 상단행을 그대로 장면화. 팀 쿡의 손이 한국 엔지니어가 안고 있는 SK하이닉스 모듈 트레이를 실제로 움켜쥐고 밀어낸다 — 허공에서 멈추면 침해가 안 보인다. 우리 쪽은 폭발 직전의 분노, 애플은 쳐다보지도 않는 능청 미소로 온도를 갈랐다.",
+      "overlay_text": "\"하이닉스 밀어내고 중국 갔다\" / 중국이 애플한테 부른 값 / 고맙지 뭐~",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — plain polished cleanroom floor — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Tight chest-up two-shot pressed close to the camera: on the left, a Korean semiconductor engineer with a warm likeable face, hood of his white cleanroom suit pushed back, an SK hynix logo patch clearly visible on his chest, clutches a metal tray of DDR5 memory modules stamped with the SK hynix logo hard against his body with both arms, his fingers gone white on the rim, eyebrows crushed into a sharp V, pupils shrunk to points, teeth bared through a mouth wrenched open, cords standing out on his neck, emerald green light blazing off the modules onto his jaw. From the right, Tim Cook (Apple CEO) has one hand clamped over the far edge of that same tray and is shoving it sideways out of frame while his other hand hooks a single crimson-glowing memory module labeled CXMT toward himself, and he never looks at the engineer — his eyes are narrowed and slid down toward the red module in cold calculation, one corner of his mouth lifted in an easy little smirk, a small silver-white Apple logo glowing on his collar. Bright sparks fly off the tray rim where the two hands grip it, the left half of the frame saturated in glowing emerald and the right half in deep glowing crimson with a Chinese flag (red field with one large yellow star and four smaller stars) burning dimly on the far right wall. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 2,
+      "purpose": "content",
+      "composition": "스케일 대비 (출하 현장)",
+      "concept_ko": "대본의 '바이트댄스 5년 치 약 10조원 + 텐센트 약 4조 3,000억원 — 애플이 계약서에 이름을 올리기도 전에 공장은 몇 년 치가 차 있었다'를 옮긴 장면. 애플이 줄 밖에 서 있는 그림이라야 '값을 부르는 자리와 받아 적는 자리가 맞바뀌었다'가 0.3초에 읽힌다. 창신 임원은 뻔뻔한 여유, 팀 쿡은 절망이 아니라 억지 미소 아래의 초조한 계산.",
+      "overlay_text": "\"하이닉스 밀어내고 중국 갔다\" / 중국이 애플한테 부른 값 / 고맙지 뭐~",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — smooth grey concrete shipping-yard ground — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. A night shipping yard where mountains of shrink-wrapped pallets of DDR5 memory modules labeled CXMT glow crimson from within and stream away in exaggerated wide-angle toward a row of shipping containers, the nearest containers marked with the ByteDance logo and the Tencent logo lit up bright, forklifts mid-lift and dust kicked up in the beams, a huge Chinese flag (red field with one large yellow star and four smaller stars) hanging on the warehouse wall behind them, a thick glowing green upward arrow rising along the pallet stacks. Chest-up on the right, a well-groomed Chinese executive in a dark suit blocks the way with one palm turned lazily upward in a 'later' gesture, eyes half-lidded, one eyebrow arched, a smooth unhurried smile, his other hand buried in his pocket. Chest-up on the left and dwarfed by the pallet mountain, Tim Cook (Apple CEO) holds a folded contract against his chest, a stiff forced smile stretched thin across his mouth, eyes flicking sideways over the stacks counting them, his other wrist half-turned to sneak a look at his watch, a cold silver-white Apple logo glowing small on his shoulder. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 3,
+      "purpose": "title",
+      "composition": "인물 감정 (2인 대면) + 삽입 액자 패널",
+      "concept_ko": "확정 제목의 심장인 '\"이 값\" 받아 들고'를 이행하는 장. 대본의 '값을 깎으러 갔는데 그 자리에서 받아 든 건 더 높은 숫자가 적힌 종이였어요'(삼성 약 178만원, 창신은 그 위). 은닉을 지키기 위해 종이는 완전 백지로 두고 붉은 봉랍만 남겨 숫자를 일절 렌더링하지 않는다. 우측 인셋 패널에 SK하이닉스 엔지니어의 혀 차는 경멸을 넣어 감정을 받아줄 우리 쪽 얼굴을 확보했다.",
+      "overlay_text": "\"하이닉스 밀어내고 중국 갔다\" / 중국이 애플한테 부른 값 / 고맙지 뭐~",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — plain dark polished floor — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Both men stand facing each other at chest height in a boardroom drowned in crimson emissive light: a well-groomed Chinese executive pushes a single completely blank sheet of paper — no printing of any kind on it, just a thick blood-red wax seal blob glowing at its corner — forward with two fingers pressed on its edge, his eyes half-closed, chin tucked, a slow indulgent smile on his lips, his free hand resting flat on a crimson-glowing DDR5 module labeled CXMT. Tim Cook (Apple CEO) has taken the sheet and crushed its top corner in his fist, his eyebrows shot high and pinched, eyes rolled down and to his left in furious arithmetic, lower lip drawn in under his teeth while the wreck of a polite smile still hangs on one side of his mouth, a sheen of sweat along his temple, a cold silver-white Apple logo glowing on his lapel. In the upper right, an inset photo panel with a clean white border shows a Korean engineer in a white cleanroom suit with an SK hynix logo patch, head turned half away, eyes rolled upward, tongue clicked against his teeth and one corner of his mouth pulled down in open contempt, lit in hard emerald green against the crimson room. Deep crimson and emerald two-tone contrast, a bold red neon ring burning around the sealed sheet. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 4,
+      "purpose": "title",
+      "composition": "현장 장면 (유리벽을 사이에 둔 대치)",
+      "concept_ko": "확정 제목 뒷머리 '18일째 답이 없는 이유'를 이행하는 장. 대본의 '오늘 기준으로 18일 남았고, 애플은 아직 아무 답도 내놓지 않았습니다'와 미 상원의원 일곱 명의 서한이 근거. 답을 안 하는 상태를 '봉인된 서한이 접수대에 쌓여 있는데 팀 쿡이 못 본 척 지나간다'로 장면화(회피=능청, 절망 아님). 유리벽 반대편에 SK하이닉스 엔지니어를 세워 그 회피를 노려보는 시선을 붙였다.",
+      "overlay_text": "\"하이닉스 밀어내고 중국 갔다\" / 중국이 애플한테 부른 값 / 고맙지 뭐~",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — plain polished lobby floor — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Eye-level shot inside a corporate lobby at night: on a reception counter at the left, a leaning stack of unopened envelopes each stamped with an embossed US Senate eagle emblem and a cracked blood-red wax seal glows under a single amber warning light, a thin curl of dust drifting over them. Chest-up in the centre, Tim Cook (Apple CEO) strides past them without stopping, his face turned deliberately away from the stack toward the far side, chin lifted, eyes narrowed and looking anywhere but at the letters, one corner of his mouth curled in a small unbothered smirk, one hand sunk in his pocket and the other loosely holding an iPhone, a large glowing silver-white Apple logo on the wall behind him. Filling the right side, a floor-to-ceiling glass wall separates him from a rack of DDR5 memory modules bearing the SK hynix logo blazing emerald green, and pressed against the far side of that glass stands a Korean engineer in a white cleanroom suit with an SK hynix logo patch, arms folded, chin tucked down while his eyes are raised in a cold flat stare fixed on Cook's back, lips pressed into a hard line, his breath fogging the glass. Deep navy background, amber and emerald two-tone contrast, fine cracks spreading across the glass between them. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 5,
+      "purpose": "emotion-closeup",
+      "composition": "인물 감정 클로즈업 (우리 쪽 얼굴 단독)",
+      "concept_ko": "이번 개정의 교정점이 '감정을 받아줄 우리 쪽 얼굴이 없다'였으므로 앵커 구도 계승 대신 감정 클로즈업으로 간다. 근거는 대본 마지막 파트 — HBM은 아직 우리 쪽이고 하이닉스는 수년치 장기공급계약을 이미 잠가 뒀다. 표정은 낭패가 아니라 헛웃음 섞인 경멸이고, 앞의 네 장과 겹치지 않는 다섯 번째 표정이다.",
+      "overlay_text": "\"하이닉스 밀어내고 중국 갔다\" / 중국이 애플한테 부른 값 / 고맙지 뭐~",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — plain dark grey wall — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. A huge head-and-shoulders close-up of a Korean semiconductor engineer with a warm likeable face, hood of her white cleanroom suit pushed back and an SK hynix logo patch bright on her shoulder, held entirely within the upper three-fifths: her eyes are half-lidded and cut sideways down to the lower right in flat contempt, the bridge of her nose wrinkled, only one corner of her mouth twisted up in a soundless scoff, her jaw slack enough to let the laugh out, and she raises an HBM memory stack stamped with the SK hynix logo beside her cheek between two fingers, holding it up almost lazily. Behind her, floor-to-ceiling racks of memory modules bearing the SK hynix logo blaze emerald green and throw that glow across her face and the wall, a thick glowing green upward arrow climbing the left edge, while a bar of hostile crimson light labeled with a small CXMT panel presses in from the extreme right edge and stops dead against a pane of glass, a red downward arrow dying inside it. Extreme two-tone contrast of emerald green against crimson red, faces lit bright and separated from a deep charcoal background by hard rim light. no text, no letters, no words, no numbers, no watermark."
+    }
+  ]
+}

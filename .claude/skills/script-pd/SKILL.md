@@ -1,11 +1,17 @@
 ---
 name: script-pd
-description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런스 수집 → 분석 → 전략 → 대본 작성 → 리뷰까지 자동 오케스트레이션. 대본/스크립트 관련 요청 시 사용.
+description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런스 수집 → 분석 → 전략 → 대본 작성 → 리뷰까지 자동 오케스트레이션. 대본/스크립트 관련 요청 시 사용. 영상 URL(watch?v=, youtu.be, shorts)이나 재생목록 URL이 함께 오면 그것을 레퍼런스로 삼아 바로 COLLECT한다. (채널 URL이거나 "채널 진단/다음 컨텐츠 기획" 요청이면 channel-trend-pd를 대신 사용)
 ---
 
 # Script PD Agent
 
 유튜브 영상 대본 제작을 자동화하는 PD 에이전트.
+
+## ⛔ 시작 전 자가 점검
+
+- **영상 URL / 재생목록 URL + "대본 만들어줘"** → 이 스킬이 맞다. 그 URL은 **레퍼런스**다. COLLECT에서 바로 쓰고 **사용자에게 URL을 다시 묻지 않는다.**
+- **채널 URL**(`/@핸들`, `/channel/UC...`, `/c/`, `/user/`, `/videos`)이거나 **"채널 진단 / 다음 컨텐츠 기획"** 요청 → 이 스킬이 아니다. `.claude/skills/channel-trend-pd/SKILL.md`로 넘긴다.
+- **channel-trend-pd에서 인계받은 경우** → 채널·프로젝트명·확정 주제·앵커 레퍼 URL·DNA 브리프·목표 러닝타임을 이미 받았으므로 다시 묻지 않고 COLLECT부터 진행한다.
 
 ## 역할 원칙
 
@@ -22,9 +28,15 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 | 감지 상태 | Read할 파일 |
 |-----------|-------------|
 | COLLECT ~ REVIEW_FINALIZE | `prompts/pd-script.md` |
-| STRATEGY 실행 시 | + `prompts/pd-templates.md` + `prompts/ctr-reference.md` + `config/thumbnail-strategy.json` (있으면) |
-| STRATEGY, OUTLINE (auto 모드) | + `channels/{채널}/config/pd-guide.md` (있으면) |
+| STRATEGY (ask 모드 확정 저장), REVIEW_FINALIZE | + `prompts/pd-templates.md` |
+| STRATEGY (auto 모드) | + `channels/{채널}/config/pd-guide.md` (있으면) |
 | 에이전트 호출 직전 (첫 호출 시 1회) | + `prompts/pd-agents.md` |
+
+> ⚠️ **에이전트에게 넘길 프롬프트 파일은 PD가 읽지 않는다.** PD가 미리 읽으면 같은 텍스트가 이중으로 쌓인다.
+> - strategist가 직접 Read: `creative-strategy.md`, `ctr-reference.md`, `thumbnail-design.md`, `thumbnail-countryball.md`, `thumbnail-geopolitics.md`
+> - outline-writer가 직접 Read: `outline-guide.md`, `pd-templates.md`(outline 포맷 절), `patterns.md`, `verified-data.md`
+>
+> 🚨 **OUTLINE 단계에서 PD는 `patterns.md`·`verified-data.md`·`pd-templates.md`를 읽지 않는다.** 합쳐 6만 자가 메인 컨텍스트에 눌러앉아 이후 모든 단계에서 재전송된다.
 
 ---
 
@@ -77,6 +89,28 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 ### 부분 재실행
 "대본 다시 써줘" → 해당 산출물 삭제 → 이후 산출물 삭제 여부 확인 → 재실행
 
+### 썸네일 프롬프트만 재생성 (완료된 프로젝트 포함)
+
+"썸네일 프롬프트 다시 뽑아줘", "썸네일만 다시" → **상태와 무관하게 이 경로로 간다.** DONE 상태여도 실행한다.
+
+- 대본·컨셉·제목은 **일절 건드리지 않는다.** 썸네일 프롬프트만 계열별로 새로 만든다
+- 상세 절차 → `prompts/pd-script.md`의 "썸네일 프롬프트 재생성" 참조
+
+> ⚠️ **이 작업은 새 세션에서 하는 것을 권장한다.** 예전 세션에는 옛 썸네일 규칙(애니메·와일드카드·하단 1/2)이 컨텍스트에 남아 있어, 파일이 바뀌어도 옛 규칙으로 만들 수 있다. 이어서 하는 경우 반드시 계열별 규칙 파일 3종(`thumbnail-design.md`, `thumbnail-countryball.md`, `thumbnail-geopolitics.md`)을 **다시 Read한 뒤** 진행한다.
+
+### 산출물 다시 정리 (완료된 프로젝트 포함)
+
+"산출물 다시 줘", "산출물 정리해줘" → **상태와 무관하게 이 경로로 간다.** DONE 상태여도, 옛 규칙으로 만든 프로젝트여도 실행한다.
+
+> 🚨 **아무것도 새로 만들지 않는다.** 대본·컨셉·제목·outline·youtube.md·썸네일 프롬프트를 **일절 건드리지 않는다.** 에이전트를 호출하지 않는다.
+> 하는 일은 딱 둘이다 — ① 누락된 복사용 `.txt` 채우기 ② 5줄 형식으로 보고.
+
+1. `{P}/output/thumbnails/`의 JSON 목록 확인
+2. **JSON은 있는데 같은 이름의 `.txt`가 없으면 생성한다.** 기존 JSON의 `prompt_en`을 그대로 옮길 뿐 프롬프트 내용을 새로 쓰지 않는다 (절차 → `prompts/pd-script.md`의 "복사용 통합본(.txt) 생성")
+   - **이미 있는 txt는 덮어쓰지 않는다.** JSON과 내용이 다를 수 있으므로, 불일치가 의심되면 덮어쓰기 전에 사용자에게 확인한다
+3. 파일 존재 확인 후 **"5. 완료(DONE)"의 산출물 요약 5줄 형식 그대로** 보고
+4. 산출물이 일부 없으면(예: youtube.md 미생성) 그 줄에 **없다고 명시**한다. 없는 파일을 링크로 걸지 않고, 임의로 만들지도 않는다 — 필요하면 사용자에게 만들지 물어본다
+
 ---
 
 ## 3. 모드별 단계 행동
@@ -85,8 +119,10 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 |------|-----------|----------|
 | collect~analyze | auto | auto |
 | **data_prep** | auto (2 에이전트 병렬) | auto |
-| **strategy** | auto (strategist 자체 평가 → 확정) | **ask** (strategist 3세트 → 사용자 **1회** 선택) |
-| outline | auto (오케스트레이터 직접) | auto |
+| **strategy** | auto (strategist 자체 평가 → 확정) | **ask** (strategist 4패키지 A·B·C·D → 사용자 **1회** 선택) |
+
+> 🚨 **ask 모드에서 사용자에게 묻는 것은 "패키지 하나"뿐이다.** 제목·썸네일 카피는 **묻지 않는다** — 3안을 전부 `concept.md`와 `output/youtube.md`에 표로 수록하고 1순위로 대본을 진행한다. 사용자는 완성된 산출물에서 직접 고른다.
+| outline | auto (outline-writer 1개) | auto (동일. 저장 후 뼈대+파트 목록만 제시) |
 | draft~review_finalize | auto (reviewer verdict + 최대 1회 리비전) | auto |
 
 ---
@@ -101,9 +137,9 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 | COLLECT | _refs/{NNN}/ | collect.py | URL 필요 |
 | ANALYZE | analysis.md | video-analyst ×N 병렬 | 채널프로필 전달 |
 | DATA_PREP | patterns.md, factcheck.md, verified-data.md | pattern-extractor + data-researcher 병렬 | 완전 병렬 |
-| STRATEGY | concept.md + hook-intro.md + prompts.json | strategist 1회 | auto→자체 확정+프롬프트, ask→사용자 선택 |
-| OUTLINE | outline.md | 오케스트레이터 직접 (셀프체크 내장) | 확인 없이 DRAFT 자동 진행 |
-| DRAFT | draft.md | script-writer (파트당 1개 병렬) + merge_draft.py | 병합 → 분량 검증 |
+| STRATEGY | concept.md + hook-intro.md + prompts.json + prompts-countryball.json (+ prompts-geopolitics.json) + **계열별 복사용 통합본 .txt** | strategist 1회 | 패키지 4개(A·B·C·D). 썸네일 프롬프트 계열별 9개씩, 파일 분리. **프롬프트 파일은 경로로 전달**. 채팅에는 **목록 표 + txt 링크만** — 영문 프롬프트 원문 출력 금지 |
+| OUTLINE | outline.md | outline-writer 1개 (셀프체크 내장) | **모든 파트 헤더에 `(~N분, ~N자)` 필수** (클로징 포함) → PD는 `grep '^### '`로만 검증 |
+| DRAFT | draft.md | script-writer (파트당 1개 병렬) + merge_draft.py | 목표를 **범위로** 전달 → 병합 → 분량 검증. **`concept.md` 전달 금지** — outline `## 1. 기획 뼈대`로 대체 (파트 수만큼 곱해진다) |
 | REVIEW_FINALIZE | script.txt | reviewer(verdict 권한 + WebSearch 검증) + 최대 1회 리비전 + TTS 검수(`prompts/tts-rules.md`) | reviewer가 직접 판단 |
 
 ---
@@ -113,11 +149,20 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 script.txt 생성 완료 시:
 
 1. 프로젝트명, 채널명, 최종 산출물 경로 안내
-2. **산출물 요약**:
-   - `_script/script.txt` — 최종 대본 (영상 제작 사이트에 업로드할 파일)
-   - `output/youtube.md` — 제목, 설명(SEO 최적화), 태그, 타임스탬프
-   - `output/thumbnails/prompts.json` — 썸네일 이미지 프롬프트 (있는 경우)
-3. 글자수, 예상 분량(~400자/분) 표시
+2. **산출물 요약 — 정확히 5줄.** 모두 존재 확인 후 클릭 가능한 상대경로 링크로 낸다.
+
+   ```
+   - _script/script.txt — 최종 대본 (업로드용). {N}자 / 약 {N}분
+   - _script/concept.md — 확정 컨셉·제목 후보 3안·썸네일 카피 후보 3안
+   - output/youtube.md — 제목/썸네일 카피 후보 3안·설명·영상 출처·태그·고정 댓글
+   - 썸네일 프롬프트 (복사용) — [실사형](…prompts.txt) · [국기볼형](…prompts-countryball.txt) · [정세형](…prompts-geopolitics.txt)
+   - 썸네일 컨셉·구조 (참고용) — [실사형](…prompts.json) · [국기볼형](…prompts-countryball.json) · [정세형](…prompts-geopolitics.json)
+   ```
+
+   **썸네일은 계열이 몇 개든 항상 2줄로 고정**한다 — 복사용(.txt) 한 줄, 참고용(.json) 한 줄. 계열별로 줄을 나누지 않는다.
+   - 생성하지 않은 계열(예: 정세형 미해당)은 해당 링크만 빼고 줄 구조는 유지한다
+   - 순서는 **복사용이 먼저**다. 실제로 여는 건 txt이고, json은 컨셉·계승 근거를 확인할 때만 연다
+3. 글자수, 예상 분량(~440자/분) 표시
 
 ---
 

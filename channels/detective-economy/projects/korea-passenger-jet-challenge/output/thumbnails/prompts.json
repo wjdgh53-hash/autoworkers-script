@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "project": "korea-passenger-jet-challenge",
+    "titles": [
+      "일본도 캐나다도 접은 3만 3천 대 시장, 한국 '다섯 번째 길' 찾아냈다! 브라질이 먼저 손 내민 이유",
+      "캐나다는 1달러에 넘긴 3만 3천 대 시장, 한국 '다섯 번째 길' 뚫었다! 세계 3위가 손잡자고 온 이유",
+      "일본도 1조엔 태우고 접은 시장, 한국 '다섯 번째 길' 올라탔다! 브라질이 먼저 찾아온 이유"
+    ],
+    "thumbnail_texts": [
+      "\"캐나다는 1달러에 넘겼다\" + 한국이 찾은 다섯 번째 길",
+      "\"일본은 1조엔을 태웠다\" + 한국이 고른 다섯 번째 길",
+      "\"세계 3위가 먼저 왔다\" + 브라질이 손잡은 대한민국"
+    ],
+    "image_concepts": {
+      "A": "밝은 한국 조립 라인 vs 어두운 격납고의 봉바르디에 — 좌우 2분할 대비. 좌측은 조명 환한 공장에서 골조가 드러난 조립 중 대형 여객기와 태극기, 작업복 뒷모습들이 기체를 올려다봄. 우측은 어두운 격납고에 먼지 덮인 방치된 여객기와 캐나다 국기. 대비에서 오는 안도감.",
+      "B": "격납고 안 미완성 기체와 먼저 간 이들의 잔영 — 단일 대형 오브젝트 + 원근 스케일 대비. 상단을 꽉 채운 조립 중 대형 여객기 동체와 용접 스파크, 좌상단 태극기 배너. 배경 깊은 곳에 먼저 간 도전자들의 어두운 기체 실루엣들이 원근으로 물러남. 결의·기대감."
+    },
+    "layout_note": "레퍼런스 001 형식 계승 — 하단 45%를 어두운 영역으로 눌러 텍스트 전용 공간 확보. 1행은 큰따옴표 인용구(노란색 최대 폰트 + 검정 두꺼운 외곽선), 2행은 형광 시안. 001의 중앙 적대국 인물 얼굴 클로즈업은 제외(모바일 160x90 판독성 + 적대 프레임 회피)."
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-realistic",
+      "concept_ko": "컨셉 A 실사. 좌측은 밝은 청백색 조명의 한국 조립 공장에서 골조와 창문 프레임이 드러난 조립 중 대형 여객기와 태극기 배너, 작업복 뒷모습 인물들이 기체를 올려다봄. 우측은 어둡고 탁한 격납고에 먼지 덮인 채 멈춰 선 여객기와 캐나다 단풍잎 국기.",
+      "prompt_en": "Photorealistic cinematic split-composition aerospace factory scene divided vertically down the middle. LEFT HALF: a brightly lit modern aircraft assembly hall in cool blue-white industrial lighting, a large narrow-body passenger jet fuselage under construction with exposed metal ribs and bare window frames, a South Korean Taegukgi flag banner hanging from the ceiling girders, three workers in navy coveralls seen from behind looking up at the aircraft, yellow overhead cranes and safety helmets as accent color, white welding sparks. RIGHT HALF: a dark, dim, dusty hangar in muted grey-brown tones, an abandoned finished regional jet sitting motionless under a grey tarp with thick dust on its surface, a Canadian maple leaf flag hanging limp and faded on the wall, cold dead lighting and deep shadows. Strong luminance contrast between the two halves. The bottom 45 percent of the frame is a dark empty band reserved for text overlay. Dramatic wide-angle composition, high detail, moody industrial atmosphere, cinematic color grading."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 동일한 좌우 대비 구도를 다크 톤 애니메 스타일로. 좌측 밝은 한국 조립 라인과 태극기, 우측 어두운 격납고의 방치된 기체와 캐나다 국기.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration with a vertical split composition. LEFT HALF: a brilliantly lit aircraft assembly hall rendered in cool cyan-white cel shading, a huge narrow-body airliner fuselage under construction with exposed structural ribs and open window frames, a South Korean Taegukgi flag banner overhead, three silhouetted workers in coveralls viewed from behind gazing up at the towering aircraft, bold ink outlines, yellow crane and helmet accents, dramatic white welding sparks bursting. RIGHT HALF: a gloomy abandoned hangar in desaturated grey-brown cel shading, a dust-covered regional jet standing dead and forgotten, a faded Canadian maple leaf flag drooping on the wall, heavy shadows and cold dead light. Sharp dramatic luminance contrast between the halves, exaggerated perspective. The bottom 45 percent is a dark empty band left clear for text overlay. Stylized digital illustration with cinematic tension."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-realistic",
+      "concept_ko": "컨셉 B 실사. 상단을 압도적으로 채운 조립 중 대형 여객기 동체와 용접 스파크, 좌상단 태극기 배너. 배경 깊은 곳에 먼저 도전했다 멈춘 기체들의 어두운 실루엣이 원근으로 물러남.",
+      "prompt_en": "Photorealistic cinematic wide shot inside a vast aircraft assembly hangar. Dominating the upper frame is a colossal narrow-body airliner fuselage under construction, its bare aluminum structural ribs and open window frames exposed, mounted on massive assembly jigs, brilliant white welding sparks showering down from a robotic arm. A large South Korean Taegukgi flag banner hangs in the upper-left corner. Receding into the shadowy depth of the background are two or three dark silhouettes of other unfinished aircraft, progressively dimmer and more desaturated with distance, suggesting abandoned earlier attempts. Cool blue-white industrial lighting on the foreground jet, yellow crane and safety-light accents, deep charcoal shadows filling the background. The bottom 45 percent of the frame is a dark empty band reserved for text overlay. Epic scale, dramatic contrast, high detail, moody cinematic grading."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 동일한 미완성 기체 + 배경 실루엣 구도를 다크 톤 애니메로. 용접 스파크와 태극기 배너 강조.",
+      "prompt_en": "Vibrant dark-toned anime-style illustration of an immense aircraft assembly hangar interior. The upper frame is overwhelmed by a gigantic airliner fuselage under construction, exposed structural ribs and bare window frames rendered with bold ink outlines and dramatic cel shading, held in towering assembly jigs, brilliant white welding sparks exploding outward in stylized bursts. A bold South Korean Taegukgi flag banner hangs in the upper-left. Fading into the dark background are two or three ghostly silhouettes of other unfinished aircraft, drawn progressively darker and flatter with distance. Cool cyan-white rim lighting on the main fuselage, yellow crane accents, deep black shadows swallowing the background. The bottom 45 percent is a dark empty band left clear for text overlay. Exaggerated dramatic perspective, high-contrast stylized digital illustration radiating resolve and anticipation."
+    },
+    {
+      "id": 5,
+      "type": "concept-a-realistic-alt",
+      "concept_ko": "컨셉 A 실사 변형. 좌우 대비를 유지하되 카메라를 낮춰 기체를 올려다보는 로우앵글로. 좌측 한국 조립 라인의 상승감과 우측 격납고의 정지감을 강조.",
+      "prompt_en": "Photorealistic cinematic low-angle split composition looking up at aircraft. LEFT HALF: shot from ground level looking steeply upward at a towering narrow-body airliner fuselage under construction, exposed ribs and open window frames catching brilliant cool blue-white factory light, a South Korean Taegukgi flag banner visible high on the girders above, two workers in coveralls seen from behind at the bottom edge gazing up, yellow gantry cranes crossing overhead, welding sparks falling like rain. RIGHT HALF: the same low upward angle but into a dark silent hangar, a dust-covered grounded regional jet looming motionless above, its surface dull and grey, a faded Canadian maple leaf flag hanging still, no light source except weak cold ambient glow. Powerful vertical energy on the left versus dead stillness on the right. The bottom 45 percent of the frame is a dark empty band reserved for text overlay. Dramatic scale, deep shadows, cinematic color grading."
+    }
+  ]
+}

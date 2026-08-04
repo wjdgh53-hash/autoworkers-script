@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "project": "naver-coupang-delivery-war",
+    "style": "photorealistic",
+    "titles": [
+      "\"반품 박스, 이제 안 들고 나가도 됩니다\" 네이버 8월 자동수거에 쿠팡 3,545억 적자가 겹친 이유",
+      "\"이제 문 앞에 두기만 하세요\" 네이버 8월 반품 자동수거에 쿠팡 과징금 6,246억이 겹친 이유",
+      "\"귀찮아서 못 옮겼습니다\" 네이버가 8월에 지우는 마지막 한 칸, 쿠팡 3,545억 적자와 겹친 이유"
+    ],
+    "thumbnail_texts": [
+      "8월부터 반품 자동수거 / 이제 갈아타도 되나",
+      "반품 안 들고 나가도 됨 / 쿠팡 3545억 적자",
+      "마지막 한 칸이 지워진다 / 이제 갈아타도 되나"
+    ],
+    "anchor_ref": "001 — \"배송 이제 우리가 직접 할게요\" 네이버 폭탄선언에 쿠팡 초비상"
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "purpose": "content",
+      "composition": "현장 장면 + 네온 발광 + 원근 과장",
+      "concept_ko": "8월 자동 수거 반품 도입. 파트 3 '8월에 켜지는 스위치'가 근거. 야간 아파트 단지에 초록 네온으로 발광하는 네이버 수거 차량 행렬이 원근으로 뻗고, 문마다 반품 박스가 놓여 화면을 꽉 채운다. 밝은 스튜디오 톤이 아니라 레퍼처럼 어두운 배경 + 발광 피사체로 갔다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — smooth wet asphalt — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. Photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Night-time Korean apartment complex under a deep navy sky with a glowing city skyline behind. A long row of glossy delivery vans blazing in emissive neon green, each with the NAVER logo glowing large across its side panel, recedes in exaggerated wide-angle perspective from the right edge deep into the frame, green light spilling across the wet asphalt. Along the left, an entire wall of apartment doors with a sealed cardboard return box printed with \"네이버배송\" glowing under green light at every single doorstep, stacked densely row after row. In the near foreground a courier in a luminous green uniform marked with the NAVER logo sweeps a box up in one motion, and beside him a Korean woman throws both palms up in an empty hands-free gesture, eyes wide and mouth open in delighted disbelief, her face lit brilliantly by the green glow. A thick glowing green neon upward arrow surges diagonally across the upper right. no large title or caption overlay text, no watermark."
+    },
+    {
+      "id": 2,
+      "purpose": "content",
+      "composition": "붕괴 + 빨간 네온 원 강조",
+      "concept_ko": "쿠팡 1분기 영업손실 3,545억원과 과징금 6,246억원이 겹친 파트 4. 레퍼의 '붕괴 건물 + 굵은 빨간 네온 원' 강조 장치를 그대로 가져오되 대상은 쿠팡 물류센터로 바꿨다. 어두운 야간 배경에 빨강 단색이 지배한다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — smooth bare ground — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. Photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Night-time industrial district under a black storm sky, the entire frame drowned in deep glowing red. A massive fulfilment warehouse with a colossal illuminated Coupang sign on its facade is buckling and collapsing, its wall caving inward, concrete slabs breaking loose and tumbling with bright sparks and dust, the sign itself split by deep jagged cracks straight through the wordmark. A very thick glowing red neon ring circles the collapse point. A thick glowing red neon downward arrow plunges steeply from the upper left into the wreckage. In the foreground, rows of overturned red parcel bins and scattered cardboard boxes pile up densely across the ground, all lit by the red glare. A Korean businessman in a dark suit stands at the lower left of the upper band, small against the building, palm pressed to his forehead, mouth open in dismay, his face harshly lit red. no large title or caption overlay text, no watermark."
+    },
+    {
+      "id": 3,
+      "purpose": "title",
+      "composition": "인물 클로즈업 + 삽입 액자 + 발광 동선",
+      "concept_ko": "확정 제목의 따옴표 문구 '반품 박스, 이제 안 들고 나가도 됩니다'를 문자 그대로 이행. 훅의 '테이프를 다시 붙여본 적 있으시죠'가 해소되는 지점. 인물 얼굴을 크게 잡되 배경은 초록 네온이 깔린 야간 복도로 두어 밝은 스튜디오 톤을 피했다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — a plain polished floor — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. Photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. A night apartment corridor flooded with emissive neon green light. A Korean woman in her thirties fills the left half of the frame from the chest up, her face brilliantly lit by the green glow, eyes wide with relief, broad open-mouthed laugh, both hands raised and open in a weightless gesture. A taped cardboard return box printed with \"네이버배송\" blazes with green rim light as it flies out of her grasp toward the right, a thick glowing green trail arcing behind it. On the right, a green-gloved courier arm marked with a glowing NAVER logo snatches the box mid-air. Behind them the corridor is packed with stacked return boxes glowing green all the way into the depth of the frame. In the upper right corner sits a small inset photo panel with a clean white border showing the same woman hauling a bulky box down a dim stairwell, the panel struck through with a bold red X. A thick glowing green neon upward arrow rises along the right edge. no large title or caption overlay text, no watermark."
+    },
+    {
+      "id": 4,
+      "purpose": "title",
+      "composition": "좌우 브랜드 대치 + 중앙 판정 보드",
+      "concept_ko": "제목이 약속한 '8월에 채워지는 마지막 한 칸'을 파트 8 최종 판정표로 이행. 좌우에 네이버·쿠팡 차량과 로고를 대칭으로 세우고 가운데 판정 보드를 놓았다. 3번(인물 클로즈업)과 그림이 완전히 다르다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — smooth wet asphalt — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. Photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Night-time city street under a deep navy sky, the frame split hard down the middle. The entire left half blazes in emissive neon green: a glossy green delivery van with a glowing NAVER logo across its side surges forward, behind it a towering warehouse facade with a huge illuminated NAVER sign and rows of conveyor belts packed with cardboard boxes printed with \"네이버배송\", all radiating green light. The entire right half burns in deep glowing red: a red van with a glowing Coupang logo skids backward, its cargo bay empty, a cracked red warehouse looming behind it under a thick glowing red neon ring. Suspended in the center between them, a large glossy scoreboard panel with five rectangular slots, the leftmost slot exploding in brilliant green light as a heavy check stamp slams into it with sparks bursting outward. A thick glowing green neon upward arrow rises on the left and a thick glowing red neon downward arrow plunges on the right in symmetry. Both logos are rendered large and clearly legible. no large title or caption overlay text, no watermark."
+    },
+    {
+      "id": 5,
+      "purpose": "reference-inherit",
+      "composition": "좌우 이분할 + 대칭 화살표 (앵커 001 계승)",
+      "concept_ko": "앵커 001 구도 계승. [계승] 좌우 이분할, 초록 상승(좌)·빨강 하강(우) 대칭 네온 화살표, 네이버 초록 대 쿠팡 빨강 진영색, 야간 도시 배경, 좌측 발광 컨베이어의 물량감. [변경 4개] ①피사체: 정면 충돌하는 두 트럭 → 문 앞 수거 로봇 팔과 먼지 쌓인 반품 카운터 ②카메라: 정면 아이레벨 → 살짝 내려다보는 부감 ③강조 요소: 충돌 스파크·건물 붕괴 → 초록 수거 동선과 정적인 공백 ④감정: 사물 대결감 → 소비자의 홀가분함 대 기업의 낭패.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — smooth wet asphalt — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. Photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Night-time cityscape under a deep navy sky, viewed slightly from above, split hard down the center. Left half saturated in emissive neon green: a long conveyor packed with rows of cardboard boxes printed with \"네이버배송\" sweeps in exaggerated perspective from the lower left toward a glossy green van with a glowing NAVER logo, while a green robotic collection arm lifts a return box from an apartment doorstep, green light spilling across every surface, a thick glowing green neon upward arrow surging behind it. Right half burning in deep glowing red: a return drop-off counter branded with a dimly glowing Coupang logo sits abandoned under dust, overturned red parcel bins scattered densely around it, a deep crack running across the counter front, a thick glowing red neon downward arrow plunging behind it. A hard vertical light break splits the two halves. Both logos are rendered large and clearly legible. no large title or caption overlay text, no watermark."
+    }
+  ]
+}

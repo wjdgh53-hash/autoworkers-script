@@ -35,16 +35,34 @@ def load_thumbnail_strategy(channel: str | None) -> dict | None:
     return None
 
 
-def get_prompt_suffixes(strategy: dict | None) -> list[str]:
-    """Build boilerplate suffixes based on channel's thumbnail strategy."""
+def get_prompt_suffixes(strategy: dict | None, style: str | None = None) -> list[str]:
+    """Build boilerplate suffixes based on channel's thumbnail strategy.
+
+    style: prompts.json의 meta.style ("photorealistic" | "countryball" | None).
+    신형 prompts.json은 세이프존·스타일 문구를 prompt_en 안에 이미 담고 있으므로
+    비율 외에는 덧붙이지 않는다. style이 없으면 구형 파일로 보고 기존 동작을 유지한다.
+    """
     suffixes = [
         "wide 16:9 aspect ratio, YouTube thumbnail composition",
     ]
 
-    # Text space / composition rule
-    text_space = (strategy or {}).get("text_space", "bottom-half")
+    if style:
+        # 신형: 구도(세이프존)와 텍스트 규칙이 prompt_en에 이미 들어 있다.
+        # 국기볼형은 사물 표면의 짧은 문구를 허용하므로 "no text"를 붙이면 안 된다.
+        if style != "countryball":
+            suffixes.append("no text, no letters, no words, no numbers, no watermark")
+        return suffixes
 
-    if text_space == "bottom-half":
+    # ── 구형 prompts.json 호환 ──────────────────────────────
+    text_space = (strategy or {}).get("text_space", "bottom-two-fifths")
+
+    if text_space == "bottom-two-fifths":
+        suffixes.append(
+            "the lower two-fifths of the image is one clean continuous surface "
+            "rendered simply and evenly with nothing on it, and every subject, "
+            "object and effect is composed entirely within the upper three-fifths"
+        )
+    elif text_space == "bottom-half":
         suffixes.append(
             "all key visual elements and the main subject fill the upper half "
             "of the frame edge to edge, the bottom half of the frame is reserved "
@@ -210,22 +228,27 @@ async def generate_thumbnails(
             print(f"ERROR: No thumbnails matching IDs: {ids}")
             sys.exit(1)
 
+    # 계열별로 폴더를 나눈다 — 안 나누면 thumbnail_01.jpg가 서로 덮어쓴다
     output_dir = prompts_file.parent
+    if subdir is None:
+        subdir = data.get("meta", {}).get("style")
     if subdir:
         output_dir = output_dir / subdir
         output_dir.mkdir(parents=True, exist_ok=True)
 
     # Load channel strategy for conditional boilerplate
     strategy = load_thumbnail_strategy(channel)
-    suffixes = get_prompt_suffixes(strategy)
+    style = data.get("meta", {}).get("style")
+    suffixes = get_prompt_suffixes(strategy, style)
 
     api_key = load_api_key()
     client = genai.Client(api_key=api_key)
 
     print(f"모델: {model}")
     print(f"썸네일 {len(thumbnails)}개 생성 예정")
-    if strategy:
-        print(f"채널 전략: text_space={strategy.get('text_space', 'bottom-half')}")
+    print(f"계열: {style or '(구형 파일 — meta.style 없음)'}")
+    if strategy and not style:
+        print(f"채널 전략: text_space={strategy.get('text_space', 'bottom-third')}")
     print(f"출력 디렉토리: {output_dir}\n")
 
     results = {"success": [], "failed": []}
@@ -276,6 +299,10 @@ def main():
         default="gemini-3.1-flash-image-preview",
         help="Gemini model (default: gemini-3.1-flash-image-preview)",
     )
+    parser.add_argument(
+        "--style", "-t", choices=["photorealistic", "countryball", "geopolitics"], default="photorealistic",
+        help="--project 사용 시 어느 계열 파일을 쓸지 (photorealistic=prompts.json, countryball=prompts-countryball.json, geopolitics=prompts-geopolitics.json)",
+    )
     parser.add_argument("--ids", nargs="+", type=int, help="Generate only specific thumbnail IDs (e.g. --ids 1 3)")
     parser.add_argument("--subdir", "-s", help="Output subdirectory name (e.g. flash, pro)")
     parser.add_argument("--force", "-f", action="store_true", help="Overwrite existing images")
@@ -287,7 +314,9 @@ def main():
         prompts_path = args.prompts
     elif args.project:
         project_dir = resolve_project_dir(args.project, args.channel)
-        prompts_path = str(project_dir / "output" / "thumbnails" / "prompts.json")
+        filename = {"countryball": "prompts-countryball.json",
+                    "geopolitics": "prompts-geopolitics.json"}.get(args.style, "prompts.json")
+        prompts_path = str(project_dir / "output" / "thumbnails" / filename)
     else:
         parser.error("Provide prompts.json path or --project")
 

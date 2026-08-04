@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "project": "nk-30k-troops-russia",
+    "style": "photorealistic",
+    "titles": [
+      "\"3만 명이 또 건너간다\" 훈련장이 되어버린 러시아 전선 조준선이 달라졌다는 평양 분위기",
+      "\"3만 명이 또 건너간다\" 사람을 빌려 쓰는 러시아 전선 손끝이 정교해졌다는 평양 분위기",
+      "\"3만 명이 또 간다\" 수업료가 되어버린 러시아 전선 눈이 밝아졌다는 평양 분위기"
+    ],
+    "thumbnail_texts": [
+      "\"50m까지 좁혔다\" / 실전 배운 북한군 + 사정권에 든 서울",
+      "\"오차가 사라졌다\" / 전장에서 큰 북한군 + 조준선 안의 서울",
+      "\"3만 명이 배운다\" / 교본이 된 러시아 전선 + 표적이 된 남쪽"
+    ],
+    "anchor_ref": "001 — \"3만 명 파병한다\" 박살난 러시아 본토 상황 심상치 않은 평양 분위기 (53,640회)",
+    "text_layout": {
+      "top_quote": "\"50m까지 좁혔다\" — 민트/연두 + 검은 외곽선",
+      "bottom_line1": "실전 배운 북한군 — '실전 배운'=흰색 / '북한군'=노랑",
+      "bottom_line2": "사정권에 든 서울 — 전체 빨강 + 흰 외곽선, 최대 폰트",
+      "corner_label": "우크라 정보총국 · 9차 당대회 — 소형 흰색 우상단",
+      "text_coverage": "35~40% (하단 2행 + 상단 인용구 1행)"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "purpose": "content",
+      "composition": "인물 감정 클로즈업",
+      "concept_ko": "김정은이 발사 데이터 화면 앞에서 확신에 찬 표정을 짓고, 옆의 붉은 조준 원이 크게 벌어진 것에서 손톱만 하게 좁혀진다. PART 4의 'KN-23 원형공산오차 500~1,500m → 50~100m, 실전 텔레메트리로 교정' 장면이 근거. 이 영상의 핵심은 무기 자체가 아니라 정확도의 변화라서 오브젝트가 아닌 인물 표정을 앞세웠다.",
+      "prompt_en": "photorealistic composite, high-gloss commercial advertising style, sharp studio lighting, crisp cut-out subjects with subtle white rim outlines and drop shadows, highly saturated colors, dark cinematic atmosphere, deep shadows, dramatic contrast. Chest-up close-up of Kim Jong Un (leader of North Korea) in a dark coat on the left, narrowed confident eyes, lips curled into a tight satisfied smirk, one gloved hand raised with the index finger pointing at a glowing tactical display beside him. On the display, a wide loose red targeting circle collapses into one tiny razor-sharp red ring locked on a single point, with a bright red neon circle highlighting the shrunken ring. Behind him the blunt nose cone of a short-range ballistic missile on its launch rail catches cold steel-blue rim light, dark smoke rising faintly in the background. Both the figure and the display sit entirely in the upper two-thirds of the frame, shot slightly from below for an imposing feel. The bottom third of the frame is completely empty — no characters, no objects, no logos, and no silhouettes. Leave it as plain, uncluttered background tone with no blur, no dark gradient, and no overlay panel. All subjects are composed entirely within the upper two-thirds of the frame. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 2,
+      "purpose": "content",
+      "composition": "좌우 대비",
+      "concept_ko": "좌측은 격추된 드론 잔해를 뜯어보며 실전으로 배우는 북한군 병사, 우측은 먼지 덮인 채 세워진 한국 드론과 붉은 하강 화살표. PART 5의 '북한군 1만 4,000명이 실전에서 드론과 싸우는 동안 드론작전사령부 예산 152억→123억, 훈련 56% 감소' 대비가 근거. 대비 자체가 메시지라 좌우 구도를 골랐다.",
+      "prompt_en": "photorealistic composite, high-gloss commercial advertising style, sharp studio lighting, crisp cut-out subjects with subtle white rim outlines and drop shadows, highly saturated colors, dark cinematic atmosphere, deep shadows, dramatic contrast. Split composition. On the left, a waist-up North Korean soldier in a mud-streaked winter uniform crouches over the shattered fuselage of a downed FPV drone, narrowed focused eyes and lips pressed tight in concentration, gloved hands prying open its wiring while orange fire glows behind him and a large glowing green upward arrow rises at the frame edge. On the right, a clean quadcopter drone sits idle under a sheet of grey dust inside a cold, dim empty hangar with a South Korean flag (white field with a red-and-blue taeguk circle and four black trigrams) hanging slack on the wall, a large glowing red downward arrow beside it. A hard vertical light break separates the two halves. All elements are composed entirely within the upper two-thirds of the frame. The bottom third of the frame is completely empty — no characters, no objects, no logos, and no silhouettes. Leave it as plain, uncluttered background tone with no blur, no dark gradient, and no overlay panel. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 3,
+      "purpose": "title",
+      "composition": "스케일 대비",
+      "concept_ko": "제목 1블록 '3만 명이 또 건너간다'의 시각적 이행. 전경에 푸틴과 김정은을 크게 세우고 뒤로 국경 철교를 건너는 끝없는 병력 대열을 작게 깔아 규모 자체를 보여준다. 두 인물의 표정을 계산(러시아)과 만족(북한)으로 갈라 '사람을 빌려 쓰는 거래'라는 각을 얼굴에서 읽히게 했다.",
+      "prompt_en": "photorealistic composite, high-gloss commercial advertising style, sharp studio lighting, crisp cut-out subjects with subtle white rim outlines and drop shadows, highly saturated colors, dark cinematic atmosphere, deep shadows, dramatic contrast. Waist-up two-shot in the foreground: Vladimir Putin (President of Russia) on the right in a dark overcoat, narrowed calculating eyes and a thin closed-lipped expression, palm turned upward in an inviting gesture; Kim Jong Un (leader of North Korea) on the left in a black coat, broad satisfied grin and chin lifted, one hand tucked in his pocket. Far behind and far smaller, an endless column of tiny uniformed soldiers streams across a long snow-dusted steel border bridge under a cold grey sky, the line shrinking into haze at the horizon to exaggerate scale. Faint translucent red-and-blue flag textures wash the outer edges. Both leaders and the marching column are contained entirely in the upper two-thirds of the frame. The bottom third of the frame is completely empty — no characters, no objects, no logos, and no silhouettes. Leave it as plain, uncluttered background tone with no blur, no dark gradient, and no overlay panel. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 4,
+      "purpose": "title",
+      "composition": "중앙 집중",
+      "concept_ko": "제목 3블록 '조준선이 달라졌다는 평양 분위기'의 이행. 화면 중앙에 붉은 조준 링 하나가 서울 스카이라인 위로 정밀하게 좁혀 들어오고, 그 위로 김정은의 확신한 눈만 크게 걸린다. 시선을 한 점에 몰아야 하는 장면이라 중앙 집중을 골랐다. 3번 장(스케일 대비, 국경 행렬)과 그림이 완전히 다르다.",
+      "prompt_en": "photorealistic composite, high-gloss commercial advertising style, sharp studio lighting, crisp cut-out subjects with subtle white rim outlines and drop shadows, highly saturated colors, dark cinematic atmosphere, deep shadows, dramatic contrast. Dead-center composition: a single thin glowing red targeting ring with fine crosshair ticks tightens over a distant city skyline of glass towers lit blue at dusk, the ring crisp and geometric against soft haze, with a bright red neon circle reinforcing the locked point. Directly above the ring, the upper portion of Kim Jong Un's (leader of North Korea) face fills the top band of the frame in shadowed profile, narrowed confident eyes fixed downward on the ring, brow lowered. Cold blue-grey atmosphere with a single warm red key light glancing off his cheek, thin dark smoke drifting between the layers. The skyline sits in the middle band and never enters the lower band. The bottom third of the frame is completely empty — no characters, no objects, no logos, and no silhouettes. Leave it as plain, uncluttered background tone with no blur, no dark gradient, and no overlay panel. All subjects are composed entirely within the upper two-thirds of the frame. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 5,
+      "purpose": "reference-inherit",
+      "composition": "국기 좌우 대비 + 중앙 상징물 (앵커 001 프레임)",
+      "concept_ko": "패키지 C 확정이지만 제목 공식을 앵커 001에서 그대로 물려받았고, 001의 좌우 국기 분할 + 중앙 상징물 + 우측 인물 발화 구도가 확정 제목의 약속(두 주체를 한 화면에)을 그대로 이행할 수 있어 계승으로 판정했다. [계승] 화면 좌우 반투명 국기 분할, 중앙 대형 상징물 1개, 우측 인물의 시선이 중앙으로 향하는 시선 흐름. [변경] ①피사체: 불타는 성 바실리 대성당 → 정중앙에 탄착점이 꽂힌 대형 사격 표적판 ②색: 잿빛 폐허+주황 화염 → 차가운 청록·강철 톤 ③앵글: 정면 아이레벨 → 로우앵글 ④강조 요소: 화염·잔해 → 붉은 조준 링과 방사형 균열 ⑤인물 표정: 우려·심각 → 확신·만족 (감정 방향 반전). 우측 국기도 러시아 삼색기 → 태극기로 바꿔 썸네일 텍스트 '사정권에 든 서울'과 붙였다.",
+      "prompt_en": "photorealistic composite, high-gloss commercial advertising style, sharp studio lighting, crisp cut-out subjects with subtle white rim outlines and drop shadows, highly saturated colors, dark cinematic atmosphere, deep shadows, dramatic contrast. Low-angle shot with the frame split by two large semi-transparent flag overlays: on the left the North Korean flag, on the right a South Korean flag (white field with a red-and-blue taeguk circle and four black trigrams). Between them, dominating the center, stands a huge weathered steel shooting target board with deep cracks spreading in a radial web from one clean impact hole punched dead center, a thin glowing red targeting ring encircling that hole. Cold teal and gunmetal palette with a single hard red accent, no fire, fine concrete dust suspended in the light. On the right edge, chest-up, Kim Jong Un (leader of North Korea) looks toward the center target with narrowed confident eyes and a small satisfied smile, mouth slightly open mid-sentence. Everything is composed within the upper two-thirds of the frame. The bottom third of the frame is completely empty — no characters, no objects, no logos, and no silhouettes. Leave it as plain, uncluttered background tone with no blur, no dark gradient, and no overlay panel. no text, no letters, no words, no numbers, no watermark."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "project": "ukraine-victory-russia-defeat",
+    "titles": [
+      "우크라이나 결정적 승리, 월 40만 톤 기름을 사오는 러시아가 사실상 백기 직전인 이유",
+      "우크라이나 결정적 승리, 산유국 러시아에 기름 배급표가 돌기 시작한 사실상 백기 직전의 이유",
+      "\"기름을 만들 데가 없다\" 세계 최대급 산유국 러시아가 인도에서 월 40만 톤을 사오는 이유"
+    ],
+    "thumbnail_texts": [
+      "우크라이나 + 결정적 승리 / 산유국 러시아 + 사실상 백기",
+      "산유국에 기름 배급표 / 러시아 + 사실상 끝났다",
+      "우크라이나 완승 / 기름 사오는 러시아 + 사실상 몰락"
+    ],
+    "image_concepts": {
+      "A": "화염 속에서 중간이 꺾여 무너지는 거대 정유 증류탑과 타들어가며 갈라지는 러시아 삼색기 — 승자는 화면에 없고 몰락만 보여준다",
+      "B": "불 꺼진 러시아 주유소, 매달린 빈 노즐과 앞으로 내민 종이 연료 쿠폰, 어둠 속으로 늘어선 차량 행렬 — 화염이 아니라 결핍의 생활 장면"
+    }
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "type": "concept-a-photorealistic",
+      "concept_ko": "컨셉 A 실사. 거대한 정유 증류탑이 중간에서 꺾여 화염 속으로 내려앉고, 옆에서 러시아 삼색기가 타들어가며 갈라진다.",
+      "prompt_en": "Photorealistic cinematic shot of a colossal oil refinery distillation column buckling and snapping near its middle, collapsing into towering orange flames and thick black smoke. Beside it a tattered Russian tricolor flag burns, its fabric cracking apart and disintegrating into embers. Dark night sky with deep shadows and dramatic contrast, the firelight rim-lighting every twisted steel beam and pipe. Ominous atmosphere of industrial collapse, oversized structure dominating the frame, no people visible."
+    },
+    {
+      "id": 2,
+      "type": "concept-a-anime",
+      "concept_ko": "컨셉 A 애니메. 같은 증류탑 붕괴와 불타는 러시아 국기를 셀셰이딩 애니메 스타일로.",
+      "prompt_en": "Vibrant anime-style illustration of a massive oil refinery distillation tower cracking and folding in on itself inside a wall of blazing orange fire. Bold ink outlines and cel-shaded lighting make the fractured steel skeleton and the shredded, burning Russian tricolor flag instantly readable. Dark moody background of night sky and heavy black smoke, deep shadows against vivid fire highlights. Exaggerated scale and dramatic low-angle perspective emphasize the collapse."
+    },
+    {
+      "id": 3,
+      "type": "concept-b-photorealistic",
+      "concept_ko": "컨셉 B 실사. 불 꺼진 러시아 주유소의 빈 노즐과 앞으로 내민 종이 연료 쿠폰, 어둠 속으로 이어지는 차량 행렬.",
+      "prompt_en": "Photorealistic cinematic night scene at a Russian petrol station where every pump stands dark and dead, fuel nozzles hanging limp and empty. A weathered hand thrusts a worn paper fuel ration coupon toward the camera while an endless queue of cars fades into the darkness under a blood-red sky. Deep shadows and moody lighting, a single cold lamp picking out the dead pumps against dramatic contrast. Tense atmosphere of scarcity; the man behind the coupon has natural realistic proportions and a weary but warm, likeable face."
+    },
+    {
+      "id": 4,
+      "type": "concept-b-anime",
+      "concept_ko": "컨셉 B 애니메. 같은 배급 쿠폰 장면을 짙은 남색과 핏빛 하늘의 애니메 스타일로.",
+      "prompt_en": "Anime-style illustration of a deserted petrol station at night, fuel pumps switched off and nozzles dangling uselessly. A hand shoves a crumpled paper ration coupon toward the viewer while an endless line of cars disappears into darkness beneath a deep crimson sky. Cel-shaded rendering with bold outlines, dark navy palette and vivid red highlights, heavy shadow and dramatic contrast. Anxious, tense mood of shortage; the handsome anime character holding the coupon has sharply expressive, desperate eyes."
+    },
+    {
+      "id": 5,
+      "type": "wildcard",
+      "concept_ko": "와일드카드. 러시아 삼색기 색으로 칠해진 거대한 주유 노즐이 기름 대신 잿불과 재를 쏟아내고, 지평선에는 희미하게 타는 정유단지가 보인다.",
+      "prompt_en": "Surreal photorealistic image of a gigantic fuel pump nozzle painted in the white, blue and red of the Russian tricolor, tilted downward and pouring out glowing embers and grey ash instead of fuel. The falling ash piles up in drifts while a darkened refinery skyline burns faintly on the horizon behind it. Dark cinematic palette with deep shadows, dramatic orange rim light and heavy contrast. The oversized nozzle dominates the frame as a single bold silhouette, ominous and tense."
+    }
+  ]
+}

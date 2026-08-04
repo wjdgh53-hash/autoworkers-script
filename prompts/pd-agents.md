@@ -9,7 +9,8 @@
 | video-analyst | opus | 전체 동시 병렬 | prompts/reference-analyze.md |
 | pattern-extractor | opus | 1개 (data-researcher와 병렬) | prompts/reference-patterns.md + config/settings.json (hook_strategy) |
 | data-researcher | opus | 1개 (pattern-extractor와 병렬, WebSearch) | prompts/data-research.md |
-| strategist | opus | 1개 (STRATEGY) | prompts/creative-strategy.md + prompts/ctr-reference.md + prompts/thumbnail-design.md + config/settings.json (hook_strategy) + config/thumbnail-strategy.json (있으면) |
+| strategist | opus | 1개 (STRATEGY) | prompts/creative-strategy.md + prompts/ctr-reference.md + prompts/thumbnail-design.md + prompts/thumbnail-countryball.md + prompts/thumbnail-geopolitics.md + prompts/pd-templates.md + config/settings.json (hook_strategy) + config/thumbnail-strategy.json (있으면) |
+| outline-writer | opus | 1개 (OUTLINE) | prompts/outline-guide.md + prompts/pd-templates.md (outline.md 포맷 절) |
 | script-writer | opus | 파트당 1개 병렬 | outline.md + prompts/script-review-checklist.md |
 | script-reviewer | opus | 1개 (verdict 권한, WebSearch) | prompts/script-review-checklist.md + prompts/draft-verify.md |
 
@@ -30,11 +31,16 @@
 
 에이전트에게 항상 전달:
 1. **역할** (agents/*.md에 정의된 역할 설명)
-2. **도메인 프롬프트** (prompts/*.md 내용 또는 파일 경로)
+2. **도메인 프롬프트** (prompts/*.md — **파일 경로로 전달**)
 3. **프로젝트 데이터** (파일 경로 — 에이전트가 직접 Read)
 4. **출력 경로** (결과 파일 절대 경로)
 
-가능하면 **파일 내용을 prompt에 임베드하지 말고 파일 경로를 전달**하여 PD 컨텍스트를 절약한다.
+> 🚨 **파일 내용을 prompt에 임베드하지 않는다. 경로만 전달한다.**
+> PD가 대신 읽어서 붙여넣으면 같은 텍스트가 PD 컨텍스트와 에이전트 프롬프트에 **이중으로 쌓인다.**
+> (STRATEGY 단계 기준 약 3.3만 자 중복)
+>
+> 대신 호출 프롬프트의 **첫 지시로 "아래 파일들을 작업 시작 전에 모두 Read하라"를 명시**한다.
+> 경로만 던지고 읽으라는 말을 빠뜨리면 에이전트가 안 읽고 진행해 규칙이 통째로 빠진다.
 
 ---
 

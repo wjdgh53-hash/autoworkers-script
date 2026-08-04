@@ -1,4 +1,5 @@
 ---
+name: pattern-extractor
 model: opus
 tools:
   - Read

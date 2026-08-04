@@ -1,10 +1,16 @@
 {
   "count": 5,
-  "art_styles": ["photorealistic", "anime"],
-  "color_palette": "dark",
-  "emotions": ["shock", "tension"],
-  "text_space": "bottom-half",
-  "face_style": "exaggerated+natural",
+  "styles": [
+    "photorealistic",
+    "countryball",
+    "geopolitics"
+  ],
+  "color_palette": "auto",
+  "emotions": [
+    "shock",
+    "tension"
+  ],
+  "text_space": "bottom-two-fifths",
   "brand": {
     "colors": [],
     "mascot": false,

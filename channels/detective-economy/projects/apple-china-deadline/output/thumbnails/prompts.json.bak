@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "project": "apple-china-deadline",
+    "style": "photorealistic",
+    "titles": [
+      "하이닉스 뒤로 밀어 두고 창신메모리 택했던 애플, 18일 뒤 내놔야 하는 문서의 정체",
+      "삼성·하이닉스 대신 중국 메모리 골랐던 애플, 8월 21일 상원에 제출해야 하는 네 가지",
+      "창신메모리를 중국 1위로 올린 마지막 손이 애플이었다는 증거, 18일 뒤 문서에 적힌다"
+    ],
+    "thumbnail_texts": [
+      "\"이걸 다 적으라고요?\" / 하이닉스 밀어내고 중국 고른 애플 / 18일 뒤 / 적어 내야 한다",
+      "\"어떻게 여기까지...\" / 애플이 인증해 준 중국 메모리 / 20년 우위에 / 금이 갔다",
+      "\"이젠 못 깎습니다\" / 애플이 흔들려던 그 값 / 이미 잠겼다 / 수년치 계약으로"
+    ],
+    "anchor_ref": "001 — 삼성 놔두고 중국으로 갔던 애플, 8월 21일까지 답해야 하는 진짜 이유"
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "purpose": "content",
+      "composition": "현장 장면",
+      "concept_ko": "애플의 품질 인증 장비가 창신메모리 공장 라인 한복판에서 돌아가는 순간. 본문 메인축(창신을 여기까지 밀어 올린 마지막 손이 애플의 인증 절차였다 — verified-data 5·6항)을 한 장면으로 압축했다. 팀 쿡의 표정은 '자기가 켠 걸 뒤늦게 깨달은 낭패'로 잡아 관통 명제(칼을 쥐여 줬다)를 얼굴에서 읽히게 했다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — plain polished factory floor — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Inside a Chinese semiconductor fabrication line whose walls glow deep crimson red, rows of silicon wafer carriers and DDR5 memory modules labeled CXMT stream along a conveyor that rushes toward the camera in extreme wide-angle, crimson light spilling onto every metal surface; a large Chinese flag (red field with one large yellow star and four smaller stars) hangs on the far wall. In the left foreground, chest-up, stands Tim Cook (Apple CEO) beside a white certification test rig marked with a large glowing Apple logo, one hand still resting flat on its control panel, the other hand half-lifted as if to pull it back, his eyebrows shot high and pinched together, eyes wide with the whites showing and fixed on the red conveyor, mouth open with the lower lip drawn in, beads of sweat on his temple catching the red light, face lit cold silver-white against the red. A thick glowing green upward arrow rises along the right edge behind the CXMT modules, and an inset photo panel with a clean white border in the upper right shows a dusk Shanghai skyline drowned in red. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 2,
+      "purpose": "content",
+      "composition": "중앙 집중",
+      "concept_ko": "마지막 파트에서 회수하는 '계약 봉인' 블록의 시각화 — SK하이닉스가 10여 개 고객사와 장기공급계약을 끝내 지금의 값을 수년간 고정시켰다(verified-data 4항). 애플 쪽 인물의 낭패와 한국 메모리 랙의 발광을 정면으로 대비시켜 영상이 위협감이 아니라 반격으로 착지한다는 걸 미리 보여준다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — plain dark polished floor — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Dead centre of the upper three-fifths, a massive contract binder stands upright like a vault door, clamped shut by a heavy steel latch and a thick blob of blood-red wax seal that glows from within; behind it, towering racks of DDR5 memory modules bearing the SK hynix logo blaze emerald green on the left and racks bearing the Samsung logo blaze electric blue on the right, their light spilling across the ceiling. On the right edge, chest-up and much smaller than the binder, Tim Cook (Apple CEO) holds a pocket calculator in one hand while his other palm is pressed hard against his forehead, eyes squeezed nearly shut, brows crushed down, lips pressed into a thin flat line, cheeks flushed, a glowing Apple logo panel dimming behind his shoulder. A thick glowing red downward arrow falls on his side of the frame. Deep navy background, amber warning light raking across the binder. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 3,
+      "purpose": "title",
+      "composition": "스케일 대비",
+      "concept_ko": "확정 제목이 약속한 '18일 뒤 내놔야 하는 문서의 정체'를 그대로 이행하는 장. 미 상원 서한의 요구가 네 칸(무예외 확약·인증 진행 공개·넘긴 기술 정보 공개·로비 내역 공개)이라는 사실을 벽처럼 세운 네 개 패널로 시각화하고, 팀 쿡이 세 번째 칸 앞에서 멈춰 선 그림으로 '어느 칸이 목을 잡고 있는가'라는 오픈루프를 건다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — plain polished stone floor — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. A colossal wall built of four enormous parchment document panels fills the upper three-fifths, each panel edged in glowing amber and stamped with a heavy embossed US Senate eagle emblem and a cracked blood-red wax seal; the third panel from the left is lit from behind by a searing red glow and a thick bold red neon ring burns around it. Standing small at the base of that third panel, waist-up, Tim Cook (Apple CEO) is caught mid-step and frozen, head tilted back to look up at it, brows pulled high and inward, eyes wide and darting down-left, lower lip pulled in under his teeth, one hand gripping a fountain pen that hangs uselessly at his side, shoulders drawn up, sweat sheen on his forehead, a cold silver-white Apple logo glowing faintly on the wall behind him. Deep navy and charcoal atmosphere, amber warning light and drifting dust. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 4,
+      "purpose": "title",
+      "composition": "좌우 대비",
+      "concept_ko": "제목 앞머리 '하이닉스 뒤로 밀어 두고 창신메모리 택했던'의 직역 장면. 왼쪽에서 조명이 꺼져 밀려나는 SK하이닉스 랙과 오른쪽에서 붉게 타오르는 창신메모리 랙을 대칭으로 세워, 글자를 읽기 전에 '누가 버려지고 누가 선택됐는지'가 0.3초에 전달되게 했다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — smooth dark warehouse floor — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. The upper three-fifths splits hard down the middle: on the left, a tall rack of DDR5 memory modules bearing the SK hynix logo is shoved aside at an angle, its emerald indicator lights dying out one by one, dust and dark smoke curling around it, a thick glowing red downward arrow behind it; on the right, an identical rack labeled CXMT blazes in saturated crimson with bright sparks flying off its power rails, a large Chinese flag (red field with one large yellow star and four smaller stars) glowing on the wall behind it, and a thick glowing green upward arrow rising beside it. Between them, chest-up and turned three-quarters toward the right, Tim Cook (Apple CEO) shoves the left rack away with the flat of one hand without looking at it while his other hand points straight at the crimson rack, his eyes narrowed and locked on the right, jaw set, mouth a tight closed line, a glowing Apple logo on his lapel side catching the crimson spill. no text, no letters, no words, no numbers, no watermark."
+    },
+    {
+      "id": 5,
+      "purpose": "reference-inherit",
+      "composition": "좌 인물 상반신 / 우 대형 상징물 (앵커 001 구도 계승)",
+      "concept_ko": "앵커 001에서 계승한 것 — 화면 분할(좌 인물 상반신 / 우 대형 상징물), 시선 흐름(좌 인물 얼굴 → 우 대형 오브젝트 → 하단 텍스트), 요소 상대 크기(인물은 상반신, 배경 오브젝트는 화면 30~40%). 다르게 한 것 5개 — ① 피사체: 복싱 링·탐정 마스코트·아이폰 제품컷 → 봉인된 상원 서한과 카운트다운 링 ② 색: 무채색 흰~회색 → 딥네이비+앰버+붉은 봉랍 ③ 시점: 아이레벨 정면 → 로우앵글 ④ 강조 요소: 글러브·링 로프 → 붉은 봉랍·카운트다운 링 ⑤ 표정: 탈진·완패 → 초조·계산.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous surface — plain polished stone floor — rendered simply and evenly with nothing on it, and every subject, character, object, effect and action is composed entirely within the upper three-fifths above it. photorealistic advertising composite, intense neon glow lighting, emissive brand colors spilling onto surrounding surfaces, extreme color contrast, the upper three-fifths densely packed with elements, exaggerated wide-angle perspective, hyper-saturated and eye-catching. Shot from a low angle looking upward: on the left third, chest-up, Tim Cook (Apple CEO) leans slightly back as if the frame is pressing down on him, his brows pulled high and pinched together, eyes open but rolled down and to his left in calculation rather than shock, lower lip bitten in under his teeth, one hand caught mid-motion turning a page of a document he is holding low, glassy sweat on his temple and along his jaw, his face lit hard from below by amber warning light. Filling the right two-thirds behind and above him, an enormous sealed letter bearing an embossed US Senate eagle emblem and a thick cracked blood-red wax seal leans over him like an overhang, a bold red neon ring burning around the seal, and a smaller inset photo panel with a clean white border sits at the upper right showing a rack of DDR5 modules labeled CXMT glowing crimson. Deep navy background, drifting dust in the amber beams, a cold silver-white Apple logo glowing small behind his shoulder. no text, no letters, no words, no numbers, no watermark."
+    }
+  ]
+}

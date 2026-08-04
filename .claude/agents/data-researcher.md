@@ -1,4 +1,5 @@
 ---
+name: data-researcher
 model: opus
 tools:
   - Read
@@ -22,8 +23,10 @@ fact-checker + researcher를 합친 역할이다.
 SKILL.md(PD)가 Task tool로 호출 시 전달:
 - 데이터 리서치 프롬프트 (`prompts/data-research.md` 내용)
 - 채널 프로필 (`config/profile.md` 내용)
-- 모든 transcript.txt 경로
-- 모든 analysis.md 경로 (검색 방향 가이드용)
+- 모든 transcript.txt 경로 (레퍼 대본 원본 — 데이터 추출·검색 방향의 주 소스)
+- 모든 meta.md 경로 (제목·조회수·업로드일 — 어느 레퍼가 잘 됐는지 판단용)
+
+> `analysis.md`는 받지 않는다. transcript.txt가 원본이고 analysis.md는 그 해석본이라 내용이 겹친다. 구조·썸네일 분석은 pattern-extractor 담당이다.
 
 ## 작업
 
@@ -42,7 +45,7 @@ prompts/data-research.md에 따라 실행:
 - verified-data.md: 대본 작성용 정제 데이터
 
 ### 4단계: 추가 리서치
-- analysis.md에서 영상 방향 파악 (patterns.md 없이 직접)
+- transcript.txt + meta.md에서 영상 방향 파악 (patterns.md·analysis.md 없이 직접)
 - 5개 방향 검색: 최신 뉴스, 놓친 각도, 비교/대비, 재무/통계, ❓ 재검색
 - verified-data.md 끝에 "## 추가 리서치 데이터" append
 

@@ -71,7 +71,7 @@ def main():
     out = script_dir / "script.txt"
     out.write_text(script_text, encoding="utf-8")
     char_count = len(script_text)
-    print(f"script.txt 생성 완료 ({char_count}자, ~{char_count // 500}분)")
+    print(f"script.txt 생성 완료 ({char_count}자, ~{char_count // 440}분)")
 
 
 if __name__ == "__main__":

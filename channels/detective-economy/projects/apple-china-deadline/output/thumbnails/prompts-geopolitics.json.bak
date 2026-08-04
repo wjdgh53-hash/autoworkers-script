@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "project": "apple-china-deadline",
+    "style": "geopolitics",
+    "applicability": "해당함 — 미 상원 7인의 압박 서한, 미 국방부 중국 군사기업 목록 지정, 상무부 Entity List·수출허가 경고, 백악관을 사이에 둔 애플 대 마이크론 로비전이 서사의 축이다. '외교 압박·제재'와 '기술패권' 범주에 정면으로 해당하므로 생성한다.",
+    "narrative_direction": "혼합 — 애플·미국 진영은 부정형(자충수·압박·마진 붕괴), 중국 진영은 국기를 온전하고 선명하게 두어 '커진 위협'으로 표현(중국이 무너지는 서사가 아니므로 오성홍기를 태우지 않는다), 한국은 태극기를 절대 훼손하지 않고 온전한 상태로 두되 그늘에 배치해 상대적 열세를 만들고 마지막 국면(계약 봉인)에서만 긍정형으로 전환한다.",
+    "titles": [
+      "하이닉스 뒤로 밀어 두고 창신메모리 택했던 애플, 18일 뒤 내놔야 하는 문서의 정체",
+      "삼성·하이닉스 대신 중국 메모리 골랐던 애플, 8월 21일 상원에 제출해야 하는 네 가지",
+      "창신메모리를 중국 1위로 올린 마지막 손이 애플이었다는 증거, 18일 뒤 문서에 적힌다"
+    ],
+    "thumbnail_texts": [
+      "\"이걸 다 적으라고요?\" / 하이닉스 밀어내고 중국 고른 애플 / 18일 뒤 / 적어 내야 한다",
+      "\"어떻게 여기까지...\" / 애플이 인증해 준 중국 메모리 / 20년 우위에 / 금이 갔다",
+      "\"이젠 못 깎습니다\" / 애플이 흔들려던 그 값 / 이미 잠겼다 / 수년치 계약으로"
+    ]
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "purpose": "content",
+      "direction": "혼합",
+      "concept_ko": "중국 측만 긍정형으로 그린다 — 오성홍기는 온전하고 선명하게, 시진핑은 확신 표정, 중앙 오브젝트는 붉게 가동되는 D램 웨이퍼 라인. 7월 27일 창신메모리 상장과 중국 시총 1위 등극(verified-data 5항)을 '중국의 성취'가 아니라 '우리 쪽으로 커진 위협의 크기'로 읽히게, 붉은 지배색과 낮게 깔린 연기로 위협 톤을 유지했다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The lower two-fifths is the same continuous scene rendered dark, smoky and low in detail so overlay text stays readable, while all faces, flags and key objects sit entirely within the upper three-fifths. photorealistic news-crisis composite, dramatic hard lighting, heavy atmospheric haze, one dominant colour drowning the frame, the upper three-fifths densely packed with elements, cinematic wide-angle, high contrast and eye-catching. An enormous Chinese flag — red field with one large yellow star and four smaller stars — hangs across the whole background in deep heavy folds rather than flying taut, pronounced creases catching the light, its red saturated and crisply lit from a hard side light, the star pattern fully intact and readable. In front of it, occupying the right third at chest-up scale, stands Xi Jinping (President of China), no hands in frame, chin slightly lifted, eyes narrowed and level, lips closed in a flat controlled line, a hard orange key light raking across one side of his face. Filling the centre-left, a single colossal semiconductor wafer-handling line runs into the distance, its robotic arms and stacked wafer carriers glowing hot crimson through the haze, thin smoke drifting low along the floor. Deep red and ember orange drown the frame; the sky above is dark and smoke-choked. no text, no letters, no words, no numbers, no captions, no watermark."
+    },
+    {
+      "id": 2,
+      "purpose": "content",
+      "direction": "부정형",
+      "concept_ko": "레퍼가 통째로 빠뜨린 3자 구도(verified-data 8항) — 애플의 사용 허가 요청과 마이크론의 정면 반대가 백악관 책상 위에서 맞붙어 있다. 중앙 오브젝트는 나란히 놓인 두 통의 봉인 서류 하나로 좁혔고, 성조기는 태우지 않고 탁하게 늘어뜨려 '미국 안에서 갈라진 국면'만 표현했다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The lower two-fifths is the same continuous scene rendered dark, smoky and low in detail so overlay text stays readable, while all faces, flags and key objects sit entirely within the upper three-fifths. photorealistic news-crisis composite, dramatic hard lighting, heavy atmospheric haze, one dominant colour drowning the frame, the upper three-fifths densely packed with elements, cinematic wide-angle, high contrast and eye-catching. A vast US flag — red and white stripes with a blue canton of white stars — hangs behind everything in deep heavy folds, its colours desaturated and grimy, soot staining the creases, edges frayed but the stripes and stars still fully readable, lit by raking orange light from below. On the left third at waist-up scale stands Donald Trump (US President), no hands in frame, brow furrowed deep, eyes cast down toward the desk and unfocused, lips pressed into a hard line, shoulders squared but sunk. Dead centre on a heavy dark desk sit two sealed dossiers pushed toward each other until they touch, each stamped with a cracked blood-red wax seal, one lit cold silver-white and the other lit hard amber, a thin line of smoke curling up between them. Ember orange and deep red dominate; the ceiling above is lost in dark haze. no text, no letters, no words, no numbers, no captions, no watermark."
+    },
+    {
+      "id": 3,
+      "purpose": "title",
+      "direction": "부정형",
+      "concept_ko": "확정 제목의 '18일 뒤 내놔야 하는 문서'를 정면으로 이행하는 장. 중앙 오브젝트를 미 상원 인장이 찍힌 봉인 서한 단 하나로 고정하고, 팀 쿡의 표정만으로 '제출자 위치에 놓인 시가총액 1위 기업'을 전달한다. 손은 넣지 않고 얼굴로만 간다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The lower two-fifths is the same continuous scene rendered dark, smoky and low in detail so overlay text stays readable, while all faces, flags and key objects sit entirely within the upper three-fifths. photorealistic news-crisis composite, dramatic hard lighting, heavy atmospheric haze, one dominant colour drowning the frame, the upper three-fifths densely packed with elements, cinematic wide-angle, high contrast and eye-catching. A huge US flag — red and white stripes with a blue canton of white stars — fills the background hanging in deep heavy folds, dull, sun-bleached and smoke-stained, its edges charred dark, harsh side light throwing half of it into deep shadow while the stripes stay readable. Standing chest-up on the right third directly in front of it is Tim Cook (Apple CEO), no hands in frame, brows pulled high and pinched together, eyes wide open but rolled down and away, jaw clenched and lower lip drawn in, a sheen of sweat along his temple, a hard orange firelight from below picking his face out bright against the dark cloth. Filling the centre-left and dwarfing him, one enormous sealed letter stands upright on a heavy lectern, an embossed eagle emblem pressed into its head and a thick cracked blood-red wax seal at its foot, lit from beneath by low creeping flame-light with smoke drifting low across its base. Ember orange and deep red drown the frame. no text, no letters, no words, no numbers, no captions, no watermark."
+    },
+    {
+      "id": 4,
+      "purpose": "title",
+      "direction": "혼합",
+      "concept_ko": "제목 앞머리 '하이닉스 뒤로 밀어 두고 창신메모리 택했던'을 두 국기 사이의 몸 방향 하나로 표현했다. 태극기는 훼손하지 않고 온전·선명하게 두되 그늘에 배치해 상대적 열세만 만들고, 오성홍기는 밝게 조명해 위협의 크기를 키운다. 중앙 오브젝트는 두 진영 사이를 넘어가는 D램 모듈 스택 하나.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The lower two-fifths is the same continuous scene rendered dark, smoky and low in detail so overlay text stays readable, while all faces, flags and key objects sit entirely within the upper three-fifths. photorealistic news-crisis composite, dramatic hard lighting, heavy atmospheric haze, one dominant colour drowning the frame, the upper three-fifths densely packed with elements, cinematic wide-angle, high contrast and eye-catching. Two enormous flags hang side by side across the background in deep heavy folds, divided not by any crack or line but purely by light and colour: on the left a South Korean flag — white field with a red-and-blue taeguk circle at the centre and four black trigrams — completely intact and undamaged but held in cool blue shadow, its folds dim; on the right a Chinese flag — red field with one large yellow star and four smaller stars — intact, saturated and blazing under a hard orange key light. Standing waist-up on the left in front of the shadowed flag is Tim Cook (Apple CEO), body and face turned three-quarters away toward the right, no hands in frame, eyes fixed off-frame right, brows raised and drawn together, mouth a tight closed line. Dead centre between the two flags, one tall stack of DDR5 memory modules sits on a conveyor caught mid-travel from the shadowed left side into the glowing red right side, its contacts sparking. Low smoke drifts along the base; the sky above is storm-dark. no text, no letters, no words, no numbers, no captions, no watermark."
+    },
+    {
+      "id": 5,
+      "purpose": "emotion-closeup",
+      "direction": "부정형",
+      "concept_ko": "팀 쿡 얼굴을 크게 잡아 표정만으로 승부한다. 손은 관자놀이를 짚는 반사 동작 하나만 허용(감정이 새어 나온 범주 A). 국기는 배경으로 완전히 물러나고, 아래에서 올라오는 붉은 빛만 얼굴을 때린다. 눈에는 어떤 발광 효과도 넣지 않는다.",
+      "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The lower two-fifths is the same continuous scene rendered dark, smoky and low in detail so overlay text stays readable, while all faces, flags and key objects sit entirely within the upper three-fifths. photorealistic news-crisis composite, dramatic hard lighting, heavy atmospheric haze, one dominant colour drowning the frame, the upper three-fifths densely packed with elements, cinematic wide-angle, high contrast and eye-catching. Tim Cook (Apple CEO) fills the upper three-fifths in a tight head-and-shoulders close-up, his head slightly bowed, two fingers of one hand pressed hard against his temple in an involuntary reflex, brow furrowed into deep vertical lines, eyes open but cast down and unfocused with reddened lower lids, lips pressed into a thin hard line with the jaw muscle standing out, glassy sweat along the hairline and a pale drained cast to his skin. His face is lit hard from below by low creeping orange firelight while the rest of the frame falls away into heavy smoke. Far behind him, almost lost in the haze, a US flag — red and white stripes with a blue canton of white stars — hangs in deep heavy folds, dull and soot-stained. Deep red and ember orange drown the frame. His eyes carry no glow, no reflection effects and no coloured light of their own. no text, no letters, no words, no numbers, no captions, no watermark."
+    }
+  ]
+}
