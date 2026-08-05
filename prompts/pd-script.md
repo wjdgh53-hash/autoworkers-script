@@ -253,6 +253,7 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 1. outline-writer 에이전트 호출 (run_in_background: true)
 2. **경로로 전달** (내용 임베드 금지). 호출 프롬프트 첫 지시로 "아래 파일들을 작업 시작 전에 모두 Read하라"를 명시한다:
    - `prompts/outline-guide.md` — outline 작성 규칙 전체 (셀프체크 9항목 포함)
+   - `prompts/tone-guide.md` — 문체 기준. **파트별 수치 배정 상한(2~3개)과 살림 비유 착지 설계용**
    - `prompts/pd-templates.md` — `## outline.md 포맷` 절
    - `{P}/_script/concept.md` + `hook-intro.md` + `patterns.md` + `verified-data.md`
    - `channels/{채널}/config/profile.md` + `pd-guide.md` (있으면)
@@ -281,7 +282,7 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 
 **대본 초안 작성. 에이전트: script-writer (파트당 1개, 병렬)**
 
-입력: `_script/outline.md` + `_script/verified-data.md` + 채널 프로필 + `prompts/script-review-checklist.md`
+입력: `_script/outline.md` + `_script/verified-data.md` + 채널 프로필 + **`prompts/tone-guide.md`** + `prompts/script-review-checklist.md`
 
 ### 파트별 병렬 에이전트
 
@@ -289,7 +290,11 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 2. **Hook & Intro는 에이전트 범위에서 제외** — merge_draft.py가 자동 삽입
 3. 파트당 에이전트 1개 병렬 호출:
    - 각 에이전트 → `_script/_draft_part{N}.md` 저장 (N = 파트 순서, 클로징 포함)
-4. 각 에이전트에게 전달: outline.md(**`## 1. 기획 뼈대` + 담당 파트 섹션**) + verified-data.md + 채널 프로필 + script-review-checklist.md + 담당 파트명 + 출력 경로 + **목표 글자수 범위**(하한 90% ~ 상한 110%, 절대 상한 130%를 숫자로 명시)
+4. 각 에이전트에게 전달: outline.md(**`## 1. 기획 뼈대` + 담당 파트 섹션**) + verified-data.md + 채널 프로필 + **tone-guide.md 전문** + script-review-checklist.md + 담당 파트명 + 출력 경로 + **목표 글자수 범위**(하한 90% ~ 상한 110%, 절대 상한 130%를 숫자로 명시)
+
+> 🚨 **`tone-guide.md`는 반드시 전문을 넣는다.** 경로만 알려주고 "읽어라"로 넘기지 않는다.
+> 대조쌍이 규칙 문장보다 강하게 작동하는데, 안 읽으면 아무 효과가 없다.
+> 이 문서는 약 4,500자로 concept.md(1만 자)와 달리 파트 수만큼 곱해져도 감당 가능한 크기다.
 5. 완료 확인: `ls {S}/_draft_part*.md`로 파일 수 == 파트 수
 
 > 🚨 **`concept.md`는 전달하지 않는다.** 작가가 필요한 확정 제목·핵심 약속·타겟 시청자·톤은 `outline.md`의 `## 1. 기획 뼈대`(약 800자)에 전부 들어 있다.
@@ -339,6 +344,33 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 > ⛔ **사후 패딩·사후 삭제로 숫자만 맞추지 않는다.** 분량을 채우려고 의미 없는 문장을 덧대거나, 줄이려고 검증된 수치를 빼는 것은 금지다.
 
 > 작가 에이전트 프롬프트에 목표 글자수를 **범위로** 준다. "1,050자 이상"이 아니라 "**1,050~1,280자 (하한 90%, 상한 110%, 절대 상한 130%)**". 하한만 주면 초과분이 그대로 쌓인다.
+
+### 문체 검증 게이트 (REVIEW 전 필수)
+
+분량 게이트를 통과한 뒤 곧바로 돌린다.
+
+```bash
+{VENV_PYTHON} scripts/src/check_tone.py {S}/draft.md
+```
+
+- **exit 0** → REVIEW 진행 (하한 미달 WARN은 차단하지 않는다. 다만 REVIEW에 그대로 넘긴다)
+- **exit 1** → 문체 2-pass (**최대 2회**):
+  1. 출력에서 FAIL 항목과 지적된 문장·구간을 확인한다
+  2. 해당 파트의 script-writer를 재호출한다. 프롬프트에 **`prompts/tone-guide.md` 전문 + check_tone.py 출력 전문**을 넣는다
+  3. 지시: 숫자는 반올림, 퍼센트는 '몇 중에 몇'으로, 전문용어는 치환표대로. **검증된 사실은 하나도 빼지 않는다**
+  4. merge_draft.py → validate_draft.py → check_tone.py 재실행
+- **2회 재작성 후에도 exit 1** → **파이프라인을 멈추고 사용자에게 보고한다.** 임의로 통과시키지 않는다
+  - 보고 내용: 어느 항목이 몇 대 몇으로 걸렸는지 + 두 번의 재작성에서 얼마나 내려갔는지 + 남은 걸림돌 문장
+  - 소재 특성상(법령·공시 중심) 물리적으로 못 맞추는 경우가 있다. 그 판단은 사용자가 한다
+
+> 📌 **초기에는 재작성이 자주 발동한다.** 기존 70편을 이 게이트에 넣으면 63편이 실패한다(2026-08-04 실측).
+> 옛 규칙으로 쓴 대본이라 당연한 결과다. 새 파이프라인(장면 수집 → outline 수치 배정 → tone-guide 전문 전달)을
+> 거친 대본은 작성 단계에서 이미 기준 안으로 들어와야 정상이다. **재작성이 계속 2회씩 발동하면 게이트가 아니라
+> 앞단(DATA_PREP·OUTLINE)이 잘못된 것이므로 그쪽을 고친다.**
+
+> ⛔ **수치를 통째로 삭제해서 밀도를 맞추지 않는다.** 반올림·비유 치환·중복 제거로 줄인다.
+> 사실 근거가 빠지면 독창성·팩트 검수에서 다시 걸린다.
+> ⛔ **기준값을 임의로 완화하지 않는다.** 상한은 레퍼 히트작 실측으로 교정된 값이다 (`check_tone.py` docstring 참조).
 
 ---
 
@@ -398,7 +430,8 @@ strategist Phase 5만 호출하거나 PD가 직접 작성한다. 어느 쪽이�
 **검수 + 확정. 에이전트: script-reviewer(verdict 권한 + 신규 주장 WebSearch 검증)**
 
 1. **script-reviewer 에이전트 호출:**
-   - 전달: `_script/draft.md` + `_script/outline.md` + `_script/concept.md` + `_script/verified-data.md` + `prompts/script-review-checklist.md` + `prompts/draft-verify.md` + `_refs/*/analysis.md` (독창성 검수 — 레퍼런스 고유 표현 대조용)
+   - 전달: `_script/draft.md` + `_script/outline.md` + `_script/concept.md` + `_script/verified-data.md` + **`prompts/tone-guide.md`** + `prompts/script-review-checklist.md` + `prompts/draft-verify.md` + `_refs/*/analysis.md` (독창성 검수 — 레퍼런스 고유 표현 대조용)
+   - **문체 게이트에서 돌린 `check_tone.py` 출력 전문**을 함께 전달한다. reviewer는 이걸 review.md `## 0. 기계 검증`에 그대로 붙인다 (reviewer에게는 Bash 툴이 없다)
    - 출력: `{P}/_script/review.md` (체크리스트 + 심각도 분류 + 신규 주장 검증 결과 + verdict)
    - reviewer가 신규 주장을 식별하면 즉시 WebSearch로 검증하여 review.md에 포함
 
@@ -410,7 +443,44 @@ strategist Phase 5만 호출하거나 PD가 직접 작성한다. 어느 쪽이�
 3. **리비전 (최대 1회):**
    - review.md 치명적 항목 (신규 주장 ❌/⚠️ 포함) 정리
    - script-writer 재호출 → draft.md 덮어쓰기
-   - finalize.py 실행 (재검수 없이 확정)
+   - **재호출 프롬프트에 반드시 넣는다** (아래 "리비전 지시 필수 문구" 참조)
+   - **리비전 후 기계 검증 재실행** (아래 참조) → finalize.py 실행
+
+### 리비전 지시 필수 문구
+
+> 🚨 **복제된 표현을 지운 자리는 "새 비유"로 채운다. 숫자로 대체하지 않는다.**
+> 레퍼와 겹치는 비유를 삭제하고 그 자리에 사실·수치를 그대로 넣는 것이 가장 흔한 도피처인데,
+> 그러면 독창성은 고쳐지고 숫자 밀도가 망가진다. **실측: `bar-karaoke-collapse`에서 리비전 전후로
+> 숫자 밀도가 2.0 → 5.5로 뛰었다.** 기준 안이라 넘어갔지만 같은 일이 더 크게 벌어질 수 있다.
+> `prompts/tone-guide.md`를 함께 전달하고, 대체 표현은 그 문서의 대조쌍대로 만들게 한다.
+
+### 리비전 후 기계 검증 (finalize 전 필수)
+
+```bash
+{VENV_PYTHON} scripts/src/validate_draft.py {S}/outline.md {S}/draft.md
+{VENV_PYTHON} scripts/src/check_tone.py {S}/draft.md
+```
+
+**검사만 한다. 자동 재수정하지 않는다.** 리비전은 1회로 끝이다.
+
+> **왜 자동 루프를 안 도는가:** 독창성과 숫자 밀도는 서로 잡아당긴다(비유를 지우면 숫자가 늘고,
+> 숫자를 줄이려 새 비유를 지으면 또 레퍼와 겹칠 수 있다). 그런데 숫자는 파이썬이 몇 초에 재는 반면
+> **독창성은 에이전트가 레퍼 원문과 대조해야 안다.** 자동으로 계속 고치면 "숫자를 고치다 독창성이
+> 다시 깨졌는지"를 확인할 방법이 없다. 그래서 검사만 하고 아래 규칙으로 처리한다.
+
+**충돌 시 우선순위 — 독창성을 지키고 숫자를 양보한다.**
+
+독창성 위반은 있냐 없냐의 문제이고 되돌릴 수 없다(올라간 영상은 못 고친다).
+숫자 밀도는 정도의 문제이고 다음 편에서 고칠 수 있다. 그래서:
+
+| 리비전 후 숫자 밀도 | 처리 |
+|---|---|
+| ~10.0 (차단선 이하) | 그대로 finalize |
+| 10.0 ~ 13.0 | **finalize 진행.** 단 완료 보고에 `⚠️ 리비전 후 숫자 밀도 {값} (기준 8, 차단선 10)` 한 줄을 반드시 넣는다 |
+| 13.0 초과 | **멈추고 사용자에게 보고.** 이건 양보 범위가 아니라 리비전이 대본을 망가뜨린 것이다 |
+
+- **복제 표현을 되살려서 숫자를 맞추는 것은 어떤 경우에도 금지**다
+- `validate_draft.py`가 exit 1/2면 분량이 깨진 것이므로 숫자 밀도와 무관하게 멈추고 보고한다
 
 4. 확정 후 finalize:
 ```bash
@@ -433,14 +503,14 @@ strategist Phase 5만 호출하거나 PD가 직접 작성한다. 어느 쪽이�
    - 출력: `{P}/output/youtube.md`
 
 8. **고정 댓글 생성 (youtube.md에 포함):**
-   - `pd-guide.md`에 크리에이터 분석 섹션 가이드가 있는 채널만 해당
-   - 대본(`script.txt`)의 크리에이터 분석 구간에서 핵심 인사이트를 추출
+   - `pd-guide.md`에 크리에이터 리액션 가이드가 있는 채널만 해당
+   - 대본(`script.txt`)의 크리에이터 리액션 구간에서 핵심 인사이트를 추출
    - youtube.md 하단에 `## 고정 댓글` 섹션으로 추가
    - 포맷:
      ```
      📌 {채널명}의 분석
 
-     {대본 크리에이터 분석 섹션의 핵심 내용을 2~4개 불릿으로 요약}
+     {대본 크리에이터 리액션 구간의 핵심 내용을 2~4개 불릿으로 요약}
 
      이 분석은 저의 개인적인 견해이며, 실제 상황은 달라질 수 있습니다.
      여러분은 어떻게 생각하시나요?
