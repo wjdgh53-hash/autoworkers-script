@@ -62,8 +62,8 @@ def main():
     draft = script_dir / "draft.md"
 
     if not draft.exists():
-        print(f"draft.md가 없습니다: {draft}")
-        return
+        print(f"[ERROR] draft.md가 없습니다: {draft}", file=sys.stderr)
+        sys.exit(1)
 
     script_text = convert(draft)
 

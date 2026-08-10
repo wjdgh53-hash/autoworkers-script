@@ -18,8 +18,20 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 1. **상태 기반 진행**: 파일 존재 여부로 현재 상태를 감지하고, 다음 단계를 자동 결정
 2. **모드 존중**: workflow.json의 ask/auto 설정에 따라 행동 결정
 3. **최소 대화**: auto 단계는 결과만 보고, ask 단계에서만 사용자와 대화
-4. **에이전트 위임**: 분석/검증/작문 등은 전문 에이전트(Task tool)에게 위임
-5. **Lazy Load**: 상세 절차는 현재 단계에 해당하는 파일만 Read
+4. **질문했으면 답을 기다린다**: 아래 "질문 대기 원칙" 참조
+5. **에이전트 위임**: 분석/검증/작문 등은 전문 에이전트(Task tool)에게 위임
+6. **Lazy Load**: 상세 절차는 현재 단계에 해당하는 파일만 Read
+
+### 질문 대기 원칙 (필수)
+
+> 🚨 **사용자에게 물어본 항목은 답을 받기 전까지 기본값·채널 표준·추정값으로 진행하지 않는다.**
+> 물어봐 놓고 "답이 없으니 일단 X로 갑니다"라고 밀고 나가는 것은 **묻지 않은 것과 같다.**
+
+- 질문을 던졌으면 그 답이 필요한 단계 **앞에서 멈춘다.** 답이 없으면 다음 단계로 넘어가지 않는다
+- **답이 필요 없는 단계는 그동안 진행해도 된다.** 예: 러닝타임 답을 기다리는 동안 COLLECT·ANALYZE·DATA_PREP은 돌려도 된다 (러닝타임과 무관하므로). 단 STRATEGY·OUTLINE처럼 답이 들어가는 단계는 멈춘다
+- 답을 기다리는 동안에는 **무엇을 기다리고 있는지 매 보고 끝에 한 줄로 다시 적는다**
+- 사용자가 "알아서 해줘 / 추천대로" 라고 명시하면 그때만 기본값으로 확정하고, **무엇으로 정했는지 밝힌다**
+- 이 원칙은 러닝타임뿐 아니라 **ask 모드의 모든 질문 지점**(패키지 선택 등)에 동일하게 적용된다
 
 ### Lazy Load 실행 프로토콜
 
@@ -33,7 +45,8 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 | 에이전트 호출 직전 (첫 호출 시 1회) | + `prompts/pd-agents.md` |
 
 > ⚠️ **에이전트에게 넘길 프롬프트 파일은 PD가 읽지 않는다.** PD가 미리 읽으면 같은 텍스트가 이중으로 쌓인다.
-> - strategist가 직접 Read: `creative-strategy.md`, `ctr-reference.md`, `thumbnail-design.md`, `thumbnail-countryball.md`, `thumbnail-geopolitics.md`
+> - strategist #1(패키지)가 직접 Read: `creative-strategy.md`, `ctr-reference.md`, `pd-templates.md`
+> - strategist #2(썸네일)가 직접 Read: `creative-strategy.md`의 **Phase 5 절만**, `thumbnail-design.md`, `thumbnail-countryball.md`, (해당 시) `thumbnail-geopolitics.md`
 > - outline-writer가 직접 Read: `outline-guide.md`, `pd-templates.md`(outline 포맷 절), `patterns.md`, `verified-data.md`
 >
 > 🚨 **OUTLINE 단계에서 PD는 `patterns.md`·`verified-data.md`·`pd-templates.md`를 읽지 않는다.** 합쳐 6만 자가 메인 컨텍스트에 눌러앉아 이후 모든 단계에서 재전송된다.
@@ -55,6 +68,7 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 - 프로젝트 시작 시 **반드시 사용자에게 질문**: "몇 분짜리 영상으로 만들까요?"
 - 사용자가 "대본 만들어줘" 할 때 이미 분량을 언급했으면 ("10분짜리로 만들어줘") 다시 묻지 않음
 - 답변을 `target_minutes`로 저장하여 이후 단계(OUTLINE, DRAFT, REVIEW)에서 사용
+- ⛔ **답을 못 받았다고 채널 표준(16분 등)으로 진행하지 않는다.** COLLECT·ANALYZE·DATA_PREP까지만 진행하고 **STRATEGY 앞에서 멈춘다** → 위 "질문 대기 원칙" 참조
 
 ### 모드 결정
 `channels/{채널}/config/workflow.json`의 `mode` 값을 그대로 따른다. **묻지 않는다.**
@@ -137,9 +151,9 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 | COLLECT | _refs/{NNN}/ | collect.py | URL 필요 |
 | ANALYZE | analysis.md | video-analyst ×N 병렬 | 채널프로필 전달 |
 | DATA_PREP | patterns.md, factcheck.md, verified-data.md | pattern-extractor + data-researcher 병렬 | 완전 병렬 |
-| STRATEGY | concept.md + hook-intro.md + prompts.json + prompts-countryball.json (+ prompts-geopolitics.json) + **계열별 복사용 통합본 .txt** | strategist 1회 | 패키지 4개(A·B·C·D). 썸네일 프롬프트 계열별 9개씩, 파일 분리. **프롬프트 파일은 경로로 전달**. 채팅에는 **목록 표 + txt 링크만** — 영문 프롬프트 원문 출력 금지 |
+| STRATEGY | concept.md + hook-intro.md + prompts.json + prompts-countryball.json (+ prompts-geopolitics.json) + **계열별 복사용 통합본 .txt** | strategist **2회** (#1 패키지 / #2 썸네일) | 패키지 4개(A·B·C·D). **#1은 썸네일 계열 규칙 3종을 읽지 않고, #2는 `creative-strategy.md`의 Phase 5 절만 읽는다.** **프롬프트 파일은 경로로 전달**. 채팅에는 **목록 표 + txt 링크만** — 영문 프롬프트 원문 출력 금지 |
 | OUTLINE | outline.md | outline-writer 1개 (셀프체크 내장) | **모든 파트 헤더에 `(~N분, ~N자)` 필수** (클로징 포함) → PD는 `grep '^### '`로만 검증 |
-| DRAFT | draft.md | script-writer (파트당 1개 병렬) + merge_draft.py | 목표를 **범위로** 전달 → 병합 → 분량 검증. **`concept.md` 전달 금지** — outline `## 1. 기획 뼈대`로 대체 (파트 수만큼 곱해진다) |
+| DRAFT | draft.md | script-writer (**인접 파트 2개씩 묶어 1개** 병렬) + merge_draft.py | 파트별 목표를 **각각 범위로** 전달 → 병합 → 분량 검증. 파트마다 파일은 따로 쓴다. **`concept.md` 전달 금지** — outline `## 1. 기획 뼈대`로 대체 (에이전트 수만큼 곱해진다) |
 | REVIEW_FINALIZE | script.txt | reviewer(verdict 권한 + WebSearch 검증) + 최대 1회 리비전 + TTS 검수(`prompts/tts-rules.md`) | reviewer가 직접 판단 |
 
 ---
@@ -185,5 +199,26 @@ script.txt 생성 완료 시:
 ### 에러 처리
 - yt-dlp 오류 → "yt-dlp 업데이트 필요: pip install -U yt-dlp" 안내
 - venv 오류 → ".venv가 이 디렉토리에서 생성된 것이 맞는지 확인" 안내. `python -m venv .venv && pip install -r requirements.txt` 재생성 안내
-- 에이전트 파일 생성 실패 (Write 권한 오류) → 해당 에이전트를 1회 재호출. 재실패 시 PD가 직접 해당 파일을 생성 (에이전트 출력에서 내용을 추출하여 PD가 Write tool로 저장)
+- 에이전트 파일 생성 실패 (Write 권한 오류) → 아래 「서브에이전트 Write 차단」 절
 - 중단 후 재시작 → 상태 감지로 자동 파악 → 해당 단계부터 재개
+
+### 서브에이전트 Write 차단
+
+서브에이전트의 Write는 **세션마다 열리기도 하고 막히기도 한다.** 막히면 에이전트가 산출물 전문을 응답으로 반환하고 PD가 다시 Write하게 되는데, **같은 텍스트가 두 번 흐르고 PD 컨텍스트는 매 턴 재전송되므로 이 우회가 파이프라인 최대의 낭비다.**
+
+> **실측(2026-08-08, china-broke-reality)**: 약 21만 자가 왕복했다. 그런데 16시대에 막혀 있던 Write가 20시대에는 열려 있었다 — **PD가 초반 판정을 끝까지 유지하는 바람에**, 이미 열린 뒤에도 계속 손으로 옮겼다.
+
+1. **차단이 확인돼도 방침을 세션 전체에 고정하지 않는다.** 각 단계의 **첫 에이전트에게 Write를 먼저 시도**시키고, 성공하면 그 단계부터 정상 경로(파일 저장 + 경로만 반환)로 복귀한다
+2. **차단이 감지되면 에러 메시지 원문을 그대로 가져오게 한다.** "WRITE_BLOCKED"처럼 요약된 신호만 받으면 원인을 영영 못 잡는다 — 실제로 2026-08-08에 그래서 진단이 막혔다
+3. **차단을 확인한 시점에 사용자에게 알린다.** 조용히 우회하지 않는다. 사용자가 세션을 다시 여는 선택을 할 수 있어야 한다
+4. 차단이 지속되는 동안에만 전문 반환으로 우회한다
+
+**에이전트에게 넣을 지시 문구:**
+
+```
+결과는 Write 툴로 {경로}에 저장하고, 최종 응답에는 "저장 완료: {경로}" 한 줄만 반환하십시오.
+Write가 실패하면 그때만 전문을 반환하되, 응답 첫 줄에 실패한 툴 호출의 **에러 메시지 원문을 그대로** 붙이십시오
+(요약하지 말고 원문 그대로). 그 아래에 파일 전문을 넣으십시오.
+```
+
+> ⛔ **권한 설정(`.claude/settings.json`)을 의심하기 전에 위 2번으로 원문부터 확보한다.** 경로 패턴은 이미 `Write(channels/**)`로 잡혀 있고, 상대·절대경로 모두 통과하는 것이 실측으로 확인됐다(2026-08-08). 즉 **경로 형식 문제가 아니다.**

@@ -1,16 +1,23 @@
 # 정세형 썸네일 프롬프트 규칙
 
 creative-strategy.md Phase 5에서 참조하는 **정세형 계열** 프롬프트 작성 규칙.
-국가 간 갈등·안보·전쟁·정권을 다룰 때 쓰는 뉴스 위기물 톤이다.
+국가 간 갈등·안보·전쟁·정권을 다룰 때 쓰는 **실사 사진 합성(시사 방송 그래픽)** 톤이다.
+
+> 🚨 **인물과 장소는 진짜 사진이어야 한다.** 유화·붓질·일러스트·애니메 질감은 이 계열이 아니다.
+> 얼굴에 피부 결과 잔머리가 살아 있는 실사 사진을 쓰고, 그 위에 **국기 배경·깨진 유리·균열·화염 같은 그래픽 처리**를 얹는다. 뉴스 시사 프로그램 썸네일의 결이다.
+> (2026-08 실측: 유화 톤으로 만든 세트가 "참고로 준 실사 이미지와 너무 다르다"는 반려를 받았다.)
 
 > 🚨 이 파일은 **정세형 전용**이다. 세 계열은 규칙이 서로 다르니 섞지 않는다.
 >
 > | | 실사형 | 국기볼형 | **정세형** |
 > |---|---|---|---|
 > | 소재 | 기업·소비·산업 | 제한 없음 | **국가·안보·전쟁·정권** |
-> | 톤 | 광고 합성, 브랜드 네온 | 글로시 반3D 애니메 | **뉴스 위기물, 화염 지배** |
+> | 톤 | 자연광 다큐 사진 | 글로시 반3D 애니메 | **실사 사진 + 시사 그래픽 합성** |
+> | 그래픽 요소 | **금지** (오버레이·균열·화살표 전부) | 만화적 효과선 허용 | **허용** (국기 배경·깨진 유리·균열·화염) |
 > | 인물 | 실존 인물 실명 | 실존 인물 금지 | **실존 국가원수 실명** |
-> | 텍스트 | 완전 금지 | 사물 표면 문구 허용 | **완전 금지** |
+> | 텍스트 | 메시지 6채널 중 ③④로 최대 2개 | 사물 표면 문구 허용 | **사물 표면 1개까지** |
+>
+> 실사형과의 차이는 **그림체가 아니라 그래픽 허용 여부**다. 둘 다 사진이지만, 실사형은 카메라가 찍은 그대로이고 정세형은 그 위에 방송 그래픽을 얹는다.
 
 ---
 
@@ -44,16 +51,22 @@ creative-strategy.md Phase 5에서 참조하는 **정세형 계열** 프롬프�
 
 ---
 
-## 화면 구성 — 피사체는 3~4개로 고정
+## 화면 구성 — 여백 없이 꽉 채운다
 
-> ⛔ **요소를 더 넣지 않는다.** 레퍼런스는 예외 없이 아래 3~4개만 쓴다. 이보다 많으면 산만해지고, 적으면 허전해진다.
+> 🚨 **이 계열의 그림체는 "빈 데가 없는 화면"이다.** 레퍼런스는 국기가 배경을 통째로 덮고, 그 앞에 인물이 늘어서고, 사이사이를 화염과 연기가 메운다. 시선이 쉴 곳이 없다.
+> ⛔ **인물 한 명을 우측에 세우고 나머지를 비우면 이 계열이 아니다.** 깔끔한 사진 합성처럼 보이는 순간 죽는다. 실제로 그렇게 만들어 실패했다.
 
-| 자리 | 내용 | 개수 |
+| 자리 | 내용 | 분량 |
 |------|------|------|
-| **배경** | 국기 (갈라진 벽 질감) | 1~2개 |
-| **전경 인물** | 국가원수·당사자 | 1~2명 |
-| **중앙 오브젝트** | 그 영상이 무엇에 관한 것인지 한 방에 답하는 실물 | **정확히 1개** |
-| (해설자 자리) | **우리는 비워둔다** — 사건 주체·상징물로 채운다 | — |
+| **배경 전체** | 국기 — 화면 폭을 가로질러 **절반 이상**을 덮는다. 두 나라면 좌우로 하나씩 | 화면의 50% 이상 |
+| **전경 인물** | 국가원수·정상이 1순위, 그다음이 **제복 집단**(군인 행렬, 지휘부). ⛔ 무명 민간인 금지 → `thumbnail-design.md`의 「국가 간 서사 — 무명 민간인을 세우지 않는다」 | 1명 또는 **여러 명** |
+| **중경 장비·상징물** | 탱크, 발사대, 함정, 공장, 도시 실루엣 — 인물 뒤에 겹쳐 배치 | 1~3개 |
+| **화염·연기** | 요소 사이의 빈틈을 메운다 (아래 "배경과 색") | 화면을 관통 |
+| (해설자 자리) | 레퍼와 달리 **넣지 않는다** — 아래 「해설자 얼굴」 절 참조 | — |
+
+**집단 구도가 이 계열의 주력이다.** 군인 여러 명이 앞뒤로 겹쳐 늘어선 행렬, 대열은 한 명짜리 상반신보다 훨씬 강하다. 인물이 여럿일 때는 **맨 앞 한 명만 표정을 또렷하게** 잡고 뒤쪽은 점점 흐려지게 한다.
+
+> ⛔ 여기서 말하는 집단은 **국가를 대표하는 제복 집단**이다. 시민 행렬·대기 줄·손님 군중은 해당하지 않는다. 세울 인물이 없으면 사람을 빼고 상징물·현장으로 화면을 세운다.
 
 **중앙 오브젝트 예시** — 레퍼런스가 실제로 쓴 것들
 - 석양 바다를 채운 유조선 함대 (원유 공급 이야기)
@@ -64,38 +77,43 @@ creative-strategy.md Phase 5에서 참조하는 **정세형 계열** 프롬프�
 
 ---
 
-## 국기 — 갈라진 벽 질감이 기본형이다
+## 국기 — 화면을 덮는 무대다
 
 국기가 배경 전체를 차지한다. **소품이 아니라 무대다.**
 
-### ⛔ 빳빳하게 편 새 깃발을 그리지 않는다
+**1. 크기 — 화면 절반 이상**
 
-인쇄물처럼 평평하고 선명한 국기는 이 스타일이 아니다.
-
-**1. 질감 — 늘어진 천**
-
-국기는 **실제 천**이다. 팽팽히 나부끼는 게 아니라 무게에 눌려 늘어지고 깊은 주름이 잡힌 상태로 그린다.
+국기가 배경 전체를 가로지른다. 인물 뒤에 작게 걸린 소품이 아니다. 두 나라가 나오면 **좌우로 하나씩, 각각 화면 절반**을 먹는다.
 
 ```
-an enormous flag hanging in deep heavy folds rather than flying taut,
-pronounced creases catching the light, fabric weight visible
+an enormous national flag filling the entire left half of the frame from top to bottom,
+real woven fabric with visible weave, deep folds and photographic shadow detail
 ```
 
-> ⛔ **갈라진 벽·콘크리트에 인쇄된 형태로 그리지 않는다.** 벽 균열 텍스처는 쓰지 않는다. 국기는 천으로만 표현한다.
+**2. 상태 — 서사 방향으로 갈린다** (둘 다 이 계열의 정본이다)
 
-- 두 나라가 나오면 좌우로 국기를 붙이되, 경계는 **빛과 색의 대비**로 나눈다 (균열선을 긋지 않는다)
+| 서사 | 국기 상태 | 영어 표현 |
+|------|----------|----------|
+| **위세·진격·결속** | 강한 바람에 크게 펄럭임. 주름이 깊고 색이 살아 있다 | `flying large and taut in hard wind, deep rippling folds` |
+| **몰락·붕괴·패배** | 가장자리가 타 들어가고 찢겨 너덜거림. 불이 천을 타고 옮겨붙는 중 | `edges charred and torn into ragged strips, flame eating along the fabric` |
 
-**2. 손상 — 문양은 읽히는 선까지만**
+> ⛔ **인쇄물처럼 평평하고 매끈한 깃발은 쓰지 않는다.** 어느 쪽이든 천의 무게와 주름이 실제 직물의 그림자로 드러나야 한다.
+> ⛔ **갈라진 벽·콘크리트에 인쇄된 형태로 그리지 않는다.** 국기는 천으로만 표현한다.
+
+- 두 나라가 나오면 경계는 **화염 기둥 또는 빛과 색의 대비**로 나눈다 (균열선을 긋지 않는다)
+
+**3. 손상 — 문양은 읽히는 선까지만**
 - `edges charred black`, `burn holes eaten through the fabric`, `soot staining the folds`
 - ⛔ **형체를 못 알아볼 만큼 찢지 않는다.** 레퍼런스도 별·삼색 띠는 끝까지 온전히 읽힌다
 
-**3. 색 — 죽고 탁하다** (부정형일 때)
+**4. 색 — 죽고 탁하다** (부정형일 때)
 - 선명한 원색이 아니다. `desaturated and grimy`, `stained and sun-bleached`, `dull muted tones`
 - 긍정형이면 반대로 `saturated, vivid, crisply lit`
 
-**4. 조명 — 아래나 옆에서 화염이 비춘다**
-- 정면 균일광을 쓰지 않는다. `raking orange firelight from below`, `harsh side light throwing the surface into deep shadow`
-- 화염은 **배경 아래쪽에 낮게 깔린다.** 화면 전체를 불로 덮지 않는다
+**5. 조명 — 화염이 화면을 관통한다**
+- 정면 균일광을 쓰지 않는다. `raking orange firelight`, `harsh side light throwing the surface into deep shadow`
+- **화염은 화면을 세로로 가른다.** 두 국기 사이 경계에 불기둥을 세우거나, 배경 전체를 화염과 검은 연기로 채운다
+- ⛔ 하단에만 낮게 깔면 화면이 비어 보인다. 다만 **세이프존(하단 3/8)에서는 화염도 어둡고 뭉개진 상태**로 이어져야 한다 — 밝은 불꽃이 하단을 채우면 글씨가 안 읽힌다
 
 ### ⛔ 태극기는 훼손하지 않는다
 
@@ -145,9 +163,10 @@ pronounced creases catching the light, fabric weight visible
 | 규칙 | 정세형에서의 적용 |
 |------|------------------|
 | **우리 쪽 인물 배치** | 9장 중 **최소 5장**에 우리 측 인물. 대본에 한국 국가원수가 등장하지 않으면 위 "확인 안 되면 대체" 조항을 적용해 **산업 현장 인물**(반도체 클린룸 근로자, 장인, 선원 등)로 세운다. 대본에 없는 정치인을 끌어오지 않는다 |
+| ⚠️ **적용 범위** | 이 표는 **한국이 당사자인 침해·탈취 서사** 전용이다. 한국이 등장하지 않는 제3국 간 서사에는 적용하지 않는다 — 그때는 `thumbnail-design.md`의 「국가 간 서사 — 무명 민간인을 세우지 않는다」가 우선이고, 양측 **국가원수**로 세트를 세운다 |
 | **접촉을 만든다** | 상대의 손이 우리 물건에 실제로 닿아야 침해가 보인다. 단 **손동작 범주 A·B 안에서만** — 서류를 건네고, 밀어 놓고, 물건을 집어 가는 등 그 자리에서 원래 하는 행위여야 한다. 카메라를 의식한 포즈(범주 금지)로 접촉을 만들지 않는다 |
 | **표정 온도를 가른다** | 상대 = 여유·계산·무심 / 우리 = 분노 또는 경멸. **둘을 같은 온도로 두지 않는다.** 눈·입·턱 근육까지 분해해 명시하고, 눈에는 발광·반사 효과를 넣지 않는다 |
-| **감정 클로즈업은 우리 쪽 얼굴로** | 9장 중 클로즈업 장을 상대 얼굴로 채우면 세트 전체가 상대 시점으로 닫힌다. **우리 쪽 얼굴**이 시청자 이입점이다 |
+| **계승 3장의 인물은 우리 쪽으로** | 7~9번 계승 컷을 상대 얼굴로만 채우면 세트 전체가 상대 시점으로 닫힌다. **최소 2장은 우리 쪽 얼굴** — 시청자 이입점이다 |
 
 > 국기 처리는 서사 방향 판정을 따른다 — **상대가 실제로 무너지는 서사가 아니면 상대 국기를 태우거나 찢지 않는다.** 온전·선명하게 두어 "커진 위협"으로만 표현하고, 열세는 **그늘과 탁한 색**으로 만든다. 태극기는 어떤 경우에도 훼손하지 않는다.
 > 온도 설계의 상위 원칙은 `prompts/ctr-reference.md`의 "대립 구도 소재의 온도 규칙"을 따른다.
@@ -176,7 +195,7 @@ pronounced creases catching the light, fabric weight visible
 
 **부정형**
 - 화염, 폭발, 버섯구름, 검은 연기, 무너진 건물, 폐허가 된 도시, 갈라진 지면
-- **화염 오렌지 + 딥레드가 화면을 지배**한다. 실사형이 브랜드 네온 대비였다면 이쪽은 단색 화염 지배다
+- **화염 오렌지 + 딥레드가 화면을 지배**한다. 실사형이 절제된 자연광이라면 이쪽은 단색 화염 지배다
 - 하늘은 어둡고 탁하다 — `black smoke-choked sky`, `storm-dark horizon`
 
 **긍정형**
@@ -187,9 +206,9 @@ pronounced creases catching the light, fabric weight visible
 
 ---
 
-## 하단 세이프존 — 풀블리드 + 하단을 어둡게 죽인다
+## 하단 세이프존 — 하단 3/8 (37%), 풀블리드 + 어둡게 죽인다
 
-화면 **하단 5분의 2는 제목 문구 오버레이 자리**다. 텍스트는 사용자가 직접 얹으므로 **이미지에는 어떤 텍스트도 넣지 않는다.**
+화면 **하단 8분의 3(37%)은 제목 문구 오버레이 자리**다. 제목 텍스트는 사용자가 직접 얹으므로 **이미지에 제목·자막을 넣지 않는다.** (장면 안 사물 표면의 주역 문구 1개는 별개다 — 아래 「텍스트 처리」 참조)
 
 > 🚨 **"하단을 비워라"라고 쓰면 안 된다.** 모델이 회색 빈 판(레터박스)을 실제로 그려버려 이미지가 위쪽 60%로 잘린다. 실제로 그렇게 만들어 실패했다.
 >
@@ -198,31 +217,36 @@ pronounced creases catching the light, fabric weight visible
 **올바른 지시 방식**
 
 - 장면은 **16:9 프레임 전체를 가장자리까지 채운다** (full-bleed). 레터박스·빈 패널·단색 블록을 만들지 않는다
-- 하단 2/5는 **같은 장면이 계속되되 어둡고 흐릿하게** 처리한다 — 연기, 그늘진 지면, 짙은 안개
+- 하단 3/8은 **같은 장면이 계속되되 어둡고 흐릿하게** 처리한다 — 연기, 그늘진 지면, 짙은 안개
 - **어두운 그라데이션은 금지가 아니라 권장이다.** 레퍼런스가 실제로 쓰는 방식이다
-- 얼굴·국기·핵심 오브젝트는 **상단 3/5 안에** 담는다. 그 아래로 내려오지 않게 한다
+- 얼굴·국기·핵심 오브젝트는 **상단 5/8 안에** 담는다. 그 아래로 내려오지 않게 한다
 
 **영어 프롬프트의 첫 문장으로 아래를 넣는다:**
 
 ```
 COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single
-full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The
-lower two-fifths is the same continuous scene rendered dark, smoky and low in detail so overlay
-text stays readable, while all faces, flags and key objects sit entirely within the upper three-fifths.
+full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The bottom
+three-eighths of the image height — that is the lowest 37%, roughly the bottom 270 pixels of a
+720-pixel-tall frame — is the same continuous scene rendered dark, smoky and free of detail so overlay
+text stays readable, while all faces, flags, weapons and key objects sit entirely within the upper
+five-eighths. Anything held or carried sits at mid height, never near the bottom edge.
 ```
 
 > 그래도 100% 지켜지지 않는다. **9장 중 2~3장은 깨질 수 있으므로 골라 쓰는 것을 전제로 한다.**
 
 ---
 
-## 인물 크기 — 상반신이 표준이다
+## 인물 크기 — 얼굴이 화면 높이의 60%
 
-레퍼런스 6장 중 얼굴이 프레임 절반을 채우는 건 1장뿐이고, 나머지는 전부 **가슴~허리 위 상반신**이다.
+> 📄 **원본은 `prompts/thumbnail-design.md`의 「🚨 인물 크기 — 얼굴이 화면 높이의 60% (3계열 공통 원본)」이다.** 비율 숫자와 영어 문장 템플릿(`SCALE, EQUALLY IMPORTANT:`)은 그 절을 그대로 따르고 여기에 다시 적지 않는다.
 
-- **기본**: `waist-up` 또는 `chest-up`, 인물이 화면 좌측 또는 우측 **1/3을 차지**한다
-- 머리 위에 약간의 여백은 둔다. 프레임 상단에 머리를 붙이는 건 5번 감정 클로즈업에서만
+정세형에만 걸리는 추가 조건은 아래 셋뿐이다.
+
+- **집단을 쓸 때도 맨 앞 한 명은 위 비율을 지킨다.** 뒤로 갈수록 작아지게 겹쳐 세운다 — `a column of soldiers receding into the frame, the nearest one filling the right third with his face spanning the top 55 to 60 percent of the frame height, the rest progressively smaller and hazier`
 - 인물을 국기 **바로 앞**에 세운다. 옆에 따로 떨어뜨리면 분리감이 생겨 힘이 죽는다
 - 화염 불빛이 얼굴에 붉은 키라이트로 들어와 **얼굴만은 밝게 살아난다**
+
+> ⚠️ 예전 이 절은 "머리 위에 약간의 여백을 둔다"였다. **실측(2026-08-09) 결과 그 지시가 인물을 화면 높이 40% 안쪽으로 줄여 임팩트를 죽였다.** 이제 머리는 상단 가장자리에 닿는다.
 
 ## 제스처 — 기본은 "손을 쓰지 않는다"
 
@@ -256,6 +280,8 @@ text stays readable, while all faces, flags and key objects sit entirely within 
 
 두 인물이 나올 때는 범주 B가 자연스럽다. 둘 사이에 실제 행위(악수·건네받기)가 있으면 그것이 곧 관계를 설명한다.
 
+**집단 대열은 범주 B다.** 군인이 소총을 메거나 받쳐 든 손, 근로자가 장비를 쥔 손은 그 자리에서 원래 하는 행위이므로 그대로 쓴다. 다만 손이 **하단 3/8로 내려오지 않게** 프레이밍한다.
+
 표정은 항상 지정한다 — 눈·눈썹·입을 분해해서 쓴다. 손이 없어도 표정만으로 서사가 읽혀야 한다.
 
 ---
@@ -276,10 +302,18 @@ text stays readable, while all faces, flags and key objects sit entirely within 
 |---|------|------|
 | 1~3 | **내용 대표** | 대본의 핵심 사건·국면을 가장 잘 보여주는 그림 |
 | 4~6 | **제목 대표** | 확정 제목이 약속한 것을 시각적으로 가장 잘 이행하는 그림 |
-| 7~9 | **인물 감정 클로즈업** (계승 성립 시 1~2장은 레퍼 계승) | 얼굴을 크게 잡아 표정만으로 승부. 국기는 배경으로 물러난다 |
+| 7~9 | **레퍼 계승** | 앵커 썸네일의 모순·구도를 정세형 톤으로 옮긴 그림. **패키지와 무관하게 3장 고정** |
+
+> 🚨 **확정 패키지가 무엇이든(A·B·C·D) 7~9번 3장은 전부 레퍼런스 썸네일 계승이다.**
+> 예전 규칙은 "인물 감정 클로즈업 위주 + 계승 성립 시 1~2장"이었는데, 그 결과 실제로 계승한 컷이 한 장뿐이거나 아예 없는 세트가 나왔다.
+> 계승의 판정 절차·[모순] 한 줄 뽑기·[남김] 4개·[바꿈] 3개는 `prompts/thumbnail-design.md`의 「7~9번 장 — 무조건 3장 전부 레퍼 계승」 절을 **그대로 따른다.**
+> 다만 **렌더링만 정세형으로 바꾼다** — 조명·색조·질감은 이 파일의 스타일 절을 쓰되, 화면 분할·카메라가 서 있는 쪽·인물 위치·모순은 앵커 그대로다.
+> `_refs`가 없거나 `thumbnail.webp`가 없어 계승이 불가능할 때만 인물 감정 클로즈업 3장으로 대체하고 사유를 `concept_ko`에 적는다.
 
 - **같은 그룹 안의 3장은 서로 완전히 다른 그림**이어야 한다. 같은 장면의 색·앵글만 바꾼 변형은 금지
-- 7~9번은 **인물·감정·서사 방향을 각각 다르게** 한다. 대립 구도 소재라면 **최소 1장은 우리 쪽 얼굴**이어야 하고, 대본에 승리·반격 착지가 있으면 **1장을 긍정형**(여명 조명, 온전·선명한 태극기)으로 전환한다
+- 7~9번은 같은 앵커에서 3장을 뽑으므로 **[바꿈] 3개를 장마다 다른 조합으로** 고르고, 인물·거리감(넓은 컷 / 가슴 위 / 얼굴 중심)을 서로 벌린다
+  - ⚠️ 단 **[모순]이 "그 인물이 누구인가"에 걸려 있으면 인물은 고정한다.** 이 계열은 인물이 국가원수라 대개 여기 해당한다 — 원수를 무명 관료로 갈면 모순이 증발한다. 판정법과 대체 축은 `thumbnail-design.md`의 「7~9번 장 — 무조건 3장 전부 레퍼 계승」에 있는 예외 조항을 따른다. 이 파일에서 다시 정의하지 않는다
+- 대립 구도 소재라면 **계승 3장 중 최소 1장은 우리 쪽 얼굴**이어야 하고, 대본에 승리·반격 착지가 있으면 **1장을 긍정형**(여명 조명, 온전·선명한 태극기)으로 전환한다
 - **9장 전부 표정이 달라야 한다.** 눈·입·턱 근육까지 분해해 명시하고, 눈에는 발광·반사 효과를 넣지 않는다
 
 ---
@@ -287,15 +321,32 @@ text stays readable, while all faces, flags and key objects sit entirely within 
 ## 프롬프트 앞부분에 항상 명시한다
 
 ```
-photorealistic news-crisis composite, dramatic hard lighting, heavy atmospheric haze,
-one dominant colour drowning the frame, the upper three-fifths densely packed with elements,
-cinematic wide-angle, high contrast and eye-catching
+photoreal current-affairs broadcast composite: every person, flag and location is a real
+photograph, sharp and true to life — faces keep real skin texture, pores, stray hair and
+natural shadow, and fabric keeps a visible weave. Over that photographic base sit broadcast
+graphic treatments: a bold colour field, cracked-glass shards, torn and scorched edges, a hard
+vignette, heavy atmospheric haze and fire glow. Dramatic hard lighting, one dominant colour
+drowning the frame, every part of the upper five-eighths packed edge to edge with elements and
+no empty space, cinematic wide-angle, very high contrast. NOT an oil painting, NOT brushwork or
+impasto, NOT a matte painting, NOT anime, NOT an illustration, NOT a 3d render
 ```
 
-**텍스트 금지 문구를 항상 끝에 붙인다:**
+> 🚨 이 문단이 이 계열의 정체성이다. `oil painting` · `brushwork` · `impasto` · `painterly` · `matte-painting` 같은 단어를 프롬프트 어디에도 쓰지 않는다.
+> **negative_prompt에도 반드시 넣는다**: `oil painting, brushwork, impasto, painterly, matte painting, illustration, anime, 3d render, cartoon`
+
+**텍스트 처리 — 주역 문구 1개까지 허용한다**
+
+> 📄 **원본은 `prompts/thumbnail-design.md`의 「🚨 핵심 메시지 물리화 — 한 줄을 화면 안에 4겹으로 만든다 (3계열 공통 원본)」이다.** 텍스트는 그 6개 채널 중 ③수치·기호와 ④대상 특정 두 개일 뿐이다 — **나머지 넷(형태·색·반응·흔적)을 글자 없이 먼저 만든다.** 뭉개짐 방지 3원칙도 그 절을 따른다.
+>
+> 정세형에만 걸리는 제한: **텍스트로 구현하는 채널은 ③·④ 중 하나만, 문구도 1개**다. 국기가 이미 무대를 다 말하고 있어서, 문구가 둘 이상이면 화면이 방송 그래픽 템플릿처럼 보인다. 그 1개도 반드시 **사물 표면**(선체·기체 동체·현판·표지판·상황판·컨테이너)에 붙어 있어야 하고, 허공에 뜬 자막은 여전히 금지다.
+>
+> ⚠️ 예전 이 절은 `no text, no letters, no words, no numbers`로 텍스트를 통째로 막았다. **실측(2026-08-09) 결과 그 지시가 화면 밀도를 죽여 임팩트를 깎았다.**
+
+**끝에 붙이는 금지 문구는 오버레이만 막는 형태로 쓴다:**
 
 ```
-no text, no letters, no words, no numbers, no captions, no watermark
+no title overlay text, no captions, no subtitle bars, no lower-third news banner, no watermark.
+Apart from the named text above, do not invent any other words or letterforms anywhere in the image.
 ```
 
 ---
@@ -329,7 +380,7 @@ no text, no letters, no words, no numbers, no captions, no watermark
 |------|------|
 | `meta.style` | 항상 `"geopolitics"` |
 | `meta.narrative_direction` | 부정형/긍정형 판정 결과 + 근거 한 줄 |
-| `purpose` | `content`(1~2) / `title`(3~4) / `emotion-closeup`(5) |
+| `purpose` | `content`(1~3) / `title`(4~6) / `reference-inherit`(7~9). 계승 불가일 때만 7~9가 `emotion-closeup` |
 | `direction` | 이 장의 방향. 두 나라 대비면 `혼합`으로 적고 어느 쪽이 어느 방향인지 concept_ko에 명시 |
 | `concept_ko` | 무엇을 보여주는지 + 방향 판정 근거 1~2문장 |
 | `prompt_en` | 세이프존 문장으로 시작하고 텍스트 금지 문구로 끝나는 완성본 |

@@ -67,10 +67,18 @@ URL을 1~3개 붙여주시면, 분석해서 채널 설정에 반영합니다.
    ```bash
    .venv/bin/python scripts/collect.py --project _benchmarks --channel "{channel-id}" URL1 URL2 ...
    ```
-   **주의**: collect.py는 `projects/` 하위에 저장하므로, 수집 후 `_benchmarks/` 폴더를 `config/` 아래로 이동한다:
+   **주의**: collect.py는 `projects/` 하위에 저장하므로, 수집 후 `_benchmarks/` 폴더를 `config/` 아래로 이동한다.
+   `mv`·`rm -r`은 Windows에서 동작하지 않으므로 **Python으로 옮긴다**:
    ```bash
-   mv channels/{channel-id}/projects/_benchmarks/_refs/* channels/{channel-id}/config/_benchmarks/
-   rm -r channels/{channel-id}/projects/_benchmarks
+   {VENV_PYTHON} -c "
+   import shutil, os
+   src = os.path.join('channels','{channel-id}','projects','_benchmarks','_refs')
+   dst = os.path.join('channels','{channel-id}','config','_benchmarks')
+   os.makedirs(dst, exist_ok=True)
+   for name in os.listdir(src):
+       shutil.move(os.path.join(src, name), os.path.join(dst, name))
+   shutil.rmtree(os.path.join('channels','{channel-id}','projects','_benchmarks'))
+   "
    ```
 3. 각 `_benchmarks/{NNN}/transcript.txt`와 `meta.md`를 Read
 4. **분석 수행** — 아래 항목을 추출:
@@ -132,7 +140,7 @@ Q2. 말투는 이 느낌이 맞나요?
 Q1. 채널 소개 한 문장 — 시청자가 "이 채널은 _____ 채널이야"라고 말하듯:
   장르별 예시:
   - 경제: "경제 뉴스를 직장인 언어로 번역해주는 채널"
-  - 역사: "역사 속 소름끼치는 이야기를 들려주는 채널"
+  - 역사: "역사 속 묻혀 있던 이야기를 파고드는 채널"
   - 심리학: "일상에 숨은 심리학을 발견하는 채널"
   - 과학: "어려운 과학을 5분 만에 이해시켜주는 채널"
 
@@ -173,7 +181,7 @@ Q3. 절대 안 쓸 표현 — 아래에서 골라주세요 (복수 선택 + 추�
 Q4. 시그니처 표현 — 내 영상에서 반복적으로 쓸 나만의 표현:
   장르별 추천:
   경제: ① "숫자로 보면요" ② "자, 여기서 핵심입니다"
-  역사: ① "그런데 여기서 소름끼치는 게" ② "기록에 따르면"
+  역사: ① "그런데 여기서 진짜 핵심은" ② "기록에 따르면"
   심리학: ① "혹시 이런 경험 있으신가요?" ② "쉽게 말하면요"
   과학: ① "이게 진짜 미친 부분인데요" ② "쉽게 말하면요"
 
@@ -240,32 +248,26 @@ B. 차용형 훅
 
 ---
 
-### 라운드 4: 썸네일 계열 & 장수
+### 라운드 4: 썸네일 계열
+
+> ⛔ **장수는 묻지 않는다.** 계열당 **9장 고정**이며, `prompts/thumbnail-design.md`의 「9장 배분」 절이 유일한 원본이다. 채널 설정으로 덮을 수 없다.
 
 ```
-이제 썸네일 전략을 설정할게요. 매 영상마다 썸네일 이미지 프롬프트가 자동 생성됩니다.
+이제 썸네일 전략을 설정할게요. 매 영상마다 썸네일 이미지 프롬프트가 계열당 9장씩 자동 생성됩니다.
 
-Q7. 계열당 몇 장 만들까요?
-  A. 3장 (빠르게 골라서 사용)
-  B. 5장 (다양한 선택지) ← 추천
-  C. 7장 (최대한 많이 보고 고르기)
-
-Q8. 어떤 계열을 쓸까요? (복수 선택 가능)
-  A. 실사형 — 실사 합성 광고 톤. 실존 국가원수·기업 총수를 실명으로 등장시키고
-     표정을 극대화합니다. 시사·경제 소재에 강합니다.
+Q7. 어떤 계열을 쓸까요? (복수 선택 가능)
+  A. 실사형 — 자연광 다큐 사진 톤. 실존 국가원수·기업 총수를 실명으로 등장시키고
+     표정을 극대화합니다. 시사·경제·산업 소재에 강합니다.
   B. 국기볼형 — 국기 구체 캐릭터. 글로시 반3D 애니메 마감.
      실존 인물을 쓰지 않아 인물 초상 부담이 없고, 국가 간 대립 서사에 강합니다.
-  A+B 둘 다 ← 추천 (각 계열 5장씩 총 10장을 받아 비교)
+  C. 정세형 — 실사 사진에 시사 그래픽을 얹은 합성. 국가원수 실명 + 국기·화염이 화면을 지배합니다.
+     전쟁·안보·정권 소재 전용이며, 해당하지 않는 회차에는 생성되지 않습니다.
+  A+B+C 전부 ← 추천 (회차마다 계열당 9장을 받아 비교)
 ```
 
-**9장 배분 (계열 공통):**
-- 1~3번 **내용 대표** — 대본의 핵심 장면·데이터를 가장 잘 보여주는 그림
-- 4~6번 **제목 대표** — 확정 제목이 약속한 것을 시각적으로 가장 잘 이행하는 그림
-- 7~9번 — 실사형은 **레퍼 계승 1~2장 + 감정 클로즈업**, 국기볼형·정세형은 **감정 클로즈업 3장**
-- 같은 그룹 안의 3장은 **서로 완전히 다른 그림**이어야 한다
-
-> 계열별 상세 규칙: 실사형 `prompts/thumbnail-design.md` / 국기볼형 `prompts/thumbnail-countryball.md`
-> 두 계열은 규칙이 정반대다(실사형=실존 인물 실명 필수 / 국기볼형=실존 인물 절대 금지).
+**배분·계승·세이프존은 계열 규칙 파일이 원본이다. 여기에 다시 적지 않는다.**
+- 실사형 `prompts/thumbnail-design.md` / 국기볼형 `prompts/thumbnail-countryball.md` / 정세형 `prompts/thumbnail-geopolitics.md`
+- 세 계열은 규칙이 서로 정반대다 (실사형=실존 인물 실명 필수 / 국기볼형=실존 인물 절대 금지 / 정세형=국가원수 실명)
 
 **장르별 기본 추천:**
 - 경제/시사 → A+B (둘 다)
@@ -325,13 +327,7 @@ Q10. 썸네일에서 유발하고 싶은 감정은? (1~2개 선택)
 
 ### 라운드 6: 구도 & 인물 — 묻지 않는다
 
-구도와 인물 표현은 **계열 규칙이 이미 정하고 있으므로 질문하지 않는다.**
-
-- **텍스트 공간**: `text_space`는 항상 `"bottom-third"`. 하단 1/3을 비워 미리캔버스 텍스트 자리로 쓴다
-- **구도**: 고정 기본값 없음. 매 영상의 서사에 맞는 구도를 전략가가 고른다
-- **인물 표현**: 실사형은 실존 인물 실명 + 표정 극대화, 국기볼형은 국기볼 캐릭터. 계열 규칙에 정의돼 있다
-
-→ 이 라운드는 건너뛰고 바로 라운드 7로 간다.
+구도·인물·세이프존은 **계열 규칙 파일이 이미 정하고 있으므로 질문하지도, 여기에 값을 적지도 않는다.** 건너뛰고 라운드 7로 간다.
 
 ---
 
@@ -443,11 +439,10 @@ Q15. 참고하고 싶은 유튜브 썸네일이 있나요? (선택사항)
 
 ```json
 {
-  "count": 5,
-  "styles": ["photorealistic", "countryball"],
+  "_note": "장수(9장)와 세이프존(하단 3/8)은 prompts/thumbnail-*.md가 유일한 원본이다. 여기에 적지 않는다.",
+  "styles": ["photorealistic", "countryball", "geopolitics"],
   "color_palette": "bright",
   "emotions": ["shock", "curiosity"],
-  "text_space": "bottom-third",
   "brand": {
     "colors": [],
     "mascot": false,
@@ -459,11 +454,9 @@ Q15. 참고하고 싶은 유튜브 썸네일이 있나요? (선택사항)
 
 | 필드 | Q# | 값 매핑 |
 |------|-----|---------|
-| count | Q7 | A→3, B→5, C→7 (**계열당** 장수) |
-| styles | Q8 | A→`["photorealistic"]`, B→`["countryball"]`, A+B→`["photorealistic","countryball"]` |
+| styles | Q7 | A→`photorealistic`, B→`countryball`, C→`geopolitics` (선택한 것만 배열로) |
 | color_palette | Q9 | A→"bright", B→"dark", C→"pastel", D→"neon", E→"monotone", F→"auto" |
 | emotions | Q10 | A→"shock", B→"curiosity", C→"tension", D→"trust", E→"warmth", F→"humor", G→"premium" |
-| text_space | — | 항상 `"bottom-third"` (묻지 않음) |
 | brand.colors | Q13-A | 사용자 입력 색상 배열 |
 | brand.mascot | Q13-B | true/false |
 | brand.fixed_layout | Q13-C | 사용자 입력 구도 설명 또는 null |
@@ -472,8 +465,12 @@ Q15. 참고하고 싶은 유튜브 썸네일이 있나요? (선택사항)
 #### 4. `channels/{channel-id}/config/assets/` 디렉토리
 
 ```bash
-mkdir -p channels/{channel-id}/config/assets/mascot
-mkdir -p channels/{channel-id}/config/assets/style-reference
+{VENV_PYTHON} -c "
+import os
+base = os.path.join('channels','{channel-id}','config','assets')
+for d in ('mascot','style-reference'):
+    os.makedirs(os.path.join(base, d), exist_ok=True)
+"
 ```
 
 Q13에서 B(마스코트)를 선택했거나, Q14에서 레퍼런스가 있다고 한 경우에만 생성.

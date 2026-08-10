@@ -43,7 +43,14 @@ _DURATION_RE = re.compile(r"[\d.]+\s*[분초]")
 _CHARS_RE = re.compile(r"([\d,]+)\s*자")
 # Hook/Intro 헤더는 목표 대상이 아니다 (draft에서도 sections[0]으로 따로 뺀다).
 # 초 단위를 허용하므로 `### Hook (76자, ~11초)`를 걸러내는 건 이 제목 필터다.
-_HOOK_TITLE_RE = re.compile(r"hook|훅|intro|인트로", re.IGNORECASE)
+#
+# ⚠️ 부분 일치가 아니라 **완전 일치**다. "Hook", "Intro", "Hook & Intro", "훅", "인트로"만
+# 걸러낸다. 예전에는 부분 일치라서 "파트 1: 진짜 훅이 뭐길래" 같은 본문 파트가 목표에서
+# 조용히 사라졌고, 개수 불일치로 exit 2가 나면서도 원인을 알 수 없었다.
+_HOOK_KEYWORD = r"(?:hook|훅|intro|인트로)"
+_HOOK_TITLE_RE = re.compile(
+    rf"^\s*{_HOOK_KEYWORD}(?:\s*[&+,·/와과]\s*{_HOOK_KEYWORD})*\s*$", re.IGNORECASE
+)
 
 # ── draft.md 섹션 파싱 (finalize.py 동일 로직) ────────────────
 _SECTION_HEADER_RE = re.compile(r"^#{2}\s+(.*)$")
@@ -54,7 +61,12 @@ _HTML_COMMENT_RE = re.compile(r"<!--.*?-->", flags=re.DOTALL)
 
 
 def parse_outline_targets(text: str) -> list[dict]:
-    """outline.md에서 파트별 목표 글자수를 추출한다."""
+    """outline.md에서 파트별 목표 글자수를 추출한다.
+
+    Hook/Intro 헤더는 목표 대상이 아니므로 제외한다. 제목이 'Hook', 'Intro',
+    'Hook & Intro' 처럼 **그 단어만으로 이루어졌을 때만** 제외한다 — 본문 파트 제목에
+    '훅'이 우연히 들어갔다고 목표를 조용히 없애면 개수 불일치로 exit 2가 난다.
+    """
     targets = []
     for m in _HEADER_RE.finditer(text):
         raw = m.group(1).strip()
@@ -69,7 +81,7 @@ def parse_outline_targets(text: str) -> list[dict]:
                 continue
 
             title = raw[:paren.start()].strip()
-            if _HOOK_TITLE_RE.search(title):
+            if _HOOK_TITLE_RE.match(title):
                 break
 
             targets.append({

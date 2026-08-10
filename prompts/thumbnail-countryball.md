@@ -58,7 +58,7 @@ creative-strategy.md Phase 5에서 참조하는 **국기볼형 계열** 프롬�
 - **9장 중 최소 5장에 우리 측 구체**를 세운다. 상대 단독 장면으로 세트를 채우지 않는다
 - **상대의 손이 우리 물건에 실제로 닿게** 한다 — 가격표 부착, 라벨 교체, 물건을 안고 걸어감. 허공에서 멈추면 "못 가졌다"까지만 읽힌다
 - **표정 온도를 가른다**: 상대 = 실눈 미소·무심·능청 / 우리 = **분노**(동공 축소 `pupils shrunk to pinpricks`, 눈썹 V자, 벌린 입, 핏대 마크) 또는 **경멸**(반쯤 감은 눈, 팔짱, 내려간 입꼬리)
-- **감정 클로즈업 장(5번)은 우리 쪽 구체로** 잡는다. 상대 얼굴로 채우면 세트 전체가 상대 시점이 된다
+- **계승 3장(7~9번)에 세우는 구체는 최소 2장을 우리 쪽으로** 잡는다. 상대 얼굴로 채우면 세트 전체가 상대 시점이 된다
 
 > 온도 설계의 상위 원칙은 `prompts/ctr-reference.md`의 "대립 구도 소재의 온도 규칙"을 따른다.
 
@@ -122,6 +122,8 @@ creative-strategy.md Phase 5에서 참조하는 **국기볼형 계열** 프롬�
 
 ## 텍스트 취급 규칙
 
+> 📄 **원본은 `prompts/thumbnail-design.md`의 「🚨 핵심 메시지 물리화 — 한 줄을 화면 안에 4겹으로 만든다 (3계열 공통 원본)」이다.** 텍스트는 그 6개 채널 중 ③수치·기호와 ④대상 특정 두 개일 뿐이다 — **나머지 넷(형태·색·반응·흔적)을 글자 없이 먼저 만들고, 텍스트는 그 위에 얹는다.** 뭉개짐 방지 3원칙도 그 절을 따른다. 여기서는 국기볼형에만 걸리는 조건만 적는다.
+
 텍스트는 **금지도 의무도 아니다.** 장면에 원래 있어야 할 것만 자연스럽게 넣는다.
 
 **넣어도 되는 경우** — 실제 사물에 붙어 있는 짧은 문구:
@@ -140,13 +142,15 @@ creative-strategy.md Phase 5에서 참조하는 **국기볼형 계열** 프롬�
 
 ---
 
-## 하단 세이프존 — 하단 2/5
+## 하단 세이프존 — 하단 3/8 (37%)
 
-화면 **하단 5분의 2는 제목 문구 오버레이 자리**다.
+화면 **하단 8분의 3(37%)은 제목 문구 오버레이 자리**다.
 
 - 이 영역에 캐릭터, 피사체, 부품, 기계, 손, 실루엣 등 어떤 요소도 배치하지 않는다
 - 흐림, 어두운 그라데이션, 반투명 패널, 검은 띠 등 별도 처리도 넣지 않는다
-- 모든 캐릭터와 피사체는 상단 5분의 3 안에 완결적으로 담는다. 구체는 가슴 위 또는 허리 위 구도로 잡고, 구체 머리가 잘리지 않게 한다
+- 모든 캐릭터와 피사체는 상단 8분의 5 안에 완결적으로 담는다. 구체는 가슴 위 또는 허리 위 구도로 잡고, 구체 머리가 잘리지 않게 한다
+
+> ℹ️ **실사형과 의도적으로 다르다.** 실사형(`thumbnail-design.md`)은 "풀블리드로 장면을 이어가되 하단만 어둡게 죽인다"인데, 이 계열은 **깨끗한 단색 바닥·하늘 면**을 그린다. 일러스트라서 평평한 면이 자연스럽고 사진 물성을 깰 일이 없기 때문이다. 두 방식을 섞지 않는다.
 
 ### 지켜지게 만드는 3가지
 
@@ -159,9 +163,11 @@ creative-strategy.md Phase 5에서 참조하는 **국기볼형 계열** 프롬�
 **영어 프롬프트의 첫 문장으로 아래를 넣는다:**
 
 ```
-COMPOSITION RULE, HIGHEST PRIORITY: the lower two-fifths of this image is one clean continuous
-surface — {smooth floor / plain ground / open sky} — rendered simply and evenly with nothing on it,
-and every character, object, effect and action is composed entirely within the upper three-fifths above it.
+COMPOSITION RULE, HIGHEST PRIORITY: the bottom three-eighths of the image height — that is the lowest
+37%, roughly the bottom 270 pixels of a 720-pixel-tall frame — is one clean continuous surface
+— {smooth floor / plain ground / open sky} — rendered simply and evenly with nothing on it, and every
+character, object, prop, effect and action is composed entirely within the upper five-eighths above it.
+Anything the characters hold or stand on sits at mid height, never near the bottom edge.
 ```
 
 > 그래도 100% 지켜지지는 않는다. **9장 중 2~3장은 깨질 수 있으므로 골라 쓰는 것을 전제로 한다.**
@@ -174,10 +180,16 @@ and every character, object, effect and action is composed entirely within the u
 |---|------|------|
 | 1~3 | **내용 대표** | 대본의 핵심 장면·데이터를 가장 잘 보여주는 그림 |
 | 4~6 | **제목 대표** | 확정 제목이 약속한 것을 시각적으로 가장 잘 이행하는 그림 |
-| 7~9 | **감정 클로즈업** (계승 성립 시 1~2장은 레퍼 계승) | 구체 1~2개를 크게 잡아 표정만으로 승부. 피사체는 배경으로 물러나거나 손에 든 작은 하나로 줄인다. 땀방울·떨림선·눈물·광채 등 만화적 감정 이펙트를 적극 사용 |
+| 7~9 | **레퍼 계승** | 앵커 썸네일의 모순·구도를 국기볼로 옮긴 그림. **패키지와 무관하게 3장 고정** |
+
+> 🚨 **확정 패키지가 무엇이든(A·B·C·D) 7~9번 3장은 전부 레퍼런스 썸네일 계승이다.**
+> 예전 규칙은 "감정 클로즈업 위주 + 계승 성립 시 1~2장"이었는데, 그 결과 실제로 계승한 컷이 한 장뿐이거나 아예 없는 세트가 나왔다.
+> 계승의 판정 절차·[남김] 4개·[바꿈] 3개는 `prompts/thumbnail-design.md`의 「7~9번 장 — 무조건 3장 전부 레퍼 계승」 절을 **그대로 따른다.**
+> 다만 **렌더링만 국기볼로 바꾼다** — 실사 인물 대신 구체, 표정은 만화적 이펙트(땀방울·떨림선·눈물)로. 화면 분할·시점·인물 위치·모순은 앵커 그대로다.
+> `_refs`가 없거나 `thumbnail.webp`가 없어 계승이 불가능할 때만 감정 클로즈업 3장으로 대체하고 사유를 `concept_ko`에 적는다.
 
 - **같은 그룹 안의 3장은 서로 완전히 다른 그림**이어야 한다. 선택지를 넓히려고 9장으로 늘린 것이므로 유사 컷이 섞이면 목적이 사라진다
-- 7~9번을 전부 클로즈업으로 채울 때는 **구체·감정·앵글을 각각 다르게** 한다 (예: 우리 쪽 분노 / 상대 능청 / 우리 쪽 헛웃음)
+- 7~9번은 같은 앵커에서 3장을 뽑으므로 **[바꿈] 3개를 장마다 다른 조합으로** 고르고, 구체의 복장·소품·거리감(넓은 컷 / 가슴 위 / 얼굴 중심)을 서로 벌린다
 - **9장 전부 표정이 달라야 한다**
 
 각 장의 구도는 아래 세 방향에서 목적에 맞게 고른다. (배분이 아니라 선택지다)
@@ -205,11 +217,11 @@ Glossy semi-3D rendered illustration with a polished anime finish: smooth volume
 다른 도구나 다른 지침에서 만들어진 이미지 프롬프트를 받으면, 그대로 쓰지 않고 이 지침의 스타일로 **전면 재작성**한다. 원문에서 가져오는 것은 **소재·구도 아이디어·주체 간 관계뿐**이다.
 
 - `photorealistic`, `cinematic photograph`, `moody grade`, `film still` 등 **사실적 묘사 계열 지시어를 모두 제거**한다. 스타일은 말미의 고정 스타일 프롬프트만 결정한다
-- `bottom-half text space`, `darker lower half` 등 텍스트 공간 지시어를 제거하고 **이 지침의 하단 3분의 1 세이프존 문장으로 교체**한다. 원문이 "하단 절반"을 요구해도 항상 "하단 3분의 1"로 통일한다
+- `bottom-half text space`, `darker lower half` 등 텍스트 공간 지시어를 제거하고 **위 「하단 세이프존」 절의 문장으로 교체**한다. 원문이 "하단 절반"이든 "하단 3분의 1"이든 항상 **하단 3/8**로 통일한다
 - 국기나 로고를 단 사물로만 표현된 주체는 **구체 캐릭터로 치환**하고, 사물은 그 캐릭터가 조종하거나 뒤에 서 있는 피사체로 재배치한다. 크기 대비·강약 관계는 캐릭터 크기 차이와 표정 대비로 옮긴다
 - 원문에 감정 묘사가 없어도 **반드시 표정과 몸짓을 부여**한다
 - 실존 랜드마크나 기념물을 직접 지목하지 않고, 해당 주체의 구체와 일반화된 배경으로 대체한다
-- 실사/애니메 같은 스타일 변주 쌍이 있으면 하나로 합치고, **서로 다른 소재 아이디어만 남겨** 5장에 재배분한다
+- 실사/애니메 같은 스타일 변주 쌍이 있으면 하나로 합치고, **서로 다른 소재 아이디어만 남겨** 위 「9장 배분」에 맞춰 재배분한다
 
 ---
 
@@ -234,15 +246,19 @@ Glossy semi-3D rendered illustration with a polished anime finish: smooth volume
       "prompt_en": "{장면 묘사} {하단 세이프존 문장} {고정 스타일 프롬프트}"
     },
     { "id": 2, "purpose": "content", "...": "..." },
-    { "id": 3, "purpose": "title", "...": "..." },
+    { "id": 3, "purpose": "content", "...": "..." },
     { "id": 4, "purpose": "title", "...": "..." },
+    { "id": 5, "purpose": "title", "...": "..." },
+    { "id": 6, "purpose": "title", "...": "..." },
     {
-      "id": 5,
-      "purpose": "emotion-closeup",
-      "composition": "감정 클로즈업",
-      "concept_ko": "...",
+      "id": 7,
+      "purpose": "reference-inherit",
+      "composition": "정면 대결",
+      "concept_ko": "[모순] … / [남김] … 4개 / [바꿈] … 3개",
       "prompt_en": "..."
-    }
+    },
+    { "id": 8, "purpose": "reference-inherit", "...": "..." },
+    { "id": 9, "purpose": "reference-inherit", "...": "..." }
   ]
 }
 ```
@@ -250,7 +266,7 @@ Glossy semi-3D rendered illustration with a polished anime finish: smooth volume
 | 필드 | 설명 |
 |------|------|
 | `meta.style` | 항상 `"countryball"` |
-| `purpose` | `content`(1~2) / `title`(3~4) / `emotion-closeup`(5) |
+| `purpose` | `content`(1~3) / `title`(4~6) / `reference-inherit`(7~9). 계승 불가일 때만 7~9가 `emotion-closeup` |
 | `composition` | 정면 대결 / 압도적 피사체 / 감정 클로즈업 중 선택한 것 |
-| `concept_ko` | 무엇을 보여주는지 + **왜 이 구도인지 대본 근거** 1~2문장 |
-| `prompt_en` | 장면 묘사 + 하단 세이프존 문장 + **고정 스타일 프롬프트** 순서로 이어 붙인 완성본 |
+| `concept_ko` | 무엇을 보여주는지 + **왜 이 구도인지 대본 근거** 1~2문장. 7~9번은 `[모순]/[남김]/[바꿈]`을 기록 |
+| `prompt_en` | **순서 고정: ① 하단 세이프존 문장 → ② 장면 묘사 → ③ 고정 스타일 프롬프트.** 세이프존을 뒤로 밀면 무시된다 |

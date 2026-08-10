@@ -48,4 +48,4 @@ SKILL.md(PD)가 Task tool로 호출 시 전달:
 
 ## 실행 방식
 
-PD가 영상별로 병렬 호출 (4개씩 batch, run_in_background: true).
+PD가 영상별로 **전체 동시 병렬** 호출 (run_in_background: true). 배치로 쪼개지 않는다.

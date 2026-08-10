@@ -70,8 +70,19 @@ def merge_draft(
 
     sections = [f"## Hook & Intro\n\n{hook_text}\n\n{intro_text}"]
 
+    # 파트 파일은 `## ` h2 한 줄로 시작해야 한다 (validate_draft.py의 계약).
+    # 헤더가 없으면 이 파일이 앞 섹션에 통째로 흡수되고, 병합은 성공한 것처럼 끝난 뒤
+    # validate 단계에서 개수 불일치로 exit 2가 난다. 원인이 여기라는 걸 알 수 없으므로
+    # 여기서 미리 짚어 준다.
+    header_problems: list[str] = []
     for part_path in parts:
         content = part_path.read_text(encoding="utf-8").strip()
+        lines = content.splitlines()
+        if not lines or not lines[0].startswith("## "):
+            header_problems.append(f"{part_path.name}: 첫 줄이 `## ` 헤더가 아니다")
+        extra = sum(1 for ln in lines[1:] if re.match(r"^#{2,3}\s+", ln))
+        if extra:
+            header_problems.append(f"{part_path.name}: 본문 안에 소제목 {extra}개 (##/### 금지)")
         sections.append(content)
 
     draft = "\n\n".join(sections) + "\n"
@@ -82,7 +93,45 @@ def merge_draft(
     print(f"draft.md 생성 완료: {output_path}")
     print(f"  Hook & Intro + {len(parts)}개 파트 병합")
     print(f"  총 {len(draft):,}자")
+
+    if header_problems:
+        print("\n[WARN] 파트 헤더 계약 위반 — validate_draft.py가 exit 2로 떨어진다:", file=sys.stderr)
+        for p in header_problems:
+            print(f"  · {p}", file=sys.stderr)
+        print("  → 해당 파트 파일을 고친 뒤 merge를 다시 돌린다.", file=sys.stderr)
+
+    _report_distant_repeats(output_path)
     return 0
+
+
+def _report_distant_repeats(draft_path: Path) -> None:
+    """병합 직후 원거리 반복을 파트 귀속과 함께 알려준다 (WARN, 종료코드 영향 없음).
+
+    병합 시점은 전체 파트가 처음 한자리에 모이면서 **파트 경계 정보가 아직 살아 있는**
+    유일한 지점이다. 작가들은 서로 뭘 썼는지 모르므로 여기서 한 번 훑어 준다.
+    """
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from check_tone import find_distant_repeats, load_body_with_parts
+    except Exception:
+        return
+
+    try:
+        body, parts = load_body_with_parts(draft_path)
+        hits = find_distant_repeats(body, parts)
+    except Exception:
+        return
+
+    if not hits:
+        return
+
+    print(f"\n[WARN] 30초 밖에서 같은 말이 다시 나옴 — {len(hits)}건", file=sys.stderr)
+    for d in hits[:5]:
+        where = f"{d['first_part'] or '?'} → {d['second_part'] or '?'}"
+        print(f"  · {where} (간격 {d['seconds']}초): {d['first'][:48]}…", file=sys.stderr)
+    if len(hits) > 5:
+        print(f"  … 외 {len(hits) - 5}건", file=sys.stderr)
+    print("  → outline에 [회수]로 설계된 오픈루프면 정상. 아니면 뒤쪽을 새로 쓴다.", file=sys.stderr)
 
 
 def main():

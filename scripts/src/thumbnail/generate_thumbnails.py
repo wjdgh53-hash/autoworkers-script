@@ -54,13 +54,17 @@ def get_prompt_suffixes(strategy: dict | None, style: str | None = None) -> list
         return suffixes
 
     # ── 구형 prompts.json 호환 ──────────────────────────────
-    text_space = (strategy or {}).get("text_space", "bottom-two-fifths")
+    # 세이프존 정본은 prompts/thumbnail-design.md의 「세이프존」 절(하단 3/8)이다.
+    # 아래는 meta.style이 없는 구형 파일에만 쓰이는 폴백이다.
+    text_space = (strategy or {}).get("text_space", "bottom-three-eighths")
 
-    if text_space == "bottom-two-fifths":
+    if text_space in ("bottom-three-eighths", "bottom-two-fifths", "bottom-third"):
         suffixes.append(
-            "the lower two-fifths of the image is one clean continuous surface "
-            "rendered simply and evenly with nothing on it, and every subject, "
-            "object and effect is composed entirely within the upper three-fifths"
+            "the image fills the entire frame edge to edge with no letterbox band "
+            "and no flat colour block; the bottom three-eighths of the image height "
+            "— the lowest 37%, roughly the bottom 270 pixels of a 720-pixel-tall frame — "
+            "continues the same scene but stays dark and free of detail so overlay text "
+            "remains readable, and every face, hand and key object sits in the upper five-eighths"
         )
     elif text_space == "bottom-half":
         suffixes.append(
@@ -248,7 +252,7 @@ async def generate_thumbnails(
     print(f"썸네일 {len(thumbnails)}개 생성 예정")
     print(f"계열: {style or '(구형 파일 — meta.style 없음)'}")
     if strategy and not style:
-        print(f"채널 전략: text_space={strategy.get('text_space', 'bottom-third')}")
+        print(f"채널 전략: text_space={strategy.get('text_space', 'bottom-three-eighths')}")
     print(f"출력 디렉토리: {output_dir}\n")
 
     results = {"success": [], "failed": []}

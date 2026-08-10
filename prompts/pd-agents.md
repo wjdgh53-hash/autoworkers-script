@@ -9,9 +9,10 @@
 | video-analyst | opus | 전체 동시 병렬 | prompts/reference-analyze.md |
 | pattern-extractor | opus | 1개 (data-researcher와 병렬) | prompts/reference-patterns.md + config/settings.json (hook_strategy) |
 | data-researcher | opus | 1개 (pattern-extractor와 병렬, WebSearch) | prompts/data-research.md |
-| strategist | opus | 1개 (STRATEGY) | prompts/creative-strategy.md + prompts/ctr-reference.md + prompts/thumbnail-design.md + prompts/thumbnail-countryball.md + prompts/thumbnail-geopolitics.md + prompts/pd-templates.md + config/settings.json (hook_strategy) + config/thumbnail-strategy.json (있으면) |
+| strategist **#1** | opus | 1개 (STRATEGY 전반) | prompts/creative-strategy.md + prompts/ctr-reference.md + prompts/pd-templates.md + config/settings.json (hook_strategy) + config/thumbnail-strategy.json (있으면) — **썸네일 계열 규칙 3종은 주지 않는다** |
+| strategist **#2** | opus | 1개 (STRATEGY 후반, 패키지 확정 후) | prompts/creative-strategy.md **Phase 5 절만**(PD가 `grep -n '^## Phase 5'`로 줄 번호를 잡아 offset 전달) + prompts/thumbnail-design.md + prompts/thumbnail-countryball.md + (국가·안보 소재면) prompts/thumbnail-geopolitics.md |
 | outline-writer | opus | 1개 (OUTLINE) | prompts/outline-guide.md + prompts/pd-templates.md (outline.md 포맷 절) |
-| script-writer | opus | 파트당 1개 병렬 | outline.md + prompts/script-review-checklist.md |
+| script-writer | opus | **인접 파트 2개씩 묶어 1개** 병렬 (6파트 → 3개) | outline.md + prompts/script-review-checklist.md |
 | script-reviewer | opus | 1개 (verdict 권한, WebSearch) | prompts/script-review-checklist.md + prompts/draft-verify.md |
 
 ---
