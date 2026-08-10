@@ -12,27 +12,35 @@ from __future__ import annotations
     같은 기간 파이썬이 재는 분량 검증(validate_draft.py)은 70편 전부 준수했다.
     기준을 숫자로 적는 것만으로는 부족하고, 재는 주체가 기계여야 한다.
 
-상한/하한 설계:
-    상한(숫자·전문용어)만 FAIL로 막는다. 하한(감정어·비유·말걸기)은 WARN에 그친다.
+상한/하한/주의 설계:
+    상한만 FAIL로 막는다. 하한과 주의는 WARN에 그친다.
     하한을 FAIL로 걸면 카운터를 채우려고 "뭉클"을 억지로 뿌리는 대본이 나온다.
     분량 검증은 이 문제가 없다 — 글자수는 채우려면 내용을 넣는 수밖에 없다. 문체는 다르다.
-    친근함은 prompts/tone-guide.md의 대조쌍으로 만들고, 여기서는 확인만 한다.
+    구조는 prompts/script-skeleton.md, 문체는 prompts/tone-guide.md가 원본이고 여기서는 확인만 한다.
 
-기준값 교정 (모두 실측):
-    상한은 "레퍼 히트작이 전부 통과하고 우리 최근작이 전부 실패하는" 선으로 잡았다.
-    기준을 이론값으로 잡으면 레퍼 히트작(40,211뷰·194,112뷰)까지 FAIL이 떠서 게이트가 무의미해진다.
+기준값 교정 (2026-08-10 재교정. 벤치마크 2개 채널 7편 + 우리 3편 실측):
+    「코믹스 경제」 4편 — 캐나다 잠수함(203k) · 폭염(63k) · 수소(11k) · 광물(4k)
+    「경제라는 게임」 3편 — 밥상 식자재 · 구글 인재유출 · 삼성 AI 모듈러홈
 
-    | 지표          | 레퍼 히트 3편 | 우리 창원/쌀 | 채택 기준 |
-    |---------------|--------------|-------------|-----------|
-    | 숫자 밀도      | 5.9 7.4 9.7  | 19.8 21.8   | ≤ 10.0    |
-    | 경제·행정 용어 | 0.4 0.7 0.9  | 3.4  3.5    | ≤ 1.5     |
-    | 문장당 숫자 4+ | 0건 0건 0건   | 3건  7건    | 0건       |
+    | 지표          | 벤치마크 7편 | 우리 3편   | 채택 기준        |
+    |---------------|-------------|-----------|-----------------|
+    | 숫자 밀도      | 4.6 ~ 21.9  | 2.0 ~ 5.1 | 4.0 ≤ x ≤ 10.0  |
+    | 경제·행정 용어 | 0.0 ~  0.4  | 0.0       | ≤ 1.5           |
+    | 1인칭          | 0.2 ~  0.6  | 2.8 ~ 3.7 | ≤ 1.2           |
+    | 반문           | 4.3 ~  8.8  | 1.7 ~ 2.0 | ≥ 3.5           |
+    | 권위 인용      | 0.2 ~  1.1  | 0.0 ~ 0.5 | ≥ 0.3           |
+    | 전환어         | 0.6 ~  3.5  | 0.3 ~ 1.5 | ≥ 0.6           |
+    | 비유 소재      | 0.2 ~  3.5  | 3.4 ~ 4.1 | ≤ 3.0 (주의)    |
 
-    숫자 밀도 상한이 체크리스트의 기존 문구(8개)보다 느슨한 것은 의도적이다.
-    정호님이 지목한 레퍼 원본이 9.7이다. 8로 조이면 그 대본도 실패 처리된다.
+    ⚠️ 숫자 밀도 상한만은 벤치마크보다 엄하게 잡았다. 벤치마크 다수가 13~21이지만
+       우리는 시니어 타겟이고, **203k 히트작이 4.6**이다. 그쪽을 목표점으로 본다.
+       그래서 "벤치마크가 전부 통과해야 한다"는 옛 교정 논리는 더 이상 쓰지 않는다.
+
+    ⚠️ 벤치마크로 이 스크립트를 검증할 때는 상한·하한 수치만 본다.
+       자동자막 텍스트는 같은 문장이 중복 기록되어 근접 반복 항목에서 오탐이 난다.
 
 종료 코드:
-    0 — 상한 항목 전부 통과 (하한 미달은 WARN이며 0을 반환한다)
+    0 — 상한 항목 전부 통과 (하한 미달·주의 초과는 WARN이며 0을 반환한다)
     1 — 상한 항목 1개 이상 실패
     2 — 파일을 읽을 수 없거나 본문이 비어 있음
 """
@@ -89,37 +97,43 @@ _JARGON_RE = re.compile(
     r"수치제어장치|복합원재료|이관|인증서)"
 )
 
-# 친근함 장치 (하한 항목, WARN 전용)
+# 측정 장치 (2026-08-10 재교정. 모듈 docstring 표 참조)
 _DEVICES = {
-    "말 걸기": re.compile(
-        r"(여러분|보고 계신|들고 계신|쓰고 계신|아십니까|아시나요|기억하시|하시죠|"
-        r"보셨을 겁니다|들어는 보셨|하실 겁니다|하실 거예요)"
+    # 리텐션 백본. 벤치마크가 60초에 한 번꼴로 던진다. 우리와 가장 크게 갈린 지표다.
+    "반문": re.compile(r"(\?|까요|겠습니까|나요\b|셨나요|을까|를까)"),
+    # 1인칭은 "온기"지만 과하면 발표자 말투가 된다. 벤치마크는 우리의 1/6만 쓴다.
+    # 지우라는 뜻이 아니라, 그 자리를 권위 인용·대조로 바꿔 앉히라는 뜻이다.
+    "1인칭": re.compile(
+        r"(저도 그랬|저는 좀|저도 처음|화가 나|얼떨떨|놀랐|믿기지|솔직히|"
+        r"제가 |저는 |저도 )"
     ),
-    "쉽게 풀어주기": re.compile(
-        r"(쉽게 말|쉽게 풀|풀어 드리|풀어드리|풀어 볼|한 번 더 풀|다시 풀|"
-        r"감이 잘|감이 안|와닿게|말씀드릴게요|무슨 말이냐|무슨 소리냐|무슨 뜻이냐)"
+    # 발언·보고서·통계 인용. 1인칭이 빠진 자리를 이것이 채운다. 제재 방어도 겸한다.
+    "권위 인용": re.compile(
+        r"(따르면|자료를 보면|통계를 보면|보도에|발표에|보고서|밝혔|전했|"
+        r"분석이|평가|지적|관계자|전문가|기관)"
     ),
-    "일상 비유": re.compile(
+    # 구어 전환어. 블록이 바뀌는 자리의 리듬. 203k 히트작이 1,000자당 3.5회 썼다.
+    "전환어": re.compile(r"(자,|자 |그런데 말입니다|여기서 한번|그럼 여기서|자\.)"),
+    # 비유 소재어. ⚠️ 판정이 아니라 "볼 자리" 표시다 — 아래 _WATCH 주석 참조.
+    "비유 소재": re.compile(
         r"(살림|가게|장바구니|밥상|월급|이자|달력|장롱|목수|고지서|통장|냉장고|"
         r"동네|아파트|집주인|숟가락|밥솥|빚쟁이|금고|장부|치면|셈이|비유)"
     ),
-    "1인칭 리액션": re.compile(
-        r"(저도 그랬|저는 좀|저도 처음|화가 나|얼떨떨|놀랐|믿기지|솔직히|"
-        r"제가 |저는 |저도 |참 안타|참 딱)"
-    ),
-    "혼잣말 되받기": re.compile(r"(천만의 말씀|그건 아닙니다|사실과 다릅니다|반은 맞|글쎄요|아닙니다\.)"),
 }
 
-# 상한 — 넘으면 FAIL (레퍼 히트작 실측으로 교정. 모듈 docstring 표 참조)
-_LIMITS = {"숫자 밀도": 10.0, "경제·행정 용어": 1.5}
-# 하한 — 미달이면 WARN (16분 대본 ≈ 7,000자 기준 8회 → 1,000자당 약 1.1)
-_FLOORS = {
-    "말 걸기": 1.1,
-    "쉽게 풀어주기": 1.1,
-    "일상 비유": 1.1,
-    "1인칭 리액션": 1.1,
-    "혼잣말 되받기": 0.5,
-}
+# 상한 — 넘으면 FAIL
+_CEILINGS = {"숫자 밀도": 10.0, "경제·행정 용어": 1.5, "1인칭": 1.2}
+
+# 하한 — 미달이면 WARN (차단하지 않는다)
+#   숫자 밀도 4.0은 정보량 하한이다. 비유로 분량을 때우면 여기에 걸린다.
+_FLOORS = {"숫자 밀도": 4.0, "반문": 3.5, "권위 인용": 0.3, "전환어": 0.6}
+
+# 주의 — 넘으면 WARN. FAIL로 막지 않는 이유가 있다.
+#   이 정규식은 "확장 비유 하나"와 "잘게 뿌린 비유 열 개"를 구분하지 못한다.
+#   게다가 주제가 가전·부동산이면 소재어가 그냥 본문에 나온다(벤치마크 삼성편 3.5).
+#   그래서 기계는 "여기를 보라"까지만 하고, 판정은 검수자가 한다.
+#   판정 기준은 prompts/script-skeleton.md §5 "비유 운용 규칙".
+_WATCH = {"비유 소재": 3.0}
 # 한 문장 안 숫자 — 4개부터 FAIL. 3개로 조이면 레퍼의 모범 문장
 # ("내 돈 1억으로 산 집에 빚이 3억 8천")까지 걸린다. 그건 비유지 나열이 아니다.
 _SENT_NUM_LIMIT = 4
@@ -374,20 +388,27 @@ def analyze(path: Path) -> dict:
     # 원거리 반복은 파트 귀속을 찍어야 하므로 offset을 보존한 본문을 따로 쓴다.
     body_with_pos, parts = load_body_with_parts(path)
 
-    ceilings, floors = {}, {}
-    for label, cap in _LIMITS.items():
-        n = count_numbers(body) if label == "숫자 밀도" else len(_JARGON_RE.findall(body))
-        v = per_1k(n, chars)
-        ceilings[label] = {"value": v, "limit": cap, "pass": v <= cap}
+    def measure(label: str) -> float:
+        if label == "숫자 밀도":
+            return per_1k(count_numbers(body), chars)
+        if label == "경제·행정 용어":
+            return per_1k(len(_JARGON_RE.findall(body)), chars)
+        return per_1k(len(_DEVICES[label].findall(body)), chars)
+
+    ceilings, floors, watch = {}, {}, {}
+    for label, cap in _CEILINGS.items():
+        ceilings[label] = {"value": (v := measure(label)), "limit": cap, "pass": v <= cap}
     for label, floor in _FLOORS.items():
-        v = per_1k(len(_DEVICES[label].findall(body)), chars)
-        floors[label] = {"value": v, "floor": floor, "pass": v >= floor}
+        floors[label] = {"value": (v := measure(label)), "floor": floor, "pass": v >= floor}
+    for label, cap in _WATCH.items():
+        watch[label] = {"value": (v := measure(label)), "limit": cap, "pass": v <= cap}
 
     return {
         "path": str(path),
         "chars": chars,
         "ceilings": ceilings,
         "floors": floors,
+        "watch": watch,
         "clusters": find_number_clusters(body),
         "heavy_sentences": find_number_heavy_sentences(body),
         "near_duplicates": find_near_duplicates(body),
@@ -409,6 +430,15 @@ def report(r: dict) -> int:
     for label, d in r["floors"].items():
         mark = "✅" if d["pass"] else "⚠️  미달"
         print(f"  {label:<14} {d['value']:>6.1f} / {d['floor']:>4.1f}   {mark}")
+
+    if r.get("watch"):
+        print("\n── 주의 (검수자가 판정한다) " + "─" * 29)
+        for label, d in r["watch"].items():
+            mark = "✅" if d["pass"] else "⚠️  초과"
+            print(f"  {label:<14} {d['value']:>6.1f} / {d['limit']:>4.1f}   {mark}")
+        if not all(d["pass"] for d in r["watch"].values()):
+            print("     → 확장 비유 하나인지, 잘게 뿌린 비유 여러 개인지 직접 본다")
+            print("       (prompts/script-skeleton.md §5 '비유 운용 규칙')")
 
     if r["near_duplicates"]:
         failed += 1
@@ -448,10 +478,13 @@ def report(r: dict) -> int:
     if failed:
         print(f"→ {failed}개 항목 실패. prompts/tone-guide.md의 대조쌍대로 고쳐 쓴다.")
         print("  숫자는 반올림하고, 퍼센트는 '몇 중에 몇'으로 바꾸고, 전문용어는 치환표대로 바꾼다.")
+        print("  1인칭이 넘쳤으면 감정을 지우는 게 아니라 권위 인용·대조로 바꿔 앉힌다.")
         return 1
     if any(not d["pass"] for d in r["floors"].values()):
-        print("→ 상한은 통과. 다만 친근함 장치가 부족하다 (위 ⚠️ 항목).")
-        print("  tone-guide.md §4를 보고 문장 단위로 보강한다. 단어만 뿌리지 않는다.")
+        print("→ 상한은 통과. 다만 하한 미달 항목이 있다 (위 ⚠️).")
+        print("  반문이 모자라면 60초에 한 번꼴로 시청자에게 되묻는다.")
+        print("  숫자 밀도가 모자라면 비유로 때운 자리를 사실·사례로 바꾼다.")
+        print("  (prompts/script-skeleton.md — 확장 비유는 1~3개, 나머지는 사례·대조·인용)")
         return 0
     print("→ 전 항목 통과.")
     return 0

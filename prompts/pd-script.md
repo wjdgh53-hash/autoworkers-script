@@ -306,8 +306,9 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 
 1. outline-writer 에이전트 호출 (run_in_background: true)
 2. **경로로 전달** (내용 임베드 금지). 호출 프롬프트 첫 지시로 "아래 파일들을 작업 시작 전에 모두 Read하라"를 명시한다:
+   - `prompts/script-skeleton.md` — **대본 골격 8블록. 파트 배열의 원본이다**
    - `prompts/outline-guide.md` — outline 작성 규칙 전체 (셀프체크 10항목 포함. **결과는 파일이 아니라 응답으로만 온다**)
-   - `prompts/tone-guide.md` — 문체 기준. **파트별 수치 배정 상한(2~3개)과 살림 비유 착지 설계용**
+   - `prompts/tone-guide.md` — 문체 기준. **파트별 수치 배정 밴드(1,000자당 5~8개)와 착지 방식 설계용**
    - `prompts/pd-templates.md` — `## outline.md 포맷` 절
    - `{P}/_script/concept.md` + `hook-intro.md` + `patterns.md` + `verified-data.md`
    - `channels/{채널}/config/profile.md` + `pd-guide.md` (있으면)
@@ -336,7 +337,7 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 
 **대본 초안 작성. 에이전트: script-writer (인접 파트 2개씩 묶어 1개, 병렬)**
 
-입력: `_script/outline.md` + `_script/verified-data.md` + 채널 프로필 + **`prompts/tone-guide.md`** + `prompts/script-review-checklist.md`
+입력: `_script/outline.md` + `_script/verified-data.md` + 채널 프로필 + **`prompts/script-skeleton.md`** + **`prompts/tone-guide.md`** + `prompts/script-review-checklist.md`
 
 ### 파트 묶음 병렬 에이전트
 
@@ -351,7 +352,7 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
    - **형제 파트 목록** — `## 3. 본문 구조`의 전 파트 헤더 + 각 파트 `핵심 내용` 첫 줄만 1줄씩 (아래 🚨 참조)
    - **Hook & Intro 원문** (`hook-intro.md`)
    - **verified-data.md는 「장면·일화」 계열 절만 발췌해 넣는다** (아래 🚨 참조)
-   - 채널 프로필 + **tone-guide.md 전문** + script-review-checklist.md
+   - 채널 프로필 + **tone-guide.md 전문** + **script-skeleton.md 전문** + script-review-checklist.md
    - 담당 파트명 + 출력 경로 + **파트별 목표 글자수 범위**(하한 90% ~ 상한 110%, 절대 상한 130%를 숫자로 명시)
    - **출력 형식 지시**: 파일은 반드시 `## {파트명}` **h2 헤더 한 줄로 시작**하고, 본문 안에는 `##`·`###` 소제목을 **하나도 넣지 않는다**
 
@@ -367,7 +368,7 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 > 발췌 대상: `## 장면·일화`, `### 장면·일화 (대본의 그림 재료)`, `### 시청자 일상으로 닿는 지점` 등 **사람·현장 묘사가 들어 있는 절 전부.** 통계 나열 절은 넣지 않는다.
 > 절 제목이 프로젝트마다 다르므로 `grep -n '^##' {S}/verified-data.md`로 목록을 먼저 뽑아 판단한다. **애매하면 넣는다** — 빠뜨려서 그림을 잃는 쪽이 더 나쁘다.
 
-> 🚨 **`tone-guide.md`는 반드시 전문을 넣는다.** 경로만 알려주고 "읽어라"로 넘기지 않는다.
+> 🚨 **`tone-guide.md`와 `script-skeleton.md`는 반드시 전문을 넣는다.** 경로만 알려주고 "읽어라"로 넘기지 않는다.
 > 대조쌍이 규칙 문장보다 강하게 작동하는데, 안 읽으면 아무 효과가 없다.
 > 다만 **약 8,100자**로 작지 않다. **파트 2개씩 묶는 이유가 여기에도 있다** — 6파트를 6명에게 주면 4.9만 자, 3명이면 2.4만 자다.
 > 같은 이유로 `concept.md`는 절대 함께 넣지 않는다.
@@ -439,7 +440,11 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 - **exit 1** → 문체 2-pass (**최대 2회**):
   1. 출력에서 FAIL 항목과 지적된 문장·구간을 확인한다
   2. 해당 파트의 script-writer를 재호출한다. 프롬프트에 **`prompts/tone-guide.md` 전문 + check_tone.py 출력 전문**을 넣는다
-  3. 지시: 숫자는 반올림, 퍼센트는 '몇 중에 몇'으로, 전문용어는 치환표대로. **검증된 사실은 하나도 빼지 않는다**
+  3. 지시는 **FAIL 항목별로 다르다:**
+     - `숫자 밀도` 초과 → 반올림, 퍼센트는 '몇 중에 몇'으로. **검증된 사실은 하나도 빼지 않는다**
+     - `경제·행정 용어` 초과 → `tone-guide.md` §2 치환표대로
+     - `1인칭` 초과 → **감정을 지우는 게 아니라 권위 인용·대조로 바꿔 앉힌다** (발언·보고서·통계)
+     - `숫자 밀도` **하한 미달** → 비유로 때운 자리를 사실·사례로 바꾼다. **비유를 더 넣지 않는다**
   4. merge_draft.py → validate_draft.py → check_tone.py 재실행
 - **2회 재작성 후에도 exit 1** → **파이프라인을 멈추고 사용자에게 보고한다.** 임의로 통과시키지 않는다
   - 보고 내용: 어느 항목이 몇 대 몇으로 걸렸는지 + 두 번의 재작성에서 얼마나 내려갔는지 + 남은 걸림돌 문장
@@ -450,9 +455,10 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 > 거친 대본은 작성 단계에서 이미 기준 안으로 들어와야 정상이다. **재작성이 계속 2회씩 발동하면 게이트가 아니라
 > 앞단(DATA_PREP·OUTLINE)이 잘못된 것이므로 그쪽을 고친다.**
 
-> ⛔ **수치를 통째로 삭제해서 밀도를 맞추지 않는다.** 반올림·비유 치환·중복 제거로 줄인다.
-> 사실 근거가 빠지면 독창성·팩트 검수에서 다시 걸린다.
-> ⛔ **기준값을 임의로 완화하지 않는다.** 상한은 레퍼 히트작 실측으로 교정된 값이다 (`check_tone.py` docstring 참조).
+> ⛔ **수치를 통째로 삭제해서 밀도를 맞추지 않는다.** 반올림·중복 제거로 줄인다.
+> 사실 근거가 빠지면 독창성·팩트 검수에서 다시 걸린다. 그리고 **숫자 밀도에는 하한 4.0도 있다** — 너무 빼면 반대로 걸린다.
+> ⛔ **기준값을 임의로 완화하지 않는다.** 벤치마크 2개 채널 7편 + 우리 3편 실측으로 교정된 값이다 (`check_tone.py` docstring 참조).
+> ⛔ **"주의: 비유 소재" 초과는 재작성 트리거가 아니다.** exit code에 영향을 주지 않으며, 검수자가 판정한다.
 
 ---
 
