@@ -413,7 +413,48 @@ def analyze(path: Path) -> dict:
         "heavy_sentences": find_number_heavy_sentences(body),
         "near_duplicates": find_near_duplicates(body),
         "distant_repeats": find_distant_repeats(body_with_pos, parts),
+        "spelled_out": find_spelled_out_numbers(body),
     }
+
+
+# 🔴🔴 **금액·규모를 한글로 풀어 쓴 자리** (2026-08-12 정호님이 완성 자막에서 잡으심)
+#
+#   「지난달 우리 증시에서 **팔백조**가 사라졌습니다」  ← 자막에 이대로 나갔다
+#
+#   대본 글자는 **자막으로 그대로** 나간다. 읽는 것은 툴이 맡으므로
+#   `800조` 라고 적어야 화면이 자연스럽고, 소리는 이지롱폼 발음 규칙이
+#   「팔백조」 로 알아서 바꾼다. `tts-rules.md` 8번에 이미 있던 규칙인데
+#   tone-guide 가 우선이라 무력화됐다 — **규칙만으로는 또 샌다. 기계가 잡는다.**
+#
+#   ⚠️ 나이·고유어 단위(쉰두 살·스무 개)는 한글이 맞다 → 안 잡는다.
+#      큰 자릿수(백·천·만·억·조)를 한글로 쓴 것만 본다.
+_KO_BIG_NUM = re.compile(
+    r"(?:[일이삼사오육칠팔구]|십|백|천)?"
+    r"(?:[일이삼사오육칠팔구십백천]{0,6})"
+    r"(?:조|억|만)(?:\s*원|\s*개|\s*명|\s*곳|\s*대)?"
+)
+# 진짜 한글 수사인지 — 머리에 한자 수사가 와야 한다 (「구조」·「사기」 같은 말을 거른다)
+_KO_BIG_HEAD = re.compile(r"^(?:[일이삼사오육칠팔구]|십|백|천)")
+
+
+def find_spelled_out_numbers(body: str, limit: int = 8) -> list[str]:
+    """금액·규모를 한글로 풀어 쓴 자리. **찾으면 FAIL 이다.**
+
+    자막에 그대로 나가므로 「팔백조」 가 화면에 뜬다.
+    """
+    나온것 = []
+    for ㅁ in _KO_BIG_NUM.finditer(body):
+        말 = ㅁ.group(0)
+        if not _KO_BIG_HEAD.match(말) or len(말) < 3:
+            continue
+        # 「만」 하나짜리(「만 원」)나 관용구는 뺀다 — 자릿수가 둘 이상이어야 수사다
+        if not re.search(r"[십백천]", 말) and not re.match(r"^[일이삼사오육칠팔구]{2,}", 말):
+            continue
+        앞 = max(0, ㅁ.start() - 14)
+        나온것.append(f"…{body[앞:ㅁ.end() + 10]}…")
+        if len(나온것) >= limit:
+            break
+    return 나온것
 
 
 def report(r: dict) -> int:
@@ -425,6 +466,16 @@ def report(r: dict) -> int:
         print(f"  {label:<14} {d['value']:>6.1f} / {d['limit']:>4.1f}   {mark}")
         if not d["pass"]:
             failed += 1
+
+    # 🔴 한글로 풀어 쓴 금액·규모 — **자막에 그대로 나간다**
+    if r.get("spelled_out"):
+        failed += 1
+        print(f"\n  {'한글로 쓴 금액':<14} {len(r['spelled_out']):>6}곳          ❌ FAIL")
+        print("     → 자막에 그대로 나갑니다. **아라비아 숫자로** 적으세요"
+              " (800조 ○ / 팔백조 ✗).")
+        print("       읽는 것은 툴이 맡습니다 — 이지롱폼이 「팔백조」 로 읽어 줍니다.")
+        for ㄱ in r["spelled_out"][:5]:
+            print(f"       {ㄱ}")
 
     print("\n── 하한 (미달이면 경고) " + "─" * 33)
     for label, d in r["floors"].items():
