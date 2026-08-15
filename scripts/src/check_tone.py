@@ -445,6 +445,12 @@ def find_spelled_out_numbers(body: str, limit: int = 8) -> list[str]:
     나온것 = []
     for ㅁ in _KO_BIG_NUM.finditer(body):
         말 = ㅁ.group(0)
+        # 🔴 앞에 아라비아 숫자가 붙어 있으면 **규칙대로 쓴 것**이다 — 잡지 않는다
+        #   「5천만 원」·「3천억」·「4조 6,000억 원」 은 tts-rules 8번이 권하는 형식이다
+        #   (아라비아 + 한글 단위). 「천만」 만 떼어 보면 한글 수사로 오인한다.
+        #   (2026-08-12 정호님이 「5천만 원이 FAIL 로 잡힌다」 고 잡으심)
+        if ㅁ.start() > 0 and body[ㅁ.start() - 1].isdigit():
+            continue
         if not _KO_BIG_HEAD.match(말) or len(말) < 3:
             continue
         # 「만」 하나짜리(「만 원」)나 관용구는 뺀다 — 자릿수가 둘 이상이어야 수사다
