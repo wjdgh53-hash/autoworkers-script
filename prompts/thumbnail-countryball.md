@@ -178,17 +178,19 @@ creative-strategy.md Phase 5에서 참조하는 **국기볼형 계열** 프롬�
 이미지 모델은 공간 제약을 잘 안 지킨다. 아래를 지키지 않으면 절반이 깨진다.
 
 **1. 세이프존 문장을 프롬프트 맨 앞에 둔다.** (고정 스타일 프롬프트는 여전히 맨 뒤에 붙인다)
+🚨 **뒤로 밀면 가중치가 낮아 무시된다.** 실사형·정세형과 동일한 원칙이다.
 **2. 부정형이 아니라 긍정형으로 쓴다.** "비워라"가 아니라 **그 자리에 그릴 표면을 지정**한다.
 **3. 밀도·배치 지시를 상단으로 한정한다.**
+**4. 분수·%·픽셀을 병기하지 않는다.** **`three-eighths` 한 가지 표기만** 쓴다 (2026-08-16 개정 — `37%`·`270 pixels`를 같이 주면 모델이 셋을 각각 다른 지시로 읽어 경계가 흔들린다).
 
 **영어 프롬프트의 첫 문장으로 아래를 넣는다:**
 
 ```
-COMPOSITION RULE, HIGHEST PRIORITY: the bottom three-eighths of the image height — that is the lowest
-37%, roughly the bottom 270 pixels of a 720-pixel-tall frame — is one clean continuous surface
-— {smooth floor / plain ground / open sky} — rendered simply and evenly with nothing on it, and every
-character, object, prop, effect and action is composed entirely within the upper five-eighths above it.
-Anything the characters hold or stand on sits at mid height, never near the bottom edge.
+COMPOSITION RULE, HIGHEST PRIORITY: the bottom three-eighths of the frame height is one clean
+continuous surface — {smooth floor / plain ground / open sky} — rendered simply and evenly with nothing
+on it, and every character, object, prop, effect and action is composed entirely within the upper
+five-eighths above it. Anything the characters hold or stand on sits at mid height, never near the
+bottom edge.
 ```
 
 > 그래도 100% 지켜지지는 않는다. **9장 중 2~3장은 깨질 수 있으므로 골라 쓰는 것을 전제로 한다.**

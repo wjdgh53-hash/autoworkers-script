@@ -226,8 +226,7 @@ real woven fabric with visible weave, deep folds and photographic shadow detail
 ```
 COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single
 full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The bottom
-three-eighths of the image height — that is the lowest 37%, roughly the bottom 270 pixels of a
-720-pixel-tall frame — is the same continuous scene rendered dark, smoky and free of detail so overlay
+three-eighths of the frame height is the same continuous scene rendered dark, smoky and free of detail so overlay
 text stays readable, while all faces, flags, weapons and key objects sit entirely within the upper
 five-eighths. Anything held or carried sits at mid height, never near the bottom edge.
 ```

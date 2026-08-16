@@ -322,7 +322,7 @@ are far smaller, roughly one third of {his/her} head height.
 ```
 COMPOSITION RULE, HIGHEST PRIORITY: the photograph fills the entire 16:9 frame edge to edge with a real
 scene — never a letterbox band, never an empty panel, never a flat colour block, and never a large
-expanse of bare empty floor. The bottom three-eighths of the frame height — that is the lowest 37% — is
+expanse of bare empty floor. The bottom three-eighths of the frame height is
 filled by {the dark backs and shoulders of the people nearest the camera / the shadowed ground / the
 bare table surface}, so far out of focus and so deeply in shadow that it reads as one single dark mass
 with no readable detail, which keeps overlay text legible on top of it. No face, no hand, no screen and

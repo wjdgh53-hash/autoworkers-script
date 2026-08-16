@@ -1,8 +1,9 @@
 {
   "_note": "장수(9장)와 세이프존(하단 3/8)은 prompts/thumbnail-*.md가 유일한 원본이다. 여기에 적지 않는다.",
-  "_axis": "축 A(시청자 본인의 돈). 국기·국가 대결 구도(countryball/geopolitics)를 쓰지 않는다 — 주어가 국가로 읽히면 축이 무너진다.",
+  "_axis": "축 A(시청자 본인의 돈). 계열은 실사형·국기볼형 2종만 생성한다(2026-08-16 정호님 지정). 정세형은 생성하지 않는다.",
   "styles": [
-    "photorealistic"
+    "photorealistic",
+    "countryball"
   ],
   "color_palette": "auto",
   "emotions": [

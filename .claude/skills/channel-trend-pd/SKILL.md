@@ -435,5 +435,6 @@ DNA 브리프의 **트렌드 조건**에 맞는 최신 이슈를 찾아 주제 �
 
 - config·profile은 **Phase 0에서 확정한 `{채널}` 것을 쓴다.** 결이 같은 채널끼리만 공유한다(탐정·럭키 → detective-economy). `bangguseok-economy`는 축이 정반대라 **자체 config**를 쓴다([[project_three_economy_channels]]).
 - 앵커 고유 표현 복제는 치명적([[feedback_reference_originality]]) — 프레임·구조·감정 엔진은 계승하되 문장·비유·시그니처 표현은 새로 창작.
+  ⚠️ **이 금지는 「대본 본문」에만 적용된다.** 제목·썸네일 텍스트는 `prompts/creative-strategy.md`의 「🔓 제목·썸네일 텍스트의 어휘 제약」이 유일한 원본이며, 2026-08-16부터 **100% 그대로 베끼기만 금지**다(단일 명사·감정어·수식어·장르 관용어는 마음껏 쓴다). 모든 채널 공통.
 - 제목이 히트작 견인 요소면 공식 계승([[feedback_follow_reference_title_formula]]), 단 매번 동적으로 현재 히트작에서 재추출.
 - 수집 실패 시 임의 진행 금지([[feedback_ref_collect_fail_ask]]).

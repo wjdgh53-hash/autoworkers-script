@@ -160,9 +160,12 @@ grep -n '^## Phase 5' prompts/creative-strategy.md
 ```
 2. strategist 에이전트 호출 — **경로로 전달**:
    - `prompts/creative-strategy.md` — **위에서 얻은 줄 번호를 offset으로 주고 "그 줄부터 끝까지만 Read하라"고 지시한다.** 전문을 읽히지 않는다
-   - `prompts/thumbnail-design.md` — 실사형 (항상)
-   - `prompts/thumbnail-countryball.md` — 국기볼형 (항상)
-   - `prompts/thumbnail-geopolitics.md` — 정세형 (**국가·안보 소재일 때만.** 아니면 전달하지 않는다)
+   - 🚨 **계열은 `channels/{채널}/config/thumbnail-strategy.json`의 `styles` 배열이 정한다.** 호출 전에 PD가 그 파일을 먼저 읽고, **거기 적힌 계열의 규칙 파일만** 전달한다. `styles`에 없는 계열은 **생성하지 않는다.**
+     - `photorealistic` → `prompts/thumbnail-design.md`
+     - `countryball` → `prompts/thumbnail-countryball.md`
+     - `geopolitics` → `prompts/thumbnail-geopolitics.md` (단 **국가·안보 소재일 때만.** `styles`에 있어도 소재가 아니면 전달하지 않는다)
+     - ⛔ `styles`에 없는 계열의 규칙 파일을 전달하지 않는다. 규칙이 서로 정반대라 섞이면 프롬프트가 깨진다
+     - 채널별 현황(2026-08-16 정호님 지정): 방구석 경제 = `photorealistic` + `countryball` / 탐정경제학 = `geopolitics` + `countryball`
    - `channels/{채널}/config/thumbnail-strategy.json` + `profile.md`
    - `{P}/_script/concept.md` (확정 컨셉·계승 정보) + `{P}/_script/verified-data.md`
    - `{P}/_refs/{앵커}/thumbnail.webp` + `analysis.md` — 계승 3장 근거

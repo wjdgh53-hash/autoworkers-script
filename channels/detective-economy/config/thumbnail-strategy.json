@@ -1,9 +1,8 @@
 {
   "_note": "장수(9장)와 세이프존(하단 3/8)은 prompts/thumbnail-*.md가 유일한 원본이다. 여기에 적지 않는다.",
   "styles": [
-    "photorealistic",
-    "countryball",
-    "geopolitics"
+    "geopolitics",
+    "countryball"
   ],
   "color_palette": "auto",
   "emotions": [
@@ -15,5 +14,6 @@
     "mascot": false,
     "fixed_layout": null
   },
-  "benchmark_analysis": null
+  "benchmark_analysis": null,
+  "_axis": "무대·주어가 중국. 계열은 정세형·국기볼형 2종만 생성한다(2026-08-16 정호님 지정). 실사형은 생성하지 않는다."
 }
