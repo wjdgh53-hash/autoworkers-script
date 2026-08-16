@@ -29,7 +29,11 @@ description: 유튜브 "채널" 진단 + 소재 추천 스킬. ①채널 URL(/@�
 1. **소재보다 프레임·구조가 먼저다.** 롱폼은 클릭을 따야 내용물을 보여줄 수 있다. 소재 중심으로 남의 채널 레퍼를 찾으면 내 채널 결을 잃는다. → **채널 자기 자신의 히트작**을 앵커 레퍼로 삼아 프레임·구조를 계승하고, 소재만 신선한 트렌드로 갈아끼운다. 그래서 남과 안 겹치고 독창적이면서 결이 유지된다.
 2. **DNA는 매번 새로 뽑는다(동적).** 발동할 때마다 "현재 최고작"에서 제목 공식·썸네일 프레임·구조를 새로 추출한다. 채널 결은 진화하므로 고정 공식에 의존하지 않는다. (`config/pd-guide.md`의 제목 공식 섹션은 참고 기본값일 뿐)
 3. **트렌드 검색은 DNA 조건부다.** "요즘 뜨는 이슈"를 그냥 찾으면 남과 겹친다. 히트작 DNA의 **구조 조건에 끼워지는** 최신 이슈만 고른다.
-4. **config는 고정, URL은 진단 대상만 결정.** 사용자는 경제 채널 3개를 `channels/detective-economy/` config 하나로 운영한다(결 동일). 준 채널 URL은 "어느 채널을 스캔·진단할지"만 정하고, 말투·장르·시그니처는 항상 detective-economy config를 쓴다. 완성 대본은 3채널 어디든 업로드 가능(youtube.md에 채널명 금지).
+4. 🚨 **`{채널}`을 Phase 0에서 한 번 확정하고 끝까지 그 값을 쓴다.** (2026-08-16 개정 — 채널이 둘 이상이 됐다)
+   - config·`_benchmarks`·`_diagnosis`·`projects`·`collect.py --channel` **전부 `channels/{채널}/` 아래를 쓴다.** 특정 채널명을 하드코딩하지 않는다
+   - **결이 같은 채널끼리는 config를 공유한다.** 탐정경제학·럭키경제학은 `detective-economy` config 하나를 쓴다(말투·시청자층 동일). 완성 대본은 그 계열 어디든 업로드 가능(youtube.md에 채널명 금지)
+   - ⛔ **결이 다르면 config를 분리한다.** `bangguseok-economy`는 축이 정반대라(주어가 시청자 본인의 돈 vs 중국) **자체 config를 갖는다.** 여기에 detective config를 쓰면 축이 뒤집힌 대본이 나온다
+   - 공유하는 채널이라도 **`production-queue.md`·`_benchmarks/channels.md`·`_diagnosis/`는 채널마다 따로**다. 소재축이 다르기 때문이다
 5. 🔗 **근거 영상은 링크를 반드시 병기한다.** 제목·조회수·배율만 쓰고 URL을 빠뜨리지 않는다. 숫자만으로는 사용자가 그 영상을 열어 썸네일·제목·구성을 확인할 수 없어 추천을 검증할 수 없다. **아래 규칙 5-1이 이 스킬의 모든 표에 적용된다.**
 
 ### 5-1. 링크 병기 규칙 (모든 산출 표 공통)
@@ -45,7 +49,7 @@ description: 유튜브 "채널" 진단 + 소재 추천 스킬. ①채널 URL(/@�
 
 **발동한다:**
 - 메시지에 **유튜브 채널 URL**(`/@핸들`, `/channel/UC...`, `/c/...`, `/user/...`, `/videos`)이 있는 경우 — 뒤에 붙는 말이 "대본 만들어줘"든 "진단해줘"든 무관
-- URL 없이 "다음 컨텐츠 기획해보자 / 채널 진단해줘 / 결 맞춰서 다음 거 만들자" → 어느 채널인지 물어보고, 지정 없으면 기본 채널(detective-economy) 최근 업로드 스캔
+- URL 없이 "다음 컨텐츠 기획해보자 / 채널 진단해줘 / 결 맞춰서 다음 거 만들자" → **어느 채널인지 묻고 답을 기다린다**(Phase 0). ⛔ 기본 채널로 밀지 않는다
 - **소재 추천 요청 — 레퍼런스도 주제도 없을 때**: "오늘 소재 추천해줘", "오늘 뭐 올리지", "오늘 뭐 만들까", "주제 알아서 정해줘", "레퍼 없는데 대본 만들어줘", "뭐가 좋을까"
 - **영상 URL** + 명시적 진단·기획 문구("이 채널 진단해줘", "이 채널 다음 컨텐츠 기획해보자") → 영상에서 소속 채널을 역추적해 진행
 
@@ -143,10 +147,30 @@ description: 유튜브 "채널" 진단 + 소재 추천 스킬. ①채널 URL(/@�
 
 ---
 
-## Phase 0 — 채널 매핑
+## Phase 0 — 채널 확정 (이후 전 단계가 이 값을 쓴다)
 
-- 준 URL이 어느 유튜브 채널인지 확인. config는 **항상 `detective-economy`** 고정.
-- URL이 없으면 사용자에게 "어느 채널인가요?(URL)" 물어본다. 그래도 없으면 기본 채널로 진행하되 그 사실을 알린다.
+> 🚨 **여기서 정한 `{채널}`이 Phase 1~6 끝까지 간다.** 중간에 다른 채널로 갈아타지 않는다.
+
+1. **채널을 특정한다**
+   - 사용자가 채널명을 말했으면 그것 — `탐정/탐정경제학 → detective-economy` · `방구석/방구석경제 → bangguseok-economy`
+   - 채널 URL을 줬으면 그 URL이 어느 로컬 채널인지 `channels/*/config/settings.json`의 `youtube_handle`·`youtube_channel_id`로 대조한다
+   - 둘 다 없으면 **사용자에게 묻고 답을 기다린다.** ⛔ 기본 채널로 밀지 않는다 (`AskUserQuestion` 대신 채팅 본문으로 묻는다)
+
+2. **`{채널}`이 정해지면 아래를 그 채널 것으로 고정한다**
+
+   | 쓰는 것 | 경로 |
+   |---|---|
+   | config (profile·pd-guide·settings·thumbnail-strategy) | `channels/{채널}/config/` |
+   | 벤치마크 채널 목록 | `channels/{채널}/config/_benchmarks/channels.md` |
+   | 대기열 | `channels/{채널}/production-queue.md` |
+   | 진단 스냅샷 | `channels/{채널}/_diagnosis/` |
+   | 중복 확인 대상 | `channels/{채널}/projects/` |
+   | 레퍼 수집 | `collect.py --channel "{채널}"` |
+
+3. **config를 공유하는 예외** — 결이 같은 채널끼리만
+   - 탐정경제학·럭키경제학 → `detective-economy` config 공유 (말투·시청자층 동일)
+   - ⛔ **`bangguseok-economy`는 공유 대상이 아니다.** 축이 정반대라 자체 config를 쓴다
+   - config를 공유해도 **대기열·벤치마크·진단은 채널마다 따로**다
 
 ---
 
@@ -217,7 +241,7 @@ description: 유튜브 "채널" 진단 + 소재 추천 스킬. ①채널 URL(/@�
 
 1. 앵커를 레퍼로 수집:
 ```bash
-{VENV_PYTHON} scripts/collect.py --project {신규프로젝트} --channel "detective-economy" "{앵커URL}"
+{VENV_PYTHON} scripts/collect.py --project {신규프로젝트} --channel "{채널}" "{앵커URL}"
 ```
    - 신규 프로젝트명: 선택 주제 확정 후 명명하므로, 이 단계는 임시로 진단용 폴더에 받거나 주제 확정 후 수집해도 된다(순서는 유연). 권장: **주제 선택(Phase 5) 후** collect → script-pd 인계 시 함께 처리.
 2. **DNA 브리프** 항목(앵커의 meta·thumbnail·transcript에서 추출):
@@ -241,7 +265,7 @@ DNA 브리프의 **트렌드 조건**에 맞는 최신 이슈를 찾아 주제 �
 
 1. 최근 1~2개월 이슈 중 프레임에 끼워지는 것만. 채널 장르(경제/시사) × 구조 조건(강대국 foil·한국 급소·구체 숫자 등)으로 좁힌다.
 2. **중복 제거**:
-   - 기존 프로젝트와 겹침 확인: `channels/detective-economy/projects/` 폴더명 스캔.
+   - 기존 프로젝트와 겹침 확인: `channels/{채널}/projects/` 폴더명 스캔.
    - 타 유튜버 포화도: 이미 많이 다뤄진 소재면 앵글 차별화 또는 제외.
 
 ### 4-2. 🚨🚨 결(소재축) 일치가 배율보다 먼저다 — 이 절을 건너뛰면 대본이 죽는다
@@ -259,7 +283,7 @@ DNA 브리프의 **트렌드 조건**에 맞는 최신 이슈를 찾아 주제 �
 | `ytsearch`로 소재 키워드를 던져 **아무 채널이나** 배율 높은 편을 주 레퍼로 삼는다 | **우리 채널과 소재축이 같은 채널**을 먼저 정하고, 그 채널 안에서 배율을 잰다 |
 | 구독자 체급이 비슷하면 결도 비슷할 것이라 가정한다 | 체급이 비슷해도 **히트 소재축이 다르면 결이 다른 채널**이다. 최근 10편의 소재를 직접 읽고 판정한다 |
 
-- 🚨 **가장 먼저 `channels/detective-economy/config/_benchmarks/channels.md`를 Read한다.** 결이 같다고 이미 판정된 채널 목록과, 결이 달라 **쓰면 안 되는 채널 목록**이 거기 있다. 밖에서 `ytsearch`로 새로 찾는 것은 그다음이다
+- 🚨 **가장 먼저 `channels/{채널}/config/_benchmarks/channels.md`를 Read한다.** 결이 같다고 이미 판정된 채널 목록과, 결이 달라 **쓰면 안 되는 채널 목록**이 거기 있다. 밖에서 `ytsearch`로 새로 찾는 것은 그다음이다
 - 축 판정 방법: 후보 채널 최근 15~20편의 **제목만 읽고 소재축을 분류**한다. 우리 채널 Phase 2의 축별 판정표와 **겹치는 축이 과반**이어야 결이 같은 채널이다
 - 새로 판정한 채널은 결과(결 같음/다름 + 근거 배율표)를 `_benchmarks/channels.md`에 **추가해 둔다.** 다음 회차에 같은 판정을 다시 하지 않기 위해서다
 
@@ -388,10 +412,10 @@ DNA 브리프의 **트렌드 조건**에 맞는 최신 이슈를 찾아 주제 �
 ## Phase 6 — script-pd 인계
 
 1. **진단 스냅샷 저장**(채널 진화 추적용):
-   - 경로: `channels/detective-economy/_diagnosis/{YYYY-MM-DD}_{채널핸들}.md`
+   - 경로: `channels/{채널}/_diagnosis/{YYYY-MM-DD}_{채널핸들}.md`
    - 내용: 스캔일, 대상 채널, 최근 성적표, **소재 축별 판정표**, **형제 채널 짝 비교**, 앵커 히트작, DNA 브리프, **검토했다 버린 후보와 기각 사유**, 선택 주제, **확정 레퍼 세트(역할·배율·영상 ID)**. (Python `open(...,encoding='utf-8')` 또는 Write tool로 저장)
 2. **script-pd 발동** — 인계 시 명시 전달:
-   - 채널: detective-economy
+   - 채널: **Phase 0에서 확정한 `{채널}`** — ⛔ 여기서 다른 채널로 갈아타지 않는다
    - 신규 프로젝트명 + 확정 주제
    - **레퍼 세트 전체와 각 편의 역할**(주/보조/**반증**/앵커) + 배율. Phase 4.5에서 확정한 그대로.
      - ⛔ **반증 레퍼는 실패작이라는 사실을 반드시 전달**한다. 안 하면 script-pd가 계승 대상으로 오해한다
@@ -404,12 +428,12 @@ DNA 브리프의 **트렌드 조건**에 맞는 최신 이슈를 찾아 주제 �
 
 ## 산출물
 
-- 진단 스냅샷: `channels/detective-economy/_diagnosis/{date}_{handle}.md`
+- 진단 스냅샷: `channels/{채널}/_diagnosis/{date}_{handle}.md`
 - 이후 대본 산출물은 script-pd와 동일(`_script/script.txt`, `output/youtube.md`, `output/thumbnails/prompts.json`, `_script/concept.md`).
 
 ## 주의
 
-- config·profile은 항상 detective-economy 고정([[project_three_economy_channels]]). 한 채널이 결이 확 달라지면 그때 config 분리.
+- config·profile은 **Phase 0에서 확정한 `{채널}` 것을 쓴다.** 결이 같은 채널끼리만 공유한다(탐정·럭키 → detective-economy). `bangguseok-economy`는 축이 정반대라 **자체 config**를 쓴다([[project_three_economy_channels]]).
 - 앵커 고유 표현 복제는 치명적([[feedback_reference_originality]]) — 프레임·구조·감정 엔진은 계승하되 문장·비유·시그니처 표현은 새로 창작.
 - 제목이 히트작 견인 요소면 공식 계승([[feedback_follow_reference_title_formula]]), 단 매번 동적으로 현재 히트작에서 재추출.
 - 수집 실패 시 임의 진행 금지([[feedback_ref_collect_fail_ask]]).
