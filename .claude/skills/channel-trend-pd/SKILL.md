@@ -430,6 +430,7 @@ DNA 브리프의 **트렌드 조건**에 맞는 최신 이슈를 찾아 주제 �
 
 - 진단 스냅샷: `channels/{채널}/_diagnosis/{date}_{handle}.md`
 - 이후 대본 산출물은 script-pd와 동일(`_script/script.txt`, `output/youtube.md`, `output/thumbnails/prompts.json`, `_script/concept.md`).
+- 🔗 **이 스킬을 거쳐 온 대본은 완료 보고에 「레퍼 세트 표」가 반드시 붙는다.** 레퍼를 사용자가 아니라 우리가 찾았기 때문이다 — 링크가 없으면 사용자가 대본의 근거를 검증할 수 없다. 형식·조건의 원본은 `.claude/skills/script-pd/SKILL.md`의 **「🔗 레퍼 세트 표」** 절이다. 여기에 다시 적지 않는다.
 
 ## 주의
 
