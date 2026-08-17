@@ -158,8 +158,13 @@ creative-strategy.md Phase 5에서 참조하는 **국기볼형 계열** 프롬�
 - 각 문구는 **짧게**. 긴 문장, 정확한 금액, 법조문, 기관 정식 명칭은 넣지 않는다. 그런 정보는 편집에서 오버레이할 것을 전제로 한다
 - 문구는 반드시 **사물의 표면에 붙어 있어야** 한다. 허공에 뜬 캡션, 화면을 가로지르는 큰 제목, 말풍선 자막은 넣지 않는다
 - **텍스트가 있어야만 의미가 통하는 구도는 만들지 않는다.** 글자를 다 지워도 무슨 이야기인지 읽혀야 하고, 텍스트는 그 위에 얹는 보조 정보다
-- 텍스트를 넣기로 했다면 영어 프롬프트 안에서 그 문구를 **따옴표로 명시**하고, 한글이면 한글로 그대로 쓴다 (예: `a red stamp reading "승인"`, `a factory sign reading "제1공장"`). 명시하지 않은 채 `with text`처럼 두루뭉술하게 쓰지 않는다
+- 텍스트를 넣기로 했다면 영어 프롬프트 안에서 그 문구를 **따옴표로 명시**한다. 명시하지 않은 채 `with text`처럼 두루뭉술하게 쓰지 않는다
 - 문구가 딱히 필요 없는 장면이면 넣지 않는다. 빈 화면을 채우려고 억지로 라벨을 만들지 않는다
+
+> 🚨🚨 **글자가 딸린 사물(명부·장부·출석부·간판·서류·표지)은 「제목 자리」와 「내용 자리」를 나눠 처리한다.**
+> **제목 자리**(표지·머리글·간판)는 **한글 3~6자를 따옴표로 정확히 지정**하고 `in Korean Hangul`을 붙인다. **내용 자리**(이름 줄·본문 행)는 `printed too small and slightly out of focus to read`로 둔다.
+> ⛔ 지정 안 하면 모델이 영문으로 채우고(1차 실패), 「획으로 그려라」로 지시하면 낙서가 나온다(2차 실패). 끝에 금지문을 붙이는 방식은 어느 쪽도 막지 못한다.
+> 판정 기준과 실측 근거의 원본은 [`thumbnail-design.md`](thumbnail-design.md)의 **「🚨🚨 글자가 딸린 사물의 기본값은 「읽을 수 없는 획」이다」** 절이다. 여기에 다시 적지 않는다.
 
 ---
 
@@ -233,8 +238,11 @@ bottom edge.
 > `.txt` 만들 때 python이 각 장에 자동으로 붙이므로 결과물은 동일하다. 원리는 `prompts/thumbnail-design.md`의 「🚨 공통 블록은 한 번만 쓴다」가 유일한 원본이다.
 
 ```
-Glossy semi-3D rendered illustration with a polished anime finish: smooth volumetric shading, strong specular highlights, soft ambient occlusion, clean bold outlines, vivid saturated colors, bright cinematic key light with sparkle and lens-flare accents, shallow depth of field on the background. Characters are "countryball" style spheres — a perfectly round glossy ball rendered with realistic sphere volume and a bright highlight, its entire surface wrapped edge to edge in its identity mark (an accurate national flag for a country, or the company's actual logo and brand color for a corporation), with large expressive cartoon eyes and mouth drawn directly on that surface, attached to a small human body in a business suit, work uniform, or military uniform, with small black gloved hands. The identity mark stays large and unbroken so it reads instantly at thumbnail size. Expressions are extreme and instantly readable at small size. The machinery, vehicles, and industrial objects in the scene are rendered with crisp mechanical detail and realistic metallic materials, contrasting against the stylized spheres. Any text that appears in the scene must be short, diegetic, and part of a real object; render it clearly and legibly. NO large title or caption overlay text, no watermark. 16:9 widescreen YouTube thumbnail.
+Glossy semi-3D rendered illustration with a polished anime finish: smooth volumetric shading, strong specular highlights, soft ambient occlusion, clean bold outlines, vivid saturated colors, bright cinematic key light with sparkle and lens-flare accents, shallow depth of field on the background. Characters are "countryball" style spheres — a perfectly round glossy ball rendered with realistic sphere volume and a bright highlight, its entire surface wrapped edge to edge in its identity mark (an accurate national flag for a country, or the company's actual logo and brand color for a corporation), with large expressive cartoon eyes and mouth drawn directly on that surface, attached to a small human body in a business suit, work uniform, or military uniform, with small black gloved hands. The identity mark stays large and unbroken so it reads instantly at thumbnail size. Expressions are extreme and instantly readable at small size. The machinery, vehicles, and industrial objects in the scene are rendered with crisp mechanical detail and realistic metallic materials, contrasting against the stylized spheres. The only legible characters anywhere in the image are the short Korean Hangul labels and numerals explicitly named in the scene description above, rendered crisply and correctly as real Korean letterforms; every other surface that would carry writing shows entries printed too small and slightly out of focus to read, never invented English words and never fake Chinese characters. NO large title or caption overlay text, no watermark. 16:9 widescreen YouTube thumbnail.
 ```
+
+> 🚨 **끝 문장이 2026-08-18에 바뀌었다.** 종전에는 `Any text that appears in the scene must be short, diegetic, and part of a real object; render it clearly and legibly.`였는데, **「또렷하게 그려라」고 해놓고 무슨 글자인지는 안 알려주는 지시**라 모델이 빈칸을 영문·가짜 한자로 채웠다(실측: 9장 전부에서 `CLASS ROSTER`와 라틴 문자 가짜 이름 발생).
+> 판정과 대응의 원본은 [`thumbnail-design.md`](thumbnail-design.md)의 **「🚨🚨 글자가 딸린 사물의 기본값은 「읽을 수 없는 획」이다」**다. 여기에 다시 적지 않는다.
 
 ---
 

@@ -344,13 +344,21 @@ impasto, NOT a matte painting, NOT anime, NOT an illustration, NOT a 3d render
 > 정세형에만 걸리는 제한: **텍스트로 구현하는 채널은 ③·④ 중 하나만, 문구도 1개**다. 국기가 이미 무대를 다 말하고 있어서, 문구가 둘 이상이면 화면이 방송 그래픽 템플릿처럼 보인다. 그 1개도 반드시 **사물 표면**(선체·기체 동체·현판·표지판·상황판·컨테이너)에 붙어 있어야 하고, 허공에 뜬 자막은 여전히 금지다.
 >
 > ⚠️ 예전 이 절은 `no text, no letters, no words, no numbers`로 텍스트를 통째로 막았다. **실측(2026-08-09) 결과 그 지시가 화면 밀도를 죽여 임팩트를 깎았다.**
+>
+> 🚨🚨 **다만 「글자가 딸린 사물」은 별개다 (2026-08-18).** 명부·장부·출석부·서류·표지는 **「제목 자리」와 「내용 자리」를 나눠** 처리한다 — 제목 자리(표지·머리글·간판)는 **한글 3~6자를 따옴표로 지정**하고 `in Korean Hangul`을 붙이며, 내용 자리(이름 줄·본문 행)는 `printed too small and slightly out of focus to read`로 둔다.
+> ⛔ 아래 「끝에 붙이는 금지 문구」로는 **막히지 않는다** — 그 금지문을 넣은 7·9번이 그대로 영문 `CLASS ROSTER`와 가짜 한자를 그렸다(끝이라 가중치가 안 실리고, 앞의 장면 묘사가 글자를 부른다). 「획으로 그려라」로 바꾼 2차 시도에서는 **낙서**가 나왔다.
+> 한자(`火化`)는 넣지 않는다 — 가짜 한자를 부르는 마중물이 된다.
+> 판정 기준과 실측 근거의 원본은 [`thumbnail-design.md`](thumbnail-design.md)의 **「🚨🚨 글자가 딸린 사물의 기본값은 「읽을 수 없는 획」이다」**다. 여기에 다시 적지 않는다.
 
 **끝에 붙이는 금지 문구는 오버레이만 막는 형태로 쓴다 — `meta.prompt_suffix`에 한 번만 쓴다:**
 
 ```
 no title overlay text, no captions, no subtitle bars, no lower-third news banner, no watermark.
-Apart from the named text above, do not invent any other words or letterforms anywhere in the image.
+Apart from the Korean Hangul labels and numerals named above — which must be rendered crisply and correctly as real Korean letterforms — do not invent any other words or letterforms anywhere in the image.
 ```
+
+> 🚨 **「named text」가 아니라 「Korean Hangul labels and numerals」로 쓴다 (2026-08-18).** 종전 문구는 언어를 안 박아서, 지정 문구가 없는 사물의 빈칸을 모델이 영문·가짜 한자로 채웠다.
+> 장면에 지정한 한글이 하나도 없는 장은 `Do not invent any words, numbers or letterforms anywhere in the image.`만 쓴다.
 
 ---
 
