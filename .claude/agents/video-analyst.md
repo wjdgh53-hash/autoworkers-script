@@ -1,6 +1,6 @@
 ---
 name: video-analyst
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

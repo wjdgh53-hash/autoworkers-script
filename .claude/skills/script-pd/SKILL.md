@@ -120,7 +120,7 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 > 하는 일은 딱 둘이다 — ① 누락된 복사용 `.txt` 채우기 ② 5줄 형식으로 보고.
 
 1. `{P}/output/thumbnails/`의 JSON 목록 확인
-2. **JSON은 있는데 같은 이름의 `.txt`가 없으면 생성한다.** 기존 JSON의 `prompt_en`을 그대로 옮길 뿐 프롬프트 내용을 새로 쓰지 않는다 (절차 → `prompts/pd-script.md`의 "복사용 통합본(.txt) 생성")
+2. **JSON은 있는데 같은 이름의 `.txt`가 없으면 생성한다.** 기존 JSON을 조립해 옮길 뿐 프롬프트 내용을 새로 쓰지 않는다 (절차 → `prompts/pd-script.md`의 "복사용 통합본(.txt) 생성" — `meta.prompt_prefix` + `prompt_en` + `meta.prompt_suffix`로 이어 붙인다. 구형 JSON은 두 필드가 없어 `prompt_en`만 나가고, 그게 맞다)
    - **이미 있는 txt는 덮어쓰지 않는다.** JSON과 내용이 다를 수 있으므로, 불일치가 의심되면 덮어쓰기 전에 사용자에게 확인한다
 3. 파일 존재 확인 후 **"5. 완료(DONE)"의 산출물 요약 5줄 형식 그대로** 보고
 4. `{P}/_refs/`에 레퍼가 있으면 **「🔗 레퍼 세트 표」도 함께 낸다.** 각 `_refs/{NNN}/meta.md`에서 제목·URL·채널을 읽어 채운다

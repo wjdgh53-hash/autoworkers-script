@@ -225,9 +225,12 @@ bottom edge.
 
 ---
 
-## 스타일 프롬프트 (항상 각 프롬프트 끝에 붙임)
+## 스타일 프롬프트 (`meta.prompt_suffix`에 한 번만 쓴다)
 
-아래 블록을 **모든 prompt_en 말미에 그대로** 붙인다. 임의로 줄이거나 바꾸지 않는다.
+아래 블록을 **`meta.prompt_suffix`에 딱 한 번** 그대로 넣는다. 임의로 줄이거나 바꾸지 않는다.
+
+> 🚨 **개별 `prompt_en` 말미에 붙이지 않는다.** 이 블록은 약 1,470자이고 9장 전부 동일하므로, 장마다 붙이면 **1.3만 자가 중복 생산**된다.
+> `.txt` 만들 때 python이 각 장에 자동으로 붙이므로 결과물은 동일하다. 원리는 `prompts/thumbnail-design.md`의 「🚨 공통 블록은 한 번만 쓴다」가 유일한 원본이다.
 
 ```
 Glossy semi-3D rendered illustration with a polished anime finish: smooth volumetric shading, strong specular highlights, soft ambient occlusion, clean bold outlines, vivid saturated colors, bright cinematic key light with sparkle and lens-flare accents, shallow depth of field on the background. Characters are "countryball" style spheres — a perfectly round glossy ball rendered with realistic sphere volume and a bright highlight, its entire surface wrapped edge to edge in its identity mark (an accurate national flag for a country, or the company's actual logo and brand color for a corporation), with large expressive cartoon eyes and mouth drawn directly on that surface, attached to a small human body in a business suit, work uniform, or military uniform, with small black gloved hands. The identity mark stays large and unbroken so it reads instantly at thumbnail size. Expressions are extreme and instantly readable at small size. The machinery, vehicles, and industrial objects in the scene are rendered with crisp mechanical detail and realistic metallic materials, contrasting against the stylized spheres. Any text that appears in the scene must be short, diegetic, and part of a real object; render it clearly and legibly. NO large title or caption overlay text, no watermark. 16:9 widescreen YouTube thumbnail.
@@ -258,7 +261,9 @@ Glossy semi-3D rendered illustration with a polished anime finish: smooth volume
     "project": "{프로젝트명}",
     "style": "countryball",
     "titles": ["{확정 제목}", "{제목 후보 2}", "{제목 후보 3}"],
-    "thumbnail_texts": ["{텍스트 세트 1}", "{텍스트 세트 2}", "{텍스트 세트 3}"]
+    "thumbnail_texts": ["{텍스트 세트 1}", "{텍스트 세트 2}", "{텍스트 세트 3}"],
+    "prompt_prefix": "",
+    "prompt_suffix": "{위 「스타일 프롬프트」 블록을 여기에 한 번만}"
   },
   "thumbnails": [
     {
@@ -266,7 +271,7 @@ Glossy semi-3D rendered illustration with a polished anime finish: smooth volume
       "purpose": "content",
       "composition": "정면 대결",
       "concept_ko": "네이버 로고 구체가 반품 박스를 걷어 가며 여유롭게 웃고, 쿠팡 로고 구체는 텅 빈 컨베이어 앞에서 경악. 국내 기업 간 대결이라 국기가 아니라 로고 구체를 썼다. 파트 3의 자동 수거 반품 도입이 근거.",
-      "prompt_en": "{장면 묘사} {하단 세이프존 문장} {고정 스타일 프롬프트}"
+      "prompt_en": "{하단 세이프존 문장} {장면 묘사}"
     },
     { "id": 2, "purpose": "content", "...": "..." },
     { "id": 3, "purpose": "content", "...": "..." },
@@ -292,4 +297,6 @@ Glossy semi-3D rendered illustration with a polished anime finish: smooth volume
 | `purpose` | `content`(1~3) / `title`(4~6) / `reference-inherit`(7~9). 계승 불가일 때만 7~9가 `emotion-closeup` |
 | `composition` | 정면 대결 / 압도적 피사체 / 감정 클로즈업 중 선택한 것 |
 | `concept_ko` | 무엇을 보여주는지 + **왜 이 구도인지 대본 근거** 1~2문장. 7~9번은 `[모순]/[남김]/[바꿈]`을 기록 |
-| `prompt_en` | **순서 고정: ① 하단 세이프존 문장 → ② 장면 묘사 → ③ 고정 스타일 프롬프트.** 세이프존을 뒤로 밀면 무시된다 |
+| `prompt_en` | **① 하단 세이프존 문장 → ② 장면 묘사** 까지만. 세이프존을 뒤로 밀면 무시된다 |
+| `meta.prompt_prefix` | 이 계열은 **빈 문자열**(`""`). 세이프존 문장에 장면별 선택지(`{smooth floor / plain ground / open sky}`)가 있어 장마다 달라지므로 `prompt_en`에 남긴다 |
+| `meta.prompt_suffix` | 위 「스타일 프롬프트」 블록(약 1,470자). **9장 전부 동일하므로 여기 한 번만.** 원리 → `thumbnail-design.md`의 「🚨 공통 블록은 한 번만 쓴다」 |

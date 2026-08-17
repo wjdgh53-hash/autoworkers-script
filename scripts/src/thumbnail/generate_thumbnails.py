@@ -85,6 +85,20 @@ def get_prompt_suffixes(strategy: dict | None, style: str | None = None) -> list
     return suffixes
 
 
+def assemble_prompt(thumb: dict, meta: dict) -> str:
+    """meta.prompt_prefix + prompt_en + meta.prompt_suffix 로 조립한다.
+
+    2026-08-17부터 prompts.json은 9장 전부 동일한 스타일·텍스트금지 문구를
+    meta.prompt_prefix / meta.prompt_suffix 에 한 번만 담는다 (중복 생산 제거).
+    정본은 prompts/thumbnail-design.md의 「🚨 공통 블록은 한 번만 쓴다」.
+
+    구형 파일은 두 필드가 없고 prompt_en이 완성본이므로 그대로 통과한다.
+    """
+    prefix = (meta.get("prompt_prefix") or "").strip()
+    suffix = (meta.get("prompt_suffix") or "").strip()
+    return " ".join(p for p in (prefix, thumb["prompt_en"].strip(), suffix) if p)
+
+
 def apply_boilerplate(prompt: str, suffixes: list[str]) -> str:
     """Append boilerplate suffixes if not already present (case-insensitive)."""
     lower = prompt.lower()
@@ -271,7 +285,7 @@ async def generate_thumbnails(
         success = await generate_thumbnail(
             client=client,
             model=model,
-            prompt=apply_boilerplate(thumb["prompt_en"], suffixes),
+            prompt=apply_boilerplate(assemble_prompt(thumb, data.get("meta", {})), suffixes),
             output_path=output_path,
             thumbnail_id=tid,
             total=len(data["thumbnails"]),

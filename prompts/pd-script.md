@@ -222,6 +222,9 @@ grep -n '^## Phase 5' prompts/creative-strategy.md
 
 생성한 JSON마다 1개씩, 같은 이름의 `.txt`를 만든다.
 
+> 🚨 **prefix·suffix를 각 장에 조립해서 쓴다.** 계열 규칙 파일들이 9장 전부 동일한 스타일·텍스트금지 문구를 `meta.prompt_prefix`/`meta.prompt_suffix`에 **한 번만** 적게 하고 있다(원본 → `prompts/thumbnail-design.md`의 「🚨 공통 블록은 한 번만 쓴다」).
+> 아래 스크립트가 `prefix + prompt_en + suffix`로 이어 붙이므로 **txt에는 완전한 프롬프트가 들어간다.** 조립을 빼먹으면 스타일 지정이 통째로 빠진 프롬프트가 나간다.
+
 ```bash
 {VENV_PYTHON} -c "
 import json, sys, os
@@ -230,11 +233,19 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
     p = os.path.join(d, src + '.json')
     if not os.path.exists(p): continue
     data = json.load(open(p, encoding='utf-8'))
-    body = '\n\n'.join(t['prompt_en'] for t in data['thumbnails'])
-    open(os.path.join(d, src + '.txt'), 'w', encoding='utf-8').write(body + '\n')
-    print(src + '.txt 생성')
+    meta = data.get('meta', {})
+    pre = (meta.get('prompt_prefix') or '').strip()
+    suf = (meta.get('prompt_suffix') or '').strip()
+    out = []
+    for t in data['thumbnails']:
+        out.append(' '.join(x for x in (pre, t['prompt_en'].strip(), suf) if x))
+    open(os.path.join(d, src + '.txt'), 'w', encoding='utf-8').write('\n\n'.join(out) + '\n')
+    print(src + '.txt 생성 — ' + str(len(out)) + '장, 장당 평균 ' + str(sum(len(x) for x in out)//len(out)) + '자')
 "
 ```
+
+- **장당 평균 글자수를 확인한다.** 1,200자 미만이면 prefix/suffix가 비어 있을 가능성이 높다 → JSON의 `meta`를 확인한다
+- 구형 JSON(`prompt_prefix`·`prompt_suffix` 없음)은 `prompt_en`이 완성본이므로 **그대로 통과한다.** 옛 프로젝트도 이 스크립트로 처리된다
 
 **txt 내용 규칙** (사용자가 실제로 복사하는 파일이다):
 - **영어 프롬프트 원문만** 넣는다. 번호·제목·한국어 설명·구분선을 넣지 않는다
@@ -513,7 +524,21 @@ strategist Phase 5만 호출하거나 PD가 직접 작성한다. 어느 쪽이�
 **검수 + 확정. 에이전트: script-reviewer(verdict 권한 + 신규 주장 WebSearch 검증)**
 
 1. **script-reviewer 에이전트 호출:**
-   - 전달: `_script/draft.md` + `_script/outline.md` + `_script/concept.md` + `_script/verified-data.md` + **`prompts/tone-guide.md`** + `prompts/script-review-checklist.md` + `prompts/draft-verify.md` + `_refs/*/analysis.md` (독창성 검수 — 레퍼런스 고유 표현 대조용)
+   - 전달: `_script/draft.md` + `_script/outline.md` + `_script/verified-data.md` + **`prompts/tone-guide.md`** + `prompts/script-review-checklist.md` + `prompts/draft-verify.md` + **레퍼 고유 표현 목록**(아래 🚨 참조)
+
+   > 🚨 **`_refs/*/analysis.md` 전문을 전달하지 않는다. `## 8. 레퍼 고유 표현 목록` 절만 발췌해 넣는다.**
+   > 검수자가 analysis.md에서 쓰는 것은 **표현 복제 대조**뿐이고, 그 재료는 8번 절에 전부 모여 있다. 구조·썸네일·댓글 분석은 검수와 무관하다.
+   > 전문을 주면 **레퍼 4편 합 6만 자**가 들어가고, 검수자는 그 안에서 표현을 다시 찾아내야 해서 **대조가 오히려 부정확해진다.**
+   >
+   > 발췌 방법 — 레퍼마다 8번 절의 줄 번호를 잡아 그 구간만 읽어 프롬프트에 넣는다:
+   > ```bash
+   > grep -n '^## 8\.' {P}/_refs/*/analysis.md
+   > ```
+   > ⚠️ **8번 절이 없으면**(옛 프로젝트) 그때만 해당 레퍼의 `analysis.md` 전문을 넘긴다. 없는 채로 넘어가면 독창성 검수가 통째로 빠진다.
+
+   > 🚨 **`concept.md`는 전달하지 않는다.** 검수자가 쓰는 확정 제목·핵심 약속·타겟 시청자는 `outline.md`의 `## 1. 기획 뼈대`에 전부 있다.
+   > `concept.md`(약 1만 자)의 나머지는 제목 후보 3안·썸네일 카피 후보 3안·썸네일 이미지 컨셉·선택 근거인데 **검수와 무관하다.** 썸네일은 검수 대상이 아니다.
+   > (script-writer에서 같은 이유로 이미 빼 둔 상태다 — 위 DRAFT 절 참조)
    - **문체 게이트에서 돌린 `check_tone.py` 출력 전문**을 함께 전달한다. reviewer는 이걸 review.md `## 0. 기계 검증`에 그대로 붙인다 (reviewer에게는 Bash 툴이 없다)
    - 출력: `{P}/_script/review.md` (체크리스트 + 심각도 분류 + 신규 주장 검증 결과 + verdict)
    - reviewer가 신규 주장을 식별하면 즉시 WebSearch로 검증하여 review.md에 포함

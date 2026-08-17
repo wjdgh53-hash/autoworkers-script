@@ -1,6 +1,6 @@
 ---
 name: pattern-extractor
-model: opus
+model: sonnet
 tools:
   - Read
   - Write

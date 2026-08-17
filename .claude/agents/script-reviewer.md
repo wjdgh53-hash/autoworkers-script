@@ -19,15 +19,16 @@ description: draft.md를 검수하고, 신규 주장을 즉시 WebSearch로 검�
 
 SKILL.md(PD)가 Task tool로 호출 시 전달:
 - draft.md 내용
-- outline.md 내용
-- concept.md 내용
+- outline.md 내용 — **확정 제목·핵심 약속·타겟 시청자는 `## 1. 기획 뼈대`에서 본다**
 - verified-data.md 내용
 - 검수 체크리스트 (prompts/script-review-checklist.md)
 - **문체 가이드 (prompts/tone-guide.md)** — 문체 검수의 판정 기준. 대조쌍이 규칙 문장보다 우선한다
 - **`check_tone.py` 실행 결과 전문** — PD가 REVIEW 직전 게이트에서 돌린 출력
 - 검증 기준 (prompts/draft-verify.md)
 - **대본 골격 (prompts/script-skeleton.md)** — 8블록 구조 검수의 판정 기준
-- 레퍼런스 분석 (_refs/*/analysis.md) — 독창성 검수 시 레퍼런스 고유 표현(비유 소재·시그니처·펀치라인) 대조용
+- **레퍼 고유 표현 목록** — 각 `_refs/*/analysis.md`의 `## 8. 레퍼 고유 표현 목록` 절만 발췌해 온다. 독창성 검수의 대조 재료다
+  - ⛔ `analysis.md` **전문은 오지 않는다.** 구조·썸네일·댓글 분석은 검수와 무관하고, 전문(레퍼 4편 합 6만 자)에서 표현을 다시 찾으면 대조가 부정확해진다
+  - `concept.md`도 오지 않는다 — 필요한 정보는 outline의 `## 1. 기획 뼈대`에 있다
 
 ## 작업
 
@@ -85,7 +86,7 @@ prompts/script-review-checklist.md의 카테고리 검수 + 신규 주장 즉시
 
 ### 7. 독창성 검수
 
-- `_refs/*/analysis.md`에 기록된 레퍼런스 고유 표현(비유·시그니처/캐치프레이즈·펀치라인·인상적 문구)을 대본과 대조한다.
+- 전달받은 **「레퍼 고유 표현 목록」**(각 레퍼 `analysis.md`의 `## 8.` 절)의 표현을 대본과 한 줄씩 대조한다. 목록에 오른 표현은 전부 **금지**다.
 - 사실·수치·사건의 중복은 위반이 아니다. **"표현"이 레퍼런스와 동일하거나 핵심 명사만 바꾼 수준이면 단 1개라도 치명적.**
 - verified-data.md·outline.md에 레퍼런스에서 흘러든 비유가 있더라도, 대본이 그대로 옮겼으면 위반으로 본다.
 - 위반 표현을 발견하면 정확히 인용하고, 어느 레퍼런스의 어떤 표현과 겹치는지 명시한 뒤 대체 표현을 제안한다.

@@ -6,9 +6,22 @@
 
 | 에이전트 | model | 실행 방식 | 참조 프롬프트 |
 |----------|-------|-----------|-------------|
-| video-analyst | opus | 전체 동시 병렬 | prompts/reference-analyze.md |
-| pattern-extractor | opus | 1개 (data-researcher와 병렬) | prompts/reference-patterns.md + config/settings.json (hook_strategy) |
+| video-analyst | **sonnet** | 전체 동시 병렬 | prompts/reference-analyze.md |
+| pattern-extractor | **sonnet** | 1개 (data-researcher와 병렬) | prompts/reference-patterns.md + config/settings.json (hook_strategy) |
 | data-researcher | opus | 1개 (pattern-extractor와 병렬, WebSearch) | prompts/data-research.md |
+
+### 🚨 모델 배정 원칙 — 「추출은 sonnet, 창작·검증은 opus」
+
+정해진 템플릿을 채우는 **추출·요약** 작업은 sonnet, 없던 것을 만들거나 사실을 판정하는 작업은 opus다.
+
+| 구분 | 에이전트 | 이유 |
+|---|---|---|
+| **sonnet** | video-analyst, pattern-extractor | 레퍼 대본을 정해진 항목표에 옮기는 일이다. 창작이 아니다 |
+| **opus 유지** | strategist, outline-writer, script-writer, script-reviewer | 대본 품질이 여기서 결정된다 |
+| **opus 유지** | data-researcher | ⛔ **sonnet으로 내리지 않는다.** 팩트 검증이고, 틀리면 허위 컨텐츠 제재로 채널이 죽는다. script-reviewer가 뒤에서 재검증하지만 **「신규 주장」만** 본다 — `verified-data.md`에 이미 검증됐다고 적혀 들어온 틀린 수치는 신규 주장이 아니어서 그냥 통과한다 |
+
+> 이 배정은 1차 버전(`autoworkers-1st`)의 원설계다. 중간에 전부 opus로 바뀌면서 비용이 뛰었고, 2026-08-17에 되돌렸다.
+> ⛔ **에이전트를 새로 추가할 때 기본값을 opus로 두지 않는다.** 위 표의 구분으로 먼저 판정한다.
 | strategist **#1** | opus | 1개 (STRATEGY 전반) | prompts/creative-strategy.md + prompts/ctr-reference.md + prompts/pd-templates.md + config/settings.json (hook_strategy) + config/thumbnail-strategy.json (있으면) — **썸네일 계열 규칙 3종은 주지 않는다** |
 | strategist **#2** | opus | 1개 (STRATEGY 후반, 패키지 확정 후) | prompts/creative-strategy.md **Phase 5 절만**(PD가 `grep -n '^## Phase 5'`로 줄 번호를 잡아 offset 전달) + prompts/thumbnail-design.md + prompts/thumbnail-countryball.md + (국가·안보 소재면) prompts/thumbnail-geopolitics.md |
 | outline-writer | opus | 1개 (OUTLINE) | prompts/outline-guide.md + prompts/pd-templates.md (outline.md 포맷 절) |

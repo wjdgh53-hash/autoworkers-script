@@ -463,6 +463,8 @@ edge, and anything resting on them sits at mid height.
 
 `{P}/output/thumbnails/prompts.json`
 
+> 🚨 **9장 전부 똑같은 문구는 `meta.prompt_suffix`에 한 번만 쓴다.** 상세 규칙은 아래 「🚨 공통 블록은 한 번만 쓴다」 절.
+
 ```json
 {
   "meta": {
@@ -470,7 +472,9 @@ edge, and anything resting on them sits at mid height.
     "style": "photorealistic",
     "titles": ["{확정 제목}", "{제목 후보 2}", "{제목 후보 3}"],
     "thumbnail_texts": ["{텍스트 세트 1}", "{텍스트 세트 2}", "{텍스트 세트 3}"],
-    "anchor_ref": "{앵커 레퍼 번호} — {앵커 제목}"
+    "anchor_ref": "{앵커 레퍼 번호} — {앵커 제목}",
+    "prompt_prefix": "",
+    "prompt_suffix": "{위 「프롬프트 작성 규칙」의 ⑤스타일 문구 + ⑥오버레이 텍스트 금지 문구를 여기에 한 번만}"
   },
   "thumbnails": [
     {
@@ -504,4 +508,24 @@ edge, and anything resting on them sits at mid height.
 | `purpose` | `content`(1~3) / `title`(4~6) / `reference-inherit`(7~9). 계승 불가일 때만 7~9가 `emotion-closeup` |
 | `composition` | 이 장에서 고른 구도 패턴명 |
 | `concept_ko` | 무엇을 보여주는지 + **왜 이 구도인지 대본 근거** 1~2문장. 7~9번은 `[모순]/[남김]/[바꿈]`을 기록 |
-| `prompt_en` | 영어 프롬프트 (3~5문장). **순서 고정: ① 세이프존 문장 → ② 장면 묘사 → ③ 스타일 문구 → ④ 텍스트 금지 문구.** 세이프존을 뒤로 밀면 무시된다 |
+| `prompt_en` | 영어 프롬프트 (3~5문장). **① 세이프존 문장 → ② `SCALE, EQUALLY IMPORTANT:` → ③ 장면 묘사 → ④ 인물과 표정** 까지만. 세이프존을 뒤로 밀면 무시된다 |
+| `meta.prompt_prefix` | 이 계열은 **빈 문자열**(`""`). 세이프존 문장에 장면별 선택지(`{인물의 등·어깨 / 그늘진 지면 / 테이블 상판}`)가 있어서 장마다 달라지므로 `prompt_en` 안에 남긴다 |
+| `meta.prompt_suffix` | ⑤스타일 문구 + ⑥오버레이 텍스트 금지 문구. **9장 전부 동일하므로 여기 한 번만 쓴다** |
+
+---
+
+## 🚨 공통 블록은 한 번만 쓴다 (3계열 공통 원본)
+
+> **실측(2026-08-17)**: `prompt_en`이 장당 **3,141자**였는데 그중 약 600자가 **9장 전부 글자 하나 다르지 않은 스타일·텍스트금지 문구**였다.
+> 2계열이면 9장 × 2 = 18번 반복되어 **약 1.9만 자가 순수 중복 생산**됐다. 이 파일과 다른 두 계열 파일이 "모든 prompt_en에 붙여라"라고 지시한 결과다.
+
+**최종 프롬프트는 이렇게 조립된다:**
+
+```
+meta.prompt_prefix  +  prompt_en  +  meta.prompt_suffix
+```
+
+- 조립은 **`.txt` 만들 때 python이 자동으로** 한다 (`prompts/pd-script.md`의 「복사용 통합본(.txt) 생성」). 사용자가 복사하는 txt는 **완전한 프롬프트**이므로 결과물은 종전과 동일하다
+- ⛔ **`prompt_en` 안에 prefix·suffix 내용을 다시 넣지 않는다.** 넣으면 최종 프롬프트에 같은 문장이 두 번 들어가 모델이 혼란한다
+- **장마다 달라지는 문장은 prefix/suffix에 넣지 않는다.** 장면별 선택지(`{…/…}`)나 수치가 들어가는 문장은 `prompt_en`에 남긴다
+- 계열마다 무엇을 prefix/suffix로 뺄지는 **그 계열 파일의 「출력 형식」 표**가 정한다 (세이프존 문장에 장면별 슬롯이 있는 계열은 뺄 수 없다)

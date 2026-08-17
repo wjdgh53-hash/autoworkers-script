@@ -317,7 +317,11 @@ five-eighths. Anything held or carried sits at mid height, never near the bottom
 
 ---
 
-## 프롬프트 앞부분에 항상 명시한다
+## 프롬프트 앞부분에 항상 명시한다 (`meta.prompt_prefix`에 한 번만 쓴다)
+
+> 🚨 **이 계열은 세이프존 문장과 아래 스타일 문구가 둘 다 장면과 무관하게 고정**이다. 그래서 **둘을 이어 붙여 `meta.prompt_prefix`에 한 번만** 쓰고, `prompt_en`에는 장면 묘사만 남긴다.
+> 순서는 종전과 완전히 같다 — **① 세이프존 → ② 아래 스타일 문구 → ③ 장면 묘사 → ④ 텍스트 금지 문구.** `.txt` 만들 때 python이 자동으로 조립한다.
+> 원리 → `prompts/thumbnail-design.md`의 「🚨 공통 블록은 한 번만 쓴다」가 유일한 원본이다.
 
 ```
 photoreal current-affairs broadcast composite: every person, flag and location is a real
@@ -341,7 +345,7 @@ impasto, NOT a matte painting, NOT anime, NOT an illustration, NOT a 3d render
 >
 > ⚠️ 예전 이 절은 `no text, no letters, no words, no numbers`로 텍스트를 통째로 막았다. **실측(2026-08-09) 결과 그 지시가 화면 밀도를 죽여 임팩트를 깎았다.**
 
-**끝에 붙이는 금지 문구는 오버레이만 막는 형태로 쓴다:**
+**끝에 붙이는 금지 문구는 오버레이만 막는 형태로 쓴다 — `meta.prompt_suffix`에 한 번만 쓴다:**
 
 ```
 no title overlay text, no captions, no subtitle bars, no lower-third news banner, no watermark.
@@ -361,7 +365,9 @@ Apart from the named text above, do not invent any other words or letterforms an
     "style": "geopolitics",
     "narrative_direction": "부정형 — 파병 대가로 방어 무기만 받은 북한의 자충수 서사",
     "titles": ["{확정 제목}", "{제목 후보 2}", "{제목 후보 3}"],
-    "thumbnail_texts": ["{텍스트 세트 1}", "{텍스트 세트 2}", "{텍스트 세트 3}"]
+    "thumbnail_texts": ["{텍스트 세트 1}", "{텍스트 세트 2}", "{텍스트 세트 3}"],
+    "prompt_prefix": "{위 「하단 세이프존」의 COMPOSITION RULE 블록} {위 「프롬프트 앞부분에 항상 명시한다」의 스타일 문구}",
+    "prompt_suffix": "{위 「끝에 붙이는 금지 문구」 블록}"
   },
   "thumbnails": [
     {
@@ -369,7 +375,7 @@ Apart from the named text above, do not invent any other words or letterforms an
       "purpose": "content",
       "direction": "부정형",
       "concept_ko": "{무엇을 보여주는지 + 왜 이 방향으로 판정했는지 대본 근거}",
-      "prompt_en": "{세이프존 문장} {스타일 문구} {장면 묘사} {텍스트 금지 문구}"
+      "prompt_en": "{장면 묘사}"
     }
   ]
 }
@@ -382,4 +388,8 @@ Apart from the named text above, do not invent any other words or letterforms an
 | `purpose` | `content`(1~3) / `title`(4~6) / `reference-inherit`(7~9). 계승 불가일 때만 7~9가 `emotion-closeup` |
 | `direction` | 이 장의 방향. 두 나라 대비면 `혼합`으로 적고 어느 쪽이 어느 방향인지 concept_ko에 명시 |
 | `concept_ko` | 무엇을 보여주는지 + 방향 판정 근거 1~2문장 |
-| `prompt_en` | 세이프존 문장으로 시작하고 텍스트 금지 문구로 끝나는 완성본 |
+| `prompt_en` | **장면 묘사만.** 세이프존·스타일·텍스트금지는 `meta`의 prefix/suffix가 담당한다 |
+| `meta.prompt_prefix` | 세이프존 블록 + 스타일 문구. **이 계열은 둘 다 장면과 무관하게 고정**이라 함께 뺀다. 9장 전부 동일하므로 여기 한 번만 |
+| `meta.prompt_suffix` | 텍스트 금지 문구. 9장 전부 동일하므로 여기 한 번만 |
+
+> ⛔ **`prompt_en`에 세이프존·스타일·텍스트금지 문구를 다시 넣지 않는다.** 넣으면 조립 후 같은 문장이 두 번 들어간다. 원리 → `prompts/thumbnail-design.md`의 「🚨 공통 블록은 한 번만 쓴다」
