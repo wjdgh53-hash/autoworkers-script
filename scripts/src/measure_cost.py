@@ -77,7 +77,21 @@ def price(model: str, c: collections.Counter) -> tuple[float, bool]:
 
 
 def scan(path: str) -> dict[str, collections.Counter]:
-    """세션 파일 1개를 모델별 usage로 집계한다."""
+    """세션 1개를 모델별 usage로 집계한다. **서브에이전트를 반드시 포함한다.**
+
+    🚨 서브에이전트 토큰은 세션 jsonl에 없다. `{세션ID}/subagents/agent-*.jsonl`에
+    따로 쌓인다. 이걸 빼면 파이프라인 비용의 대부분이 누락된다 — 실측(2026-08-18)
+    에서 메인 $35 / 서브에이전트 $70으로, 서브가 3분의 2였다.
+    """
+    agg = _scan_one(path)
+    subdir = os.path.join(os.path.dirname(path), os.path.basename(path)[:-6], "subagents")
+    for sub in sorted(glob.glob(os.path.join(subdir, "agent-*.jsonl"))):
+        for model, c in _scan_one(sub).items():
+            agg[model].update(c)
+    return agg
+
+
+def _scan_one(path: str) -> dict[str, collections.Counter]:
     agg: dict[str, collections.Counter] = collections.defaultdict(collections.Counter)
     with open(path, encoding="utf-8", errors="ignore") as f:
         for line in f:
