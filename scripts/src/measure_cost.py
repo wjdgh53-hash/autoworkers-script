@@ -135,9 +135,19 @@ def report(agg: dict[str, collections.Counter], label: str) -> float:
         print(f"    {'출력':<22}{c['output_tokens']:>14,}")
         print(f"    {'캐시 쓰기':<21}{c['cache_creation_input_tokens']:>14,}")
         print(f"    {'캐시 읽기':<21}{c['cache_read_input_tokens']:>14,}")
+        raw = (c["input_tokens"] + c["output_tokens"]
+               + c["cache_creation_input_tokens"] + c["cache_read_input_tokens"])
+        print(f"    {'━ 원시 합계':<20}{raw:>14,}")
         if known:
-            print(f"    {'→ 비용':<21}{'$' + format(cost, ',.2f'):>14}")
-    print(f"\n  {'합계':<23}{'$' + format(total, ',.2f'):>14}")
+            print(f"    {'→ 환산 비용(참고)':<18}{'$' + format(cost, ',.2f'):>14}")
+    grand_raw = sum(c["input_tokens"] + c["output_tokens"]
+                    + c["cache_creation_input_tokens"] + c["cache_read_input_tokens"]
+                    for c in agg.values())
+    print(f"\n  {'★ 원시 토큰 합계':<19}{grand_raw:>14,}   ← 구독 플랜 사용량은 이 기준")
+    print(f"  {'환산 비용 합계(참고)':<18}{'$' + format(total, ',.2f'):>14}   ← API 종량제 기준")
+    print("\n  ※ 구독 플랜(Max/Pro)은 API 종량제와 가중치가 다르다. 출력을 입력의 5배로,")
+    print("     캐시 읽기를 0.1배로 치는 것은 API 단가이며 구독 사용량 산정 방식이 아니다.")
+    print("     절감 여부를 판단할 때는 원시 토큰 합계를 본다.")
     if unknown:
         print(f"  ⚠️ 단가를 모르는 모델이 있어 합계가 실제보다 낮습니다: {', '.join(unknown)}")
     return total
