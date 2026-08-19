@@ -36,9 +36,11 @@ PD는 파일을 **경로로** 전달한다. **작업 시작 전에 아래를 Rea
 | `prompts/creative-strategy.md` | 설계 절차 | #1 전문 / #2 **Phase 5 절만** |
 | `prompts/ctr-reference.md` | CTR 이론 | #1만 |
 | `prompts/pd-templates.md` | 산출물 포맷 정의 | #1만 |
-| `prompts/thumbnail-design.md` | **실사형** 썸네일 규칙 | #2만 |
+| `prompts/thumbnail-design.md` | **실사형** 썸네일 규칙 (공통) | #2만 |
 | `prompts/thumbnail-countryball.md` | **국기볼형** 썸네일 규칙 | #2만 |
 | `prompts/thumbnail-geopolitics.md` | **정세형** 썸네일 규칙 (국가·안보 소재일 때) | #2만 |
+| 🚨 `config/thumbnail-design.md` | **채널 전용 실사형 오버라이드 — 있으면 위 공통 파일과 「함께」 읽는다.** 공통을 대체하지 않고 명시된 절만 덮어쓰며, **충돌하면 이 파일이 이긴다** | #2만 |
+| 🚨 `config/thumbnail-illustration.md` | **일러스트형** 썸네일 규칙 (**채널 전용. 공통 파일이 없다**) | #2만 |
 | `config/profile.md` | 채널 톤/타겟 |
 | `config/settings.json` | `hook_strategy` 값 |
 | `config/pd-guide.md` | 채널 전략 가이드 (있으면) |

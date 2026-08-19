@@ -529,7 +529,11 @@ TTS 나레이션 기준 1분 ≈ 440자 (1초 ≈ 7.3자). 전체 타겟 러닝�
 3. 각 Hook에서 효과적인 요소(구조, 감정 트리거, 오프닝 기법)를 식별한다
 4. 아래 차용 레벨 중 하나를 적용한다
 
-**차용 레벨:**
+> 🚨 **이 표는 「Hook = 대본 본문」 전용이다. 제목·썸네일 텍스트에는 적용하지 않는다 (2026-08-19 명시).**
+> 본문은 독창성 규칙이 그대로 살아 있어 L1을 억제하지만, **제목·썸네일은 2026-08-16에 전면 완화돼 금지선이 「100% 그대로 베끼기」 하나뿐**이다(위 「🔓 제목·썸네일 텍스트의 어휘 제약」·`ctr-reference.md`의 「썸네일 문구 차용 방법론」).
+> 두 표가 같은 L1~L4 이름을 쓰는 탓에 **본문 기준을 제목에 잘못 적용하는 사고가 있었다.** 어느 표를 보고 있는지 먼저 확인한다.
+
+**차용 레벨 (본문 Hook 전용):**
 
 | 레벨 | 설명 | 예시 (레퍼 원문: "한때 시장 99%를 지배했던 배민, 이제 더 이상 1등이 아닙니다") |
 |------|------|---|
@@ -722,14 +726,20 @@ Phase 4에서 확정된 패키지를 기반으로 **계열별로 9개씩** 프�
 
 > 🚨 **어느 계열을 만들지는 `channels/{채널}/config/thumbnail-strategy.json`의 `styles` 배열이 정한다.** 거기 적힌 계열만 만들고, 없는 계열은 만들지 않는다. **사용자에게 묻지 않는다.**
 > - `styles`에 있어도 **정세형은 국가·안보 소재일 때만** 만든다(아래 생성 조건 표). 소재가 아니면 만들지 않고, 만들지 않았다는 사실과 사유를 보고한다
-> - 채널별 현황(2026-08-16 정호님 지정): 방구석 경제 = `photorealistic` + `countryball` / 탐정경제학 = `geopolitics` + `countryball`
+> - 채널별 현황(2026-08-19 갱신): 방구석 경제 = `photorealistic` + `illustration` (**국기볼 제거**) / 탐정경제학 = `geopolitics` + `countryball`
+>   ⛔ 이 줄은 **참고용 메모다.** 판단은 항상 `styles` 배열로 하고, 메모와 어긋나면 **JSON이 이긴다**
 > - `styles`가 없거나 비어 있으면 그때만 「해당하는 계열 전부」로 폴백한다
 
 | 계열 | 규칙 파일 | 출력 파일 | 생성 조건 |
 |------|----------|----------|----------|
-| **실사형** | `prompts/thumbnail-design.md` | `{P}/output/thumbnails/prompts.json` | 항상 |
-| **국기볼형** | `prompts/thumbnail-countryball.md` | `{P}/output/thumbnails/prompts-countryball.json` | 항상 |
-| **정세형** | `prompts/thumbnail-geopolitics.md` | `{P}/output/thumbnails/prompts-geopolitics.json` | **국가·안보·전쟁·정권 소재일 때만** |
+| **실사형** | `prompts/thumbnail-design.md` **+ (있으면) `channels/{채널}/config/thumbnail-design.md`** | `{P}/output/thumbnails/prompts.json` | `styles`에 있을 때 |
+| **국기볼형** | `prompts/thumbnail-countryball.md` | `{P}/output/thumbnails/prompts-countryball.json` | `styles`에 있을 때 |
+| **정세형** | `prompts/thumbnail-geopolitics.md` | `{P}/output/thumbnails/prompts-geopolitics.json` | `styles`에 있고 **국가·안보·전쟁·정권 소재일 때만** |
+| **일러스트형** | `channels/{채널}/config/thumbnail-illustration.md` (**채널 전용. 공통 파일 없음**) | `{P}/output/thumbnails/prompts-illustration.json` | `styles`에 있을 때 |
+
+> 🚨 **채널 전용 오버라이드를 빠뜨리지 않는다 (2026-08-19 신설).**
+> `channels/{채널}/config/thumbnail-design.md`가 **존재하면 공통 파일과 함께 반드시 읽는다.** 공통 파일을 대체하지 않고 명시된 절만 덮어쓰며, **충돌하면 채널 파일이 이긴다.**
+> ⛔ 이걸 빠뜨리면 채널 전용 게이트가 통째로 무시된 채 9장이 생성된다 — 2026-08-19에 실제로 이 누락이 있었다.
 
 **정세형 생성 조건 판정** — 대본 소재가 국가 간 갈등·대립, 전쟁·파병·군사, 안보 위기, 정권·체제, 외교 압박·제재에 해당하면 생성한다. 기업 경쟁·소비·유통·산업 기술·국내 사회 현상이면 **생성하지 않고 그 사실과 이유를 보고**한다. 억지로 국기를 끌어오지 않는다.
 

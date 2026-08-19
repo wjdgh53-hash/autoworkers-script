@@ -46,7 +46,8 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 
 > ⚠️ **에이전트에게 넘길 프롬프트 파일은 PD가 읽지 않는다.** PD가 미리 읽으면 같은 텍스트가 이중으로 쌓인다.
 > - strategist #1(패키지)가 직접 Read: `creative-strategy.md`, `ctr-reference.md`, `pd-templates.md`
-> - strategist #2(썸네일)가 직접 Read: `creative-strategy.md`의 **Phase 5 절만**, `thumbnail-design.md`, `thumbnail-countryball.md`, (해당 시) `thumbnail-geopolitics.md`
+> - strategist #2(썸네일)가 직접 Read: `creative-strategy.md`의 **Phase 5 절만** + **그 채널 `styles`에 있는 계열의 규칙 파일** (`thumbnail-design.md` / `thumbnail-countryball.md` / `thumbnail-geopolitics.md` / 채널 전용 `config/thumbnail-illustration.md`)
+>   🚨 **+ `channels/{채널}/config/thumbnail-design.md`가 있으면 반드시 함께 Read한다 (2026-08-19 신설).** 공통 파일을 대체하지 않고 명시된 절만 덮어쓰며, 충돌하면 채널 파일이 이긴다. 계열·전달 목록의 원본은 `prompts/pd-script.md`의 STRATEGY #2 절이다
 > - outline-writer가 직접 Read: `outline-guide.md`, `pd-templates.md`(outline 포맷 절), `patterns.md`, `verified-data.md`
 >
 > 🚨 **OUTLINE 단계에서 PD는 `patterns.md`·`verified-data.md`·`pd-templates.md`를 읽지 않는다.** 합쳐 6만 자가 메인 컨텍스트에 눌러앉아 이후 모든 단계에서 재전송된다.
@@ -110,7 +111,7 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 - 대본·컨셉·제목은 **일절 건드리지 않는다.** 썸네일 프롬프트만 계열별로 새로 만든다
 - 상세 절차 → `prompts/pd-script.md`의 "썸네일 프롬프트 재생성" 참조
 
-> ⚠️ **이 작업은 새 세션에서 하는 것을 권장한다.** 예전 세션에는 옛 썸네일 규칙(애니메·와일드카드·하단 1/2)이 컨텍스트에 남아 있어, 파일이 바뀌어도 옛 규칙으로 만들 수 있다. 이어서 하는 경우 반드시 계열별 규칙 파일 3종(`thumbnail-design.md`, `thumbnail-countryball.md`, `thumbnail-geopolitics.md`)을 **다시 Read한 뒤** 진행한다.
+> ⚠️ **이 작업은 새 세션에서 하는 것을 권장한다.** 예전 세션에는 옛 썸네일 규칙(애니메·와일드카드·하단 1/2)이 컨텍스트에 남아 있어, 파일이 바뀌어도 옛 규칙으로 만들 수 있다. 이어서 하는 경우 반드시 **그 채널 `styles`에 있는 계열의 규칙 파일 전부**(`thumbnail-design.md` / `thumbnail-countryball.md` / `thumbnail-geopolitics.md` / 채널 전용 `config/thumbnail-illustration.md`)와 **채널 전용 오버라이드 `config/thumbnail-design.md`(있으면)** 를 **다시 Read한 뒤** 진행한다.
 
 ### 산출물 다시 정리 (완료된 프로젝트 포함)
 
@@ -154,7 +155,7 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 | COLLECT | _refs/{NNN}/ | collect.py | URL 필요 |
 | ANALYZE | analysis.md | video-analyst ×N 병렬 | 채널프로필 전달 |
 | DATA_PREP | patterns.md, factcheck.md, verified-data.md | pattern-extractor + data-researcher 병렬 | 완전 병렬 |
-| STRATEGY | concept.md + hook-intro.md + prompts.json + prompts-countryball.json (+ prompts-geopolitics.json) + **계열별 복사용 통합본 .txt** | strategist **2회** (#1 패키지 / #2 썸네일) | 패키지 4개(A·B·C·D). **#1은 썸네일 계열 규칙 3종을 읽지 않고, #2는 `creative-strategy.md`의 Phase 5 절만 읽는다.** **프롬프트 파일은 경로로 전달**. 채팅에는 **목록 표 + txt 링크만** — 영문 프롬프트 원문 출력 금지 |
+| STRATEGY | concept.md + hook-intro.md + **그 채널 `styles`에 있는 계열의 JSON 전부** + **계열별 복사용 통합본 .txt** | strategist **2회** (#1 패키지 / #2 썸네일) | 패키지 4개(A·B·C·D). **#1은 썸네일 계열 규칙 3종을 읽지 않고, #2는 `creative-strategy.md`의 Phase 5 절만 읽는다.** **프롬프트 파일은 경로로 전달**. 채팅에는 **목록 표 + txt 링크만** — 영문 프롬프트 원문 출력 금지 |
 | OUTLINE | outline.md | outline-writer 1개 (셀프체크 내장) | **모든 파트 헤더에 `(~N분, ~N자)` 필수** (클로징 포함) → PD는 `grep '^### '`로만 검증 |
 | DRAFT | draft.md | script-writer (**인접 파트 2개씩 묶어 1개** 병렬) + merge_draft.py | 파트별 목표를 **각각 범위로** 전달 → 병합 → 분량 검증. 파트마다 파일은 따로 쓴다. **`concept.md` 전달 금지** — outline `## 1. 기획 뼈대`로 대체 (에이전트 수만큼 곱해진다) |
 | REVIEW_FINALIZE | script.txt | reviewer(verdict 권한 + WebSearch 검증) + 최대 1회 리비전 + TTS 검수(`prompts/tts-rules.md`) | reviewer가 직접 판단 |
@@ -172,8 +173,8 @@ script.txt 생성 완료 시:
    - _script/script.txt — 최종 대본 (업로드용). {N}자 / 약 {N}분
    - _script/concept.md — 확정 컨셉·제목 후보 3안·썸네일 카피 후보 3안
    - output/youtube.md — 제목/썸네일 카피 후보 3안·설명·영상 출처·태그·고정 댓글
-   - 썸네일 프롬프트 (복사용) — [실사형](…prompts.txt) · [국기볼형](…prompts-countryball.txt) · [정세형](…prompts-geopolitics.txt)
-   - 썸네일 컨셉·구조 (참고용) — [실사형](…prompts.json) · [국기볼형](…prompts-countryball.json) · [정세형](…prompts-geopolitics.json)
+   - 썸네일 프롬프트 (복사용) — **그 채널 `styles`에 있는 계열만** [실사형](…prompts.txt) · [국기볼형](…prompts-countryball.txt) · [정세형](…prompts-geopolitics.txt) · [일러스트형](…prompts-illustration.txt)
+   - 썸네일 컨셉·구조 (참고용) — **동일 계열만** [실사형](…prompts.json) · [국기볼형](…prompts-countryball.json) · [정세형](…prompts-geopolitics.json) · [일러스트형](…prompts-illustration.json)
    ```
 
    **썸네일은 계열이 몇 개든 항상 2줄로 고정**한다 — 복사용(.txt) 한 줄, 참고용(.json) 한 줄. 계열별로 줄을 나누지 않는다.

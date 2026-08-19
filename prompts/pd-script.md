@@ -164,17 +164,22 @@ grep -n '^## Phase 5' prompts/creative-strategy.md
      - `photorealistic` → `prompts/thumbnail-design.md`
      - `countryball` → `prompts/thumbnail-countryball.md`
      - `geopolitics` → `prompts/thumbnail-geopolitics.md` (단 **국가·안보 소재일 때만.** `styles`에 있어도 소재가 아니면 전달하지 않는다)
+     - `illustration` → `channels/{채널}/config/thumbnail-illustration.md` (**채널 전용 계열.** 공통 파일이 없다)
      - ⛔ `styles`에 없는 계열의 규칙 파일을 전달하지 않는다. 규칙이 서로 정반대라 섞이면 프롬프트가 깨진다
-     - 채널별 현황(2026-08-16 정호님 지정): 방구석 경제 = `photorealistic` + `countryball` / 탐정경제학 = `geopolitics` + `countryball`
+     - 🚨 **채널 전용 오버라이드가 있으면 공통 규칙 파일과 「함께」 전달한다 (2026-08-19 신설).**
+       `channels/{채널}/config/thumbnail-design.md`가 **존재하면 반드시 같이 넘긴다.** 공통 파일을 대체하지 않고 명시된 절만 덮어쓴다 — 충돌하면 채널 파일이 이긴다
+       ⛔ 이걸 빠뜨리면 채널 전용 게이트(예: 방구석의 얼굴·원단위 금액·사건 진행중·주어=내 돈)가 **통째로 무시된 채 썸네일이 나온다.** 실제로 2026-08-19에 이 누락이 있었다
+     - 채널별 현황(2026-08-19 갱신): 방구석 경제 = `photorealistic` + `illustration` (**국기볼 제거**, 근거 → `channels/bangguseok-economy/config/thumbnail-strategy.json`의 `_countryball_removed`) / 탐정경제학 = `geopolitics` + `countryball`
+     - ⛔ **위 「채널별 현황」은 참고용 메모일 뿐이다.** 실제 판단은 **항상 그 채널의 `thumbnail-strategy.json`의 `styles` 배열**로 한다. 메모와 JSON이 어긋나면 **JSON이 이기고**, 메모를 고친다
    - `channels/{채널}/config/thumbnail-strategy.json` + `profile.md`
    - `{P}/_script/concept.md` (확정 컨셉·계승 정보) + `{P}/_script/verified-data.md`
    - `{P}/_refs/{앵커}/thumbnail.webp` + `analysis.md` — 계승 3장 근거
    - ⛔ `patterns.md` · `_strategy_candidates.md` · `ctr-reference.md`를 전달하지 않는다. Phase 5는 확정된 `concept.md`만 있으면 된다
-3. 출력: `prompts.json` + `prompts-countryball.json` (+ 해당 시 `prompts-geopolitics.json`)
+3. 출력: **`styles`에 적힌 계열마다 파일 1개.** `prompts.json`(실사형) / `prompts-countryball.json` / `prompts-geopolitics.json` / `prompts-illustration.json` 중 **해당 계열만**
 
 ### auto 모드
 
-1. #1이 낸 concept.md + hook-intro.md 존재 확인 → 곧바로 **strategist #2** 호출 → prompts.json + prompts-countryball.json (+ 국가·안보 소재면 prompts-geopolitics.json) 존재 확인
+1. #1이 낸 concept.md + hook-intro.md 존재 확인 → 곧바로 **strategist #2** 호출 → **`styles`에 적힌 계열의 JSON이 전부 생겼는지** 확인 (정세형은 국가·안보 소재일 때만)
 2. 결과 요약 보고 — 확정 패키지(A~D 중 어느 것인지) + 확정 제목
 3. **복사용 통합본 .txt 생성** (아래 "복사용 통합본(.txt) 생성" 참조) — 필수
 4. **썸네일 목록 표 + txt 링크 출력** (아래 "썸네일 프롬프트 채팅 출력 — 목록 표만" 참조. 영문 프롬프트 원문은 출력하지 않는다)
@@ -207,10 +212,12 @@ grep -n '^## Phase 5' prompts/creative-strategy.md
    > `SendMessage`는 그 에이전트의 컨텍스트를 그대로 이어받으므로 **재Read가 0**이다. 설계 밀도는 그대로고 비용만 빠진다.
    > **실측(2026-08-08, china-broke-reality)**: 혼합안(A 앵글 + 레퍼 제목 골격)을 새 Task로 띄워 **183,441토큰**을 썼다. SendMessage였으면 약 3만이었다.
    > PD가 조립하지 않는 이유: 계승 골격을 새로 짜려면 어휘 대조표·[모순]/[남김]/[바꿈] 판정·텐션 트라이앵글을 다시 설계해야 하고, 그건 부분 Read로 조립되지 않는다. **품질을 지키면서 비용만 없애는 길이 SendMessage다.**
-5. **strategist #2 호출** (위 「strategist #2 — 썸네일 프롬프트」 절차 그대로) — 계열마다 파일 분리:
-   - `{P}/output/thumbnails/prompts.json` — 실사형 9개 (항상)
-   - `{P}/output/thumbnails/prompts-countryball.json` — 국기볼형 9개 (항상)
+5. **strategist #2 호출** (위 「strategist #2 — 썸네일 프롬프트」 절차 그대로) — **`styles`에 적힌 계열마다** 파일 분리:
+   - `{P}/output/thumbnails/prompts.json` — 실사형 9개
+   - `{P}/output/thumbnails/prompts-countryball.json` — 국기볼형 9개
    - `{P}/output/thumbnails/prompts-geopolitics.json` — 정세형 9개 (국가·안보 소재일 때만)
+   - `{P}/output/thumbnails/prompts-illustration.json` — 일러스트형 9개
+   - ⛔ **`styles`에 없는 계열은 만들지 않는다.** "항상 만든다"는 계열은 없다
 6. **복사용 통합본 .txt 생성** (아래 참조) — 필수
 7. **썸네일 목록 표 + txt 링크 출력** (아래 참조. 영문 프롬프트 원문은 출력하지 않는다)
 8. OUTLINE 진행
@@ -229,7 +236,7 @@ grep -n '^## Phase 5' prompts/creative-strategy.md
 {VENV_PYTHON} -c "
 import json, sys, os
 d = os.path.join('{P}', 'output', 'thumbnails')
-for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
+for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics', 'prompts-illustration']:
     p = os.path.join(d, src + '.json')
     if not os.path.exists(p): continue
     data = json.load(open(p, encoding='utf-8'))
@@ -270,7 +277,7 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 {VENV_PYTHON} -c "
 import json, os, sys
 d = os.path.join(sys.argv[1], 'output', 'thumbnails')
-for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
+for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics', 'prompts-illustration']:
     p = os.path.join(d, src + '.json')
     if not os.path.exists(p): continue
     print('###', src)
@@ -297,7 +304,13 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 ## 정세형 9개 — [복사용 txt](…/output/thumbnails/prompts-geopolitics.txt)
 
 (동일 구조. 국가·안보 소재가 아니면 이 절을 생략하고 사유를 한 줄 적는다)
+
+## 일러스트형 9개 — [복사용 txt](…/output/thumbnails/prompts-illustration.txt)
+
+(동일 구조)
 ```
+
+> ⛔ **`styles`에 없는 계열의 절은 아예 출력하지 않는다.** 위 4개는 형식 예시이며, 실제로는 그 채널이 만든 계열만 적는다.
 
 **표 규칙:**
 - 1번부터 9번까지 **한 줄씩 9행**으로 낸다. "1~3", "4~6" 같은 묶음 표기는 쓰지 않는다
@@ -486,7 +499,9 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
 
 ### 절차
 
-1. **규칙 파일을 지금 다시 Read한다** — `prompts/thumbnail-design.md` + `prompts/thumbnail-countryball.md` + `prompts/thumbnail-geopolitics.md`
+1. **규칙 파일을 지금 다시 Read한다** — 그 채널 `styles`에 있는 계열의 공통 규칙 파일 + **채널 전용 파일 전부**
+   - 공통: `prompts/thumbnail-design.md` · `prompts/thumbnail-countryball.md` · `prompts/thumbnail-geopolitics.md` 중 해당 계열
+   - 🚨 **채널 전용**: `channels/{채널}/config/thumbnail-design.md` · `channels/{채널}/config/thumbnail-illustration.md` — **있으면 반드시 함께 읽는다.** 충돌하면 채널 파일이 이긴다
    - 이어서 진행 중인 세션이면 옛 규칙이 컨텍스트에 남아 있을 수 있다. 반드시 다시 읽는다
 2. **재료 확인**:
    - `{P}/_script/concept.md` — 확정 제목, 썸네일 텍스트, 이미지 컨셉
@@ -503,11 +518,13 @@ for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics']:
    - `_refs`가 비어 있거나 `thumbnail.webp`가 없으면 **그때만** 계승 불가 → 감정 클로즈업 3장으로 대체하고 사유를 `concept_ko`에 적는다
 
    앵커를 정했으면 그 `analysis.md`의 비주얼 분석과 `thumbnail.webp`를 근거로 **[모순] 한 줄을 뽑아** `concept_ko` 맨 앞에 적는다.
-4. **해당하는 계열을 모두 생성한다. 어느 계열을 만들지 묻지 않는다.**
+4. **그 채널 `styles`에 적힌 계열을 모두 생성한다. 어느 계열을 만들지 묻지 않는다.**
    - 기존 파일이 있으면 `{파일명}.bak`으로 옮긴 뒤 새로 쓴다 (덮어쓰기 전에 보존 — 그래서 확인을 받을 필요가 없다)
-   - `{P}/output/thumbnails/prompts.json` — 실사형 9개 (항상)
-   - `{P}/output/thumbnails/prompts-countryball.json` — 국기볼형 9개 (항상)
+   - `{P}/output/thumbnails/prompts.json` — 실사형 9개
+   - `{P}/output/thumbnails/prompts-countryball.json` — 국기볼형 9개
    - `{P}/output/thumbnails/prompts-geopolitics.json` — 정세형 9개 (**국가·안보·전쟁·정권 소재일 때만**. 아니면 생성하지 않고 사유 보고)
+   - `{P}/output/thumbnails/prompts-illustration.json` — 일러스트형 9개
+   - ⛔ **`styles`에 없는 계열은 만들지 않는다.** "항상 만든다"는 계열은 없다 — 채널마다 다르다
    - **예외**: 사용자가 "국기볼만", "정세형만"처럼 계열을 직접 지정했을 때만 그 계열만 만든다
 5. **복사용 통합본 .txt 재생성** — 위 "복사용 통합본(.txt) 생성" 절차 그대로. JSON을 새로 썼으면 txt도 반드시 갱신한다 (기존 txt가 남아 있으면 옛 프롬프트를 복사하게 된다)
 6. **채팅으로 계열을 분리 출력** — 위 "썸네일 프롬프트 채팅 출력 — 목록 표만" 형식 그대로 (목록 표 + txt 링크. 영문 원문 출력 금지)
