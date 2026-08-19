@@ -1,9 +1,12 @@
 {
   "_note": "장수(9장)와 세이프존(하단 3/8)은 prompts/thumbnail-*.md가 유일한 원본이다. 여기에 적지 않는다.",
-  "_axis": "축 A(시청자 본인의 돈). 계열은 실사형·국기볼형 2종만 생성한다(2026-08-16 정호님 지정). 정세형은 생성하지 않는다.",
+  "_override": "🚨 이 채널은 config/thumbnail-design.md(전용 오버라이드)를 prompts/thumbnail-design.md와 함께 읽는다. 충돌하면 방구석 파일이 이긴다. 게이트 A(얼굴)·B(원단위 금액)·C(사건 진행중)·D(주어=내 돈)를 9장 전부 통과해야 한다.",
+  "_styles_note": "2계열을 생성한다. photorealistic → prompts.json (규칙: config/thumbnail-design.md) / illustration → prompts-illustration.json (규칙: config/thumbnail-illustration.md). 🧪 illustration은 2026-08-19 신설된 미검증 계열이라 첫 회차는 A/B 실측이다 — 어느 계열을 썼는지와 성적을 production-queue.md에 반드시 기록한다.",
+  "_axis": "축 A-1(머스크·미래) 또는 A-2(주식·개미). 시청자 본인의 돈이 주어다.",
+  "_countryball_removed": "2026-08-19 제거. 국기볼 히트 0건(08-14 0.94배 / 08-12 0.15배 / 알고싶은경제학 다낭 최하위권)이고 얼굴 게이트와 정면 충돌한다. 그 자리에 illustration을 신설했다. 근거: config/_benchmarks/thumbnail-patterns.md",
   "styles": [
     "photorealistic",
-    "countryball"
+    "illustration"
   ],
   "color_palette": "auto",
   "emotions": [
@@ -12,8 +15,8 @@
   ],
   "brand": {
     "colors": [],
-    "mascot": false,
+    "mascot": "illustration 계열 전용. 사양은 config/thumbnail-illustration.md §3 — 미색 원형 머리·머리카락 없음·코 없음·검은 점 눈·선 입, 감정은 눈썹으로만. 한 프로젝트 9장은 반드시 동일.",
     "fixed_layout": null
   },
-  "benchmark_analysis": null
+  "benchmark_analysis": "config/_benchmarks/thumbnail-patterns.md"
 }

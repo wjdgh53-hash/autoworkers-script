@@ -107,6 +107,10 @@ _DEVICES = {
         r"(저도 그랬|저는 좀|저도 처음|화가 나|얼떨떨|놀랐|믿기지|솔직히|"
         r"제가 |저는 |저도 )"
     ),
+    # 2인칭. 시청자를 화면 안으로 끌어들이는 장치. (2026-08-19 신설)
+    #   실측: 방구석 결 벤치 히트 1.2~2.7 / 실패 0.8~1.1 / 우리 08-18 0.8·08-16 3.7.
+    #   ⚠️ 상한은 두지 않는다 — 우리 최고작(08-16, 26.6배)이 3.7이라 상한 근거가 없다.
+    "2인칭": re.compile(r"(여러분|당신|본인|내 돈|내 계좌|우리 돈)"),
     # 발언·보고서·통계 인용. 1인칭이 빠진 자리를 이것이 채운다. 제재 방어도 겸한다.
     "권위 인용": re.compile(
         r"(따르면|자료를 보면|통계를 보면|보도에|발표에|보고서|밝혔|전했|"
@@ -127,6 +131,67 @@ _CEILINGS = {"숫자 밀도": 10.0, "경제·행정 용어": 1.5, "1인칭": 1.2
 # 하한 — 미달이면 WARN (차단하지 않는다)
 #   숫자 밀도 4.0은 정보량 하한이다. 비유로 분량을 때우면 여기에 걸린다.
 _FLOORS = {"숫자 밀도": 4.0, "반문": 3.5, "권위 인용": 0.3, "전환어": 0.6}
+
+# ─────────────────────────────────────────────────────────────────────
+# 채널별 밴드 재정의 (2026-08-19 신설)
+#
+# 위 기본값은 **탐정경제학 계열 근거**로 잡혔다. 모듈 docstring이 그렇게 적고 있다 —
+# "우리는 시니어 타겟이고 203k 히트작이 4.6이다. 그쪽이 목표점이다."
+#
+# 🔴 그런데 방구석 경제는 축이 다르다(주어=시청자 본인의 돈). 결이 같은 벤치 7편을
+#    **이 파일과 같은 잣대로** 재 보니 아래와 같았다(2026-08-19, 자동자막 기준).
+#
+#      숫자 밀도   히트 26.7 · 32.8 · 23.3 · 23.5(해설형) / 12.2(사연형)
+#                  실패 20.8 · 30.0
+#                  우리 8.7 · 7.0
+#      2인칭       히트 1.8 · 2.4 · 1.0 · 2.1 · 1.2
+#                  실패 0.6 · 1.3
+#                  우리 0.3 · 0.9
+#
+# ⚠️ **숫자 밀도는 히트와 실패를 가르지 못한다**(20.8~32.8로 겹친다). 하한을 올린다고
+#    성적이 오른다는 증거는 없다. 다만 **기본 상한 10.0은 벤치 7편 전부를 차단**하므로
+#    그건 명백히 잘못된 값이다. 상한만 실측 위로 올리고, 하한은 "벤치 어느 편보다도
+#    낮은 상태"만 벗어나게 12.0으로 둔다(WARN이라 차단하지 않는다).
+#
+# ⚠️ 2인칭은 상대적으로 깨끗하게 갈렸다(히트 1.0~2.4 vs 우리 0.3~0.9). 하한 1.2.
+#    ⛔ 상한은 두지 않는다 — 우리 최고작(08-16, 26.6배)이 다른 잣대로 3.7이었다.
+#
+# 상한을 푸는 근거: 나열식 몰아쓰기는 _SENT_NUM_LIMIT(한 문장 4개)와
+# find_number_clusters()가 이미 따로 막는다. 밀도 상한이 그 역할까지 겸할 필요가 없다.
+# (실측 원본: channels/bangguseok-economy/config/_benchmarks/script-patterns.md)
+_CHANNEL_BANDS: dict[str, dict[str, dict[str, float]]] = {
+    "bangguseok-economy": {
+        # 벤치 최고 32.8 바로 위. 이 값을 넘기면 그때는 정말 나열이다.
+        "ceilings": {"숫자 밀도": 34.0},
+        # 12.0 = 벤치 7편 중 최저(사연형 12.2) 바로 아래. 히트 보장이 아니라 하한선이다.
+        "floors": {"숫자 밀도": 12.0, "2인칭": 1.2},
+    },
+}
+
+
+def channel_of(path: Path) -> str:
+    """경로에서 채널 id를 뽑는다 — channels/{채널}/projects/... 규약.
+
+    호출부를 바꾸지 않으려고 경로에서 읽는다. 규약에 안 맞으면 빈 문자열이라
+    기본 밴드가 그대로 쓰인다(기존 동작 유지).
+    """
+    parts = path.resolve().parts
+    if "channels" in parts:
+        i = parts.index("channels")
+        if i + 1 < len(parts):
+            return parts[i + 1]
+    return ""
+
+
+def bands_for(path: Path) -> tuple[dict, dict]:
+    """이 대본에 적용할 (상한, 하한)을 돌려준다."""
+    ceilings = dict(_CEILINGS)
+    floors = dict(_FLOORS)
+    override = _CHANNEL_BANDS.get(channel_of(path))
+    if override:
+        ceilings.update(override.get("ceilings", {}))
+        floors.update(override.get("floors", {}))
+    return ceilings, floors
 
 # 주의 — 넘으면 WARN. FAIL로 막지 않는 이유가 있다.
 #   이 정규식은 "확장 비유 하나"와 "잘게 뿌린 비유 열 개"를 구분하지 못한다.
@@ -395,16 +460,21 @@ def analyze(path: Path) -> dict:
             return per_1k(len(_JARGON_RE.findall(body)), chars)
         return per_1k(len(_DEVICES[label].findall(body)), chars)
 
+    cap_band, floor_band = bands_for(path)
+    ch = channel_of(path)
+
     ceilings, floors, watch = {}, {}, {}
-    for label, cap in _CEILINGS.items():
+    for label, cap in cap_band.items():
         ceilings[label] = {"value": (v := measure(label)), "limit": cap, "pass": v <= cap}
-    for label, floor in _FLOORS.items():
+    for label, floor in floor_band.items():
         floors[label] = {"value": (v := measure(label)), "floor": floor, "pass": v >= floor}
     for label, cap in _WATCH.items():
         watch[label] = {"value": (v := measure(label)), "limit": cap, "pass": v <= cap}
 
     return {
         "path": str(path),
+        "channel": ch,
+        "band_override": ch in _CHANNEL_BANDS,
         "chars": chars,
         "ceilings": ceilings,
         "floors": floors,

@@ -23,6 +23,46 @@
 
 ## ⭐ 1군 — 주 벤치마크 (계승 대상)
 
+### ⭐⭐ 0군 — 경제해적단 (2026-08-19 신규 등재 · 정호님 발견)
+https://www.youtube.com/@경제해적단-t5m · 구독 **101,000** · **58편 실측 중앙값 21,008** · 활동 중(08-18)
+**나레이션 롱폼 21~28분 · 하루 2편 · 축 A-1+A-2 · 시청자 연령대 ⭕(월급쟁이~50대 투자자)**
+
+| 영상 | 조회 | 배율 |
+|---|---|---|
+| [같은 S&P500인데 세금 970만 vs 3700만원](https://www.youtube.com/watch?v=JREdVuRBv9U) (08-10) | **289,154** | **13.8배** |
+| [2026년 필수로 모아야 하는 가장 안전한 5가지 자산](https://www.youtube.com/watch?v=K_0fFxiJsEM) (07-29) | 230,187 | 11.0배 |
+| [재테크의 기초 상식, 모르면 절대 부자 못 됩니다](https://www.youtube.com/watch?v=T2NAq3jFDQM) (07-20) | 213,307 | 10.2배 |
+| [돈이 스스로 일하기 시작하는 시작점](https://www.youtube.com/watch?v=PEnNxbBd5eY) (08-09) | 209,159 | 10.0배 |
+| [달러 패권의 진짜 전략](https://www.youtube.com/watch?v=NID7VESSER8) (08-13) | 145,251 | 6.9배 |
+| ⛔ [엔화 약세의 진짜 이유](https://www.youtube.com/watch?v=ztlNzqArChw) (08-18) | 3,892 | 0.19배 |
+| ⛔ [레버리지 절대 하면 안 되는 5가지 이유](https://www.youtube.com/watch?v=rHKJbvIGft8) (08-10) | 2,179 | 0.10배 |
+
+> ⚠️ **체급이 우리(6,360)의 15.9배라 「계승 대상」이 아니다.** 소재 수요·제목 공식·썸네일 구성·대본 구조의 **참고용 최상위 등급**이다.
+> ⚠️ 구독 대비 중앙값은 **0.21배**로 야무진 경제학(0.36배)보다 낮다. **절대 도달은 2.8배 크지만 구독 효율은 낮다.** 배율만 보고 과대평가하지 않는다.
+>
+> 🧪 **이 채널의 진짜 벤치 가치는 하루 2편이다.** 같은 날·같은 채널·같은 스타일로 두 편이 나오므로 **매일 통제 실험이 하나씩 생긴다** —
+> 08-04는 [148,984회](https://www.youtube.com/watch?v=vIJ49BrbFc8) vs [3,695회](https://www.youtube.com/watch?v=MNUUqEnQBOc)로 **40배**가 갈렸다. 다음 회차부터 이 짝비교를 우선 본다.
+>
+> 🔴 **같은 소재도 「내 돈으로 착지하느냐」로 갈린다** — [엔화 900선 붕괴, **다음은 원화입니다**](https://www.youtube.com/watch?v=ozFbvuudbwU) **70,693회** vs [의외로 잘 모르는 **엔화 약세의 진짜 이유**](https://www.youtube.com/watch?v=ztlNzqArChw) **3,892회. 18배.**
+> ⛔ **개별 종목·단기 타이밍 편은 이 채널에서도 전부 죽는다** (2,179~3,695회). 조언형 회피 근거는 아래 7절.
+>
+> 📌 상세 분석: 썸네일 [thumbnail-patterns.md](thumbnail-patterns.md) · 대본 [script-patterns.md](script-patterns.md)
+
+### 📋 축별 담당표 (2026-08-19 건전성 실측)
+
+| 축 | 채널 | 구독 | 중앙값 | 최근 업로드 | 포맷이 우리와 같은가 |
+|---|---|---|---|---|---|
+| **A-1+A-2 (참고용 0군)** | [경제해적단](https://www.youtube.com/@경제해적단-t5m) | 101,000 | 21,008 | ✅ 08-18 (하루 2편) | ⭕ **나레이션 롱폼 21~28분** (⚠️ 체급 15.9배) |
+| **A-1 머스크·미래** | [알고싶은경제학](https://www.youtube.com/channel/UCO42fLoLMxCOzs6P6VjApXA) | 8,990 | 2,050 | ✅ 08-16 재개 | ⭕ **나레이션 롱폼 16~26분** |
+| **A-1 머스크·미래** | [경제우체부](https://www.youtube.com/channel/UCr9ypiZp4EbjJuw2ZYB1vpQ) | 9,090 | 710 | ✅ 08-14 | ⭕ **나레이션 롱폼 19~29분** |
+| **A-2 주식·개미** | [은빛시나리오](https://www.youtube.com/channel/UCowMNQXcxSJJ7Kyc41Q4Pzw) | 24,400 | 3,373 | ✅ 08-16 | ❌ 사연 재구성 40~55분 |
+| **A-2 주식·개미** | [너와 나의 경제학교](https://www.youtube.com/channel/UCF9cuJUvzJyVnoDke5clbHw) | 17,200 | 16,805 | ✅ 08-18 | ❌ 인터뷰 클립 8~12분 |
+
+> 🔴 **공백: A-2에는 포맷이 맞는 채널이 한 곳도 없다.**
+> A-1은 우리와 같은 나레이션 롱폼 채널이 2곳인데, **A-2는 둘 다 포맷 계승이 불가**해 소재·제목 공식만 가져와야 한다.
+> 유일하게 맞았던 [유치한경제학](https://www.youtube.com/channel/UC7cf7eZIucAAzkm_rwoawZw)(A-2 + 나레이션 롱폼)은 **05-29 이후 2.7개월 중단**이다.
+> → **A-2 나레이션 롱폼 채널을 추가 발굴할 필요가 있다.** 그때까지는 A-2 편의 구성 리스크를 감안한다(레퍼의 40분 사연 몰입이 20분 나레이션으로 이식될지 미검증).
+
 ### ⛔ ① 야무진 경제학 — **2026-08-19 1군에서 강등. 소재 레퍼로 쓰지 않는다**
 https://www.youtube.com/channel/UCdu6FZYHrnBKdyzRawLabmg · 구독 21,200 · 중앙값 7,543 · 활동 중(08-16)
 
@@ -77,18 +117,21 @@ https://www.youtube.com/channel/UCF9cuJUvzJyVnoDke5clbHw
 > **같은 소재를 2주 만에 재탕했는데 원본보다 더 터졌다(365,066 > 344,496).** 수요가 그만큼 두껍다.
 > 우리 [08-09](https://www.youtube.com/watch?v=EfzrxJzqExk)(1,573회 / 5.9배)가 정확히 이 소재를 계승한 편이고, **머스크 없이 성공한 유일한 편**이다.
 
-### ② 알고싶은경제학 · 구독 8,990 · 중앙값 379
+### ② 알고싶은경제학 · 구독 8,990 · 중앙값 2,050 · ✅ **2026-08-16 업로드 재개**
 https://www.youtube.com/channel/UCO42fLoLMxCOzs6P6VjApXA
-**나레이션 롱폼 16~26분 · 체급 1.4배 · 우리와 실패 패턴까지 동일**
+**나레이션 롱폼 16~26분 · 체급 1.4배 · 담당 축 A-1 · 우리와 포맷·실패 패턴까지 동일**
 
 | 영상 | 조회 | 배율 |
 |---|---|---|
-| [미래엔 화폐 대신 이것만 남는다. 머스크가 지목한 진짜 자산](https://www.youtube.com/watch?v=oOWqkW_aXi0) (05-31) | 344,972 | **909배** |
-| ["일하지마세요" 일론머스크가 한국을 지목했다](https://www.youtube.com/watch?v=zuk0RdqfrBU) (05-21) | 96,803 | **255배** |
-| [2040년은 지금과 전혀 다른 세상이 됩니다. 로봇100억대 시대](https://www.youtube.com/watch?v=BusFMbfd5GY) (06-27) | 67,876 | **179배** |
+| [미래엔 화폐 대신 이것만 남는다. 머스크가 지목한 진짜 자산](https://www.youtube.com/watch?v=oOWqkW_aXi0) (05-31) | 346,487 | **169배** |
+| ["일하지마세요" 일론머스크가 한국을 지목했다](https://www.youtube.com/watch?v=zuk0RdqfrBU) (05-21) | 101,490 | **49.5배** |
+| [2040년은 지금과 전혀 다른 세상이 됩니다. 로봇100억대 시대](https://www.youtube.com/watch?v=BusFMbfd5GY) (06-27) | 74,997 | **36.6배** |
+| [2045년, 통장에 돈 대신 '쿠폰'이 들어옵니다 (AI 아버지 힌턴)](https://www.youtube.com/watch?v=3bJL8q_o5-I) (08-16) | 3,958 | 1.9배 |
 
-나머지 11편(삼성 노조, LG 로봇, 젠슨황 방한, 이삭토스트, 다낭 몰락, 항공유)은 **전부 250~8,238회.**
-⚠️ 2026-07-23 이후 업로드 중단(24일). 1개월 넘기면 등급 강등.
+나머지 8편(삼성 노조, LG 로봇, 젠슨황 방한, 이삭토스트, 다낭 몰락)은 **전부 285~8,252회.**
+
+> ✅ **2026-08-19 건전성 복구.** 07-23 이후 24일 공백이라 「1개월 넘기면 강등」 경고가 걸려 있었으나 **08-16에 재개**했다. [production-queue.md](../../production-queue.md) **4·5번의 주 레퍼가 이 채널**이라 이 확인이 중요하다.
+> ⚠️ **배율 절대값이 이전 기록(909·255·179배)과 다르다.** 업로드 재개로 **중앙값 분모가 379 → 2,050으로 오른 것**이지 그 영상들이 식은 게 아니다(오히려 344,972 → 346,487로 늘었다). 순위·이상치 판정은 동일하다.
 
 ### ③ 은빛시나리오 → **위 「①-신」으로 이동** (2026-08-19 승격, 수치 갱신)
 
@@ -112,9 +155,15 @@ https://www.youtube.com/channel/UCr9ypiZp4EbjJuw2ZYB1vpQ
 
 | 채널 | 구독 | 중앙값 | 포맷 | 최고작 / 배율 | 상태 |
 |---|---|---|---|---|---|
-| [지혜백세](https://www.youtube.com/channel/UCi3H9NCIKQ4IzcLBTGyD_1w) | 92,300 | 4,707 | **AI 나레이션 초장편 30~70분** · 65세+ 시니어 타겟 | [머스크의 6가지 예언, 돈이 사라진다](https://www.youtube.com/watch?v=VYSl5TDSznA) 127,200 / **27배** · [절대 저축하지 말라는 머스크의 예언](https://www.youtube.com/watch?v=BCsEOdk2a2Y) 16,350 / 3.5배 · [머스크 충격 예언 – 부동산·현금도 위험](https://www.youtube.com/watch?v=JUnqknVbACY) 10,731 / 2.3배 | ⭕ 활동 중(08-14) |
+| 🔴 [지혜백세](https://www.youtube.com/channel/UCi3H9NCIKQ4IzcLBTGyD_1w) | 92,300 | 6,784 | **AI 나레이션 초장편 30~70분** · **65세+ 시니어 명시 타겟** | [머스크의 6가지 예언](https://www.youtube.com/watch?v=VYSl5TDSznA) 141,433 / **20.9배** · [절대 저축하지 말라는 머스크의 예언](https://www.youtube.com/watch?v=BCsEOdk2a2Y) 18,857 / 2.8배 · [머스크 충격 예언 – 부동산·현금도 위험](https://www.youtube.com/watch?v=JUnqknVbACY) 14,028 / 2.1배 | ⚠️ **연령대 규칙 위반 — 소재 반입 금지**(08-19 재판정) · 활동 중(08-14) |
+
+> 🔴 **지혜백세 — 2026-08-19 경고 추가. 야무진 경제학과 같은 함정이다.**
+> 제목에 타겟을 **대놓고 박아놨다**: [젠슨 황의 선언 \| **65세 이상 시니어**가 폭락장에서 노후 돈 지키는](https://www.youtube.com/watch?v=gjdCl2ocVA8) · [머스크의 옵티머스 양산 \| **65세 이상 시니어**, 지금 안 움직이면](https://www.youtube.com/watch?v=7A1OouqeUXg) · [머스크의 6가지 예언 \| **대한민국 시니어**가 반드시 준비해야 할](https://www.youtube.com/watch?v=VYSl5TDSznA)
+> **머스크축이라는 이유로 소재를 그대로 가져오면 [08-18](https://www.youtube.com/watch?v=33l7widZdTs)이 반복된다.** 판정 순서 1번(시청자 연령대)에서 걸린다.
+> ⭕ 허용 범위: **「이 소재가 존재하고 수요가 있다」는 확인용만.** 소재·앵글·제목을 계승하지 않는다. 계승은 [알고싶은경제학](https://www.youtube.com/channel/UCO42fLoLMxCOzs6P6VjApXA)·[경제우체부](https://www.youtube.com/channel/UCr9ypiZp4EbjJuw2ZYB1vpQ)에서 한다
+> 📌 이미 [⛔ 검토했다 버린 후보](../../production-queue.md)에 「머스크 옵티머스/요양원 시대」가 **0.37배**로 올라가 있다 — 이 채널 안에서도 시니어 색이 가장 짙은 편이 죽었다
 | [너와 나의 경제학교](https://www.youtube.com/channel/UCF9cuJUvzJyVnoDke5clbHw) | 17,200 | — | — | → **위 「①-신」으로 이동** (2026-08-19 갱신) | ⭕ 활동 중(08-18) |
-| [유치한경제학](https://www.youtube.com/channel/UC7cf7eZIucAAzkm_rwoawZw) | 185,000 | 25,892 | 나레이션 롱폼 | [주식 할때 꼭 알아야 하는 모든것](https://www.youtube.com/watch?v=jk6fkxmDU-4) 191,738 / 7.4배 · [개미가 상승장에도 돈을 잃는 6가지 이유](https://www.youtube.com/watch?v=KJmgBISDA6g) 136,115 / 5.3배 | ⚠️ 05-29 이후 2.5개월 중단 |
+| [유치한경제학](https://www.youtube.com/channel/UC7cf7eZIucAAzkm_rwoawZw) | 185,000 | 25,892 | 나레이션 롱폼 | [주식 할때 꼭 알아야 하는 모든것](https://www.youtube.com/watch?v=jk6fkxmDU-4) 191,813 / 7.4배 · [개미가 상승장에도 돈을 잃는 6가지 이유](https://www.youtube.com/watch?v=KJmgBISDA6g) 136,140 / 5.3배 | ⛔ **05-29 이후 2.7개월 중단**(08-19 재확인). 아깝다 — **A-2 소재 + 나레이션 롱폼으로 우리와 포맷이 맞는 유일한 채널이었다** |
 | [소름돋는 경제학](https://www.youtube.com/channel/UCb6Loqkzz-EaFryCL51n5Mg) | 26,800 | 9,818 | 나레이션 롱폼 | [머스크가 경고한 미래 예측 30가지](https://www.youtube.com/watch?v=Ck5nNMjigJE) 907,197 / **92배** | ⛔ 01-13 이후 7개월 중단 |
 | [머니인사이드](https://www.youtube.com/channel/UCxfko2YOD6DODYRGzeOPhIQ) | 2,140,000 | — | **인터뷰**(교수·전문가) | ["딱 5년 남았어요" AGI 시대 오면 '이런' 인간만 살아남을 겁니다](https://www.youtube.com/watch?v=89rQSoPFd7M) 3,904,186 · ['5년 뒤' 다가올 충격적인 미래, AI 시대 멸종하는 직업들](https://www.youtube.com/watch?v=bzrGkVx_TYU) 902,557 | ⭕ 체급 338배 — **소재 수요 상한선 확인용** |
 | [지식인사이드](https://www.youtube.com/channel/UCA_hgsFzmynpv1zkvA5A7jA) | 4,000,000 | — | **인터뷰** | ["일해서 돈버는 시대 끝났다" AI시대 몸값 폭등하는 사람의 특징](https://www.youtube.com/watch?v=512LLypVJfQ) 7,030,303 · ["AI한테 질문하지 마세요" 앞으로 5년, 가장 빨리 사라질 직원](https://www.youtube.com/watch?v=JOpF8yrE1t8) 792,422 | ⭕ 체급 632배 — 동일 |
