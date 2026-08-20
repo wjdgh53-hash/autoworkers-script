@@ -35,42 +35,24 @@
 채도 **0.34~0.54** · 밝기 0.29~0.44 · 대비 **0.96~1.00**
 → 순검정에 가까운 그림자와 밝은 하이라이트가 **한 화면에 같이** 있다. 회색 중간톤으로 채우면 이 값이 안 나온다.
 
-### 이 계열의 화면은 항상 이렇게 생겼다
+### 벤치 화면에서 관찰된 것 (사양이 아니라 관찰이다)
 
-| # | 요소 | 사양 |
-|---|---|---|
-| 1 | **광원** | **화면 중앙~중앙 뒤에 황금빛 노을(또는 강한 역광)이 반드시 있다.** 하늘이 주황~금색으로 타고, 그 빛이 장면 전체를 물들인다 |
-| 2 | **배경** | 밝고 **디테일이 꽉 찬 일러스트.** 도로·건물·실내가 정확한 원근으로 그려지되 **사진 질감이 아니다.** 굵은 검정 외곽선 + 셀 음영 |
-| 3 | **좌우 대비** | 좌 = 어둡고 차갑고 **빨강 경고** / 우 = 밝고 따뜻하고 **초록·금색.** 가운데에 물리적 경계(톨게이트·능선·갈라진 땅·유리문) |
-| 4 | **정보 카드** | 🚨 **화면에 3~6개.** 나무·금속 팻말, 흰 보드, 원형 배지, 막대그래프 + 굵은 화살표, 체크리스트 박스. **각 카드에 한글 라벨과 수치가 크게 적혀 있다** |
-| 5 | **상징물** | 금화 더미 · 돈다발 · 왕관 · 자루 · 표지판 — 부/손실을 사물로 세운다 |
-| 6 | **마스코트** | §3. 큰 흰 머리 + **굵은 검정 눈썹** + 큰 눈, 화면 중앙 또는 좌우에 |
-| 7 | **인물 수** | **장면이 정한다. 개수 기준을 두지 않는다** — 아래 참조 |
-
-### 🔴 인물 수를 강제하지 않는다 (2026-08-20 정호님)
-
-내가 9장 전부에 「동일 캐릭터 3~5명」을 박아 넣었다가 지적받고 걷어냈다.
-**벤치 실측을 다시 보면 절반이 1인이다** — [ISA](https://www.youtube.com/watch?v=SLmxz2IOa_k) · [배당주 투자](https://www.youtube.com/watch?v=vrZKuTGJsQU) · [월배당 ETF](https://www.youtube.com/watch?v=81c1g3RiDE8) · 엔화 · 분산투자는 마스코트 하나뿐이고,
-[부자들은 주식을 팔지 않습니다](https://www.youtube.com/watch?v=aepM7E3vsTs)는 2인, 「이번 폭락만 끝나면」은 6인 군중이다.
-
-| 장면 | 인물 |
+| 요소 | 벤치가 하는 방식 |
 |---|---|
-| **좌우 대비** — 갈린 두 결말을 보여줄 때 | 양쪽에 각각. 대비를 키우려면 한쪽을 무리로 |
-| **은유 장면** — 양동이·계단처럼 하나의 그림으로 원리를 말할 때 | **1인.** 여럿이면 은유가 흐려진다 |
-| **인물 클로즈업·계승** | **1인**(+ 필요하면 배경에 한 명) |
+| **광원** | 화면 뒤쪽에서 **황금빛 노을이나 강한 역광**이 들어와 장면을 주황·금색으로 물들인다. 반대편은 거의 검다 |
+| **질감** | **입체적이다.** 금속·유리·벽돌·천·금화에 무게와 재질감이 있고, 그림자와 하이라이트가 붙는다 |
+| **좌우 대비** | 좌 = 어둡고 차갑고 빨강 / 우 = 밝고 따뜻하고 초록·금색. 가운데에 물리적 경계 |
+| **정보 카드** | 팻말·흰 보드·원형 배지·막대그래프·굵은 화살표에 **한글 라벨과 수치가 크게** 적혀 있다 |
+| **상징물** | 금화 더미 · 돈다발 · 왕관 · 자루 — 부와 손실을 사물로 세운다 |
+| **밀도** | 화면에 빈 곳이 거의 없다. 포스터처럼 볼 것이 계속 있다 |
+| **마스코트** | §3 |
 
-⛔ **개수를 정해 놓고 채우지 않는다.** 그건 오늘 대본 규칙에서 걷어낸 「시키는 규칙」과 같은 함정이다 ([notes/rule-conflict-audit.md](../../../notes/rule-conflict-audit.md) §0).
+> ⛔ **위 표는 개수를 정하지 않는다.** 카드 몇 개, 인물 몇 명, 상징물 몇 개 — **장면이 필요로 하는 만큼**이다.
+> 많이 필요하면 많이 쓰고 적게 필요하면 적게 쓴다. 개수를 정해 놓고 채우면 그 순간 억지가 된다
+> ([notes/rule-conflict-audit.md](../../../notes/rule-conflict-audit.md) §0 — 오늘 대본 규칙에서 걷어낸 바로 그 함정).
 
 ```
-Style: bold high-saturation 2D vector-style digital illustration with heavy black outlines and flat
-cel shading, in the visual language of Korean finance-explainer YouTube thumbnails. A golden sunset
-burns in the centre background and floods the whole scene with warm orange and gold light, while the
-opposite side falls into deep near-black shadow — the tonal range runs from almost pure black to
-bright highlight inside the same frame. Colours are vivid, unmixed and poster-like: gold and orange
-for the winning side, saturated red for loss and danger, saturated green for gain. The world is
-packed with legible detail — signboards, panels, badges, bar charts, thick arrows, stacks of gold
-coins and cash bundles — arranged so the eye reads them instantly at thumbnail size. Rendered as a
-drawing throughout: never a photograph, never a 3D render, never muted, never grey.
+Style: a richly rendered, volumetric semi-3D digital illustration in the visual language of Korean finance-explainer YouTube thumbnails — dimensional forms with real weight, believable materials (brushed metal, glass, brick, paper, fabric, gold), soft ambient occlusion and glossy highlights; every surface has thickness, weight and a light side and a shadow side. A golden sunset or a strong warm key light burns behind the scene and floods it with orange and gold, while the opposite side falls into deep near-black shadow, so the tonal range runs from almost pure black to bright highlight inside one frame. Colours are vivid and poster-like: gold and orange for the winning side, saturated red for loss and danger, saturated green for gain. The frame is CROWDED — signboards, floating panels, round badges, bar charts, thick arrows, stacks of gold coins, cash bundles, brand-free shopping and office props stacked into every part of the upper picture the way a busy movie poster is, and yet the main figure and the main number still read instantly at thumbnail size. CHARACTER SHEET, identical in every image: a large smooth round off-white head with no hair and no nose, rendered with soft three-dimensional shading and a clean dark outline, always the brightest face in the picture; two big white eyes with round black pupils and visible eyelids; thick solid black eyebrows that change angle with the emotion; a drawn mouth that opens and bends with the emotion; a small simple body in situation clothing with simple rounded hands. If the scene contains more than one person, every one of them is the SAME character with the same head, differing only in clothing, pose and expression; many scenes have only one. Render only the Korean words quoted above; every other surface stays free of lettering.
 ```
 
 - ⛔ **`documentary`·`photograph`·`believable lighting`·`available light`·`35mm`·`f/2.8`·`muted`·`grey`·`overcast` 계열 어휘를 한 개도 쓰지 않는다.** 1차 실패의 원인이다
