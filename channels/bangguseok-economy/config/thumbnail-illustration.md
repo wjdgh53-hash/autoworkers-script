@@ -24,101 +24,73 @@
 
 ---
 
-## §2. 스타일 — 경제해적단을 그대로 베낀다
+## §2. 스타일 — 경제해적단을 백지에서 그대로 복제한다
 
-> 🔴 **2026-08-20 전면 개정.** 첫 회차(`semiconductor-stock-halved`) 결과물이 **회색·저채도·무표정**으로 나왔다.
-> 원인은 아래 옛 문구였다 — `believable perspective, materials and lighting`이 모델에게 **사진 렌더링**으로 읽혀
-> 다큐 사진 톤(저채도·저대비)이 나왔고, 색·표정 규정이 아예 없어서 모델 기본값이 그대로 갔다.
-> 정호님 지시: **"완전히 벤치마킹한다고 생각하고 똑같이 베껴도 된다."**
+> 🔴 **2026-08-20 2차 전면 개정.** 1차 개정은 기존 씬 설명에 색·표정만 얹어서 **전혀 닮지 않았다.**
+> 정호님: *"기존의 스타일 완전히 백지화 시키고 완전히 똑같이 만들어라. 기존에 있던 건 완전히 버려."*
+> 이 절은 **참고가 아니라 복제 사양**이다. 아래를 그대로 따른다.
 
-### 실측 — 경제해적단 상위 6편 (2026-08-20, 160×90 축소 후 HSV)
+### 실측 — 경제해적단 상위 6편 (160×90 축소 후 HSV)
 
-| | 채도 | 밝기 | 대비(상위5%−하위5%) |
-|---|---|---|---|
-| [S&P500 9.7 vs 3,700만](https://www.youtube.com/watch?v=JREdVuRBv9U) 채널 1위 | 0.37 | 0.29 | 0.96 |
-| [달러 패권](https://www.youtube.com/watch?v=NID7VESSER8) 157,000 | 0.36 | 0.33 | 0.96 |
-| [부자들은 주식을 팔지 않습니다](https://www.youtube.com/watch?v=aepM7E3vsTs) | 0.47 | 0.34 | 0.98 |
-| [조용히 부자되는 3가지](https://www.youtube.com/watch?v=1-M2uIaVoKs) | 0.40 | 0.35 | 0.97 |
-| [월배당 ETF 베스트 5](https://www.youtube.com/watch?v=81c1g3RiDE8) | 0.34 | 0.44 | 1.00 |
-| [배당주로 노후 끝내기](https://www.youtube.com/watch?v=vrZKuTGJsQU) | 0.54 | 0.37 | 1.00 |
+채도 **0.34~0.54** · 밝기 0.29~0.44 · 대비 **0.96~1.00**
+→ 순검정에 가까운 그림자와 밝은 하이라이트가 **한 화면에 같이** 있다. 회색 중간톤으로 채우면 이 값이 안 나온다.
 
-**채도 0.34~0.54 · 대비 0.96~1.00.** 대비가 거의 1.00이라는 건 **순검정 그림자와 밝은 하이라이트가 한 화면에 같이 있다**는 뜻이다.
-회색 중간톤으로 채우면 이 값이 안 나온다.
+### 이 계열의 화면은 항상 이렇게 생겼다
 
-### 규격
-
-| 요소 | 규격 |
-|---|---|
-| **매체** | **2D 디지털 일러스트.** 사진이 아니다 — 붓·셀 음영이 보이는 그림 |
-| **캐릭터** | 극단적으로 단순. 선 몇 개로 된 얼굴 |
-| **배경** | 정교하되 **명백한 그림.** 건물·거리·실내가 사실적 비례로 그려지되 사진 질감이 아니다 |
-| **채도** | **높다.** 황금빛 주황이 기본 광원. 빨강(손실)·초록(이익)·금색(성공)을 원색으로 쓴다 |
-| **대비** | **극단적.** 순검정에 가까운 그림자와 밝은 하이라이트를 한 화면에 |
-| **왜** | 정보량 대비가 시선을 캐릭터로 몰고, 색·대비가 160×90에서 살아남게 한다 |
-
-```
-Style: a bold, high-saturation 2D digital illustration with cel shading and visible brush work —
-clearly a drawing, never a photograph. Warm golden-hour light floods the scene from one side,
-pushing deep near-black shadows on the other; the tonal range runs from almost pure black to bright
-highlight in the same frame. Colours are vivid and unmixed — warm gold and orange for the winning
-side, saturated red for loss and danger, saturated green and gold for gain. The environment is
-drawn in rich detail with solid perspective, but stays an illustration. The characters standing in
-it are drawn in a deliberately flat, minimal style, and this contrast is intentional.
-```
-
-- ⛔ **`believable lighting`·`photorealistic`·`documentary`·`muted`·`desaturated`·`overcast` 계열 단어를 쓰지 않는다.** 이 단어들이 첫 회차를 회색으로 만들었다
-- ⛔ **회색 중간톤으로 화면을 채우지 않는다.** 어두운 곳은 검게, 밝은 곳은 밝게
-- ⛔ 아메리칸 카툰·치비·3D 픽사 렌더는 아니다
-- ⛔ **국기볼형과 다르다.** 국기볼은 국가를 의인화한 구체이고, 이건 **시청자 본인의 아바타**다
-
-### 좌우 대비일 때의 색 배분 (벤치 주력 구도)
-
-```
-왼쪽 (잃는 쪽)   차갑고 어둡다 — 회청색·먹구름·비, 빨강 경고, 검은 그림자
-      ↕ 가운데 경계는 물리적으로 (능선·유리·문틀·빛의 경계)
-오른쪽 (얻는 쪽) 따뜻하고 밝다 — 황금빛 노을, 초록, 금색
-```
-
-> 실측: [채널 1위 13.8배](https://www.youtube.com/watch?v=JREdVuRBv9U)가 정확히 이 배분이다 —
-> 좌측 비 내리는 잿빛 산길, 우측 황금빛 도시와 저택. 가운데 능선이 경계다.
-
-## §3. 마스코트 규격 — 「나」의 아바타
-
-**매 편 같은 캐릭터가 나온다.** 벤치 최상위 4곳 전부가 고정 얼굴을 갖고 있다([thumbnail-patterns.md](_benchmarks/thumbnail-patterns.md) 8-3).
-
-### 고정 사양 (9장 전부 동일하게 유지)
-
-```
-a smooth rounded off-white head with no hair, no nose and no rendered skin texture,
-two solid black eyes, drawn eyebrows and a drawn mouth; the eyebrows change shape with the
-emotion, and the mouth, the eyes, sweat drops, tears, hands and props change with it too
-```
-
-| 항목 | 규격 | 이유 |
+| # | 요소 | 사양 |
 |---|---|---|
-| **머리** | 매끈한 미색(off-white) 원형. 머리카락 없음 | 머리카락이 붙는 순간 **성별·연령**이 생긴다 |
-| **눈** | 검은 점 두 개. **감정이 클 때는 크게 뜬 흰자 + 검은 눈동자**로 키운다 | 단순할수록 이입이 넓다 |
-| **코** | **없음** | 인종·나이 신호를 지운다 |
-| **입** | 담담할 땐 짧은 선. **놀람·낭패는 크게 벌린 입**으로 연다 | |
-| **눈썹** | **감정에 따라 확실히 바뀐다** — V자(경고·분노) / 八자(불안·낭패) / 평평(담담) / 아치(놀람) | 감정의 1차 신호다 |
-| **🔴 눈썹만으로 끝내지 않는다** | 눈썹 + **입 · 눈 · 땀방울 · 눈물 · 손동작(머리 감싸기·이마 짚기·가리키기) · 소품**을 **함께** 쓴다 | 눈썹 하나로는 무표정이 된다 |
-| **몸** | 상황에 맞는 복장(정장·작업복·등산복 등). **몸은 바뀌고 머리는 안 바뀐다** | 처지는 바뀌어도 「나」는 같다 |
-| **크기** | 머리가 화면 높이의 **30~40%** | 실사형(55~60%)보다 작다 — 배경 장면을 함께 읽혀야 하기 때문 |
+| 1 | **광원** | **화면 중앙~중앙 뒤에 황금빛 노을(또는 강한 역광)이 반드시 있다.** 하늘이 주황~금색으로 타고, 그 빛이 장면 전체를 물들인다 |
+| 2 | **배경** | 밝고 **디테일이 꽉 찬 일러스트.** 도로·건물·실내가 정확한 원근으로 그려지되 **사진 질감이 아니다.** 굵은 검정 외곽선 + 셀 음영 |
+| 3 | **좌우 대비** | 좌 = 어둡고 차갑고 **빨강 경고** / 우 = 밝고 따뜻하고 **초록·금색.** 가운데에 물리적 경계(톨게이트·능선·갈라진 땅·유리문) |
+| 4 | **정보 카드** | 🚨 **화면에 3~6개.** 나무·금속 팻말, 흰 보드, 원형 배지, 막대그래프 + 굵은 화살표, 체크리스트 박스. **각 카드에 한글 라벨과 수치가 크게 적혀 있다** |
+| 5 | **상징물** | 금화 더미 · 돈다발 · 왕관 · 자루 · 표지판 — 부/손실을 사물로 세운다 |
+| 6 | **마스코트** | §3. 큰 흰 머리 + **굵은 검정 눈썹** + 큰 눈, 화면 중앙 또는 좌우에 |
 
-> ⚠️ **차별화**: 경제해적단은 흰 동그라미 + 검은 점, 야무진은 노란 계란 + 안경이다.
-> 우리는 **안경 없음 + 미색**으로 간다. 안경을 붙이면 야무진과 겹치고 「해설자」 인상이 생겨 **「나」가 아니라 「선생」**이 된다.
+```
+Style: bold high-saturation 2D vector-style digital illustration with heavy black outlines and flat
+cel shading, in the visual language of Korean finance-explainer YouTube thumbnails. A golden sunset
+burns in the centre background and floods the whole scene with warm orange and gold light, while the
+opposite side falls into deep near-black shadow — the tonal range runs from almost pure black to
+bright highlight inside the same frame. Colours are vivid, unmixed and poster-like: gold and orange
+for the winning side, saturated red for loss and danger, saturated green for gain. The world is
+packed with legible detail — signboards, panels, badges, bar charts, thick arrows, stacks of gold
+coins and cash bundles — arranged so the eye reads them instantly at thumbnail size. Rendered as a
+drawing throughout: never a photograph, never a 3D render, never muted, never grey.
+```
 
-> 🔴 **2026-08-20 개정 — 「감정을 책임지는 유일한 요소는 눈썹」을 삭제했다.**
-> 첫 회차가 **9장 전부 무표정**으로 나왔다. 눈썹만 허용하면 그 이상을 못 그린다.
-> 벤치 실측: [부자들은 주식을 팔지 않습니다](https://www.youtube.com/watch?v=aepM7E3vsTs)는 **땀방울 + 머리 감싼 손 + 벌린 입**을 한 얼굴에 다 쓰고,
-> 옆 캐릭터는 **선글라스 + 커피잔**으로 여유를 표현한다. [달러 패권 157,000회](https://www.youtube.com/watch?v=NID7VESSER8)는 **크게 뜬 눈 + 벌린 입 + 손바닥을 편 제지 동작**이다.
-> ⛔ **다만 얼굴 생김을 그대로 베끼지는 않는다** (2026-08-20 정호님). 눈썹 굵기·모양 같은 **그 채널 마스코트의 인상**은 가져오지 않는다.
-> 가져올 것은 **스타일(색·대비·배경)과 감정 표현의 강도**다. **얼굴은 우리 것**으로 간다.
-> **표정 강도는 대본 내용을 유추할 수 있을 만큼 올린다**([[feedback_thumbnail_face_expression]]).
+- ⛔ **`documentary`·`photograph`·`believable lighting`·`available light`·`35mm`·`f/2.8`·`muted`·`grey`·`overcast` 계열 어휘를 한 개도 쓰지 않는다.** 1차 실패의 원인이다
+- ⛔ **빈 화면을 만들지 않는다.** 벤치는 어느 구석에도 볼 것이 있다 — 카드가 3개 미만이면 다시 만든다
 
-> 🔶 **이 사양은 교체 가능하다.** 다만 **한 프로젝트 안 9장은 반드시 동일**해야 한다.
+## §3. 마스코트 — 경제해적단 캐릭터를 그대로 복제한다
 
----
+> 🔴 **2026-08-20 2차 개정.** 앞서 「눈썹까지 따라하진 말라」는 지시로 눈썹을 뺐더니
+> 결과물이 **점 눈 무표정**으로 나와 벤치와 전혀 닮지 않았다.
+> 정호님 최종 지시: **"완전히 똑같이 새로 만들어."** → 얼굴도 복제한다.
+
+### 고정 사양 (9장 전부 동일)
+
+```
+a large smooth round off-white head with no hair and no nose, drawn with a bold black outline;
+two big white eyes with round black pupils and visible eyelids; thick solid black eyebrows that
+change angle with the emotion; a drawn mouth that opens and bends with the emotion; a small
+simple body in situation-appropriate clothing with simple rounded hands
+```
+
+| 항목 | 사양 |
+|---|---|
+| **머리** | **크다.** 화면 높이의 **30~40%.** 매끈한 미색 원형, 머리카락·코 없음, 굵은 검정 외곽선 |
+| **눈** | **큰 흰자 + 검은 원형 눈동자.** ⛔ 작은 점 눈이 아니다 — 1차 실패의 원인 |
+| **눈썹** | **굵은 검정.** 감정의 1차 신호 — V자(분노·경고) / 八자(불안·낭패) / 아치(놀람) / 평평(담담) |
+| **입** | 감정에 따라 연다 — 미소 곡선 / 벌린 O / 아래로 꺾인 찡그림 / 짧은 선(담담) |
+| **몸** | 상황복. **정장이 기본**이고 작업복·등산복 등으로 바뀐다. 손은 단순한 둥근 모양 |
+| **소품** | 선글라스 · 모자 · 커피잔 · 서류 — 여유/낭패를 소품으로도 말한다 |
+| **표정 부속** | **땀방울 · 눈물 · 머리 감싼 손 · 이마 짚기 · 가리키는 손** |
+
+> **실측**: [부자들은 주식을 팔지 않습니다](https://www.youtube.com/watch?v=aepM7E3vsTs)는 한 얼굴에 **땀방울 + 머리 감싼 손 + 벌린 입**을 다 쓰고, 옆 캐릭터는 **선글라스 + 커피잔**으로 여유를 표현한다.
+> [배당주 투자](https://www.youtube.com/watch?v=vrZKuTGJsQU)는 **선글라스 + 밀짚모자 + 커피잔 + 흔들의자**로 「이미 이룬 사람」을 한 장에 세운다.
+> [달러 패권 157,000회](https://www.youtube.com/watch?v=NID7VESSER8)는 **크게 뜬 눈 + 벌린 입 + 손바닥 편 제지 동작**이다.
+
+> 🚨 **한 프로젝트 안 9장의 얼굴은 반드시 동일하다.** 몸과 표정만 바뀐다.
 
 ## §4. 구도 — 좌우 대비가 이 계열의 주력
 
