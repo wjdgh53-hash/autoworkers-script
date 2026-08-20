@@ -90,8 +90,8 @@ it are drawn in a deliberately flat, minimal style, and this contrast is intenti
 
 ```
 a smooth rounded off-white head with no hair, no nose and no rendered skin texture,
-two solid black eyes and a drawn mouth; thick black eyebrows carry most of the emotion,
-and the mouth, sweat drops, tears, hands and props carry the rest
+two solid black eyes, drawn eyebrows and a drawn mouth; the eyebrows change shape with the
+emotion, and the mouth, the eyes, sweat drops, tears, hands and props change with it too
 ```
 
 | 항목 | 규격 | 이유 |
@@ -100,8 +100,8 @@ and the mouth, sweat drops, tears, hands and props carry the rest
 | **눈** | 검은 점 두 개. **감정이 클 때는 크게 뜬 흰자 + 검은 눈동자**로 키운다 | 단순할수록 이입이 넓다 |
 | **코** | **없음** | 인종·나이 신호를 지운다 |
 | **입** | 담담할 땐 짧은 선. **놀람·낭패는 크게 벌린 입**으로 연다 | |
-| **눈썹** | 굵은 검정 — V자(경고·분노) / 八자(불안·낭패) / 평평(담담) / 아치(놀람) | |
-| **🔴 표정 부속** | **땀방울 · 눈물 · 벌린 입 · 손동작(머리 감싸기·이마 짚기·가리키기) · 소품(선글라스·커피잔)을 적극 쓴다** | 아래 실측 참조 |
+| **눈썹** | **감정에 따라 확실히 바뀐다** — V자(경고·분노) / 八자(불안·낭패) / 평평(담담) / 아치(놀람) | 감정의 1차 신호다 |
+| **🔴 눈썹만으로 끝내지 않는다** | 눈썹 + **입 · 눈 · 땀방울 · 눈물 · 손동작(머리 감싸기·이마 짚기·가리키기) · 소품**을 **함께** 쓴다 | 눈썹 하나로는 무표정이 된다 |
 | **몸** | 상황에 맞는 복장(정장·작업복·등산복 등). **몸은 바뀌고 머리는 안 바뀐다** | 처지는 바뀌어도 「나」는 같다 |
 | **크기** | 머리가 화면 높이의 **30~40%** | 실사형(55~60%)보다 작다 — 배경 장면을 함께 읽혀야 하기 때문 |
 
@@ -112,6 +112,8 @@ and the mouth, sweat drops, tears, hands and props carry the rest
 > 첫 회차가 **9장 전부 무표정**으로 나왔다. 눈썹만 허용하면 그 이상을 못 그린다.
 > 벤치 실측: [부자들은 주식을 팔지 않습니다](https://www.youtube.com/watch?v=aepM7E3vsTs)는 **땀방울 + 머리 감싼 손 + 벌린 입**을 한 얼굴에 다 쓰고,
 > 옆 캐릭터는 **선글라스 + 커피잔**으로 여유를 표현한다. [달러 패권 157,000회](https://www.youtube.com/watch?v=NID7VESSER8)는 **크게 뜬 눈 + 벌린 입 + 손바닥을 편 제지 동작**이다.
+> ⛔ **다만 얼굴 생김을 그대로 베끼지는 않는다** (2026-08-20 정호님). 눈썹 굵기·모양 같은 **그 채널 마스코트의 인상**은 가져오지 않는다.
+> 가져올 것은 **스타일(색·대비·배경)과 감정 표현의 강도**다. **얼굴은 우리 것**으로 간다.
 > **표정 강도는 대본 내용을 유추할 수 있을 만큼 올린다**([[feedback_thumbnail_face_expression]]).
 
 > 🔶 **이 사양은 교체 가능하다.** 다만 **한 프로젝트 안 9장은 반드시 동일**해야 한다.
