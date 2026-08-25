@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "project": "china-returning-students",
+    "style": "geopolitics",
+    "narrative_direction": "부정형 — 중국이 스스로 천인계획의 이름을 지운 자충수로 세계가 문을 닫았고, 53만 5,600명이 돌아온 자리에 청년실업률 17.9%와 대졸자 1,270만 명이 기다린다. 몰락·자충수 서사이므로 오성홍기는 그을리고 찢긴 상태로 간다(태극기는 등장하지 않는다). 한국이 당사자가 아닌 제3국 서사이므로 「우리 쪽 얼굴 최소 5장」 조항은 적용하지 않고, 실명 인물은 verified-data.md에 근거가 있는 인물로만 세웠다.",
+    "titles": [
+      "\"이 이름을 꺼내지 마라\" 유학생 53만 명이 한 해 만에 되돌아온 진짜 이유",
+      "\"검색해도 안 나옵니다\" 중국이 지운 계획 하나가 53만 명을 집으로 돌려보낸 이유",
+      "\"3억 쓰고 105만 원 받는다\" 돌아온 유학생 53만 명이 마주한 자리의 정체"
+    ],
+    "thumbnail_texts": [
+      "\"이름부터 지우고 시작했다\" / 53만 명이 되돌아온 자리 / 여긴 자리가 없대요",
+      "\"검색해도 이젠 안 나옵니다\" / 53만 명을 되돌린 그 계획 / 켕겼나 보네",
+      "\"3억 쓰고 105만 원 받습니다\" / 53만 명이 마주한 줄 / 기대치를 낮췄어요"
+    ],
+    "prompt_prefix": "COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The bottom three-eighths of the frame height is the same continuous scene rendered dark, smoky and free of detail so overlay text stays readable, while all faces, flags, weapons and key objects sit entirely within the upper five-eighths. Anything held or carried sits at mid height, never near the bottom edge. photoreal current-affairs broadcast composite: every person, flag and location is a real photograph, sharp and true to life — faces keep real skin texture, pores, stray hair and natural shadow, and fabric keeps a visible weave. Over that photographic base sit broadcast graphic treatments: a bold colour field, cracked-glass shards, torn and scorched edges, a hard vignette, heavy atmospheric haze and fire glow. Dramatic hard lighting, one dominant colour drowning the frame, every part of the upper five-eighths packed edge to edge with elements and no empty space, cinematic wide-angle, very high contrast. NOT an oil painting, NOT brushwork or impasto, NOT a matte painting, NOT anime, NOT an illustration, NOT a 3d render",
+    "prompt_suffix": "no title overlay text, no captions, no subtitle bars, no lower-third news banner, no watermark. Apart from the Korean Hangul labels and numerals named above — which must be rendered crisply and correctly as real Korean letterforms — do not invent any other words or letterforms anywhere in the image.",
+    "negative_prompt": "oil painting, brushwork, impasto, painterly, matte painting, illustration, anime, 3d render, cartoon, glowing eyes, lens glare in the eyes, rising-sun ray flag, letterbox bars, empty grey panel, latin text, fake chinese characters"
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "purpose": "content",
+      "direction": "부정형",
+      "composition": "국가원수 단독 + 지워지는 현판",
+      "concept_ko": "2018년 9월 「이름을 외부에 노출하지 말라」 지침과 2020년 4월 검색 차단이 이번 편의 출발점이라, 국가원수 얼굴 옆에서 현판이 검은 페인트로 덮이는 순간을 그대로 물건으로 만들었다. 자기가 만든 계획을 자기 손으로 덮은 자충수라 부정형으로 판정했다.",
+      "prompt_en": "A tight chest-up shot of Xi Jinping (President of China) standing directly in front of an enormous Chinese flag — red field with one large yellow star and four smaller stars — in real woven fabric with a visible weave and deep folds, filling the whole background from top to bottom, its upper edge charred black and torn into ragged strips, soot staining the folds and the red dulled and grimy. Hard raking orange firelight from the left keeps his face bright while the hall behind him drowns in black smoke and heavy haze. His brow is furrowed deep, his eyes are cast down and unfocused, his lips pressed into a hard line and the muscle at his jaw set; no hands are in frame. Immediately behind his shoulder hangs a heavy enamel wall plaque reading \"천인계획\" in Korean Hangul, the right half of it already covered by fresh black paint that still runs in wet streaks down the wall, a paint roller leaning against the skirting far back in the haze. Broadcast cracked-glass shards spread across the flag behind his head. His head reaches the top edge of the frame and his face alone is taller than half the frame height, all of it inside the upper five-eighths, while the smoke below thickens and loses every trace of detail."
+    },
+    {
+      "id": 2,
+      "purpose": "content",
+      "direction": "부정형",
+      "composition": "실명 인물 + 압도적 장비",
+      "concept_ko": "세계가 문을 닫은 이유를 사람 하나로 세운 컷. 쉬옌쥔은 GE항공 복합재 팬 모듈을 노렸다가 2021년 유죄, 2022년 징역 20년이 확정된 국가안전부 정보관이라 verified-data.md의 1차 출처가 있는 인물이다. 훔치려던 물건을 뒤에 실물로 세워 「왜 닫혔나」를 한 장으로 답한다.",
+      "prompt_en": "Chest-up shot of Xu Yanjun, the Chinese Ministry of State Security intelligence officer convicted of economic espionage and sentenced to twenty years in a United States federal court, standing in the left half of the frame. Behind him an enormous Chinese flag — red field with one large yellow star and four smaller stars — hangs as real woven fabric with a visible weave and deep folds, its edges charred black and torn into ragged strips, the red desaturated and grimy. Filling the right side and angled toward the camera is a huge composite jet-engine fan module, its curved carbon-fibre blades scratched, soot-blackened and lit from below by orange firelight, black smoke pouring through the gaps between the blades so no part of the upper frame is empty. A hard side light cuts his face out of the darkness; his eyes are narrow and fixed downward, his mouth is a thin flat line, the muscle at his jaw is clenched and his shoulders are squared, no hands in frame. Broadcast cracked-glass shards run down through the flag beside his head. His head reaches the top edge of the frame and his face alone is taller than half the frame height, entirely inside the upper five-eighths, while the haze at the bottom of the picture goes black and featureless. Every surface in this scene is bare metal or bare fabric with no writing, labels or numbers anywhere on it."
+    },
+    {
+      "id": 3,
+      "purpose": "content",
+      "direction": "부정형",
+      "composition": "현장 스케일 광각 (오버숄더)",
+      "concept_ko": "돌아온 자리를 사람 줄로 보여주는 컷. 2026년 대졸자 1,270만 명에 귀국자 53만 5,600명이 얹혀 구직 대군이 1,500만 명을 넘는다는 수치를 그래프가 아니라 접수처 앞 줄로 물리화했다. 무명 민간인을 주역으로 세우지 않기 위해 전경 인물은 뒷모습만 잡고 얼굴은 특정하지 않는다.",
+      "prompt_en": "A wide view down a vast indoor job-fair hall in China, shot from just behind the nearest applicant so that only his shoulder and the back of his head appear in dark silhouette at the right edge, a thick stack of resumes held up at chest height in his hand. In front of him a queue of jobseekers with wheeled suitcases bends twice and recedes far into the hall, the people rendered progressively smaller and hazier with distance and their faces never individually featured. Covering the entire back wall is an enormous Chinese flag — red field with one large yellow star and four smaller stars — hanging as real woven fabric with deep folds, its lower edge charred black and its red dulled and grimy, orange light from an unseen source raking hard across it. A hall banner above the counters reads \"접수처\" in Korean Hangul, and the smaller notices pinned beside it are printed too small and slightly out of focus to read. Grey daylight from high windows fights with heavy atmospheric haze and broadcast cracked-glass shards spread from the upper right corner. The flag, the banner and the whole queue sit inside the upper five-eighths, while the floor, the shadows and the haze merge into one dark detail-free mass toward the bottom of the picture."
+    },
+    {
+      "id": 4,
+      "purpose": "title",
+      "direction": "부정형",
+      "composition": "실명 인물 + 서류 접촉",
+      "concept_ko": "확정 제목의 「이 이름을 꺼내지 마라」가 무엇이었는지를 얼굴로 답하는 컷. 찰스 리버는 천인계획 계약 참여자였고 그 사실을 부인한 것으로 유죄가 확정됐다 — 손바닥으로 계약서를 덮어 밀어내는 동작(그 자리에서 실제로 하는 행위)이 제목의 은닉과 정확히 겹친다.",
+      "prompt_en": "Chest-up shot of Charles Lieber, the former Harvard University chemistry department chair convicted of lying to federal investigators about his Wuhan University of Technology talent-programme affiliation, standing slightly right of centre. Behind him an enormous Chinese flag — red field with one large yellow star and four smaller stars — fills the frame as real woven fabric with a visible weave and deep folds, its edges charred and eaten through with burn holes, soot pressed into the creases and the colour stained and sun-bleached. His flat palm is pressed down on a contract lying on a desk edge at mid height, sliding it away from the camera; the document's cover line reads \"계약서\" in Korean Hangul and every other line printed on it is too small and slightly out of focus to read. His brow is drawn down hard, his eyes are cast sideways away from the lens, his lips are pressed thin and his shoulders are sunk. Hard orange side light keeps his face bright against a black smoke-choked background, and broadcast cracked-glass shards spread across the flag from the lower left of it. His head reaches the top edge of the frame and his face alone is taller than half the frame height, all inside the upper five-eighths, while the desk surface and the haze below fall away into darkness with no detail."
+    },
+    {
+      "id": 5,
+      "purpose": "title",
+      "direction": "부정형",
+      "composition": "실명 인물 + 균열 간 상징물",
+      "concept_ko": "제목이 약속한 「그 계획이 무엇이었나」의 원본 사례. 장루징은 천인계획을 타고 돌아와 SMIC를 세운 인물이라 계획의 정체를 얼굴 하나로 설명한다. 중국의 성취로 읽히지 않게 웨이퍼에 금을 넣고 국기를 태워 자충수 쪽으로 못을 박았다.",
+      "prompt_en": "Chest-up shot of Zhang Rujing, the founder of SMIC and the engineer known as the father of China's semiconductor industry, standing at the right of the frame and holding a large silicon wafer up at mid height in both hands, turning it toward a light source so a hairline crack running clean across its surface catches the glare. Behind and to the left an enormous Chinese flag — red field with one large yellow star and four smaller stars — fills more than half the picture in real woven fabric with deep folds, its edges charred black and torn into ragged strips, the red desaturated and grimy, a column of fire and black smoke rising along the seam between the flag and the dark plant interior so no part of the upper frame is empty. Orange firelight throws a hard red key onto his face; his eyes are lowered to the wafer and unfocused, his mouth is slightly open in a tired exhale, his brow bunched and his shoulders dropped. Broadcast cracked-glass shards echo the crack in the wafer across the flag. His head reaches the top edge of the frame and his face alone is taller than half the frame height, all inside the upper five-eighths, while the smoke below him goes black and loses all detail. Every surface in this scene is bare with no writing, labels or numbers anywhere on it."
+    },
+    {
+      "id": 6,
+      "purpose": "title",
+      "direction": "부정형",
+      "composition": "국가원수 + 귀국 행렬 스케일",
+      "concept_ko": "제목의 「53만 명이 한 해 만에 되돌아온」을 그대로 이행하는 컷. 나간 57만 명 중 94%가 돌아온 역대 최고 귀국률을 입국장으로 물리화하고, 그 앞에 국가원수의 낭패 표정을 붙여 「자초한 결과」로 닫는다. 1번과 인물은 같지만 각도·손동작·표정을 전부 갈랐다.",
+      "prompt_en": "A three-quarter side view of Xi Jinping (President of China) filling the left of the frame, the heel of his hand pressed hard against his temple and his eyes squeezed shut, his brow bunched, his mouth open in a tired exhale and his shoulders sunk. Behind and to the right an enormous Chinese flag — red field with one large yellow star and four smaller stars — hangs the full height of an airport arrivals hall wall in real woven fabric with deep folds, its lower edge charred and smouldering, the red dulled and grimy. Beneath it a dense column of returning travellers dragging wheeled suitcases pours through the arrival gates and recedes into thick haze, packed shoulder to shoulder with their faces never individually featured. A gate sign above them reads \"입국장\" in Korean Hangul, while the smaller notices around it are printed too small and slightly out of focus to read. Cold grey daylight is cut through by an orange glow from the left that keeps his face bright, and broadcast cracked-glass shards run down the wall between him and the crowd. His head reaches the top edge of the frame and his face alone is taller than half the frame height, all inside the upper five-eighths, while the floor and the crowd's legs dissolve into one dark, smoky, detail-free band at the bottom of the picture."
+    },
+    {
+      "id": 7,
+      "purpose": "reference-inherit",
+      "direction": "부정형",
+      "composition": "레퍼 계승 — 좌 감정 클로즈업 / 우 군중 스케일 (넓은 컷)",
+      "concept_ko": "[모순] 두뇌를 돈으로 쓸어 담던 나라인데, 돌아온 사람이 설 자리가 없다. / [남김] ①좌우 분할(좌 감정 클로즈업·우 군중 스케일) ②우측 캐리어 끌고 줄 선 행렬 ③우상단 중국 국기 요소 ④하단 텍스트 자리와 상단의 명도 대비. 카메라 시점(수평 눈높이·인물은 정면 아래를 응시)은 앵커 그대로 남긴다. / [바꿈] ①좌측 피사체를 우는 여성 무명 인물 → 국가원수 실명 클로즈업(정세형은 무명 민간인을 주역으로 세우지 않는다) ②우측을 야간 거리 → 주간 채용 박람회장 접수대 줄 ③광원·포인트색을 어두운 야간＋노란 텍스트 → 탁한 회색 주광＋붉은 포인트.",
+      "prompt_en": "A horizontal eye-level two-part frame split down the middle. On the left, Xi Jinping (President of China) chest-up and close to the lens, his gaze directed straight down toward the camera, his lips pressed hard together, his brow low and flat, his nostrils drawn tight and no hands in frame; a hard grey daylight key from the left keeps his skin texture and stray hair sharp. On the right, a daylight Chinese job-fair hall where a queue of applicants dragging wheeled suitcases and clutching resume folders waits at the reception counters, bending once and receding into haze with their faces never individually featured, and a counter banner reading \"채용관\" in Korean Hangul above them while the smaller notices beside it are printed too small and slightly out of focus to read. Filling the upper right corner and running down behind the queue is an enormous Chinese flag — red field with one large yellow star and four smaller stars — in real woven fabric with deep folds, its edge charred black and its red dulled and grimy. The palette is drained grey-green daylight with the flag's red as the only strong accent, and a vertical band of broadcast cracked glass runs down the seam between the two halves. His face and the flag sit inside the upper five-eighths, while his shoulder, the floor and the queue's legs merge into one dark hazy detail-free band across the bottom of the picture."
+    },
+    {
+      "id": 8,
+      "purpose": "reference-inherit",
+      "direction": "부정형",
+      "composition": "레퍼 계승 — 좌 감정 클로즈업 / 우 군중 스케일 (가슴 위 중간 거리)",
+      "concept_ko": "[모순] 두뇌를 돈으로 쓸어 담던 나라인데, 돌아온 사람이 설 자리가 없다. / [남김] 좌우 분할·캐리어 줄·우상단 국기·하단 명도 대비 4개와 카메라 시점(수평 눈높이·정면 아래 응시)을 그대로 유지. / [바꿈] ①좌측 인물을 천인계획으로 돌아온 당사자(장루징)로 교체 ②우측을 공항 귀국 수속 창구 줄로 교체 ③거리감을 7번보다 당겨 얼굴 비중을 키우고 배경 채도를 더 죽였다.",
+      "prompt_en": "A horizontal eye-level frame split into two halves. On the left, Zhang Rujing, the founder of SMIC and the engineer known as the father of China's semiconductor industry, framed closer than a chest-up so his head and shoulders dominate that half, his gaze directed straight down toward the camera, his eyes red-rimmed and unfocused, the corners of his mouth pulled down and his lower lip pushed forward, one hand not visible and the other resting flat on a counter edge at mid height. On the right, a daylight airport customs and re-entry hall where returning students queue with wheeled suitcases and cardboard document boxes, the line receding into haze with faces never individually featured, and a hanging sign above the counters reading \"귀국 수속\" in Korean Hangul while the notices beside it are printed too small and slightly out of focus to read. An enormous Chinese flag — red field with one large yellow star and four smaller stars — fills the upper right corner as real woven fabric with deep folds, its lower edge charred and smoke-stained, the red desaturated almost to brown. The whole picture is cold, grimy, low-saturation daylight with a single red accent, broken by a vertical run of broadcast cracked glass along the split. His face and the flag sit inside the upper five-eighths, and the counter, the floor and the queue's lower bodies sink into one dark, hazy, featureless band at the bottom."
+    },
+    {
+      "id": 9,
+      "purpose": "reference-inherit",
+      "direction": "부정형",
+      "composition": "레퍼 계승 — 좌 감정 클로즈업 / 우 군중 스케일 (얼굴 중심)",
+      "concept_ko": "[모순] 두뇌를 돈으로 쓸어 담던 나라인데, 돌아온 사람이 설 자리가 없다. / [남김] 좌우 분할·캐리어 줄·우상단 국기·하단 명도 대비 4개와 카메라 시점(수평 눈높이·정면 아래 응시)을 그대로 유지. / [바꿈] ①좌측을 문이 닫힌 원인 당사자(쉬옌쥔)의 얼굴 중심 초근접으로 교체 ②우측을 상담 창구 앞 줄로 교체 ③화염 대신 창문 역광을 광원으로 써서 7·8번과 조명 성격을 갈랐다.",
+      "prompt_en": "A horizontal eye-level frame in which the left half is filled almost entirely by the face of Xu Yanjun, the Chinese Ministry of State Security intelligence officer sentenced to twenty years for economic espionage, cropped close so the top of his head touches the upper edge, his gaze directed straight down toward the camera, his eyelids heavy, the whites of his eyes dulled, his mouth clamped shut and the skin around his jaw slack, no hands in frame. On the right, a daylight Chinese employment centre where applicants with wheeled suitcases and plastic document sleeves queue at consultation windows, the line folding back on itself and fading into haze with faces never individually featured, a window sign above them reading \"상담 창구\" in Korean Hangul while every other printed line nearby is too small and slightly out of focus to read. An enormous Chinese flag — red field with one large yellow star and four smaller stars — hangs across the upper right corner in real woven fabric with deep folds, its edge charred black, the red flattened and dirty. Hard backlight from a wall of dirty windows rims his cheek and turns the queue into layered grey shapes, and broadcast cracked-glass shards spread from the corner of the flag toward his ear. His face and the flag sit inside the upper five-eighths, while the bottom of the picture is one continuous dark, hazy, detail-free extension of the same hall."
+    }
+  ]
+}

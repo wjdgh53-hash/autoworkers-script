@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "project": "xinjiang-forced-labor-blacklist",
+    "style": "geopolitics",
+    "narrative_direction": "부정형(중국) 중심 — 「싸게 만든 이유」가 그대로 「못 팔게 된 이유」가 되어 187곳이 명단에 오르고 억류 누계 39억 4천만 달러(약 5조 4천억 원, 2026년 2월 기준)가 항구에 묶인 이미 완료된 자업자득 서사(verified-data §1·§2). 미국이 함께 등장하는 5·8번만 혼합 — 중국은 부정형(그을리고 탁한 오성홍기), 미국은 긍정형(온전·선명한 성조기)으로 갈라 배치. 한국은 무대에 세우지 않는다(무대는 신장과 미 항구).",
+    "titles": [
+      "\"같은 라인인데 월급이 반토막\" 187곳을 잘라낸 신장산 원가의 정체",
+      "전기값 41원에 사람값 58만 원, 세계에서 제일 싼 그 원가가 187곳을 잘랐습니다",
+      "싸게 만든 원가가 중국 최대의 족쇄가 됐습니다｜감시·이송·저임금으로도 못 지운 신장산 187곳"
+    ],
+    "thumbnail_texts": [
+      "1줄 \"같은 라인인데 월급이 반토막\" / 2줄 깎아낸 건 사람 몫이었다 / 리액션 쏠쏠했겠네",
+      "1줄 \"전기값 41원에 사람까지 싸게 썼다\" / 2줄 그 원가가 불러온 청구서 / 리액션 고맙지 뭐~",
+      "1줄 신장 원가 드디어 청구서 / 2줄 중국 태양광에 지옥시작 / 3줄 아껴 쓴 월급이 187곳을 잘라냈다 / 리액션 자업자득"
+    ],
+    "prompt_prefix": "COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The bottom three-eighths of the frame height is the same continuous scene rendered dark, smoky and free of detail so overlay text stays readable, while all faces, flags, weapons and key objects sit entirely within the upper five-eighths. Anything held or carried sits at mid height, never near the bottom edge. photoreal current-affairs broadcast composite: every person, flag and location is a real photograph, sharp and true to life — faces keep real skin texture, pores, stray hair and natural shadow, and fabric keeps a visible weave. Over that photographic base sit broadcast graphic treatments: a bold colour field, cracked-glass shards, torn and scorched edges, a hard vignette, heavy atmospheric haze and fire glow. Dramatic hard lighting, one dominant colour drowning the frame, every part of the upper five-eighths packed edge to edge with elements and no empty space, cinematic wide-angle, very high contrast. NOT an oil painting, NOT brushwork or impasto, NOT a matte painting, NOT anime, NOT an illustration, NOT a 3d render",
+    "prompt_suffix": "no title overlay text, no captions, no subtitle bars, no lower-third news banner, no watermark. Apart from the numerals named above — which must be rendered crisply and correctly as plain arabic numerals — do not invent any other words, letterforms or characters anywhere in the image.",
+    "negative_prompt": "oil painting, brushwork, impasto, painterly, matte painting, illustration, anime, 3d render, cartoon, letterbox bars, empty grey panel, glowing eyes, korean signage, hangul shop signs"
+  },
+  "thumbnails": [
+    {
+      "id": 1,
+      "purpose": "content",
+      "composition": "국기 무대 + 원수 클로즈업",
+      "direction": "부정형",
+      "concept_ko": "값을 만든 조건 자체를 화면에 세운다 — 석탄 화력 냉각탑·송전탑·전기 계량기 '41'과 폴리실리콘 잉곳 더미로 「kWh당 0.03달러(약 41원) 전기가 폴리실리콘 원가의 40%」(verified-data §4)를 물건으로 보여주고, 시진핑은 그 값을 깎던 쪽의 무심·계산 표정으로만 세워 감정 무게는 잉곳 쪽에 둔다. 방향은 그을린 오성홍기로 부정형.",
+      "prompt_en": "An enormous Chinese flag — red field with one large yellow star and four smaller stars — fills the entire background from edge to edge, real woven fabric with a visible weave and deep folds, its red dulled and grimy with coal soot and its upper hem lightly scorched. In front of it a row of coal-fired power-station cooling towers pumps black smoke across a storm-dark sky and a line of high-voltage pylons marches back into orange haze; at mid height a heap of raw polysilicon ingots, dull blue-grey glassy chunks, catches hard orange firelight. Bolted to the nearest pylon at mid height is a heavy industrial electricity meter whose analogue dial reads the numerals '41' beside a red indicator lamp. SCALE, EQUALLY IMPORTANT: Xi Jinping (President of China) stands directly in front of the flag on the right, his head filling the right third of the frame with his face spanning the top fifty-five to sixty percent of the frame height and the top of his head touching the upper edge; his eyelids are lowered in unhurried calculation, one corner of his mouth lifted a fraction, his gaze sliding sideways down to the ingots, no hands visible. Warm orange key light rakes his face from the left, cracked-glass shards and drifting embers pack every gap behind him, and the ground below the ingots sinks into thick dark smoke."
+    },
+    {
+      "id": 2,
+      "purpose": "content",
+      "composition": "두 국기 좌우 분할 + 현장(인물 없음)",
+      "direction": "혼합",
+      "concept_ko": "그 값이 어디서 멈췄는지를 물건으로만 보여준다 — 억류 태그가 박힌 컨테이너 벽과 뜯다 만 태양광 패널 상자로 「억류 누계의 83%가 전자(태양광 주도) 32억 8천만 달러」(verified-data §2)를 물리화했다. 세울 국가원수가 없는 현장 컷이라 사람을 빼고 화물로 화면을 세웠고, 중국 국기는 부정형·미 국기는 긍정형으로 갈라 혼합으로 판정했다.",
+      "prompt_en": "No people anywhere in the frame. A US customs container yard at dusk: a wall of stacked shipping containers fills the frame edge to edge at mid height, every door closed with a steel bolt seal and a bright red inspection hold tag, one tag stencilled with the numerals '187'. In the foreground at mid height a half-opened cardboard crate of solar panels sits split apart, dark blue photovoltaic cells spilling from the torn packaging and losing their shine. Behind the containers on the left hangs an enormous Chinese flag — red field with one large yellow star and four smaller stars — in real woven fabric, its edges charred black and torn into ragged strips, soot staining the folds and small flames eating along the hem, colours desaturated and grimy; on the right an equally enormous US flag — red and white stripes with a blue canton of white stars — flies large and taut in hard wind, saturated and crisply lit. A column of fire and black smoke rises between the two flags and divides the frame. Cracked-glass shards spread across the container wall, heavy atmospheric haze, hard vignette, and the yard floor below the crates dissolves into dark featureless smoke."
+    },
+    {
+      "id": 3,
+      "purpose": "content",
+      "composition": "실내 현장 + 원수 클로즈업",
+      "direction": "부정형",
+      "concept_ko": "꺼진 라인 하나로 대가를 보여준다 — 파일럿 램프가 죽고 체인이 걸린 반응로 열은 「2025년 중국 폴리실리콘 가동률 40% 아래 하락」(verified-data 추가리서치)의 그림이고, 시진핑은 이입 대상이 아니라 불복하는 대가 지불자로 세웠다. 그을린 오성홍기와 멈춘 설비로 부정형 판정.",
+      "prompt_en": "Interior of a shut-down polysilicon plant in Xinjiang: two long rows of tall reactor vessels recede into the frame in crisp industrial detail, their pilot lamps dead, control panels black, heavy chains and padlocks slung across the access gantries at mid height, dust and haze hanging in the air. An enormous Chinese flag — red field with one large yellow star and four smaller stars — is strung across the far wall behind the reactors in real woven fabric, dulled, soot-stained and lightly charred along its hem. Hard orange firelight rakes in from the left and black smoke curls between the vessels, filling every remaining gap. SCALE, EQUALLY IMPORTANT: Xi Jinping (President of China) stands close to camera on the right, his head filling the right third of the frame with his face spanning the top fifty-five to sixty percent of the frame height and the top of his head touching the upper edge; his eyes are narrowed to hard slits with the bridge of his nose wrinkled, jaw muscles bunched from clenched back teeth, lips pulled thin in flat refusal, staring at the dead line, no hands visible. Cracked-glass shards spread from the nearest control panel and the factory floor beneath the vessels falls away into dark smoky shadow."
+    },
+    {
+      "id": 4,
+      "purpose": "title",
+      "composition": "오브젝트 클로즈업 + 붉은 원 강조(인물 없음)",
+      "direction": "부정형",
+      "concept_ko": "제목 앞머리 「같은 라인인데 월급이 반토막」을 그대로 물건으로 세운다 — 같은 컨베이어 위에 두꺼운 봉투와 가위로 반이 잘린 봉투를 나란히 놓아 「위구르 월 2,800~3,000위안(약 58만~62만 원)·하루 13시간 vs 같은 공장 한족 월 6,000~8,000위안」(verified-data §9)의 격차를 두께 하나로 읽히게 했다. 사람을 세우지 않고 잘린 값 자체를 감정 대상으로 삼았다.",
+      "prompt_en": "Extreme close view along a polysilicon factory conveyor line: two brown pay envelopes lie side by side on the steel belt at mid height, enormous in frame. The right envelope is swollen thick with banknotes, its flap straining open. The left envelope has been cut clean in half by heavy shears, the severed banknotes fanning out of the raw cut edge, and a hard red broadcast circle is drawn around it. The open shears lie on the belt beside the cut envelope. Behind the belt an enormous Chinese flag — red field with one large yellow star and four smaller stars — fills the entire background in real woven fabric, dull, grimy and lightly scorched along its edges, with tall reactor vessels and roof trusses silhouetted against it through orange haze. Cracked-glass shards radiate outward from the cut, hard orange rim light picks out the banknote edges, black smoke chokes the upper corners, no people anywhere in the frame, and the near end of the belt falls away into dark featureless shadow."
+    },
+    {
+      "id": 5,
+      "purpose": "title",
+      "composition": "두 국기 좌우 분할 + 원수 클로즈업",
+      "direction": "혼합",
+      "concept_ko": "제목의 「187곳을 잘라냈다」를 격리된 화물 더미와 콘크리트 벽의 '187'로 이행한다 — 2026년 7월 31일 43곳 일괄 추가로 총 187곳이 명단에 올랐고 유죄 추정을 뒤집는 성공률은 약 12%뿐(verified-data §1). 잘라낸 쪽인 미국은 긍정형(온전·선명한 성조기, 여명광), 중국은 부정형(그을리고 탁한 오성홍기)으로 갈라 혼합 판정.",
+      "prompt_en": "A US customs quarantine yard: an endless grid wall of seized shipping containers fills the middle of the frame in hard perspective, every door carrying a red hold tag, and the numerals '187' are stencilled huge in white paint across the concrete blast wall behind the stack. On the left hangs an enormous Chinese flag — red field with one large yellow star and four smaller stars — in real woven fabric, desaturated, soot-stained and charred along its edges, sunk in grimy shadow; on the right an equally enormous US flag — red and white stripes with a blue canton of white stars — flies taut and vivid in hard wind under clean dawn light. A column of fire and black smoke divides the two. SCALE, EQUALLY IMPORTANT: Donald Trump (US President) stands directly in front of the US flag on the right, his head filling the right third of the frame with his face spanning the top fifty-five to sixty percent of the frame height and the top of his head touching the upper edge; chin lifted, eyes narrowed, lips pressed into a hard flat line, looking straight past camera, no hands visible. Gantry cranes and stacked crates pack every remaining gap, hard vignette, and the yard surface below the containers dissolves into dark haze."
+    },
+    {
+      "id": 6,
+      "purpose": "title",
+      "composition": "단일 상징물 압도 배치(인물 없음)",
+      "direction": "부정형",
+      "concept_ko": "제목의 「신장산 원가의 정체」를 한 덩어리로 물리화한다 — 세계 5대 폴리실리콘 공장 중 4곳이 신장에 몰려 만든 그 잉곳(verified-data §4)이 통째로 갈라지고, 갈라진 틈에 붉은 억류 태그와 잘린 지폐 반쪽이 박혀 「싸게 만든 이유 = 못 팔게 된 이유」를 한 화면에 겹쳤다. 갈라진 잉곳과 불타는 국기 하단으로 부정형 판정.",
+      "prompt_en": "A single colossal polysilicon ingot, dull blue-grey and glassy, stands upright at the centre of the frame at mid height, taller than the machinery flanking it and rendered with sharp crystalline surface detail. A jagged cracked-glass fracture runs down its whole length, and jammed into the split are a bright red customs hold tag and the severed half of a banknote bundle. Behind it an enormous Chinese flag — red field with one large yellow star and four smaller stars — fills the entire background in real woven fabric, grimy and sun-bleached, its upper edge charred black with flame eating along the hem; coal-plant chimneys and high-voltage pylons stand silhouetted through the smoke on both sides. Raking orange firelight from the lower left throws the ingot into deep relief, embers and cracked-glass shards drift across the frame, no people anywhere, and the base of the ingot disappears into thick dark featureless smoke."
+    },
+    {
+      "id": 7,
+      "purpose": "reference-inherit",
+      "composition": "앵커 계승 — 얼굴 중심 컷",
+      "direction": "부정형",
+      "concept_ko": "[모순] 앵커 001은 「가장 촘촘한 감시망을 세운 자가 자기가 만든 그 스캔 광선 아래에서 굳어 있다」였다 — 우리 편은 「사람을 묶어 만든 그 값이 지금 그 물건을 항구에 묶어 놓았다」로 같은 모순을 옮긴다. / [남김] ①우측 국가원수 얼굴이 화면 오른쪽 3분의 1을 채우는 배치 ②좌측 붉은 원 강조 ③상단을 가로지르는 붉은 스캔 광선 + 사각 인식 프레임 ④화염·검은 연기와 오성홍기가 배경을 통째로 덮는 무대 ⑤눈높이 정면 와이드앵글(카메라 시점은 그대로) / [바꿈] ⓐ원 안의 대상: 위구르 노인 → 반으로 잘린 임금 봉투(사람 대신 잘린 값을 세운다) ⓑ상단 장치: 중국 감시 드론 편대 → 미 세관 X선 검사 갠트리(감시하던 쪽이 검사받는 쪽으로 뒤집힌다) ⓒ표정: 경악한 눈 → 내리깐 눈과 눌러 다문 입(대가를 치르는 쪽)",
+      "prompt_en": "A news-crisis poster composition. An enormous Chinese flag — red field with one large yellow star and four smaller stars — burns across the entire background in real woven fabric, flame eating along its torn edges, black smoke choking a storm-dark sky. Across the top of the frame a US customs X-ray inspection gantry arches over the scene, its scanning heads throwing four hard red beams down through the smoke onto the cargo below, thin rectangular detection frames snapping shut around each crate. At mid height on the left, a brown pay envelope cut clean in half with banknotes spilling from the severed edge is ringed by a hard red broadcast circle. SCALE, EQUALLY IMPORTANT: Xi Jinping (President of China) is close to camera on the right, his head filling the right third of the frame with his face spanning the top fifty-five to sixty percent of the frame height and the top of his head touching the upper edge; his eyes are cast down and unfocused, lips pressed into a hard line, shoulders sunk, red firelight keying his face bright against the smoke, no hands visible. Eye-level straight-on wide angle, every gap packed with fire, embers and cracked-glass shards, the ground below the envelope lost in dark smoke."
+    },
+    {
+      "id": 8,
+      "purpose": "reference-inherit",
+      "composition": "앵커 계승 — 넓은 컷, 두 원수 좌우 대비",
+      "direction": "혼합",
+      "concept_ko": "[모순] 앵커와 같은 모순을 폭을 넓혀 옮긴다 — 「원가를 낮춘 그 경로가 그대로 유죄의 증거 경로가 됐다」(verified-data §전환). / [남김] ①좌측 붉은 원 강조 ②상단을 가로지르는 붉은 스캔 광선 + 사각 인식 프레임 ③화염·검은 연기가 요소 사이를 메우는 배경 ④국기가 배경을 덮는 무대 ⑤눈높이 정면 와이드앵글 / [바꿈] ⓐ인물 수: 원수 1명 → 시진핑·트럼프 두 원수 좌우 배치 ⓑ배경 국기: 오성홍기 단독 → 좌 오성홍기(부정형·그을림) 대 우 성조기(긍정형·온전) 분할 ⓒ원 안의 대상: 위구르 노인 → 억류 태그가 박힌 태양광 패널 상자",
+      "prompt_en": "Wide two-leader composition. On the left an enormous Chinese flag — red field with one large yellow star and four smaller stars — hangs in real woven fabric, charred along its edges, desaturated and sunk in grimy shadow; on the right an equally enormous US flag — red and white stripes with a blue canton of white stars — snaps taut and vivid in hard wind under clean bright light. Between them rises a wall of seized shipping containers beneath an X-ray gantry whose red scanning beams sweep down across the stack, rectangular detection frames locking onto the cargo. At mid height on the left, a crate of solar panels with a red customs hold tag stapled to its side is ringed by a hard red broadcast circle. Xi Jinping (President of China) stands directly in front of the Chinese flag on the left and Donald Trump (US President) directly in front of the US flag on the right. SCALE, EQUALLY IMPORTANT: each head fills roughly a third of the frame width with the faces spanning the top fifty-five to sixty percent of the frame height. Xi's brow is furrowed deep, his gaze sliding sideways toward the containers, mouth half open; Trump wears a thin satisfied smile with half-lowered lids, facing camera. Fire and black smoke pour up through the seam between the two flags, eye-level straight-on wide angle, no empty space anywhere, the dock surface below the crate dissolving into dark haze."
+    },
+    {
+      "id": 9,
+      "purpose": "reference-inherit",
+      "composition": "앵커 계승 — 가슴 위 + 중경 상징물",
+      "direction": "부정형",
+      "concept_ko": "[모순] 앵커의 모순을 설비 쪽으로 옮긴다 — 「가장 싸게 돌리려고 지은 라인이 지금은 체인으로 잠겨 있다」. 명단에 오르면 그 회사 물건은 강제노동 산물로 추정되고 뒤집힌 비율은 약 12%뿐이다(verified-data §1). / [남김] ①우측 국가원수 얼굴이 오른쪽 3분의 1을 채우는 배치 ②좌측 붉은 원 강조 ③상단의 붉은 스캔 격자와 사각 인식 프레임 ④불타는 오성홍기와 검은 연기가 덮은 배경 ⑤눈높이 정면 와이드앵글 / [바꿈] ⓐ중경 오브젝트: 철조망 수용 시설 담장 → 체인과 자물쇠로 봉인된 공장 셔터 ⓑ원 안의 대상: 위구르 노인 → 꺼진 반응로 파일럿 램프 ⓒ거리감: 얼굴 클로즈업 단독 → 가슴 위 + 중경 상징물 동반",
+      "prompt_en": "An enormous Chinese flag — red field with one large yellow star and four smaller stars — fills the entire background in real woven fabric, its edges charred and torn into ragged strips, flame climbing the fabric and black smoke swallowing the sky. At the centre of the frame a heavy factory roller shutter is chained shut and padlocked, a round red seal disc slapped across the join, the loading bay behind it pitch black. Across the top of the frame a lattice of thin red scanning beams sweeps left to right, rectangular detection frames snapping shut on the shutter. At mid height on the left, a dead reactor pilot lamp with dark cold glass is ringed by a hard red broadcast circle. SCALE, EQUALLY IMPORTANT: Xi Jinping (President of China) is framed chest-up on the right, his head filling the right third of the frame with his face spanning the top fifty-five to sixty percent of the frame height; his eyes are stretched wide, mouth slightly open in stalled dismay, tendons standing out on his neck, orange firelight keying his face bright against the smoke, no hands visible. Eye-level straight-on wide angle, embers and cracked-glass shards packing every gap, the apron below the shutter sinking into dark featureless smoke."
+    }
+  ]
+}
