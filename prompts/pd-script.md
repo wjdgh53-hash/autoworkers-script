@@ -233,23 +233,19 @@ grep -n '^## Phase 5' prompts/creative-strategy.md
 > 아래 스크립트가 `prefix + prompt_en + suffix`로 이어 붙이므로 **txt에는 완전한 프롬프트가 들어간다.** 조립을 빼먹으면 스타일 지정이 통째로 빠진 프롬프트가 나간다.
 
 ```bash
-{VENV_PYTHON} -c "
-import json, sys, os
-d = os.path.join('{P}', 'output', 'thumbnails')
-for src in ['prompts', 'prompts-countryball', 'prompts-geopolitics', 'prompts-illustration']:
-    p = os.path.join(d, src + '.json')
-    if not os.path.exists(p): continue
-    data = json.load(open(p, encoding='utf-8'))
-    meta = data.get('meta', {})
-    pre = (meta.get('prompt_prefix') or '').strip()
-    suf = (meta.get('prompt_suffix') or '').strip()
-    out = []
-    for t in data['thumbnails']:
-        out.append(' '.join(x for x in (pre, t['prompt_en'].strip(), suf) if x))
-    open(os.path.join(d, src + '.txt'), 'w', encoding='utf-8').write('\n\n'.join(out) + '\n')
-    print(src + '.txt 생성 — ' + str(len(out)) + '장, 장당 평균 ' + str(sum(len(x) for x in out)//len(out)) + '자')
-"
+{VENV_PYTHON} scripts/build_thumb_txt.py --project {프로젝트} --channel {채널}
 ```
+
+> 🚨🚨 **txt 를 손으로 쓰지 않는다. 반드시 이 스크립트로 만든다** (2026-08-21 신설).
+> 스크립트가 조립과 **규격 검증을 함께** 한다 — 번호·제목·구분선·따옴표 밖 한글이 있으면 실패하고, 장당 1,200자 미만이면 prefix/suffix 누락으로 잡는다.
+>
+> **왜 못 박았나** — 서브에이전트 Write 가 막힌 세션에서 PD 가 txt 를 직접 조립하다가
+> 규격을 확인하지 않고 `### 1 (content)` 헤더와 `---` 구분선을 넣었다.
+> 정호님이 파일을 열자마자 **"원래 이렇게 안 주잖아"**로 걸렸다.
+> 스크립트가 있으면 형식이 고정되는데, 손으로 만드는 순간 매번 새로 지어진다.
+>
+> 이미 만들어진 txt 를 검사만 하려면 `--check` 를 붙인다:
+> `{VENV_PYTHON} scripts/build_thumb_txt.py --project {프로젝트} --channel {채널} --check`
 
 - **장당 평균 글자수를 확인한다.** 1,200자 미만이면 prefix/suffix가 비어 있을 가능성이 높다 → JSON의 `meta`를 확인한다
 - 구형 JSON(`prompt_prefix`·`prompt_suffix` 없음)은 `prompt_en`이 완성본이므로 **그대로 통과한다.** 옛 프로젝트도 이 스크립트로 처리된다
@@ -556,6 +552,9 @@ strategist Phase 5만 호출하거나 PD가 직접 작성한다. 어느 쪽이�
    > 🚨 **`concept.md`는 전달하지 않는다.** 검수자가 쓰는 확정 제목·핵심 약속·타겟 시청자는 `outline.md`의 `## 1. 기획 뼈대`에 전부 있다.
    > `concept.md`(약 1만 자)의 나머지는 제목 후보 3안·썸네일 카피 후보 3안·썸네일 이미지 컨셉·선택 근거인데 **검수와 무관하다.** 썸네일은 검수 대상이 아니다.
    > (script-writer에서 같은 이유로 이미 빼 둔 상태다 — 위 DRAFT 절 참조)
+   - 🔴 **`_script/concept.md`의 「확정 제목」·「제목 후보」·「썸네일 카피 후보」 표를 발췌해 전달한다 (2026-08-21 신설).**
+     `script-review-checklist.md`의 **「제목·썸네일 ↔ 대본 정합 검수」**를 돌리려면 이 셋이 필요하다. concept.md 전문은 여전히 주지 않는다 — **세 표만** 오려서 넣는다
+     > ⛔ 이걸 빼면 「제목이 「6가지」를 약속했는데 본문은 3개」 같은 사고가 그대로 통과한다. 실측 사고는 원본 절에 기록돼 있다
    - **문체 게이트에서 돌린 `check_tone.py` 출력 전문**을 함께 전달한다. reviewer는 이걸 review.md `## 0. 기계 검증`에 그대로 붙인다 (reviewer에게는 Bash 툴이 없다)
    - 출력: `{P}/_script/review.md` (체크리스트 + 심각도 분류 + 신규 주장 검증 결과 + verdict)
    - reviewer가 신규 주장을 식별하면 즉시 WebSearch로 검증하여 review.md에 포함
