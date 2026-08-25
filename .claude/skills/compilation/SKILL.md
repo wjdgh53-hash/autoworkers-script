@@ -236,11 +236,39 @@ for url in urls:
 - 시그니처 표현은 인트로에서는 아껴둔다 (본편에서 사용할 것이므로)
 - 총 길이: 150~250자 내외
 - 벤치마킹 채널 인트로와 동일한 문장 구조를 그대로 쓰지 않는다
+- **직전 통합본들의 인트로를 먼저 읽고 문장 구조·표현이 겹치지 않게 한다.** 통합본은 같은 채널에 반복해서 나가므로 시청 안내 문구("편하게 틀어두고…")가 매번 같으면 양산형으로 읽힌다
+
+### 🔴 TTS 규격 (본편 대본과 동일하게 적용한다)
+
+**인트로도 TTS에 올라가는 대본이다. `prompts/tts-rules.md`를 본편 `script.txt`와 똑같이 지킨다.**
+규칙 원본은 `tts-rules.md` 한 곳이므로 여기에 다시 옮겨 적지 않는다. 자주 놓치는 지점만 짚는다.
+
+| 항목 | 인트로에서 특히 주의할 점 |
+|---|---|
+| 특수문자·이모지 | 기획 문서 감각으로 `—`, `·`, `※`를 쓰기 쉽다. 낭독 대상에는 쓰지 않는다 |
+| 단어 뒤 괄호 | 「폭스콘(Foxconn)」처럼 쓰지 않는다 |
+| URL·이메일 | 인트로에 넣지 않는다 |
+| 숫자 표기 (8번) | **기계가 검사하지 못하는 유일한 항목이라 반드시 눈으로 대조한다.** 고유어 단위(개·명·살·가지·곳)는 고유어, 한자어·외래어 단위(톤·미터·년·원)는 한자어 또는 아라비아 |
+| 한 줄 형식 | 정본은 한 줄이다. `intro.md`의 문단 나눔은 사람이 읽기 위한 것이고, 정본에는 남지 않는다 |
 
 ### 작성 후
-- 인트로 전문을 사용자에게 보여주고 피드백 수렴
-- 수정 요청 시 해당 부분만 수정
-- 확정되면 저장
+
+1. 인트로 전문을 사용자에게 보여주고 피드백 수렴 → 수정 요청 시 해당 부분만 수정
+2. 확정되면 `intro.md`에 저장한다. 아래쪽에 `---`로 구분해 **검수 체크**를 남긴다
+   (금지 표현 / 독재자 존칭 / 시그니처 절약 / 직전 통합본과의 중복 회피 / 숫자 표기 대조표)
+3. **`finalize_intro.py`로 TTS 정본을 뽑는다.** 손으로 한 줄로 이어 붙이지 않는다
+
+```bash
+# macOS/Linux
+.venv/bin/python scripts/finalize_intro.py --dir "channels/{ch}/projects/{proj}/_compilation"
+# Windows
+.venv\Scripts\python scripts\finalize_intro.py --dir "channels\{ch}\projects\{proj}\_compilation"
+```
+
+- `intro.md`의 **첫 `---` 앞까지**만 낭독 대상으로 잘라내므로, 검수 체크는 반드시 `---` 아래에 쓴다
+- 본편 `finalize.py`와 **같은 함수**를 호출한다 (규칙 집행자는 한 곳이다)
+- 리포트에 보정 건수가 뜨면 그건 **인트로 원문이 규격을 어겼다는 뜻**이다. 자동 보정을 믿고 넘기지 말고 `intro.md` 원문을 고친 뒤 다시 돌린다
+- 산출물은 `intro_script.txt` — **TTS에 올리는 파일은 이것이다**
 
 ---
 
@@ -255,10 +283,14 @@ channels/{channel}/
     └── _compilation/
     ├── analysis.md       # 영상 메타데이터 + 분석 결과 (재료 중복 검증표 포함)
     ├── plan.md           # 조합/순서/썸네일 추천 확정본
-    ├── intro.md          # 인트로 대본
+    ├── intro.md          # 인트로 대본 (읽기용 + 검수 체크)
+    ├── intro_script.txt  # 🔴 TTS 업로드용 정본 — 한 줄, finalize_intro.py가 생성
     ├── intro_chunks.txt  # (STEP 7) 자막 덩어리 — 한 줄에 하나
     └── intro.srt         # (STEP 7) TTS 오디오에 정렬된 인트로 자막
 ```
+
+> `intro.md`와 `intro_script.txt`의 관계는 본편의 `draft.md`와 `script.txt`와 **완전히 같다.**
+> 사람이 읽고 고치는 건 `intro.md`, TTS에 올리는 정본은 `intro_script.txt`다.
 
 - `{compilation-name}`: 통합본 주제를 영어 kebab-case로 자동 명명
   - 예: `north-korea-military-compilation`
@@ -333,8 +365,34 @@ channels/{channel}/
 ```markdown
 # 통합본 인트로 대본
 
-{인트로 전문}
+{인트로 전문 — 문단 나눔은 읽기용이다. 정본에는 남지 않는다}
+
+---
+
+## 검수 체크
+
+- 금지 표현 없음 (profile.md 대조)
+- 독재자 존칭 없음
+- 시그니처 표현은 본편용으로 아껴 미사용
+- 직전 통합본 인트로와 문장 구조·표현 중복 회피 ({무엇을 무엇으로 바꿨는지})
+- 인용 수치의 출처 ({재료 영상의 검증된 출처})
+
+### TTS 규격 검증 (`prompts/tts-rules.md`)
+
+기계 검증: `scripts/finalize_intro.py` 실행 → 보정 {N}건
+정본은 한 줄 형식의 intro_script.txt
+
+기계가 검사하지 않는 **숫자 표기(8번)** 는 직접 확인했다.
+
+| 표기 | 분류 | 규칙 | 판정 |
+|---|---|---|---|
+| {56개국} | {규모} | {아라비아 + 한글 단위} | ⭕ |
+
+- 분량 {N}자 · 예상 낭독 {N}초 (@440자/분)
 ```
+
+> `---` 아래가 검수 체크다. `finalize_intro.py`가 **첫 `---` 앞까지만** 낭독 대상으로 자르므로
+> 이 구분선을 빠뜨리면 검수 체크가 통째로 TTS 대본에 섞여 들어간다.
 
 ### 완료 보고
 
@@ -346,7 +404,8 @@ channels/{channel}/
 📁 산출물:
 - [analysis.md](channels/.../analysis.md) — 영상 메타데이터 분석
 - [plan.md](channels/.../plan.md) — 조합/순서/썸네일 기획
-- [intro.md](channels/.../intro.md) — 인트로 대본
+- [intro.md](channels/.../intro.md) — 인트로 대본 + 검수 체크
+- [intro_script.txt](channels/.../intro_script.txt) — 🔴 TTS 업로드용 정본 (한 줄)
 
 📊 통합본 요약:
 - 총 러닝타임: {합산}분 (인트로 제외)
@@ -375,7 +434,8 @@ channels/{channel}/
 - 없으면: "인트로 TTS 오디오를 `_compilation/` 폴더에 넣고 알려주세요" 안내
 
 ### 7-2. 자막 덩어리(chunks) 작성
-`intro.md` 대본을 **호흡·의미 단위**로 쪼개 `_compilation/intro_chunks.txt`에 한 줄에 하나씩 저장한다.
+**`intro_script.txt`** 를 **호흡·의미 단위**로 쪼개 `_compilation/intro_chunks.txt`에 한 줄에 하나씩 저장한다.
+(`intro.md`가 아니다 — TTS가 실제로 읽은 텍스트는 정본인 `intro_script.txt`이고, 정렬 정확도는 이 일치에서 나온다)
 
 **끊기 기준:**
 - 쉼표·절 단위로 짧게 끊는다. 문장 중간이라도 자연스러운 호흡 지점에서 자른다

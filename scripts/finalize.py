@@ -102,7 +102,17 @@ _ASCII_BLOB_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9:._\-]{19,}")
 
 def strip_markdown(draft_path: Path) -> str:
     """draft.md에서 마크다운 메타를 제거하고 **한 줄** 대본 텍스트를 반환."""
-    raw = _HTML_COMMENT_RE.sub("", draft_path.read_text(encoding="utf-8"))
+    return strip_markdown_text(draft_path.read_text(encoding="utf-8"))
+
+
+def strip_markdown_text(raw: str) -> str:
+    """마크다운 문자열에서 메타를 제거하고 **한 줄** 대본 텍스트를 반환.
+
+    `strip_markdown`의 본체다. 파일이 아니라 문자열을 받는 진입점이 따로 필요해서
+    분리했다 — 통합본 인트로(`finalize_intro.py`)처럼 draft.md가 아닌 마크다운을
+    같은 규칙으로 정리해야 하는 곳이 있다. 동작은 종전과 완전히 동일하다.
+    """
+    raw = _HTML_COMMENT_RE.sub("", raw)
 
     body: list[str] = []
     for line in raw.splitlines():
