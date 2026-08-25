@@ -87,10 +87,24 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 
 | 감지 상태 | Read할 파일 |
 |-----------|-------------|
-| COLLECT ~ REVIEW_FINALIZE | `prompts/pd-script.md` |
+| COLLECT ~ REVIEW_FINALIZE | `prompts/pd-script.md` — 🚨 **전문이 아니라 「지금 단계의 절」만** (아래) |
 | STRATEGY (ask 모드 확정 저장), REVIEW_FINALIZE | + `prompts/pd-templates.md` |
 | STRATEGY (auto 모드) | + `channels/{채널}/config/pd-guide.md` (있으면) |
 | 에이전트 호출 직전 (첫 호출 시 1회) | + `prompts/pd-agents.md` |
+
+> 💰 **`pd-script.md`는 「지금 단계의 절」만 읽는다 (2026-08-25 신설).**
+> 이 파일은 27,784자(약 19,000토큰)다. 통째로 읽으면 **그 뒤 280턴 내내 다시 실려 편당 약 5.3M 원시토큰**이 된다.
+> 그런데 한 단계에서 실제로 쓰는 건 그중 한 절뿐이다.
+>
+> ```bash
+> grep -n '^## ' prompts/pd-script.md      # 절 시작 줄 번호를 얻는다
+> ```
+> 그다음 **지금 단계의 절 시작 줄부터 다음 절 시작 줄까지만** `Read`의 `offset`·`limit`으로 읽는다.
+> 절 이름은 상태명과 같다 — `## COLLECT` · `## ANALYZE` · `## DATA_PREP` · `## STRATEGY` · `## OUTLINE` · `## DRAFT` · `## REVIEW_FINALIZE`.
+>
+> - **단계가 넘어가면 다음 절을 그때 읽는다.** 미리 읽어 두지 않는다
+> - ⚠️ **줄 번호를 외워 두지 않는다.** 파일이 바뀌면 어긋나므로 단계마다 `grep`을 새로 돌린다
+> - ⚠️ **막히면 더 읽는다.** 절 밖에 필요한 게 있다고 판단되면 그 부분을 추가로 읽는다. 아껴야 할 것은 총량이지 정확도가 아니다
 
 > ⚠️ **에이전트에게 넘길 프롬프트 파일은 PD가 읽지 않는다.** PD가 미리 읽으면 같은 텍스트가 이중으로 쌓인다.
 > - strategist #1(패키지)가 직접 Read: `creative-strategy.md`, `ctr-reference.md`, `pd-templates.md`
@@ -208,7 +222,7 @@ description: 유튜브 대본 PD. "대본 만들어줘" 한마디로 레퍼런�
 | DATA_PREP | patterns.md, factcheck.md, verified-data.md | pattern-extractor + data-researcher 병렬 | 완전 병렬 |
 | STRATEGY | concept.md + hook-intro.md + **그 채널 `styles`에 있는 계열의 JSON 전부** + **계열별 복사용 통합본 .txt** | strategist **2회** (#1 패키지 / #2 썸네일) | 패키지 4개(A·B·C·D). **#1은 썸네일 계열 규칙 3종을 읽지 않고, #2는 `creative-strategy.md`의 Phase 5 절만 읽는다.** **프롬프트 파일은 경로로 전달**. 채팅에는 **목록 표 + txt 링크만** — 영문 프롬프트 원문 출력 금지 |
 | OUTLINE | outline.md | outline-writer 1개 (셀프체크 내장) | **모든 파트 헤더에 `(~N분, ~N자)` 필수** (클로징 포함) → PD는 `grep '^### '`로만 검증 |
-| DRAFT | draft.md | script-writer (**인접 파트 2개씩 묶어 1개** 병렬) + merge_draft.py | 파트별 목표를 **각각 범위로** 전달 → 병합 → 분량 검증. 파트마다 파일은 따로 쓴다. **`concept.md` 전달 금지** — outline `## 1. 기획 뼈대`로 대체 (에이전트 수만큼 곱해진다) |
+| DRAFT | draft.md | script-writer **1개** (파트 1~클로징 순차) + merge_draft.py | **PD가 outline을 쪼개지 않는다 — 경로로 넘긴다.** 파트마다 파일은 따로 쓴다 → 병합 → 분량 검증. **`concept.md`·`script-review-checklist.md` 전달 금지** (앞은 작가가 안 쓰고, 뒤는 검수자 문서다) |
 | REVIEW_FINALIZE | script.txt | reviewer(verdict 권한 + WebSearch 검증) + 최대 1회 리비전 + TTS 검수(`prompts/tts-rules.md`) | reviewer가 직접 판단 |
 
 ---
