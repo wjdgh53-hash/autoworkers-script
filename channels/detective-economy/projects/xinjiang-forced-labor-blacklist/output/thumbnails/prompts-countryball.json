@@ -3,14 +3,14 @@
     "project": "xinjiang-forced-labor-blacklist",
     "style": "countryball",
     "titles": [
-      "\"같은 라인인데 월급이 반토막\" 187곳을 잘라낸 신장산 원가의 정체",
-      "전기값 41원에 사람값 58만 원, 세계에서 제일 싼 그 원가가 187곳을 잘랐습니다",
-      "싸게 만든 원가가 중국 최대의 족쇄가 됐습니다｜감시·이송·저임금으로도 못 지운 신장산 187곳"
+      "\"신장에서 나왔다\" 이 한 줄에 187곳이 세계에서 통째로 쫓겨났습니다",
+      "싸게 만들려 위구르를 밀어 넣은 대가, 중국 187곳에 찍힌 지워지지 않는 낙인",
+      "신장산 세 글자가 중국 최대의 낙인이 됐습니다｜감시·이송·저임금으로도 지우지 못한 187곳의 원산지"
     ],
     "thumbnail_texts": [
-      "1줄 \"같은 라인인데 월급이 반토막\" / 2줄 깎아낸 건 사람 몫이었다 / 리액션 쏠쏠했겠네",
-      "1줄 \"전기값 41원에 사람까지 싸게 썼다\" / 2줄 그 원가가 불러온 청구서 / 리액션 고맙지 뭐~",
-      "1줄 신장 원가 드디어 청구서 / 2줄 중국 태양광에 지옥시작 / 3줄 아껴 쓴 월급이 187곳을 잘라냈다 / 리액션 자업자득"
+      "1줄 \"신장에서 나왔다\" 이 한 줄이면 끝 / 2줄 187곳이 쫓겨났다 / 리액션 자업자득",
+      "1줄 \"싸게 만들려고 사람을 밀어 넣었다\" / 2줄 그 값이 지워지지 않는다 / 리액션 쏠쏠했겠네",
+      "1줄 신장산 세 글자가 낙인 / 2줄 중국 태양광에 지옥시작 / 3줄 못 지운 원산지가 187곳을 잘랐다 / 리액션 자업자득"
     ],
     "prompt_prefix": "",
     "prompt_suffix": "Glossy semi-3D rendered illustration with a polished anime finish: smooth volumetric shading, strong specular highlights, soft ambient occlusion, clean bold outlines, vivid saturated colors, bright cinematic key light with sparkle and lens-flare accents, shallow depth of field on the background. Characters are \"countryball\" style spheres — a perfectly round glossy ball rendered with realistic sphere volume and a bright highlight, its entire surface wrapped edge to edge in its identity mark (an accurate national flag for a country, or the company's actual logo and brand color for a corporation), with large expressive cartoon eyes and mouth drawn directly on that surface, attached to a small human body in a business suit, work uniform, or military uniform, with small black gloved hands. The identity mark stays large and unbroken so it reads instantly at thumbnail size. Expressions are extreme and instantly readable at small size. The machinery, vehicles, and industrial objects in the scene are rendered with crisp mechanical detail and realistic metallic materials, contrasting against the stylized spheres. The only legible characters anywhere in the image are the short Korean Hangul labels and numerals explicitly named in the scene description above, rendered crisply and correctly as real Korean letterforms; every other surface that would carry writing shows entries printed too small and slightly out of focus to read, never invented English words and never fake Chinese characters. NO large title or caption overlay text, no watermark. 16:9 widescreen YouTube thumbnail."
@@ -41,7 +41,7 @@
       "id": 4,
       "purpose": "title",
       "composition": "정면 대결",
-      "concept_ko": "제목 앞머리 「같은 라인인데 월급이 반토막」을 같은 벨트 위 두 봉투로 이행한다 — 오성홍기 구체는 두꺼운 봉투를 제 겨드랑이에 끼고 반토막 난 봉투만 라인 위로 밀고, 성조기 구체가 그 잘린 봉투를 집어 들며 분노한다. 「위구르 월 2,800~3,000위안 vs 같은 공장 한족 월 6,000~8,000위안」(verified-data §9)이 근거이고 표정 온도를 무심 대 분노로 갈랐다.",
+      "concept_ko": "제목 앞머리 「신장에서 나왔다」를 낙인 그 자체로 세운다 — 컨베이어 위 상자 옆면에 찍힌 원산지 도장과, 그 도장 하나 때문에 붉은 억류 태그가 박힌 상자를 나란히 놓아 「신장에서 나왔다는 한 줄이 곧 유죄 추정」(verified-data §1)임을 물건 하나로 읽히게 했다. 사람을 세우지 않고 찍힌 낙인 자체를 감정 대상으로 삼았다.",
       "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the bottom three-eighths of the frame height is one clean continuous surface — a smooth plain concrete floor — rendered simply and evenly with nothing on it, and every character, object, prop, effect and action is composed entirely within the upper five-eighths above it. Anything the characters hold or stand on sits at mid height, never near the bottom edge. Scene: a factory conveyor line runs straight across the middle of the frame at mid height, rendered in crisp mechanical detail. On the left a countryball sphere wrapped edge to edge in the Chinese flag — red field with one large yellow star and four smaller stars — in a business suit, one small black gloved hand tucking a fat banknote-stuffed pay envelope under its arm while the other pushes a second pay envelope, cut clean in half by shears, across the belt; its eyes slide away to the side and its mouth is a flat unbothered line. On the right a countryball sphere wrapped edge to edge in the US flag — red and white stripes with a blue canton of white stars — in a dark navy customs uniform, lifting the severed half-envelope with one gloved hand, eyebrows slammed into a hard V, pupils shrunk to pinpricks, mouth open in anger with a red anger-vein mark on its surface. Loose banknote halves and dull blue-grey polysilicon wafers scatter along the belt behind them, blurred plant interior beyond."
     },
     {
@@ -55,7 +55,7 @@
       "id": 6,
       "purpose": "title",
       "composition": "감정 클로즈업",
-      "concept_ko": "제목의 「신장산 원가의 정체」를 껴안은 잉곳이 갈라지는 그림으로 이행한다 — 세계 5대 폴리실리콘 공장 중 4곳이 신장에 몰려 만든 최저원가 물건(verified-data §4)이 갈라지고 그 틈에서 붉은 억류 태그가 삐져나온다. 감정 무게는 구체가 아니라 갈라진 물건 쪽에 있다.",
+      "concept_ko": "제목의 「지우지 못한 원산지」를 한 덩어리로 물리화한다 — 세계 5대 폴리실리콘 공장 중 4곳이 신장에 몰려 만든 그 잉곳(verified-data §4)이 통째로 갈라지고, 갈라진 틈에서 지워지지 않는 원산지 각인이 드러난다. 「싸게 만든 이유 = 못 팔게 된 이유」를 한 화면에 겹쳤다. 갈라진 잉곳과 불타는 국기 하단으로 부정형 판정.",
       "prompt_en": "COMPOSITION RULE, HIGHEST PRIORITY: the bottom three-eighths of the frame height is one clean continuous surface — a smooth plain warehouse floor — rendered simply and evenly with nothing on it, and every character, object, prop, effect and action is composed entirely within the upper five-eighths above it. Anything the characters hold or stand on sits at mid height, never near the bottom edge. Scene: a countryball sphere wrapped edge to edge in the Chinese flag — red field with one large yellow star and four smaller stars — in a business suit fills the left of the upper five-eighths, both small black gloved hands wrapped around a huge dull blue-grey polysilicon ingot it is hugging against itself at mid height; the ingot, rendered with crisp glassy crystalline detail, is splitting apart along a jagged crack that runs its whole length, and a bright red customs hold tag is jammed into the split. The sphere's pupils have shrunk to pinpricks, its mouth is a stiff frozen line, a single vertical stress line sits above its eyes and one bead of sweat slides down its surface. Broken glassy shards and glowing sparks hang in the air around the ingot, blurred bonded-warehouse racking behind."
     },
     {

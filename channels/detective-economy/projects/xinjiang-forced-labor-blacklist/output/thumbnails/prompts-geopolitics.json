@@ -4,14 +4,14 @@
     "style": "geopolitics",
     "narrative_direction": "부정형(중국) 중심 — 「싸게 만든 이유」가 그대로 「못 팔게 된 이유」가 되어 187곳이 명단에 오르고 억류 누계 39억 4천만 달러(약 5조 4천억 원, 2026년 2월 기준)가 항구에 묶인 이미 완료된 자업자득 서사(verified-data §1·§2). 미국이 함께 등장하는 5·8번만 혼합 — 중국은 부정형(그을리고 탁한 오성홍기), 미국은 긍정형(온전·선명한 성조기)으로 갈라 배치. 한국은 무대에 세우지 않는다(무대는 신장과 미 항구).",
     "titles": [
-      "\"같은 라인인데 월급이 반토막\" 187곳을 잘라낸 신장산 원가의 정체",
-      "전기값 41원에 사람값 58만 원, 세계에서 제일 싼 그 원가가 187곳을 잘랐습니다",
-      "싸게 만든 원가가 중국 최대의 족쇄가 됐습니다｜감시·이송·저임금으로도 못 지운 신장산 187곳"
+      "\"신장에서 나왔다\" 이 한 줄에 187곳이 세계에서 통째로 쫓겨났습니다",
+      "싸게 만들려 위구르를 밀어 넣은 대가, 중국 187곳에 찍힌 지워지지 않는 낙인",
+      "신장산 세 글자가 중국 최대의 낙인이 됐습니다｜감시·이송·저임금으로도 지우지 못한 187곳의 원산지"
     ],
     "thumbnail_texts": [
-      "1줄 \"같은 라인인데 월급이 반토막\" / 2줄 깎아낸 건 사람 몫이었다 / 리액션 쏠쏠했겠네",
-      "1줄 \"전기값 41원에 사람까지 싸게 썼다\" / 2줄 그 원가가 불러온 청구서 / 리액션 고맙지 뭐~",
-      "1줄 신장 원가 드디어 청구서 / 2줄 중국 태양광에 지옥시작 / 3줄 아껴 쓴 월급이 187곳을 잘라냈다 / 리액션 자업자득"
+      "1줄 \"신장에서 나왔다\" 이 한 줄이면 끝 / 2줄 187곳이 쫓겨났다 / 리액션 자업자득",
+      "1줄 \"싸게 만들려고 사람을 밀어 넣었다\" / 2줄 그 값이 지워지지 않는다 / 리액션 쏠쏠했겠네",
+      "1줄 신장산 세 글자가 낙인 / 2줄 중국 태양광에 지옥시작 / 3줄 못 지운 원산지가 187곳을 잘랐다 / 리액션 자업자득"
     ],
     "prompt_prefix": "COMPOSITION RULE, HIGHEST PRIORITY: the scene fills the entire 16:9 frame edge to edge as a single full-bleed image — never a letterbox band, never an empty panel, never a flat colour block. The bottom three-eighths of the frame height is the same continuous scene rendered dark, smoky and free of detail so overlay text stays readable, while all faces, flags, weapons and key objects sit entirely within the upper five-eighths. Anything held or carried sits at mid height, never near the bottom edge. photoreal current-affairs broadcast composite: every person, flag and location is a real photograph, sharp and true to life — faces keep real skin texture, pores, stray hair and natural shadow, and fabric keeps a visible weave. Over that photographic base sit broadcast graphic treatments: a bold colour field, cracked-glass shards, torn and scorched edges, a hard vignette, heavy atmospheric haze and fire glow. Dramatic hard lighting, one dominant colour drowning the frame, every part of the upper five-eighths packed edge to edge with elements and no empty space, cinematic wide-angle, very high contrast. NOT an oil painting, NOT brushwork or impasto, NOT a matte painting, NOT anime, NOT an illustration, NOT a 3d render",
     "prompt_suffix": "no title overlay text, no captions, no subtitle bars, no lower-third news banner, no watermark. Apart from the numerals named above — which must be rendered crisply and correctly as plain arabic numerals — do not invent any other words, letterforms or characters anywhere in the image.",
@@ -47,7 +47,7 @@
       "purpose": "title",
       "composition": "오브젝트 클로즈업 + 붉은 원 강조(인물 없음)",
       "direction": "부정형",
-      "concept_ko": "제목 앞머리 「같은 라인인데 월급이 반토막」을 그대로 물건으로 세운다 — 같은 컨베이어 위에 두꺼운 봉투와 가위로 반이 잘린 봉투를 나란히 놓아 「위구르 월 2,800~3,000위안(약 58만~62만 원)·하루 13시간 vs 같은 공장 한족 월 6,000~8,000위안」(verified-data §9)의 격차를 두께 하나로 읽히게 했다. 사람을 세우지 않고 잘린 값 자체를 감정 대상으로 삼았다.",
+      "concept_ko": "제목 앞머리 「신장에서 나왔다」를 낙인 그 자체로 세운다 — 컨베이어 위 상자 옆면에 찍힌 원산지 도장과, 그 도장 하나 때문에 붉은 억류 태그가 박힌 상자를 나란히 놓아 「신장에서 나왔다는 한 줄이 곧 유죄 추정」(verified-data §1)임을 물건 하나로 읽히게 했다. 사람을 세우지 않고 찍힌 낙인 자체를 감정 대상으로 삼았다.",
       "prompt_en": "Extreme close view along a polysilicon factory conveyor line: two brown pay envelopes lie side by side on the steel belt at mid height, enormous in frame. The right envelope is swollen thick with banknotes, its flap straining open. The left envelope has been cut clean in half by heavy shears, the severed banknotes fanning out of the raw cut edge, and a hard red broadcast circle is drawn around it. The open shears lie on the belt beside the cut envelope. Behind the belt an enormous Chinese flag — red field with one large yellow star and four smaller stars — fills the entire background in real woven fabric, dull, grimy and lightly scorched along its edges, with tall reactor vessels and roof trusses silhouetted against it through orange haze. Cracked-glass shards radiate outward from the cut, hard orange rim light picks out the banknote edges, black smoke chokes the upper corners, no people anywhere in the frame, and the near end of the belt falls away into dark featureless shadow."
     },
     {
@@ -63,7 +63,7 @@
       "purpose": "title",
       "composition": "단일 상징물 압도 배치(인물 없음)",
       "direction": "부정형",
-      "concept_ko": "제목의 「신장산 원가의 정체」를 한 덩어리로 물리화한다 — 세계 5대 폴리실리콘 공장 중 4곳이 신장에 몰려 만든 그 잉곳(verified-data §4)이 통째로 갈라지고, 갈라진 틈에 붉은 억류 태그와 잘린 지폐 반쪽이 박혀 「싸게 만든 이유 = 못 팔게 된 이유」를 한 화면에 겹쳤다. 갈라진 잉곳과 불타는 국기 하단으로 부정형 판정.",
+      "concept_ko": "제목의 「지우지 못한 원산지」를 한 덩어리로 물리화한다 — 세계 5대 폴리실리콘 공장 중 4곳이 신장에 몰려 만든 그 잉곳(verified-data §4)이 통째로 갈라지고, 갈라진 틈에서 지워지지 않는 원산지 각인이 드러난다. 「싸게 만든 이유 = 못 팔게 된 이유」를 한 화면에 겹쳤다. 갈라진 잉곳과 불타는 국기 하단으로 부정형 판정.",
       "prompt_en": "A single colossal polysilicon ingot, dull blue-grey and glassy, stands upright at the centre of the frame at mid height, taller than the machinery flanking it and rendered with sharp crystalline surface detail. A jagged cracked-glass fracture runs down its whole length, and jammed into the split are a bright red customs hold tag and the severed half of a banknote bundle. Behind it an enormous Chinese flag — red field with one large yellow star and four smaller stars — fills the entire background in real woven fabric, grimy and sun-bleached, its upper edge charred black with flame eating along the hem; coal-plant chimneys and high-voltage pylons stand silhouetted through the smoke on both sides. Raking orange firelight from the lower left throws the ingot into deep relief, embers and cracked-glass shards drift across the frame, no people anywhere, and the base of the ingot disappears into thick dark featureless smoke."
     },
     {
