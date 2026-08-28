@@ -181,6 +181,12 @@ grep -n '^## Phase 5' prompts/creative-strategy.md
      - ⛔ **위 「채널별 현황」은 참고용 메모일 뿐이다.** 실제 판단은 **항상 그 채널의 `thumbnail-strategy.json`의 `styles` 배열**로 한다. 메모와 JSON이 어긋나면 **JSON이 이기고**, 메모를 고친다
    - `channels/{채널}/config/thumbnail-strategy.json` + `profile.md`
    - `{P}/_script/concept.md` (확정 컨셉·계승 정보) + `{P}/_script/verified-data.md`
+   - 🚨 **대본의 중심 실존 인물을 호출 프롬프트에 이름으로 적어 전달한다 (2026-08-27 신설).**
+     `verified-data.md`에 **발언·결정·예측이 실려 대본 파트를 끌고 가는 유명인**이 있으면 그 이름을 쓴다.
+     ⛔ **확정 제목에 그 이름이 없어도 전달한다** — 제목이 파는 것과 썸네일이 세우는 얼굴은 다른 일을 한다.
+     > 🔴 **왜 못 박았나 (N7 사고)**: 같은 편을 두 번 뽑았는데 **PD가 프롬프트에 「머스크」를 적은 1차에는 있었고, 안 적은 2차에는 9장 전부에서 사라졌다.**
+     > 채널 규칙(`config/thumbnail-design.md` §2-A-1 ①)이 유명인을 1순위로 정하고 있는데도 그랬다. **규칙 파일만으로는 실행되지 않는다.**
+     > 얼굴 판정의 원본은 그 채널 파일이고, 여기서는 **재료(인물 이름)를 빠뜨리지 않는 것**만 담당한다
    - `{P}/_refs/{앵커}/thumbnail.webp` + `analysis.md` — 계승 3장 근거
    - ⛔ `patterns.md` · `_strategy_candidates.md` · `ctr-reference.md`를 전달하지 않는다. Phase 5는 확정된 `concept.md`만 있으면 된다
 3. 출력: **`styles`에 적힌 계열마다 파일 1개.** `prompts.json`(실사형) / `prompts-countryball.json` / `prompts-geopolitics.json` / `prompts-illustration.json` 중 **해당 계열만**
